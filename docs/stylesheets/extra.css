@@ -1,0 +1,16 @@
+/* Custom CSS overrides for the Metashape Expert Manual.
+ *
+ * Material for MkDocs renders a small status icon next to article
+ * titles in the navigation when the article has a `status:` field in
+ * its YAML frontmatter. The default icon (used for status values
+ * Material does not specifically recognise — `unverified` in our
+ * case) is a circled-i (ⓘ).
+ *
+ * The metadata is already rendered as a visible bullet list at the
+ * top of each article (via `hooks/render_metadata.py`), so the nav
+ * icon is redundant. Hide it.
+ */
+.md-nav .md-status:after,
+.md-nav .md-status {
+    display: none !important;
+}

@@ -1,0 +1,319 @@
+site_name: Metashape Expert Manual
+site_description: >-
+  An expert-level companion to the Agisoft Metashape user manual, distilling
+  insights from the Agisoft community forums, the metashape-scripts
+  repository, and field experience that go beyond what the official manuals
+  cover.
+site_author: Metashape Expert Manual contributors
+site_url: https://photogrammetrycommunity.github.io/metashape-expert-manual/
+
+# Repository
+repo_name: PhotogrammetryCommunity/metashape-expert-manual
+repo_url: https://github.com/PhotogrammetryCommunity/metashape-expert-manual
+edit_uri: edit/main/docs/
+
+copyright: >-
+  Content licensed CC-BY-4.0. Code samples licensed under the MIT License.
+  Forum quotations belong to their respective authors and are reproduced
+  with attribution under fair-use technical commentary.
+
+# ────────────────────────────────────────────────────────────────────────
+# Theme — Material for MkDocs
+# ────────────────────────────────────────────────────────────────────────
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link        # link GUI / Python tabs across articles
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+# ────────────────────────────────────────────────────────────────────────
+# Plugins
+# ────────────────────────────────────────────────────────────────────────
+plugins:
+  - search
+  - mermaid2
+  # mike provides the version selector at runtime; no extra plugin needed.
+
+# ────────────────────────────────────────────────────────────────────────
+# Hooks — render article metadata as a visible info block at the top
+# of each article (per deep-review feedback that pure YAML
+# frontmatter loses reader-visibility).
+# ────────────────────────────────────────────────────────────────────────
+hooks:
+  - hooks/render_metadata.py
+
+# ────────────────────────────────────────────────────────────────────────
+# Custom stylesheets — hide the default `.md-status` nav icon (which
+# Material adds for any article with a `status:` frontmatter field;
+# the status is already rendered as a visible bullet via the hook
+# above, so the nav icon is redundant).
+# ────────────────────────────────────────────────────────────────────────
+extra_css:
+  - stylesheets/extra.css
+
+# ────────────────────────────────────────────────────────────────────────
+# Markdown extensions
+# ────────────────────────────────────────────────────────────────────────
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path:
+        - docs
+        - .
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
+  - pymdownx.tabbed:
+      alternate_style: true   # required for content.tabs.link
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.caret
+  - pymdownx.tilde
+  - pymdownx.keys
+
+# ────────────────────────────────────────────────────────────────────────
+# Navigation
+#
+# The workflow axis mirrors the photogrammetry pipeline and the official
+# user manual. The topics axis is the cross-cutting
+# tag taxonomy. Articles are added incrementally; the placeholders below
+# are committed empty so the IA is visible from day one.
+# ────────────────────────────────────────────────────────────────────────
+nav:
+  - Home: index.md
+  - Workflow:
+      - workflow/index.md
+      - Project setup:
+          - workflow/project-setup/index.md
+          - Setting `chunk.region` to bound the tie-point cloud: workflow/project-setup/setting-the-chunk-region.md
+          - "Symlink filename — not target — controls the camera label": workflow/project-setup/symlink-filename-camera-label.md
+          - "Importing camera orientation: EXIF, OPK, yaw/pitch/roll": workflow/project-setup/importing-camera-orientation.md
+          - "Fixing exterior orientation: skipping Align Photos with known EO": workflow/project-setup/external-orientation-import.md
+          - "Drone metadata: DJI altitude semantics and RTK XMP accuracy tags": workflow/project-setup/dji-drone-metadata.md
+          - "Camera stations: when to use them and the nodal-head requirement": workflow/project-setup/camera-stations-nodal-head.md
+          - "Repositioning a chunk: moving the origin to a known point": workflow/project-setup/repositioning-chunk-origin.md
+          - "Custom vertical datums: adding a geoid undulation grid": workflow/project-setup/custom-geoid-vertical-datum.md
+          - "Change Path: swapping image format / resolution after alignment": workflow/project-setup/change-path-and-export-coords.md
+          - "Programmatic chunk.region control: move, scale, rotate the bounding box": workflow/project-setup/region-control-python.md
+      - Camera calibration:
+          - workflow/camera-calibration/index.md
+          - "EXIF focal length: which tags Metashape reads, and the no-crop-factor rule": workflow/camera-calibration/exif-focal-length-estimation.md
+          - "`sensor.calibration` vs `sensor.user_calib`": workflow/camera-calibration/sensor-calibration-vs-user-calib.md
+          - "Fisheye and spherical sensors: the seven projection types": workflow/camera-calibration/fisheye-spherical-camera-types.md
+          - "Metashape's distortion model and converting to OpenCV / Colmap": workflow/camera-calibration/distortion-model-opencv-colmap.md
+          - "Choosing which camera parameters to fix or optimize": workflow/camera-calibration/choosing-camera-parameters.md
+          - "Rolling-shutter compensation: Regularized vs Full": workflow/camera-calibration/rolling-shutter-compensation.md
+          - "Calibration groups: programmatic management in Python": workflow/camera-calibration/calibration-groups-management.md
+          - Programmatic calibration import / export: workflow/camera-calibration/calibration-import-export.md
+          - Declaring a fixed-geometry multi-camera rig in Python: workflow/camera-calibration/multi-camera-rig-python.md
+          - Choosing the master sensor in a multi-camera layout: workflow/camera-calibration/choosing-master-sensor-multi-camera-layout.md
+          - "The slave-sensor transform: composition rule, axis convention, and recipes": workflow/camera-calibration/slave-sensor-transform-recipes.md
+          - "Multispectral imaging: per-file band declaration and master-band change": workflow/camera-calibration/multispectral-band-handling.md
+          - "Transferring camera orientation between modalities (RGB → thermal)": workflow/camera-calibration/transfer-orientation-modalities.md
+      - Photo alignment:
+          - workflow/alignment/index.md
+          - "Pair preselection: Disabled, Generic, or Reference?": workflow/alignment/pair-preselection-modes.md
+          - "Helping alignment when photos don't align: markers, references, and what to use when": workflow/alignment/helping-alignment.md
+          - Diagnosing under-aligned chunks: workflow/alignment/diagnosing-under-aligned-chunks.md
+          - Recovery paths for unaligned cameras: workflow/alignment/recovery-paths-unaligned-cameras.md
+          - "Adding cameras to an aligned chunk: the `keep_keypoints` workflow": workflow/alignment/incremental-matching-keep-keypoints.md
+          - "AI-assisted mask generation": workflow/alignment/ai-mask-generation.md
+          - "Automatic sky masking with ONNX: pre-clean for sky-prone aerial captures": workflow/alignment/automatic-sky-masking.md
+          - "`mask_tiepoints` cross-view propagation and the foreground-occluder case": workflow/alignment/mask-tiepoints-cross-view.md
+          - "`filter_mask=True` starves matchPhotos when masks cover most of the image": workflow/alignment/filter-mask-starvation.md
+          - "Exclude stationary tie points: when and why": workflow/alignment/stationary-point-filter.md
+          - Synthetic position priors via `ReferencePreselectionSource`: workflow/alignment/synthetic-priors-reference-preselection.md
+          - "`alignChunks(method=point)` cannot break geometric symmetry": workflow/alignment/alignchunks-symmetric-scene-failure.md
+      - Optimization & accuracy:
+          - workflow/optimization/index.md
+          - The Clean Tie Points → Optimize Cameras loop: workflow/optimization/clean-tie-points-optimize-cameras-loop.md
+          - When does `optimizeCameras` actually do something?: workflow/optimization/when-optimize-cameras-helps.md
+          - "Tightening reference accuracies after `alignCameras`": workflow/optimization/tightening-reference-accuracies.md
+          - "Reducing camera overlap in over-acquired datasets": workflow/optimization/reducing-camera-overlap.md
+      - Markers, GCPs, scale bars:
+          - workflow/markers-gcps/index.md
+          - "Coded circular targets: 12-bit markers, printing, sizing, and the 14-bit / 16-bit / 20-bit family": workflow/markers-gcps/coded-circular-targets.md
+          - "AprilTag detection — choosing a variant": workflow/markers-gcps/apriltag-detection.md
+          - Programmatic marker placement and pinning: workflow/markers-gcps/programmatic-marker-placement.md
+          - "Gray flags in marker detection: what they mean and how to remove them": workflow/markers-gcps/gray-flags-marker-detection.md
+          - Removing "blue flag" marker projections cleanly: workflow/markers-gcps/removing-blue-flag-marker-projections.md
+      - Chunks and merging:
+          - workflow/chunks/index.md
+          - The three `alignChunks` methods: workflow/chunks/alignchunks-three-methods.md
+          - What `mergeChunks` actually does: workflow/chunks/what-mergechunks-does.md
+          - "`mergeChunks` does not deduplicate cameras": workflow/chunks/no-camera-deduplication.md
+          - The `merge_tiepoints` option: workflow/chunks/merge-tiepoints-and-keep-keypoints.md
+      - Depth maps:
+          - workflow/depth-maps/index.md
+          - "Depth-map quality and filter modes: choosing parameters for Build Point Cloud": workflow/depth-maps/depth-map-quality-and-filter-modes.md
+          - Exporting depth maps from Python (32-bit, scaled): workflow/depth-maps/exporting-depth-maps-python.md
+      - Point cloud:
+          - workflow/point-cloud/index.md
+          - "Point cloud confidence values: what they mean and how to filter": workflow/point-cloud/point-cloud-confidence-values.md
+          - "Ground classification: the erosion radius parameter": workflow/point-cloud/ground-classification-erosion-radius.md
+      - Mesh:
+          - workflow/mesh/index.md
+          - "Mesh surface types: Arbitrary vs Height field, and the source-data choice": workflow/mesh/mesh-surface-types.md
+          - "How Metashape computes vertex normals on model export": workflow/mesh/vertex-normal-computation.md
+      - Texture:
+          - workflow/texture/index.md
+          - "Color calibration: when to use it, what it does, and the white-balance / vignetting knobs": workflow/texture/color-calibration.md
+          - "Texture in Metashape 2.3 — what changed and why your scripts may need updating": workflow/texture/texture-in-2-3-changes.md
+          - "Texture blending modes — what each one actually does": workflow/texture/blending-modes.md
+      - DEM:
+          - workflow/dem/index.md
+          - "DEM build options: point cloud vs mesh as source, and the interpolation knob": workflow/dem/build-options.md
+      - Orthomosaic:
+          - workflow/orthomosaic/index.md
+          - Orthomosaic export — 4GB / BigTIFF / shift: workflow/orthomosaic/orthomosaic-export-pitfalls.md
+          - "Orthomosaic in a marker-defined planar projection": workflow/orthomosaic/marker-defined-projection.md
+          - "Area and volume measurement: Model view vs DEM": workflow/orthomosaic/area-volume-measurement.md
+          - Applying Patch on multiple shapes: workflow/orthomosaic/applying-patch-multiple-shapes.md
+          - "Exporting to Cesium 3D Tiles": workflow/orthomosaic/exporting-cesium-tiled-models.md
+      - Tiled model:
+          - workflow/tiled-model/index.md
+          - "Tiled models: when to use, what they replace, and how to export": workflow/tiled-model/tiled-model-when-to-use.md
+      - Export & reporting:
+          - workflow/export-reporting/index.md
+          - "Auto-export per-shape: orthomosaic, DEM, point cloud, mesh, KMZ": workflow/export-reporting/auto-export-per-shape.md
+          - "`exportPointCloud` defaults: GUI vs Python CRS difference": workflow/export-reporting/exportpoints-crs-default.md
+          - "Exporting cameras for Gaussian Splatting / Colmap downstream pipelines": workflow/export-reporting/colmap-export-for-3dgs.md
+      - Network processing:
+          - workflow/network-processing/index.md
+          - "Network processing: setup, monitoring, and common failure modes": workflow/network-processing/network-processing-setup.md
+      - Scripting & automation:
+          - workflow/scripting-automation/index.md
+          - Automating gradual selection in Python: workflow/scripting-automation/automating-gradual-selection-python.md
+          - Logging from Metashape Python scripts: workflow/scripting-automation/logging-from-python-scripts.md
+  - Topics:
+      - topics/index.md
+      - Performance & GPU:
+          - topics/performance/index.md
+          - "Performance tuning: CPU, RAM, GPU, and OS": topics/performance/cpu-ram-gpu-os-tuning.md
+          - When does Metashape use the GPU?: topics/performance/gpu-usage-by-stage.md
+          - "RAM and quality settings: what determines peak memory": topics/performance/ram-and-quality-settings.md
+          - "Linux vs Windows: 10–40% faster processing": topics/performance/linux-vs-windows-performance.md
+          - "Multi-GPU setups: SLI, TCC mode, and utilization": topics/performance/multi-gpu-utilization.md
+          - Diagnosing CUDA / OpenCL errors: topics/performance/diagnosing-cuda-opencl-errors.md
+      - CRS & georeferencing:
+          - topics/crs/index.md
+          - "`chunk.transform.matrix` is local→world; `camera.transform` is local": topics/crs/chunk-frame-vs-camera-frame.md
+      - Multi-chunk & multi-camera:
+          - topics/multi-chunk/index.md
+          - "When to use chunks: dataset partitioning strategies": topics/multi-chunk/when-to-use-chunks.md
+      - Scripting & automation:
+          - topics/scripting/index.md
+          - "Scripting context pitfalls: GUI vs command-line, document handles, and stage validation": topics/scripting/scripting-context-pitfalls.md
+          - "YPR rotation conventions: ypr2mat vs camera.reference.rotation": topics/scripting/ypr-rotation-conventions.md
+          - "The chunk's internal coordinate system: arbitrary scale and chunk.transform.scale": topics/scripting/chunk-internal-scale-and-units.md
+          - "Working with shape geometries (1.7+ API)": topics/scripting/shape-geometry-api.md
+          - "Creating point shapes programmatically: grid placement with DEM-based elevation": topics/scripting/creating-point-shapes-from-dem.md
+          - "`camera.project` and `camera.unproject`: 2D ↔ 3D in Python": topics/scripting/camera-project-unproject.md
+          - Converting `camera.transform` to ENU: topics/scripting/camera-poses-to-enu.md
+          - "Computing camera direction vectors and look-at points": topics/scripting/camera-direction-vectors.md
+          - Computing per-camera coverage area: topics/scripting/computing-camera-coverage-area.md
+          - Mapping orthomosaic pixels back to source images: topics/scripting/orthomosaic-pixel-to-source-image.md
+          - "Filtering cameras by tie-point selection: which photos see this 3D point?": topics/scripting/filter-cameras-by-tie-points.md
+          - "Mesh and point-cloud editing recipes (Python)": topics/scripting/mesh-pointcloud-editing-recipes.md
+          - "`Model.renderDepth`: synthetic depth from arbitrary viewpoints": topics/scripting/model-render-depth.md
+          - "Rendering models from synthetic cameras: spherical panoramas and regular views": topics/scripting/rendering-from-synthetic-cameras.md
+          - "Comparing chunks for change detection: DEM, mesh, point-cloud diff": topics/scripting/chunk-diff-volume-workflows.md
+          - "Aligning two meshes / point clouds: model-to-model registration in Python": topics/scripting/aligning-models-and-clouds.md
+          - "Diagnostic mesh visualisation: colorize by overlap or altitude": topics/scripting/colorize-mesh-diagnostics.md
+          - "Undocumented tweaks: a partial reference": topics/scripting/undocumented-tweaks-reference.md
+      - Troubleshooting:
+          - topics/troubleshooting/index.md
+          - "Troubleshooting Metashape: diagnostic ladder and where the logs live": topics/troubleshooting/troubleshooting-diagnostic-ladder.md
+      - Hardware & IO:
+          - topics/hardware-io/index.md
+          - "Intel i9-13900K / 14900K instability: BIOS workarounds": topics/hardware-io/intel-13900k-14900k-instability.md
+      - Repeatability & QA:
+          - topics/repeatability-qa/index.md
+          - Reproducing chunk-info statistics in Python: topics/repeatability-qa/reproducing-chunk-info-statistics-python.md
+          - "Keypoint-size-normalised reprojection error: the kps metric": topics/repeatability-qa/keypoint-size-error-metric.md
+          - "Tie-point multiplicity: track length, distribution, and what it tells you": topics/repeatability-qa/tie-point-multiplicity.md
+          - "Reprojection error analysis: per-camera and per-tie-point": topics/repeatability-qa/reprojection-error-analysis.md
+          - "Marker projection statistics: counts, per-marker errors, metres vs pixels": topics/repeatability-qa/marker-projection-statistics.md
+          - "Scalebar distance error: per-scalebar values and RMS aggregation": topics/repeatability-qa/scalebar-error-statistics.md
+          - "Camera reference error: per-camera location & orientation in Python": topics/repeatability-qa/camera-reference-error-python.md
+          - "Sensor and camera shared-tie-point graphs: detecting isolated groups": topics/repeatability-qa/shared-tie-point-graphs.md
+          - "DSM ridge-line artefacts: alignment-quality diagnosis": topics/repeatability-qa/dsm-ridge-lines-diagnosis.md
+          - "Saving estimated reference values to file: location, rotation, error, and sigma": topics/repeatability-qa/save-estimated-reference.md
+          - "Bundle-adjustment quality: variance factor, overfit testing, and reference detectability": topics/repeatability-qa/bundle-adjustment-quality.md
+  - Reference:
+      - reference/index.md
+      - Glossary: reference/glossary.md
+      - Sample datasets: reference/sample-data.md
+      - Version timeline: reference/version-timeline.md
+      - Version differences: reference/version-differences.md
+      - Agisoft Knowledge Base: reference/agisoft-knowledge-base.md
+      - Features:
+          - reference/features/index.md
+          - Gradual selection: reference/features/gradual-selection.md
+          - Guided matching: reference/features/guided-matching.md
+          - Reference preselection: reference/features/reference-preselection.md
+          - Generic preselection: reference/features/generic-preselection.md
+          - Adaptive camera model fitting: reference/features/adaptive-camera-model-fitting.md
+          - Components view: reference/features/components-view.md
+          - Estimate Image Quality: reference/features/estimate-image-quality.md
+  - About:
+      - Contributing: about/contributing.md
+      - Style guide: about/style.md
+      - Unverified claims: about/unverified.md
+      - Release gate (demos): about/release-gate-demos.md
+
+# ────────────────────────────────────────────────────────────────────────
+# Validation — fail the build on broken internal links / unrecognized nav
+# ────────────────────────────────────────────────────────────────────────
+strict: true
+
+validation:
+  nav:
+    omitted_files: warn
+    not_found: warn
+    absolute_links: warn
+  links:
+    not_found: warn
+    absolute_links: warn
+    unrecognized_links: warn

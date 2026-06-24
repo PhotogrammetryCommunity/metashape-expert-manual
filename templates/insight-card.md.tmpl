@@ -1,0 +1,61 @@
+# Insight card — <one-line summary>
+
+> Internal authoring note, not published.
+
+```yaml
+id: insight-NNNN
+created: YYYY-MM-DD
+status: draft         # draft | reviewed | merged-as-card | promoted-to-article | rejected
+disposition_reason: ""
+
+source:
+  forum_thread: <thread-permalink>
+  forum_messages:
+    # One entry per cited message in the thread. Date and version
+    # are required so the reader can calibrate
+    # how much of the advice still applies.
+    - permalink: <message-permalink-1>
+      author: <forum-handle>
+      date: YYYY-MM-DD
+      version_at_time: <Cite-as from docs/reference/version-timeline.md>
+    - permalink: <message-permalink-2>
+      author: <forum-handle>
+      date: YYYY-MM-DD
+      version_at_time: <Cite-as from docs/reference/version-timeline.md>
+  authors: [<forum-handle>, ...]
+  thread_dates:
+    first_post: YYYY-MM-DD
+    last_post:  YYYY-MM-DD
+
+topic_tags: [<tag-1>, <tag-2>]
+feature_tags: [<feature-slug-1>, ...]   # match docs/reference/features/<slug>.md
+versions:
+  applies_to: ["2.x"]            # Metashape major versions
+  obsolete_in: []
+  caveats: ""
+```
+
+## Summary
+
+One paragraph capturing the insight in plain prose. The reader of this
+card is the article author, not the end-user.
+
+## Why it matters
+
+When does the reader hit this? How often does the question come up on the
+forum? What's the cost of getting it wrong?
+
+## Source extracts
+
+> "Quoted forum text — short excerpt only — with attribution above the
+> quote." — Author, YYYY-MM-DD, `<version-at-time>` ([permalink](<url>))
+
+## Related cards
+
+- `<insight-NNNN>` — relation (duplicate / contradicts / extends).
+
+## Validation notes
+
+- What would a reviewer need to reproduce this? Dataset, settings, Metashape
+  version.
+- Has anyone reproduced it yet? Who, when?

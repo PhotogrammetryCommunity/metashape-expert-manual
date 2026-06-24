@@ -1,0 +1,184 @@
+id	folder_id	folder	date_iso	date_raw	title	url
+31000023521	31000117231	Node-locked license activation	2022-03-01	Tue, 1 Mar, 2022	&quot;Can&#39;t Write License&quot; error during activation on macOS	https://agisoft.freshdesk.com/support/solutions/articles/31000023521
+31000126204	31000117231	Node-locked license activation	2023-03-01	Wed, 1 Mar, 2023	How to create an offline activation request file	https://agisoft.freshdesk.com/support/solutions/articles/31000126204
+31000133073	31000121523	(Metashape 1.x) Floating license activation	2026-04-17	Fri, 17 Apr, 2026	(Metashape 1.x) Floating license activation procedure	https://agisoft.freshdesk.com/support/solutions/articles/31000133073
+31000133120	31000119676	Licensing terms	2022-01-27	Thu, 27 Jan, 2022	How Educational license differs from a full license	https://agisoft.freshdesk.com/support/solutions/articles/31000133120
+31000133121	31000119676	Licensing terms	2024-01-22	Mon, 22 Jan, 2024	Licensing for the network processing	https://agisoft.freshdesk.com/support/solutions/articles/31000133121
+31000133123	31000114192	Python scripting	2022-02-10	Thu, 10 Feb, 2022	How to run Python script automatically on Metashape Professional start	https://agisoft.freshdesk.com/support/solutions/articles/31000133123
+31000133141	31000114192	Python scripting	2022-02-10	Thu, 10 Feb, 2022	How to run the script in headless mode from the command-line	https://agisoft.freshdesk.com/support/solutions/articles/31000133141
+31000133220	31000119676	Licensing terms	2022-01-28	Fri, 28 Jan, 2022	floating license	https://agisoft.freshdesk.com/support/solutions/articles/31000133220
+31000133222	31000119676	Licensing terms	2019-08-01	Thu, 1 Aug, 2019	EULA	https://agisoft.freshdesk.com/support/solutions/articles/31000133222
+31000133223	31000119676	Licensing terms	2019-08-01	Thu, 1 Aug, 2019	EULA	https://agisoft.freshdesk.com/support/solutions/articles/31000133223
+31000133910	31000114461	Hardware, drivers, visualization	2022-02-25	Fri, 25 Feb, 2022	NVIDIA graphic card is not recognized on macOS in GPU preferences tab	https://agisoft.freshdesk.com/support/solutions/articles/31000133910
+31000134012	31000117231	Node-locked license activation	2024-01-22	Mon, 22 Jan, 2024	moving license	https://agisoft.freshdesk.com/support/solutions/articles/31000134012
+31000135256	31000014177	License purchase	2023-02-01	Wed, 1 Feb, 2023	How to update Metashape Pro to the new version	https://agisoft.freshdesk.com/support/solutions/articles/31000135256
+31000135259	31000014177	License purchase	2023-07-28	Fri, 28 Jul, 2023	How to try full Metashape functionality before buying	https://agisoft.freshdesk.com/support/solutions/articles/31000135259
+31000135262	31000014177	License purchase	2024-10-18	Fri, 18 Oct, 2024	How to purchase Metashape license	https://agisoft.freshdesk.com/support/solutions/articles/31000135262
+31000135266	31000120678	Import and export problems	2022-02-25	Fri, 25 Feb, 2022	Exported DEM in TIF format appears to be black&amp;white when opened in external software	https://agisoft.freshdesk.com/support/solutions/articles/31000135266
+31000135267	31000120678	Import and export problems	2022-02-25	Fri, 25 Feb, 2022	When exported model is opened in MeshLab the texture is not applied	https://agisoft.freshdesk.com/support/solutions/articles/31000135267
+31000135268	31000120678	Import and export problems	2022-02-25	Fri, 25 Feb, 2022	Model exported to PDF format doesn&#39;t open and shows only blank page	https://agisoft.freshdesk.com/support/solutions/articles/31000135268
+31000135270	31000120678	Import and export problems	2022-02-25	Fri, 25 Feb, 2022	Orthomosaic export fails	https://agisoft.freshdesk.com/support/solutions/articles/31000135270
+31000135378	31000117231	Node-locked license activation	2022-03-01	Tue, 1 Mar, 2022	What to do with the license, when planning to update OS or upgrade hardware	https://agisoft.freshdesk.com/support/solutions/articles/31000135378
+31000135437	31000114192	Python scripting	2022-10-03	Mon, 3 Oct, 2022	Where to find general Python scripts for Metashape (PhotoScan) Professional	https://agisoft.freshdesk.com/support/solutions/articles/31000135437
+31000135640	31000117231	Node-locked license activation	2022-03-01	Tue, 1 Mar, 2022	How to uninstall Agisoft Metashape	https://agisoft.freshdesk.com/support/solutions/articles/31000135640
+31000136860	31000114192	Python scripting	2023-01-11	Wed, 11 Jan, 2023	How to install external Python module to Metashape Professional package	https://agisoft.freshdesk.com/support/solutions/articles/31000136860
+31000136920	31000114461	Hardware, drivers, visualization	2022-02-25	Fri, 25 Feb, 2022	How to configure OpenGL for Agisoft Metashape GUI mode on the cloud instances with GPU	https://agisoft.freshdesk.com/support/solutions/articles/31000136920
+31000145016	31000114192	Python scripting	2022-10-03	Mon, 3 Oct, 2022	How to calculate estimated Exterior Orientation parameters for the cameras using Python	https://agisoft.freshdesk.com/support/solutions/articles/31000145016
+31000145376	31000114461	Hardware, drivers, visualization	2022-02-25	Fri, 25 Feb, 2022	Photo and Ortho view is not responding, toolbar disappears	https://agisoft.freshdesk.com/support/solutions/articles/31000145376
+31000145918	31000117342	Network processing	2025-02-03	Mon, 3 Feb, 2025	How to configure the network processing	https://agisoft.freshdesk.com/support/solutions/articles/31000145918
+31000145919	31000117342	Network processing	2022-02-24	Thu, 24 Feb, 2022	Is network processing supported in Standard and/or Professional edition	https://agisoft.freshdesk.com/support/solutions/articles/31000145919
+31000145920	31000117342	Network processing	2025-03-31	Mon, 31 Mar, 2025	How many licenses are required for network processing	https://agisoft.freshdesk.com/support/solutions/articles/31000145920
+31000147966	31000014177	License purchase	2024-01-12	Fri, 12 Jan, 2024	How can I update from PhotoScan to Metashape, is it free?	https://agisoft.freshdesk.com/support/solutions/articles/31000147966
+31000148332	31000118486	Coordinate systems	2022-02-24	Thu, 24 Feb, 2022	How to use height above geoid for the coordinate system	https://agisoft.freshdesk.com/support/solutions/articles/31000148332
+31000148381	31000120114	Multispectral and thermal data processing	2026-04-06	Mon, 6 Apr, 2026	MicaSense Altum processing workflow (including Reflectance Calibration) in Agisoft Metashape Professional	https://agisoft.freshdesk.com/support/solutions/articles/31000148381
+31000148432	31000114859	Common problems in Metashape	2024-04-17	Wed, 17 Apr, 2024	What do some error messages in Metashape interface mean?	https://agisoft.freshdesk.com/support/solutions/articles/31000148432
+31000148780	31000120114	Multispectral and thermal data processing	2026-04-06	Mon, 6 Apr, 2026	MicaSense RedEdge MX processing workflow (including Reflectance Calibration) in Agisoft Metashape Professional	https://agisoft.freshdesk.com/support/solutions/articles/31000148780
+31000148830	31000119082	Close range data processing	2026-04-10	Fri, 10 Apr, 2026	Spherical panoramas generation	https://agisoft.freshdesk.com/support/solutions/articles/31000148830
+31000148835	31000118092	Ungrouped Tutorials	2026-03-05	Thu, 5 Mar, 2026	Camera track creation and fly through video rendering	https://agisoft.freshdesk.com/support/solutions/articles/31000148835
+31000148853	31000117880	Aerial data processing	2026-04-08	Wed, 8 Apr, 2026	Orthomosaic seamline editing (patching)	https://agisoft.freshdesk.com/support/solutions/articles/31000148853
+31000148855	31000118091	Measurements	2026-03-25	Wed, 25 Mar, 2026	Coded targets and Scale bars	https://agisoft.freshdesk.com/support/solutions/articles/31000148855
+31000148866	31000117880	Aerial data processing	2025-10-16	Thu, 16 Oct, 2025	Point Cloud Classification	https://agisoft.freshdesk.com/support/solutions/articles/31000148866
+31000148884	31000118091	Measurements	2026-03-27	Fri, 27 Mar, 2026	DEM based measurements	https://agisoft.freshdesk.com/support/solutions/articles/31000148884
+31000148930	31000114192	Python scripting	2025-12-08	Mon, 8 Dec, 2025	How to install Metashape stand-alone Python module	https://agisoft.freshdesk.com/support/solutions/articles/31000148930
+31000149015	31000121523	(Metashape 1.x) Floating license activation	2023-03-02	Thu, 2 Mar, 2023	Where to find more information regarding floating license management	https://agisoft.freshdesk.com/support/solutions/articles/31000149015
+31000149337	31000117943	Image capture tips	2022-03-11	Fri, 11 Mar, 2022	General image capture tips	https://agisoft.freshdesk.com/support/solutions/articles/31000149337
+31000149338	31000117943	Image capture tips	2022-12-21	Wed, 21 Dec, 2022	Aerial survey tips	https://agisoft.freshdesk.com/support/solutions/articles/31000149338
+31000149339	31000117943	Image capture tips	2022-10-18	Tue, 18 Oct, 2022	Terrestrial shooting scenario	https://agisoft.freshdesk.com/support/solutions/articles/31000149339
+31000149340	31000117943	Image capture tips	2024-04-15	Mon, 15 Apr, 2024	Close-range objects scanning	https://agisoft.freshdesk.com/support/solutions/articles/31000149340
+31000149341	31000117943	Image capture tips	2022-03-11	Fri, 11 Mar, 2022	Full body/head scanning capture tips	https://agisoft.freshdesk.com/support/solutions/articles/31000149341
+31000150614	31000114461	Hardware, drivers, visualization	2022-02-25	Fri, 25 Feb, 2022	General information related to GPU processing	https://agisoft.freshdesk.com/support/solutions/articles/31000150614
+31000150804	31000014177	License purchase	2022-02-28	Mon, 28 Feb, 2022	Can my license be transferred / sold if I’m not planning to use it in the future?	https://agisoft.freshdesk.com/support/solutions/articles/31000150804
+31000150805	31000014177	License purchase	2022-02-28	Mon, 28 Feb, 2022	May I continue using my Educational license if I have finished my studies / retired from a university / started my career outside academic environment?	https://agisoft.freshdesk.com/support/solutions/articles/31000150805
+31000151182	31000118486	Coordinate systems	2025-06-18	Wed, 18 Jun, 2025	Conversion between the coordinate systems	https://agisoft.freshdesk.com/support/solutions/articles/31000151182
+31000152092	31000119082	Close range data processing	2026-04-08	Wed, 8 Apr, 2026	3D model reconstruction	https://agisoft.freshdesk.com/support/solutions/articles/31000152092
+31000152334	31000118608	Agisoft Cloud	2026-02-13	Fri, 13 Feb, 2026	Agisoft Cloud projects management	https://agisoft.freshdesk.com/support/solutions/articles/31000152334
+31000152491	31000117880	Aerial data processing	2026-02-19	Thu, 19 Feb, 2026	Possible causes of large altitude errors when working with DJI images in Metashape	https://agisoft.freshdesk.com/support/solutions/articles/31000152491
+31000153271	31000117231	Node-locked license activation	2022-03-01	Tue, 1 Mar, 2022	How many times can I deactivate a node-locked license and activate it again?	https://agisoft.freshdesk.com/support/solutions/articles/31000153271
+31000153371	31000014177	License purchase	2022-02-28	Mon, 28 Feb, 2022	What is FastSpring?	https://agisoft.freshdesk.com/support/solutions/articles/31000153371
+31000153479	31000119359	Masking	2025-02-07	Fri, 7 Feb, 2025	Working with masks	https://agisoft.freshdesk.com/support/solutions/articles/31000153479
+31000153555	31000121523	(Metashape 1.x) Floating license activation	2023-03-02	Thu, 2 Mar, 2023	Which RLM server version can be used for the floating license option	https://agisoft.freshdesk.com/support/solutions/articles/31000153555
+31000153696	31000117880	Aerial data processing	2026-02-19	Thu, 19 Feb, 2026	Aerial data processing (with GCPs) - Orthomosaic&amp;DEM generation	https://agisoft.freshdesk.com/support/solutions/articles/31000153696
+31000153699	31000119818	Stereoscopic measurements and vectorization	2026-04-06	Mon, 6 Apr, 2026	Stereo pair selection, measurements and navigation	https://agisoft.freshdesk.com/support/solutions/articles/31000153699
+31000153729	31000119084	Processing data from special sources	2026-02-20	Fri, 20 Feb, 2026	Satellite imagery processing	https://agisoft.freshdesk.com/support/solutions/articles/31000153729
+31000153736	31000119082	Close range data processing	2026-04-14	Tue, 14 Apr, 2026	Orthomosaic generation (cylindrical projection)	https://agisoft.freshdesk.com/support/solutions/articles/31000153736
+31000153743	31000119676	Licensing terms	2022-01-27	Thu, 27 Jan, 2022	What is considered as Automated processing service, that requires Service Provider license of Agisoft Metashape?	https://agisoft.freshdesk.com/support/solutions/articles/31000153743
+31000153952	31000119996	Working with textures	2026-04-03	Fri, 3 Apr, 2026	Normal map generation	https://agisoft.freshdesk.com/support/solutions/articles/31000153952
+31000154049	31000119082	Close range data processing	2025-04-01	Tue, 1 Apr, 2025	Orthomosaic generation (planar projection)	https://agisoft.freshdesk.com/support/solutions/articles/31000154049
+31000154132	31000117880	Aerial data processing	2026-02-19	Thu, 19 Feb, 2026	Control and Check points for aerial surveys	https://agisoft.freshdesk.com/support/solutions/articles/31000154132
+31000154587	31000119996	Working with textures	2026-04-03	Fri, 3 Apr, 2026	Texture map types	https://agisoft.freshdesk.com/support/solutions/articles/31000154587
+31000154629	31000114192	Python scripting	2025-03-19	Wed, 19 Mar, 2025	How to select fixed percent of the points (Gradual Selection) using Python	https://agisoft.freshdesk.com/support/solutions/articles/31000154629
+31000154762	31000114192	Python scripting	2023-10-02	Mon, 2 Oct, 2023	How to make Python interpreter to use Metashape module	https://agisoft.freshdesk.com/support/solutions/articles/31000154762
+31000155067	31000118608	Agisoft Cloud	2025-11-07	Fri, 7 Nov, 2025	Agisoft Cloud processing tutorial	https://agisoft.freshdesk.com/support/solutions/articles/31000155067
+31000155118	31000118608	Agisoft Cloud	2025-12-25	Thu, 25 Dec, 2025	Agisoft Cloud Web Viewer tutorial	https://agisoft.freshdesk.com/support/solutions/articles/31000155118
+31000155179	31000119082	Close range data processing	2024-05-17	Fri, 17 May, 2024	4D processing	https://agisoft.freshdesk.com/support/solutions/articles/31000155179
+31000155265	31000119082	Close range data processing	2024-05-17	Fri, 17 May, 2024	How to build a complete (360 degree) model of an object	https://agisoft.freshdesk.com/support/solutions/articles/31000155265
+31000155544	31000118486	Coordinate systems	2022-02-24	Thu, 24 Feb, 2022	Reference links and description for supported Geoids formats	https://agisoft.freshdesk.com/support/solutions/articles/31000155544
+31000155753	31000119552	Other languages	2026-01-16	Fri, 16 Jan, 2026	Материалы на русском языке	https://agisoft.freshdesk.com/support/solutions/articles/31000155753
+31000155990	31000118608	Agisoft Cloud	2026-04-16	Thu, 16 Apr, 2026	Agisoft Cloud Plans	https://agisoft.freshdesk.com/support/solutions/articles/31000155990
+31000156301	31000118091	Measurements	2026-03-27	Fri, 27 Mar, 2026	DEM difference calculation	https://agisoft.freshdesk.com/support/solutions/articles/31000156301
+31000156493	31000119812	Metashape integration with third party products	2026-02-20	Fri, 20 Feb, 2026	Improving GPS accuracy using MakeItAccurate service	https://agisoft.freshdesk.com/support/solutions/articles/31000156493
+31000156497	31000117880	Aerial data processing	2026-02-19	Thu, 19 Feb, 2026	Aerial data processing(SenseFly eBee)	https://agisoft.freshdesk.com/support/solutions/articles/31000156497
+31000156964	31000119729	Algorithms	2024-05-15	Wed, 15 May, 2024	References list	https://agisoft.freshdesk.com/support/solutions/articles/31000156964
+31000157018	31000119812	Metashape integration with third party products	2026-02-20	Fri, 20 Feb, 2026	Using BINGO for quality assessment	https://agisoft.freshdesk.com/support/solutions/articles/31000157018
+31000157329	31000114461	Hardware, drivers, visualization	2024-03-13	Wed, 13 Mar, 2024	Memory requirements for processing operations	https://agisoft.freshdesk.com/support/solutions/articles/31000157329
+31000157459	31000119818	Stereoscopic measurements and vectorization	2026-03-31	Tue, 31 Mar, 2026	Setting up a Stealth3DMouse controller	https://agisoft.freshdesk.com/support/solutions/articles/31000157459
+31000157618	31000121523	(Metashape 1.x) Floating license activation	2023-03-02	Thu, 2 Mar, 2023	How to run floating license server as a system service	https://agisoft.freshdesk.com/support/solutions/articles/31000157618
+31000157619	31000121523	(Metashape 1.x) Floating license activation	2022-03-05	Sat, 5 Mar, 2022	How to run floating license server on VM (virtual machine)	https://agisoft.freshdesk.com/support/solutions/articles/31000157619
+31000157620	31000119840	(Metashape 2.x) Floating license activation	2023-07-31	Mon, 31 Jul, 2023	How to borrow the floating license for the offline work	https://agisoft.freshdesk.com/support/solutions/articles/31000157620
+31000157701	31000119082	Close range data processing	2024-05-17	Fri, 17 May, 2024	Manual chunk alignment (Standard edition)	https://agisoft.freshdesk.com/support/solutions/articles/31000157701
+31000157888	31000117880	Aerial data processing	2026-02-19	Thu, 19 Feb, 2026	Colorization of the external point cloud based on images	https://agisoft.freshdesk.com/support/solutions/articles/31000157888
+31000157908	31000117880	Aerial data processing	2026-02-19	Thu, 19 Feb, 2026	Aerial data processing (without GCPs)	https://agisoft.freshdesk.com/support/solutions/articles/31000157908
+31000157953	31000118092	Ungrouped Tutorials	2026-03-05	Thu, 5 Mar, 2026	Mission planning for complex structures	https://agisoft.freshdesk.com/support/solutions/articles/31000157953
+31000158119	31000120281	Camera calibration	2026-03-02	Mon, 2 Mar, 2026	What does camera calibration results mean in Metashape?	https://agisoft.freshdesk.com/support/solutions/articles/31000158119
+31000158217	31000118608	Agisoft Cloud	2025-08-06	Wed, 6 Aug, 2025	Agisoft Cloud known issues and solutions	https://agisoft.freshdesk.com/support/solutions/articles/31000158217
+31000158320	31000117880	Aerial data processing	2024-05-17	Fri, 17 May, 2024	Combined processing of aerial and terrestrial images	https://agisoft.freshdesk.com/support/solutions/articles/31000158320
+31000158376	31000119996	Working with textures	2024-05-17	Fri, 17 May, 2024	Agisoft Texture De-Lighter - general workflow	https://agisoft.freshdesk.com/support/solutions/articles/31000158376
+31000158435	31000117943	Image capture tips	2022-03-11	Fri, 11 Mar, 2022	Underwater survey image capture tips	https://agisoft.freshdesk.com/support/solutions/articles/31000158435
+31000158881	31000119996	Working with textures	2026-04-03	Fri, 3 Apr, 2026	Style transfer for 3D model	https://agisoft.freshdesk.com/support/solutions/articles/31000158881
+31000158885	31000119996	Working with textures	2026-04-03	Fri, 3 Apr, 2026	Remove lighting from texture in Agisoft Metashape Professional	https://agisoft.freshdesk.com/support/solutions/articles/31000158885
+31000158896	31000119082	Close range data processing	2024-05-17	Fri, 17 May, 2024	Connected components in camera alignment procedure	https://agisoft.freshdesk.com/support/solutions/articles/31000158896
+31000158928	31000114461	Hardware, drivers, visualization	2022-03-17	Thu, 17 Mar, 2022	Does Metashape work on Apple M1 architecture?	https://agisoft.freshdesk.com/support/solutions/articles/31000158928
+31000158941	31000119359	Masking	2026-01-19	Mon, 19 Jan, 2026	Volumetric masking for depth maps based mesh model generation	https://agisoft.freshdesk.com/support/solutions/articles/31000158941
+31000158942	31000120114	Multispectral and thermal data processing	2026-04-07	Tue, 7 Apr, 2026	Thermal imagery processing	https://agisoft.freshdesk.com/support/solutions/articles/31000158942
+31000158967	31000119359	Masking	2022-11-07	Mon, 7 Nov, 2022	Aligning photos with background suppression from single mask	https://agisoft.freshdesk.com/support/solutions/articles/31000158967
+31000159037	31000114859	Common problems in Metashape	2022-02-11	Fri, 11 Feb, 2022	What to do, if Metashape crashes?	https://agisoft.freshdesk.com/support/solutions/articles/31000159037
+31000159101	31000122633	LiDAR and Laser scans data processing	2024-05-17	Fri, 17 May, 2024	Terrestrial laser scanning data processing (for Metashape 1.7 to 1.8)	https://agisoft.freshdesk.com/support/solutions/articles/31000159101
+31000159199	31000118608	Agisoft Cloud	2026-05-21	Thu, 21 May, 2026	Latest releases &amp; bugfixes	https://agisoft.freshdesk.com/support/solutions/articles/31000159199
+31000159337	31000119818	Stereoscopic measurements and vectorization	2026-03-31	Tue, 31 Mar, 2026	Snapping options	https://agisoft.freshdesk.com/support/solutions/articles/31000159337
+31000159367	31000119812	Metashape integration with third party products	2026-02-20	Fri, 20 Feb, 2026	Export cameras in PAT-B format	https://agisoft.freshdesk.com/support/solutions/articles/31000159367
+31000159531	31000119084	Processing data from special sources	2026-02-20	Fri, 20 Feb, 2026	Processing scanned images with fiducial marks	https://agisoft.freshdesk.com/support/solutions/articles/31000159531
+31000159556	31000118608	Agisoft Cloud	2026-02-12	Thu, 12 Feb, 2026	Agisoft Cloud Project Sharing tutorial	https://agisoft.freshdesk.com/support/solutions/articles/31000159556
+31000159853	31000120114	Multispectral and thermal data processing	2026-04-06	Mon, 6 Apr, 2026	DJI Phantom 4 Multispectral data processing	https://agisoft.freshdesk.com/support/solutions/articles/31000159853
+31000159895	31000121523	(Metashape 1.x) Floating license activation	2024-10-23	Wed, 23 Oct, 2024	How to transfer floating license server to a new machine?	https://agisoft.freshdesk.com/support/solutions/articles/31000159895
+31000160027	31000114859	Common problems in Metashape	2023-03-21	Tue, 21 Mar, 2023	GPU error messages - possible solutions	https://agisoft.freshdesk.com/support/solutions/articles/31000160027
+31000160059	31000120281	Camera calibration	2026-03-02	Mon, 2 Mar, 2026	Lens calibration (using chessboard pattern) in Metashape	https://agisoft.freshdesk.com/support/solutions/articles/31000160059
+31000160098	31000114859	Common problems in Metashape	2022-02-25	Fri, 25 Feb, 2022	GPU-related crashes in Metashape	https://agisoft.freshdesk.com/support/solutions/articles/31000160098
+31000160235	31000014177	License purchase	2026-04-28	Tue, 28 Apr, 2026	How to install Agisoft Metashape	https://agisoft.freshdesk.com/support/solutions/articles/31000160235
+31000160468	31000119812	Metashape integration with third party products	2026-02-20	Fri, 20 Feb, 2026	How to process an Image Group captured with Leica BLK3D	https://agisoft.freshdesk.com/support/solutions/articles/31000160468
+31000160727	31000120388	Agisoft Viewer	2023-03-21	Tue, 21 Mar, 2023	How to install and customize Agisoft Viewer?	https://agisoft.freshdesk.com/support/solutions/articles/31000160727
+31000160729	31000117880	Aerial data processing	2026-04-08	Wed, 8 Apr, 2026	Parameters for ground point classification	https://agisoft.freshdesk.com/support/solutions/articles/31000160729
+31000160891	31000118608	Agisoft Cloud	2026-03-06	Fri, 6 Mar, 2026	Agisoft Cloud Measurements &amp; Annotations	https://agisoft.freshdesk.com/support/solutions/articles/31000160891
+31000160911	31000120388	Agisoft Viewer	2022-02-10	Thu, 10 Feb, 2022	How to create a playlist for a presentation?	https://agisoft.freshdesk.com/support/solutions/articles/31000160911
+31000160912	31000120388	Agisoft Viewer	2022-02-10	Thu, 10 Feb, 2022	How to add 2D/3D data to Agisoft Viewer?	https://agisoft.freshdesk.com/support/solutions/articles/31000160912
+31000161029	31000120114	Multispectral and thermal data processing	2026-04-06	Mon, 6 Apr, 2026	How to add MicaSense RedEdge MX Dual data properly	https://agisoft.freshdesk.com/support/solutions/articles/31000161029
+31000161038	31000121523	(Metashape 1.x) Floating license activation	2022-03-05	Sat, 5 Mar, 2022	How to fix &quot;Invalid hostid type 16384&quot; activation error	https://agisoft.freshdesk.com/support/solutions/articles/31000161038
+31000161146	31000120114	Multispectral and thermal data processing	2026-04-06	Mon, 6 Apr, 2026	How to process data from Sentera 6X in Metashape?	https://agisoft.freshdesk.com/support/solutions/articles/31000161146
+31000161178	31000120388	Agisoft Viewer	2023-07-07	Fri, 7 Jul, 2023	Measure and Drawing tools in Agisoft Viewer	https://agisoft.freshdesk.com/support/solutions/articles/31000161178
+31000161295	31000118092	Ungrouped Tutorials	2026-03-03	Tue, 3 Mar, 2026	Powerlines detection	https://agisoft.freshdesk.com/support/solutions/articles/31000161295
+31000161406	31000119082	Close range data processing	2026-04-10	Fri, 10 Apr, 2026	Processing spherical panoramas in Agisoft Metashape	https://agisoft.freshdesk.com/support/solutions/articles/31000161406
+31000161533	31000118486	Coordinate systems	2026-01-15	Thu, 15 Jan, 2026	What to do if you need to use an existing geoid on another datum	https://agisoft.freshdesk.com/support/solutions/articles/31000161533
+31000161545	31000120114	Multispectral and thermal data processing	2024-05-17	Fri, 17 May, 2024	Prescription maps generation in Agisoft Metashape	https://agisoft.freshdesk.com/support/solutions/articles/31000161545
+31000161735	31000117880	Aerial data processing	2026-02-19	Thu, 19 Feb, 2026	DJI with RTK coordinates data processing	https://agisoft.freshdesk.com/support/solutions/articles/31000161735
+31000161958	31000119359	Masking	2026-01-19	Mon, 19 Jan, 2026	Automatic background masking using custom script	https://agisoft.freshdesk.com/support/solutions/articles/31000161958
+31000161959	31000114192	Python scripting	2024-05-15	Wed, 15 May, 2024	Script with general processing workflow	https://agisoft.freshdesk.com/support/solutions/articles/31000161959
+31000162008	31000120678	Import and export problems	2025-12-31	Wed, 31 Dec, 2025	Brightness &amp; contrast for orthomosaic export	https://agisoft.freshdesk.com/support/solutions/articles/31000162008
+31000162209	31000118092	Ungrouped Tutorials	2026-03-05	Thu, 5 Mar, 2026	Point cloud editing with confidence filter tool	https://agisoft.freshdesk.com/support/solutions/articles/31000162209
+31000162210	31000119996	Working with textures	2026-04-03	Fri, 3 Apr, 2026	How to analyse Model UV Statistics?	https://agisoft.freshdesk.com/support/solutions/articles/31000162210
+31000162211	31000119996	Working with textures	2026-04-02	Thu, 2 Apr, 2026	Texture quality improvement with the defocus masking feature	https://agisoft.freshdesk.com/support/solutions/articles/31000162211
+31000162212	31000119084	Processing data from special sources	2026-02-20	Fri, 20 Feb, 2026	Smart cameras with depth sensor data processing	https://agisoft.freshdesk.com/support/solutions/articles/31000162212
+31000162414	31000119359	Masking	2022-02-11	Fri, 11 Feb, 2022	Masks from background photos	https://agisoft.freshdesk.com/support/solutions/articles/31000162414
+31000162464	31000119818	Stereoscopic measurements and vectorization	2026-03-31	Tue, 31 Mar, 2026	3D Spacemouse controller	https://agisoft.freshdesk.com/support/solutions/articles/31000162464
+31000162477	31000120678	Import and export problems	2024-04-17	Wed, 17 Apr, 2024	Exported model becomes less detailed and ripples	https://agisoft.freshdesk.com/support/solutions/articles/31000162477
+31000162552	31000114192	Python scripting	2024-02-05	Mon, 5 Feb, 2024	Automatic detection of objects on orthomosaic	https://agisoft.freshdesk.com/support/solutions/articles/31000162552
+31000162572	31000117231	Node-locked license activation	2022-03-01	Tue, 1 Mar, 2022	Metashape Standard license activation on macOS for multiple users on the same computer	https://agisoft.freshdesk.com/support/solutions/articles/31000162572
+31000162602	31000118091	Measurements	2026-03-25	Wed, 25 Mar, 2026	Creating scale bars in the project without coded targets	https://agisoft.freshdesk.com/support/solutions/articles/31000162602
+31000162626	31000118608	Agisoft Cloud	2024-11-14	Thu, 14 Nov, 2024	Agisoft Cloud Virtual Tour tutorial	https://agisoft.freshdesk.com/support/solutions/articles/31000162626
+31000162627	31000120678	Import and export problems	2022-02-01	Tue, 1 Feb, 2022	Import video issues	https://agisoft.freshdesk.com/support/solutions/articles/31000162627
+31000163220	31000119082	Close range data processing	2024-05-17	Fri, 17 May, 2024	How to improve the modeling of thin objects in Metashape	https://agisoft.freshdesk.com/support/solutions/articles/31000163220
+31000163267	31000114859	Common problems in Metashape	2022-02-25	Fri, 25 Feb, 2022	Troubleshooting about usage on Linux	https://agisoft.freshdesk.com/support/solutions/articles/31000163267
+31000163268	31000119082	Close range data processing	2025-04-15	Tue, 15 Apr, 2025	Turntable capturing scenario and processing workflow	https://agisoft.freshdesk.com/support/solutions/articles/31000163268
+31000163280	31000114859	Common problems in Metashape	2025-05-26	Mon, 26 May, 2025	Firewall configuration	https://agisoft.freshdesk.com/support/solutions/articles/31000163280
+31000163324	31000117943	Image capture tips	2022-06-22	Wed, 22 Jun, 2022	Suggested scenario for photo shooting an interior	https://agisoft.freshdesk.com/support/solutions/articles/31000163324
+31000163388	31000119359	Masking	2026-01-19	Mon, 19 Jan, 2026	Automatic masking from the model	https://agisoft.freshdesk.com/support/solutions/articles/31000163388
+31000164388	31000117880	Aerial data processing	2024-05-17	Fri, 17 May, 2024	DEM editing tools	https://agisoft.freshdesk.com/support/solutions/articles/31000164388
+31000164680	31000121523	(Metashape 1.x) Floating license activation	2022-12-30	Fri, 30 Dec, 2022	How to create offline activation request for the floating license server activation	https://agisoft.freshdesk.com/support/solutions/articles/31000164680
+31000166900	31000121523	(Metashape 1.x) Floating license activation	2023-03-02	Thu, 2 Mar, 2023	Frequent floating license activation mistakes	https://agisoft.freshdesk.com/support/solutions/articles/31000166900
+31000166933	31000120114	Multispectral and thermal data processing	2026-04-07	Tue, 7 Apr, 2026	Processing R-JPEG data in Metashape	https://agisoft.freshdesk.com/support/solutions/articles/31000166933
+31000166942	31000118091	Measurements	2026-03-27	Fri, 27 Mar, 2026	Mesh model based volume measure	https://agisoft.freshdesk.com/support/solutions/articles/31000166942
+31000167427	31000118608	Agisoft Cloud	2025-07-14	Mon, 14 Jul, 2025	Agisoft Cloud Quickstart	https://agisoft.freshdesk.com/support/solutions/articles/31000167427
+31000167433	31000118608	Agisoft Cloud	2026-04-15	Wed, 15 Apr, 2026	Agisoft Cloud account management:	https://agisoft.freshdesk.com/support/solutions/articles/31000167433
+31000167860	31000121359	Batch processing	2022-09-12	Mon, 12 Sep, 2022	automatic processing, single button processing, one button processing	https://agisoft.freshdesk.com/support/solutions/articles/31000167860
+31000167872	31000121359	Batch processing	2025-12-31	Wed, 31 Dec, 2025	Batch processing	https://agisoft.freshdesk.com/support/solutions/articles/31000167872
+31000167986	31000118092	Ungrouped Tutorials	2026-03-05	Thu, 5 Mar, 2026	Advanced Selection tools for Point Cloud and Model	https://agisoft.freshdesk.com/support/solutions/articles/31000167986
+31000168141	31000120281	Camera calibration	2026-03-03	Tue, 3 Mar, 2026	Export undistorted photos	https://agisoft.freshdesk.com/support/solutions/articles/31000168141
+31000168292	31000114192	Python scripting	2024-02-14	Wed, 14 Feb, 2024	How to download script from GitHub?	https://agisoft.freshdesk.com/support/solutions/articles/31000168292
+31000168474	31000122633	LiDAR and Laser scans data processing	2026-04-16	Thu, 16 Apr, 2026	Terrestrial laser scans processing in Metashape 2.3.x	https://agisoft.freshdesk.com/support/solutions/articles/31000168474
+31000169030	31000122633	LiDAR and Laser scans data processing	2025-01-30	Thu, 30 Jan, 2025	Aerial laser scans data processing	https://agisoft.freshdesk.com/support/solutions/articles/31000169030
+31000169229	31000119840	(Metashape 2.x) Floating license activation	2025-10-02	Thu, 2 Oct, 2025	(Metashape 2.x) Floating license activation procedure	https://agisoft.freshdesk.com/support/solutions/articles/31000169229
+31000169237	31000119840	(Metashape 2.x) Floating license activation	2023-03-01	Wed, 1 Mar, 2023	(Metashape 2.x) Floating license deactivation procedure	https://agisoft.freshdesk.com/support/solutions/articles/31000169237
+31000169304	31000117231	Node-locked license activation	2023-08-21	Mon, 21 Aug, 2023	(Metashape 2.x) Offline activation of Node-locked license	https://agisoft.freshdesk.com/support/solutions/articles/31000169304
+31000169378	31000119840	(Metashape 2.x) Floating license activation	2023-06-23	Fri, 23 Jun, 2023	(Metashape 2.x) Linking client machine to the license server	https://agisoft.freshdesk.com/support/solutions/articles/31000169378
+31000169438	31000119840	(Metashape 2.x) Floating license activation	2023-03-21	Tue, 21 Mar, 2023	(Metashape 2.x) How to run license server as a system service	https://agisoft.freshdesk.com/support/solutions/articles/31000169438
+31000169660	31000118092	Ungrouped Tutorials	2026-03-05	Thu, 5 Mar, 2026	Configure custom basemap	https://agisoft.freshdesk.com/support/solutions/articles/31000169660
+31000170259	31000119818	Stereoscopic measurements and vectorization	2026-03-31	Tue, 31 Mar, 2026	Vectorization tools	https://agisoft.freshdesk.com/support/solutions/articles/31000170259
+31000170365	31000118091	Measurements	2026-03-27	Fri, 27 Mar, 2026	Measurement tools in Model view	https://agisoft.freshdesk.com/support/solutions/articles/31000170365
+31000170564	31000118608	Agisoft Cloud	2025-02-21	Fri, 21 Feb, 2025	How to conduct inspection and report	https://agisoft.freshdesk.com/support/solutions/articles/31000170564
+31000171950	31000117880	Aerial data processing	2026-02-19	Thu, 19 Feb, 2026	Block Model	https://agisoft.freshdesk.com/support/solutions/articles/31000171950
+31000172034	31000121435	Agisoft Metashape 2.1 release	2026-01-16	Fri, 16 Jan, 2026	Major changes in Agisoft Metashape 2.1	https://agisoft.freshdesk.com/support/solutions/articles/31000172034
+31000172512	31000114461	Hardware, drivers, visualization	2024-11-18	Mon, 18 Nov, 2024	Hardware recommendations	https://agisoft.freshdesk.com/support/solutions/articles/31000172512
+31000173952	31000121985	Agisoft Metashape 2.2.x release	2025-12-12	Fri, 12 Dec, 2025	New features in Agisoft Metashape 2.2.x	https://agisoft.freshdesk.com/support/solutions/articles/31000173952
+31000173963	31000117880	Aerial data processing	2024-12-23	Mon, 23 Dec, 2024	Orthomosaic Pansharpening	https://agisoft.freshdesk.com/support/solutions/articles/31000173963
+31000175667	31000118608	Agisoft Cloud	2025-10-23	Thu, 23 Oct, 2025	How to manage your team	https://agisoft.freshdesk.com/support/solutions/articles/31000175667
+31000177202	31000122481	Agisoft Metashape 2.3.x release	2026-04-28	Tue, 28 Apr, 2026	New features in Agisoft Metashape 2.3.x	https://agisoft.freshdesk.com/support/solutions/articles/31000177202
+31000177705	31000122481	Agisoft Metashape 2.3.x release	2026-02-25	Wed, 25 Feb, 2026	Texture editing tool (Assign image)	https://agisoft.freshdesk.com/support/solutions/articles/31000177705
+31000177786	31000118608	Agisoft Cloud	2026-05-21	Thu, 21 May, 2026	How to configure geospatial data visualization	https://agisoft.freshdesk.com/support/solutions/articles/31000177786

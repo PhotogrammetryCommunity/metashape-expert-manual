@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+# Generic commit-message guardrail for the PUBLIC metashape-expert-manual repo.
+# No project-specific private names here; the named-blocklist lives in the local
+# private companion repo and is invoked only if present.
+set -u
+
+msg="$1"
+repo_root=$(git rev-parse --show-toplevel)
+priv="$repo_root/../metashape-expert-manual-private/check_private_refs.sh"
+status=0
+
+email_re='[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}'
+allow_re='@(agisoft\.com|example\.(com|org|net)|users\.noreply\.github\.com|[A-Za-z0-9.-]*\.noreply\.)'
+home_re='/(Users|home)/[A-Za-z0-9_.-]+'
+key_re='AKIA[0-9A-Z]{16}|aws_secret_access_key'
+
+if hits=$(grep -nE "$email_re" -- "$msg" 2>/dev/null | grep -viE "$allow_re"); then
+  echo "GUARDRAIL: non-allowed email in commit message:"; echo "$hits"; status=1
+fi
+if hits=$(grep -nE "$home_re" -- "$msg" 2>/dev/null); then
+  echo "GUARDRAIL: absolute home path in commit message:"; echo "$hits"; status=1
+fi
+if hits=$(grep -nE "$key_re" -- "$msg" 2>/dev/null); then
+  echo "GUARDRAIL: key-like string in commit message:"; echo "$hits"; status=1
+fi
+
+if [ -x "$priv" ]; then
+  "$priv" --msg "$msg" || status=1
+fi
+
+if [ "$status" -ne 0 ]; then
+  echo "Commit message blocked by .githooks/commit-msg." >&2
+fi
+exit $status

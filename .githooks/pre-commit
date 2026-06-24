@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+# Generic privacy/secret guardrail for the PUBLIC metashape-expert-manual repo.
+#
+# Contains NO project-specific private names — those live only in the local
+# private companion repo (../metashape-expert-manual-private). If that repo is
+# checked out beside this one, its named-blocklist scanner is invoked too; if it
+# is absent, this hook still runs the generic checks and does not fail on that.
+#
+# Enable once per clone:  git config core.hooksPath .githooks
+set -u
+
+repo_root=$(git rev-parse --show-toplevel)
+priv="$repo_root/../metashape-expert-manual-private/check_private_refs.sh"
+
+# Staged (added/copied/modified) files, NUL-delimited (safe with spaces).
+staged=()
+while IFS= read -r -d '' f; do staged+=("$f"); done \
+  < <(git diff --cached --name-only --diff-filter=ACM -z)
+[ "${#staged[@]}" -eq 0 ] && exit 0
+
+status=0
+
+# --- Generic checks (no private names) ---
+email_re='[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}'
+allow_re='@(agisoft\.com|example\.(com|org|net)|users\.noreply\.github\.com|[A-Za-z0-9.-]*\.noreply\.)'
+home_re='/(Users|home)/[A-Za-z0-9_.-]+'
+key_re='AKIA[0-9A-Z]{16}|aws_secret_access_key'
+
+for f in "${staged[@]}"; do
+  [ -f "$f" ] || continue
+  case "$f" in .githooks/*) continue ;; esac  # hooks legitimately contain the patterns
+  if hits=$(grep -nE "$email_re" -- "$f" 2>/dev/null | grep -viE "$allow_re"); then
+    echo "GUARDRAIL: non-allowed email address in $f:"; echo "$hits"; status=1
+  fi
+  if hits=$(grep -nE "$home_re" -- "$f" 2>/dev/null); then
+    echo "GUARDRAIL: absolute home path in $f:"; echo "$hits"; status=1
+  fi
+  if hits=$(grep -nE "$key_re" -- "$f" 2>/dev/null); then
+    echo "GUARDRAIL: key-like string in $f:"; echo "$hits"; status=1
+  fi
+done
+
+# --- Private named-blocklist (only if the private repo is present) ---
+if [ -x "$priv" ]; then
+  "$priv" --files "${staged[@]}" || status=1
+fi
+
+if [ "$status" -ne 0 ]; then
+  echo "Commit blocked by .githooks/pre-commit. Fix the above (or use --no-verify only for mechanical history ops)." >&2
+fi
+exit $status

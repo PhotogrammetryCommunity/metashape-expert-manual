@@ -1,0 +1,13 @@
+# Hardware and IO
+
+This section is part of the Metashape Expert Manual's [workflow / topics / reference]
+navigation, scaffolded ahead of any content.
+
+More articles will be added to this section over time.
+
+If you are looking for guidance the official Metashape user manual already covers
+well, please consult that first — see [the official documentation](https://www.agisoft.com/downloads/user-manuals/).
+
+## Articles
+
+- [Intel i9-13900K / 14900K instability: BIOS workarounds](intel-13900k-14900k-instability.md)

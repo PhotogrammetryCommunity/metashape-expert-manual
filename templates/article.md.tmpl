@@ -1,0 +1,91 @@
+# <Article Title — sentence case>
+
+> _Front matter — required, edit before submitting._
+>
+> - **edition:** `Standard` | `Pro` — see edition rule below.
+> - **tags:** `<workflow-stage>`, `<cross-cutting-topic>`, `<…>`
+> - **applies_to:** Metashape Pro 2.x  *(note 1.x compatibility here if any)*
+> - **status:** `verified` | `unverified` | `deprecated`
+> - **confidence:** `high` | `medium` | `low` — one sentence justifying the rating.
+> - **last_reviewed:** YYYY-MM-DD by `<reviewer-handle>`
+>
+> _Edition rule (per `STYLE.md`):_
+> _Mark **Standard** if the GUI procedure works in Metashape Standard
+> Edition (even if a Python equivalent is also shown — Python is Pro-only
+> but the article is still Standard if the GUI path needs no Pro features).
+> Mark **Pro** if the only path is Python, or if the GUI procedure uses
+> Pro-only features._
+
+## Problem
+
+One short paragraph stating the user-facing symptom or question, in the
+voice the user would use. Resist the urge to start explaining yet.
+
+## Context
+
+Why this happens. What is going on under the hood. Keep this section short
+unless the explanation is the point of the article — most articles are
+how-tos, not explanations.
+
+## Solution
+
+The recommended approach. If multiple approaches exist, pick a primary and
+explain the tradeoffs. State assumptions explicitly (dataset type, sensor,
+overlap).
+
+### GUI
+
+Step-by-step procedure with menu paths. Use exact menu labels as they
+appear in the current Metashape version. Cross-link to the corresponding
+Python step where it makes sense.
+
+1. ...
+2. ...
+3. ...
+
+> Screenshot — alt text required, caption names the source dataset and
+> Metashape version (see `STYLE.md`).
+
+### Python
+
+```python
+import Metashape
+
+doc = Metashape.app.document
+chunk = doc.chunk
+
+# Concrete, runnable example. No pseudocode. Imports required.
+```
+
+If the GUI and Python paths produce visibly different intermediate state
+(common with optimisation or gradual selection), say so explicitly.
+
+## Caveats and gotchas
+
+- Edge cases.
+- Version-specific behaviour (1.x vs 2.x).
+- Performance notes.
+- Things that look similar but are not the same operation.
+
+## References
+
+- **Official manual:** `<section name>`, `<page or anchor>` — `<URL or PDF>`
+- **Python Reference:** `Metashape.<Class>.<method>` — `<URL>`
+- **Forum:** `[<Author>, <YYYY-MM-DD>, <Cite-as>](<message-permalink>)` —
+  one-line description of relevance. *(`Cite-as` from
+  `docs/reference/version-timeline.md`. Every
+  citation must include date AND version-at-time.)*
+- **`metashape-scripts`:** `<path>` at commit `<short-sha>` — one-line
+  description.
+- **Related feature pages:** `[<Feature>](../../reference/features/<slug>.md)`
+  *(and update the feature page to link back to
+  this article.)*
+- **Related articles:** `[<Title>](../path/to/article.md)`
+
+<!--
+Authoring notes (delete before merging):
+- Run the per-article self-review checklist in CONTRIBUTING.md.
+- Confirm `applies_to` matches the version actually validated against.
+- If status is `unverified`, add a "How to validate" appendix with the
+  exact dataset and procedure a reviewer would need.
+-->
