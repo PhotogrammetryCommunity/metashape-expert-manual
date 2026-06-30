@@ -262,7 +262,11 @@ for the per-axis-vector vs single-scalar discussion.
 - **`Chunk.euler_angles` defaults to `EulerAnglesYPR`.** Other
   values (`EulerAnglesOPK`, `EulerAnglesPOK`, `EulerAnglesANK`)
   change the interpretation of `camera.reference.rotation`. The
-  pitch-sign-flip convention documented here is specific to
+  Reference pane displays angles in this convention, and
+  `chunk.importCameras(path, format="opk")` converts OPK input to
+  YPR on load (Alexey Pasumansky,
+  [forum topic 3901](https://www.agisoft.com/forum/index.php?topic=3901.0)).
+  The pitch-sign-flip convention documented here is specific to
   YPR. If your chunk uses OPK
   (omega-phi-kappa) or another, consult the user manual for
   that convention's canonical pose.
@@ -381,6 +385,10 @@ version. Re-document for that release.
 - [Forum thread, *Z axis convention for aerial datasets*, 2016](https://www.agisoft.com/forum/index.php?topic=6126.0)
   — primary source for the drone-Z-axis-pointing-to-ground
   canonical pose .
+- [Forum thread, *converting Euler angles to YPR — what are PS's conventions?*, 2015](https://www.agisoft.com/forum/index.php?topic=3901.0)
+  — Alexey Pasumansky (Agisoft): the Reference pane default is
+  YPR, and `importCameras(format="opk")` converts OPK input to
+  YPR on load.
 - *Metashape Python Reference* (2.3.1):
   `Metashape.Utils.ypr2mat`, `Metashape.Utils.mat2ypr`,
   `Chunk.euler_angles`, `Metashape.EulerAngles`,

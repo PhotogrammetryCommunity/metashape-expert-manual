@@ -3,7 +3,7 @@ title: Declaring a fixed-geometry multi-camera rig in Python
 status: unverified
 applies_to: Metashape Pro 2.x — and unchanged from Metashape 1.x via the same API
 edition: Pro
-last_reviewed: 2026-05-22
+last_reviewed: 2026-06-30
 diataxis: how-to
 confidence: high
 ---
@@ -103,8 +103,8 @@ for sensor in chunk.sensors:
     sensor.reference.rotation_enabled = True
     # x, y, z in metres (master frame)
     sensor.reference.location = Metashape.Vector([0.120, 0.000, 0.000])
-    # omega, phi, kappa in degrees (master frame, ZYX or XYZ
-    # depending on your convention — see Caveats)
+    # omega, phi, kappa in degrees (master frame; always OPK,
+    # independent of chunk.euler_angles — see Caveats)
     sensor.reference.rotation = Metashape.Vector([0.0, 0.0, 0.0])
 ```
 
@@ -164,16 +164,38 @@ captures is non-zero.
   sensor is `chunk.sensors[0]`. Don't rely on `chunk.sensors[0]`
   being a particular sensor — find sensors by `label` or by
   inspecting which cameras use them.
-- **Rotation Vector convention.** `sensor.reference.rotation =
-  Metashape.Vector([omega, phi, kappa])` uses the same convention
-  as `chunk.reference.rotation` — *omega-phi-kappa* in degrees,
-  rotation about the X, Y, Z axes in that order. Verify by
-  setting a known offset, exporting cameras, and inspecting the
-  XML — the master sensor's `<sensor>` block has no `<rotation>`
-  tag (its rotation is implicit-identity); slave sensors have it
-  in the declared form. The 2021 RedEdge-M thread (covered in
-  [Choosing the master sensor](choosing-master-sensor-multi-camera-layout.md))
-  uses this same XML structure for diagnosis.
+- **Rotation Vector convention — omega-phi-kappa.**
+  `sensor.reference.rotation = Metashape.Vector([omega, phi,
+  kappa])` is omega-phi-kappa in degrees (rotation about the X, Y,
+  Z axes in that order), and this holds **independent of
+  `chunk.euler_angles`**. This is the key difference from a *camera*
+  reference rotation (`camera.reference.rotation`), which *does*
+  follow `chunk.euler_angles` (yaw-pitch-roll when the chunk is
+  YPR). Evidence: Agisoft support reads the adjusted slave offset
+  as `Metashape.utils.mat2opk(sensor.rotation)`
+  ([forum topic 11173](https://www.agisoft.com/forum/index.php?topic=11173.0)),
+  and Agisoft's own *Apply Vertical Camera Alignment* script
+  converts a *camera* reference via
+  `euler2mat(rotation, chunk.euler_angles)` while converting the
+  sensor-level `antenna.rotation` via a fixed `ypr2mat` — i.e.,
+  sensor-level references are not routed through
+  `chunk.euler_angles`
+  ([agisoft-llc/metashape-scripts](https://github.com/agisoft-llc/metashape-scripts),
+  quoted at [forum topic 17079](https://www.agisoft.com/forum/index.php?topic=17079.0)).
+  Community recipes set the offset the same way, via
+  `rotmat2opk` / explicit `omega, phi, kappa`
+  ([topic 15021](https://www.agisoft.com/forum/index.php?topic=15021.0),
+  [topic 10450](https://www.agisoft.com/forum/index.php?topic=10450.0)).
+  Corroborated locally with `optimizeCameras` on a synthetic rig
+  under a **YPR** chunk: a slave `reference.rotation` set from
+  `mat2opk(solved_rotation)` (tight accuracy) stays put on
+  re-optimize, while `mat2ypr(solved_rotation)` drags it away
+  (single-chunk check — shows OPK is read under a YPR chunk, not a
+  full two-convention proof). In the XML, the master sensor's
+  `<sensor>` block has no `<rotation>` tag (implicit identity);
+  slave sensors carry the declared offset — the same structure used
+  for the RedEdge-M diagnosis in
+  `choosing-master-sensor-multi-camera-layout.md`.
 - **Master sensor selection is not made here.** It is determined
   earlier — by the filename/subfolder ordering of the images
   passed to `addPhotos`. The first sensor in alphabetical
@@ -270,3 +292,19 @@ declared offset shows up on the slave's `reference.location` and
 - *Metashape Python Reference* (2.3.1), `Chunk.addPhotos` —
   documents `filegroups=` and `layout=`. `Sensor` and
   `Sensor.reference` document the offset surface.
+- [Forum thread, *print adjusted slave-sensor offsets*](https://www.agisoft.com/forum/index.php?topic=11173.0)
+  — Alexey Pasumansky (Agisoft) reads the adjusted offset as
+  `mat2opk(sensor.rotation)`; confirms the slave offset is
+  omega-phi-kappa.
+- [agisoft-llc/metashape-scripts](https://github.com/agisoft-llc/metashape-scripts),
+  *Apply Vertical Camera Alignment* (quoted at
+  [forum topic 17079](https://www.agisoft.com/forum/index.php?topic=17079.0))
+  — `camera.reference.rotation` is converted via
+  `euler2mat(…, chunk.euler_angles)` while the sensor-level
+  `antenna.rotation` uses a fixed `ypr2mat`; evidence that
+  sensor-level references are not `euler_angles`-driven.
+- [Forum thread, *How to enter slave offset values*, 2022](https://www.agisoft.com/forum/index.php?topic=15021.0)
+  and [*input slave offset reference*, 2019](https://www.agisoft.com/forum/index.php?topic=10450.0)
+  — community recipes setting `sensor.reference.rotation` as
+  omega-phi-kappa (`rotmat2opk`). Corroboration; forum users, not
+  Agisoft staff.
