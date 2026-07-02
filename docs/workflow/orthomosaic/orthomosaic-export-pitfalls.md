@@ -3,7 +3,7 @@ title: "Orthomosaic export — the 4GB / BigTIFF limit and shift-during-export"
 status: unverified
 applies_to: Metashape Pro 2.x and Standard 2.x — and PhotoScan 1.x via the same workflow
 edition: Standard
-last_reviewed: 2026-06-05
+last_reviewed: 2026-07-02
 diataxis: how-to
 confidence: medium
 ---
@@ -200,6 +200,26 @@ The final reply in topic=10816 was a request for the project
 file. If the checklist doesn't resolve the issue,
 escalation with the project file is the documented path.
 
+## Disabled cameras appearing in the orthomosaic
+
+Users occasionally report that photos they *disabled* still get
+orthorectified into the mosaic. In the one case that reached a
+resolution the cause was mundane — the frames the user believed were
+disabled (laser-scan images) were in fact still enabled ([topic
+15418](https://www.agisoft.com/forum/index.php?topic=15418.0), 2026
+follow-up, self-retracted). The diagnostic Agisoft support suggested is
+still worth keeping in mind:
+
+- **Regenerate the seamline layer after changing the enabled set.**
+  Seamlines are computed from the cameras enabled at generation time; a
+  seamline layer built *before* you disabled photos can still assign
+  polygons to those now-disabled images. Rebuild the orthomosaic (and
+  regenerate seamlines) after toggling camera enablement, and check the
+  *Build Orthomosaic* processing log for any disabled photo being
+  orthorectified. (Alexey Pasumansky posed this as the likely cause,
+  [topic 15418](https://www.agisoft.com/forum/index.php?topic=15418.0),
+  2023 — not independently confirmed.)
+
 ## Caveats
 
 - **`split_in_blocks=True` and `big_tiff=True` are not mutually
@@ -291,6 +311,10 @@ block count grows accordingly.
   — companion to topic=10816.
 - [Forum thread, *Orthomosaic shift*, 2024](https://www.agisoft.com/forum/index.php?topic=16052.0)
   — third companion on the shift issue.
+- [Forum thread, *Disabled cameras still used in Orthomosaic generation*, 2023–2026](https://www.agisoft.com/forum/index.php?topic=15418.0)
+  — disabled-camera / seamline-regeneration diagnostic; a
+  staff-suggested cause, with a 2026 follow-up that resolved to user
+  error.
 - *Metashape Python Reference* (2.3.1), `Chunk.exportRaster`,
   `Chunk.buildOrthomosaic`.
 - [*Orthomosaic export fails* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000135270)
