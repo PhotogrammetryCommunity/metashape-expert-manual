@@ -2,7 +2,8 @@
 
 > **Status:** documented (2026-05-24). Synthesises
 > forum-attested mechanism + introspection-confirmed API
-> surface.
+> surface. The Sequential-mode ±24-frame window is
+> empirically verified on Metashape 2.2.3 (2026-07-10).
 
 ## What it is
 
@@ -61,7 +62,7 @@ Metashape 2.2.2):
 |------|-------------|------------------|
 | `ReferencePreselectionSource` (default) | The values in `camera.reference.location` (and `.rotation`, if loaded). These are the user-supplied / EXIF-derived reference coordinates. | Drone surveys with GPS-tagged images; aerial flights where every image has a position. |
 | `ReferencePreselectionEstimated` | The values in `camera.transform` from a *previous* alignment. Not the reference-pane values. | Re-running matching after an initial alignment, where the bundle-adjusted positions are more accurate than the GPS reference. |
-| `ReferencePreselectionSequential` | Image-order pairs (camera *i* with cameras *i±k* for some window *k*). No coordinates required. | Video frames, drone fast-flights where the ordered sequence approximates spatial proximity, time-lapse from a moving rig. |
+| `ReferencePreselectionSequential` | Image-order pairs: each camera *i* with the **24 preceding and 24 following** frames (a fixed ±24 window — see below). No coordinates required. | Video frames, drone fast-flights where the ordered sequence approximates spatial proximity, time-lapse from a moving rig. |
 
 The default is `ReferencePreselectionSource` — the user manual's
 expected behaviour for a typical aerial workflow.
@@ -161,6 +162,48 @@ serendipitously (correct match happens to be in the shortlist
 anyway). The diagnostic is to disable reference preselection
 and re-run; if alignment improves, the references are bad.
 
+### Sequential mode: a fixed ±24-frame window
+
+The coordinate-based shortlist above applies to `Source` and
+`Estimated` modes. **Sequential** mode is different: it ignores
+coordinates entirely and pairs each image with a *fixed* window
+of its neighbours in label (filename) order.
+
+A synthetic-pattern experiment on **Metashape 2.2.3** pins that
+window at **±24**: each image is matched with the **24 preceding
+and 24 following** frames — up to 48 neighbours per image. The
+window **wraps around the ends of the sequence**: the user manual
+states that *"the first with the last images in the sequence will
+also be compared"*, so the sequence is treated as a loop and even
+the first and last frames get the full ±24 window (pairing with
+frames at the opposite end) rather than a truncated one.
+
+*Method.* Build image sequences that repeat the first *p* unique
+frames, so two identical frames sit exactly *p* apart, then run
+`matchPhotos(generic_preselection=False, reference_preselection=True,
+reference_preselection_mode=ReferencePreselectionSequential)`.
+A frame only matches an identical copy when that copy falls
+inside the window, i.e. when *p* ≤ window. Average tie-point
+projections per image stayed high (~73) for every period *p* from
+5 through 24 and collapsed to **exactly zero** at *p* = 25 and
+above — locating the one-directional reach at 24.
+
+> **Verified:** ✓ empirically (synthetic
+> repeating-pattern sequences, generic preselection disabled,
+> `filter_stationary_points=False`). The window is not exposed as
+> a `matchPhotos` kwarg and may differ in other versions —
+> re-measure if the exact value matters for your pipeline.
+
+The verification script is a self-contained binary search: it
+generates random-noise patterns, repeats the first *p* of them, and
+detects the match cliff — [**download `measure_sequential_window.py`**](measure_sequential_window.py):
+
+??? example "Show the verification script (`measure_sequential_window.py`)"
+
+    ```python
+    --8<-- "reference/features/measure_sequential_window.py"
+    ```
+
 ## Generic preselection on top of reference preselection
 
 When both `reference_preselection=True` and
@@ -195,18 +238,23 @@ shortlist excluded.
 - **Sequential mode is for ordered captures.** It assumes
   consecutive images are spatially close. A randomly-shuffled
   image set with `ReferencePreselectionSequential` produces
-  garbage pair selections.
+  garbage pair selections. It matches a **fixed ±24-frame
+  window** (24 preceding + 24 following frames, cyclic),
+  independent of any coordinates or `location_accuracy` — see
+  above.
 - **Estimated mode requires a prior alignment.** Calling
   `matchPhotos(reference_preselection_mode=…Estimated)` on a
   fresh chunk with no prior `alignCameras` raises an error:
   there are no estimated transforms to use.
-- **The "near" neighbour count is not user-tunable via
-  Python.** The internal logic depends on
+- **The coordinate-shortlist neighbour count (`Source` /
+  `Estimated` modes) is not user-tunable via Python.** The
+  internal logic depends on
   `camera.reference.location_accuracy` and the dataset's
   density. To force a wider search radius, increase the
   `location_accuracy` value (or set it to a Vector with the
   desired uncertainty); to force a narrower search, decrease
-  it.
+  it. (Sequential mode does not use this logic; its window is
+  fixed — see above.)
 - **Reference preselection is the default; disabling it is the
   unusual choice.** Most production aerial workflows will not
   touch this setting. Disable it only when diagnosing
