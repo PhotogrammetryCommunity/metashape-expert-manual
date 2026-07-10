@@ -23,6 +23,7 @@ copyright: >-
 theme:
   name: material
   language: en
+  custom_dir: overrides
   features:
     - navigation.instant
     - navigation.tracking

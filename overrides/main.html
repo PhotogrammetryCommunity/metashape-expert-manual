@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{#
+  Inject extra tags into <head>. The Google Search Console verification
+  meta tag only needs to be on the homepage, but Material adds this block
+  to every page — which is harmless and standard practice.
+#}
+{% block extrahead %}
+  <meta name="google-site-verification" content="MT-nWX6neE3ViZwg03q2lk8hrqHKcacPtuhX90fFX3o" />
+{% endblock %}
