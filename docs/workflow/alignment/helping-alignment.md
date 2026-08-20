@@ -740,7 +740,7 @@ rather than label:
 For physical-target sizing rules, the printing workflow, and
 the comparison between the four CircularTarget bit-counts,
 see
-[Coded circular targets: 12-bit markers, printing, sizing, and the 14-bit / 16-bit / 20-bit family](../markers-gcps/coded-circular-targets.md).
+[Coded circular targets: printing, sizing, and choosing a variant](../markers-gcps/coded-circular-targets.md).
 For the AprilTag family added in 2.2, see
 [AprilTag detection — choosing a variant](../markers-gcps/apriltag-detection.md).
 For removing auto-placed projections that landed on the wrong
@@ -1481,7 +1481,7 @@ response. Links point at the deep-dive recipe for each path.
 - [Programmatic marker placement and pinning](../markers-gcps/programmatic-marker-placement.md)
   — the Python API for the marker workflow this article
   describes through the GUI.
-- [Coded circular targets: 12-bit markers, printing, sizing, and the 14-bit / 16-bit / 20-bit family](../markers-gcps/coded-circular-targets.md)
+- [Coded circular targets: printing, sizing, and choosing a variant](../markers-gcps/coded-circular-targets.md)
   — physical-target design and printing workflow for the
   CircularTarget family this article references.
 - [AprilTag detection — choosing a variant](../markers-gcps/apriltag-detection.md)

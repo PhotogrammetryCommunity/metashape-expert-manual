@@ -174,7 +174,7 @@ nav:
           - "Reducing camera overlap in over-acquired datasets": workflow/optimization/reducing-camera-overlap.md
       - Markers, GCPs, scale bars:
           - workflow/markers-gcps/index.md
-          - "Coded circular targets: 12-bit markers, printing, sizing, and the 14-bit / 16-bit / 20-bit family": workflow/markers-gcps/coded-circular-targets.md
+          - "Coded circular targets: printing, sizing, and choosing a variant": workflow/markers-gcps/coded-circular-targets.md
           - "AprilTag detection — choosing a variant": workflow/markers-gcps/apriltag-detection.md
           - Programmatic marker placement and pinning: workflow/markers-gcps/programmatic-marker-placement.md
           - "Gray flags in marker detection: what they mean and how to remove them": workflow/markers-gcps/gray-flags-marker-detection.md

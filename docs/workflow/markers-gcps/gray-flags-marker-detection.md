@@ -214,7 +214,7 @@ geometric filter, or manually inspect each detected marker.
 - [AprilTag detection: choosing a variant](apriltag-detection.md)
   — for auto-detected coded markers (the source of blue flags
   in many drone-survey workflows).
-- [Coded circular targets: 12-bit markers, printing, sizing, and the 14-bit / 16-bit / 20-bit family](coded-circular-targets.md)
+- [Coded circular targets: printing, sizing, and choosing a variant](coded-circular-targets.md)
   — the CircularTarget family these flags appear on; printing
   workflow and target-sizing guidance.
 - [Marker projection statistics](../../topics/repeatability-qa/marker-projection-statistics.md)

@@ -1,5 +1,5 @@
 ---
-title: "Coded circular targets: 12-bit markers, printing, sizing, and the 14-bit / 16-bit / 20-bit family"
+title: "Coded circular targets: printing, sizing, and choosing a variant"
 status: unverified
 applies_to: Metashape Pro 2.x — and PhotoScan / Metashape 1.x via the same `CircularTarget*` enum on the legacy `Metashape.TargetType` (and `PhotoScan.TargetType`). AprilTag detection is Metashape Pro 2.2+; see the AprilTag article.
 edition: Pro
@@ -8,7 +8,7 @@ diataxis: how-to
 confidence: medium
 ---
 
-# Coded circular targets: 12-bit markers, printing, sizing, and the 14-bit / 16-bit / 20-bit family
+# Coded circular targets: printing, sizing, and choosing a variant
 
 > **Confidence:** *medium.* The four-family CircularTarget
 > bit-count enumeration, the printing workflow, and the
@@ -97,14 +97,16 @@ related coded targets (including 14-bit) exist:
 - [`CCTDecode` (poxiao2)](https://github.com/poxiao2/CCTDecode)
   — open-source decoder for the same target family.
 
-## The four bit-count variants
+## Choosing a target family
 
-| Variant | API enum (`Metashape.TargetType`) | Library size | Suggested use |
+| Variant | API enum (`Metashape.TargetType`) | Library size | When to use |
 |---------|---|---|---|
-| **12-bit circular** | `CircularTarget12bit` | 161 codes | Default close-range; "most precise" per manual |
-| **14-bit circular** | `CircularTarget14bit` | 561 codes | Larger projects than 12-bit can name |
-| **16-bit circular** | `CircularTarget16bit` | 2,001 codes | Industrial / many-target metrology |
-| **20-bit circular** | `CircularTarget20bit` | 26,013 codes | Massive projects (rare) |
+| **12-bit circular** | `CircularTarget12bit` | 161 codes | Default close-range; single-chunk projects with a few dozen markers; "most precise" per manual |
+| **14-bit circular** | `CircularTarget14bit` | 561 codes | Multi-chunk projects with up to a few hundred markers |
+| **16-bit circular** | `CircularTarget16bit` | 2,001 codes | Industrial / many-target metrology (thousands of targets) |
+| **20-bit circular** | `CircularTarget20bit` | 26,013 codes | Massive code-library needs (rare in practice) |
+| **AprilTag** (Metashape 2.2+) | `AprilTag*` (7 variants) | varies by variant | Robotics-derived workflows; robust detection in cluttered scenes — see [AprilTag detection](apriltag-detection.md) |
+| **Non-coded** (white circle / 4-segment) | — | n/a | Aerial / large-area projects where coded targets would be impractically large |
 
 The exact code counts vary by Metashape version and the
 parity-check scheme in effect; the manual's own description
@@ -124,6 +126,16 @@ The manual's claim that 12-bit is decoded "more precisely"
 relates to the lower bit-count's better signal-to-noise ratio
 in the ring-decoding step — the parity-checked ring is
 shorter and survives more degradation.
+
+For non-coded targets, identity is assigned by spatial position
+rather than an encoded ID — match them via *ignore labels* on
+import, or by renaming detected markers after detection. For
+automation-friendly defaults, 12-bit circular targets plus
+AprilTag (when 2.2+ is available) cover the vast majority of
+close-range and field-survey use cases. To refine the choice by
+how many mutually-robust markers you need, see
+[Which family for a given k?](#which-family-for-a-given-k)
+below.
 
 ## Printing the targets in Metashape
 
@@ -201,7 +213,7 @@ If your project's expected GSD is 1 cm:
 | Minimum global target diameter | `3.5 × central diameter` | `3.5 × 10 cm = 35 cm` |
 | Recommended print size of central circle | `~5 px × GSD` margin above floor | `~5 × 1 cm = 5 cm` (use as a working *radius* to leave headroom; resulting central *diameter* on print is ≥ 10 cm) |
 
-If GSD is 2 mm (close-range artefact scanning), the central
+If GSD is 2 mm (close-range artifact scanning), the central
 circle becomes 2 cm and the global target ~7 cm — easy to
 print on letter paper. If GSD is 5 cm (high-altitude aerial),
 the global target balloons to 175 cm, which is impractical
@@ -251,6 +263,12 @@ starting point, but no upper-bound for θ has been
 forum-attested in the corpus.
 
 ## Marker ambiguity and the minimum Hamming distance
+
+> **Explanation / reference (background).** The sections from here to
+> *Binary code tables* explain *why* some markers get confused and
+> provide the code data behind the recommendations. They go beyond the
+> print-and-size how-to and the *Choosing a target family* table above;
+> you need none of it to simply pick and print a family.
 
 *The separation, masquerade, and best-subset figures in the sections
 below come from analyzing the decoded CircularTarget families — the
@@ -446,7 +464,59 @@ optimum. For comparison, a *random* 10-marker subset of the 12-bit family
 sits at worst-pair 2 (a confusable pair) versus 4 for the chosen set, and
 contains masquerade pairs that the chosen set does not.
 
-## Safer marker pools: the maximum masquerade-free sets
+## Caveats
+
+- **Library size limits.** The 12-bit family has 161 unique
+  codes; if your project needs more markers than that, you'll
+  run out of unique IDs (causing identity collisions) and must
+  switch to 14-bit (561 codes), 16-bit (2,001), or 20-bit
+  (26,013). More important than raw count is *separation*: see
+  "Choosing a well-separated, occlusion-robust subset" above —
+  the 12-bit family cannot supply 20 mutually-robust markers
+  even though it has 161 codes. Plan target counts and
+  separation before printing.
+- **Mounting flatness matters.** A bent or curled target
+  introduces ellipse-fitting bias in the central-circle
+  detection. Mount targets on rigid panels (foamcore,
+  aluminum, MDF) before deployment.
+- **Lighting and contrast.** Uniform lighting across the
+  target's surface is critical. Targets in deep shadow have
+  reduced contrast at the ring boundaries; the parity-check
+  may then fail and the target is silently dropped from
+  detection.
+- **Surface reflectance.** Glossy or reflective surfaces
+  (laminated targets in direct sunlight) create specular
+  highlights that confuse the detector. Matte vinyl or
+  photo-quality matte paper outperforms glossy print.
+- **Print accuracy.** The central circle's diameter and the
+  ring widths must be reproduced accurately by the printer.
+  Inkjet printers can drift by a few percent; for metrology
+  use, verify printed target dimensions with a caliper
+  against the dimensions specified in the *Print Markers*
+  dialog.
+- **Aerial impracticality at high GSD.** Per the manual, a
+  35-cm-diameter target for 1-cm-GSD aerial work scales to
+  175 cm at 5-cm GSD — impractical. Switch to non-coded
+  targets (or pre-surveyed natural features) for high-GSD
+  aerial work.
+- **The 30-px upper bound is from a 2014-era tutorial.** The
+  detection algorithm has improved since; the upper bound is
+  almost certainly looser today, but no updated guidance has
+  been forum-published. Treat 30 px as a soft ceiling for
+  conservative target sizing.
+- **Patent status varies by jurisdiction.** The German
+  patent (Schneider 1991) has expired; equivalent patents in
+  other jurisdictions may not have, depending on national
+  filing dates. For commercial use, verify your local IP
+  position before mass-producing 12-bit targets.
+
+## Reference: marker pools and binary code tables
+
+The following are reference data supporting the recommendations
+above — the largest occlusion-safe marker pools per family, and the
+raw binary codes.
+
+### Safer marker pools: the maximum masquerade-free sets
 
 If you would rather pick your own markers than copy a fixed list, draw
 them from a **maximum masquerade-free pool** — the largest subset of a
@@ -560,7 +630,7 @@ graph:
     1742, 1743, 1745, 1746, 1766, 1772, 1774, 1929
     ```
 
-## Binary code tables (12-bit and 14-bit)
+### Binary code tables (12-bit and 14-bit)
 
 Each marker's identity is an `N`-bit integer. Bit `s` (value `2**s`)
 corresponds to ring **sector `s`**, at angle `s * 360/N` degrees
@@ -643,67 +713,6 @@ target #1, the second is target #2, and so on.
     5983, 5999, 6007, 6011, 6063, 6071, 6075, 6107, 6143, 7023, 7031, 7095,
     7167, 7679, 7935, 8063, 8127
     ```
-
-## Choosing between target families
-
-| Choice | When | Notes |
-|--------|------|-------|
-| **12-bit circular** | Default. Single-chunk projects with a few dozen markers. | Manual: "12 bit pattern is considered to be decoded more precisely." |
-| **14-bit circular** | Multi-chunk projects with up to a few hundred markers. | Larger code library; precision slightly below 12-bit. |
-| **16-bit circular** | Industrial metrology with thousands of targets. | Limited deployment in photogrammetry; mostly a metrology choice. |
-| **20-bit circular** | Massive code-library needs (huge surveyed sites). | Rare in practice. |
-| **AprilTag** (since 2.2) | Robotics-derived workflows; needs robust detection in cluttered scenes. | See [AprilTag detection — choosing a variant](apriltag-detection.md). |
-| **Non-coded** (white circle / 4-segment) | Aerial / large-area projects where coded targets would be impractically large. | Detected per-image automatically; identity assignment uses spatial position rather than encoded ID — match via *ignore labels* on import or rename detected markers post-detection. |
-
-For automation-friendly defaults, 12-bit circular targets +
-AprilTag (when 2.2+ is available) cover the vast majority
-of close-range and field-survey use cases.
-
-## Caveats
-
-- **Library size limits.** The 12-bit family has 161 unique
-  codes; if your project needs more markers than that, you'll
-  run out of unique IDs (causing identity collisions) and must
-  switch to 14-bit (561 codes), 16-bit (2,001), or 20-bit
-  (26,013). More important than raw count is *separation*: see
-  "Choosing a well-separated, occlusion-robust subset" above —
-  the 12-bit family cannot supply 20 mutually-robust markers
-  even though it has 161 codes. Plan target counts and
-  separation before printing.
-- **Mounting flatness matters.** A bent or curled target
-  introduces ellipse-fitting bias in the central-circle
-  detection. Mount targets on rigid panels (foamcore,
-  aluminum, MDF) before deployment.
-- **Lighting and contrast.** Uniform lighting across the
-  target's surface is critical. Targets in deep shadow have
-  reduced contrast at the ring boundaries; the parity-check
-  may then fail and the target is silently dropped from
-  detection.
-- **Surface reflectance.** Glossy or reflective surfaces
-  (laminated targets in direct sunlight) create specular
-  highlights that confuse the detector. Matte vinyl or
-  photo-quality matte paper outperforms glossy print.
-- **Print accuracy.** The central circle's diameter and the
-  ring widths must be reproduced accurately by the printer.
-  Inkjet printers can drift by a few percent; for metrology
-  use, verify printed target dimensions with a caliper
-  against the dimensions specified in the *Print Markers*
-  dialog.
-- **Aerial impracticality at high GSD.** Per the manual, a
-  35-cm-diameter target for 1-cm-GSD aerial work scales to
-  175 cm at 5-cm GSD — impractical. Switch to non-coded
-  targets (or pre-surveyed natural features) for high-GSD
-  aerial work.
-- **The 30-px upper bound is from a 2014-era tutorial.** The
-  detection algorithm has improved since; the upper bound is
-  almost certainly looser today, but no updated guidance has
-  been forum-published. Treat 30 px as a soft ceiling for
-  conservative target sizing.
-- **Patent status varies by jurisdiction.** The German
-  patent (Schneider 1991) has expired; equivalent patents in
-  other jurisdictions may not have, depending on national
-  filing dates. For commercial use, verify your local IP
-  position before mass-producing 12-bit targets.
 
 ## See also
 

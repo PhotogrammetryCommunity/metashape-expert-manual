@@ -11,7 +11,7 @@ Reference* version 2.3.1, especially `Metashape.Marker`,
 
 ## Articles
 
-- [Coded circular targets: 12-bit markers, printing, sizing, and the 14-bit / 16-bit / 20-bit family](coded-circular-targets.md)
+- [Coded circular targets: printing, sizing, and choosing a variant](coded-circular-targets.md)
 - [AprilTag detection — choosing a variant](apriltag-detection.md)
 - [Programmatic marker placement and pinning](programmatic-marker-placement.md)
 - [Gray flags in marker detection: what they mean and how to remove them](gray-flags-marker-detection.md)

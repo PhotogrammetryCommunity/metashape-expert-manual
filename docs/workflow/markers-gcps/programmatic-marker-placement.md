@@ -260,7 +260,7 @@ end-to-end run on Metashape 2.2.3 (2026-06-04).
   — the GUI workflow analogue of this Python-API article,
   with the broader decision framework for when to use markers
   vs camera references.
-- [Coded circular targets: 12-bit markers, printing, sizing, and the 14-bit / 16-bit / 20-bit family](coded-circular-targets.md)
+- [Coded circular targets: printing, sizing, and choosing a variant](coded-circular-targets.md)
   — what the physical targets look like, sizing rules, and
   the *Print Markers* workflow that produces them.
 - [Recovery paths for unaligned cameras](../alignment/recovery-paths-unaligned-cameras.md)

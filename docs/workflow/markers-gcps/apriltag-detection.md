@@ -9,7 +9,15 @@ confidence: medium
 ---
 
 # AprilTag detection — choosing a variant
-> **Confidence:** *medium.* The seven AprilTag variants and `chunk.detectMarkers` kwarg surface are introspection-confirmed; the bit / library-size / Hamming-distance tradeoff table is forum-attested. The occlusion-robustness and best-subset claims come from analyzing the published `tagStandard41h12` codes with a rotation-invariant Hamming distance, together with the AprilTag minimum-distance guarantee from the literature.
+
+> **Confidence:** *medium.* The seven AprilTag variants and
+> `chunk.detectMarkers` kwarg surface are introspection-confirmed; the
+> bit / library-size / Hamming-distance tradeoff table is forum-attested.
+> The occlusion-robustness and best-subset claims come from analyzing the
+> published `tagStandard41h12` codes with a rotation-invariant Hamming
+> distance, together with the AprilTag minimum-distance guarantee from the
+> literature.
+
 ## Problem
 
 Metashape 2.2.0 added **AprilTag detection** as a coded-target type
@@ -23,22 +31,10 @@ and why.
 ## Context
 
 AprilTag is a fiducial marker family designed by the University of
-Michigan APRIL Lab (Olson 2011, Wang & Olson 2016). Each variant is
-a **dictionary** of valid bit-codes:
-
-- The **bit count** (`16h5` = 16 bits per tag) sets the tag's
-  internal grid size.
-- The **Hamming distance** (the `h` number) is the minimum number
-  of bit-flips between any two valid codes — higher Hamming
-  distance is more error-resilience at the cost of fewer unique
-  tags.
-- The **library size** is the number of unique codes the dictionary
-  contains. Larger library = more unique markers in one project.
-
-In Metashape these are exposed as enum values on
-`Metashape.TargetType`. The `chunk.detectMarkers(...)` API takes
-**any** of them (or the legacy `CircularTarget*` variants) via the
-`target_type` kwarg.
+Michigan APRIL Lab (Olson 2011, Wang & Olson 2016). Each variant is a
+**dictionary** of valid bit-codes, exposed as an enum value on
+`Metashape.TargetType`; `chunk.detectMarkers(...)` accepts any of them
+(or the legacy `CircularTarget*` variants) via the `target_type` kwarg.
 
 Marker detection — including AprilTag — is **Pro-only**:
 
@@ -62,6 +58,17 @@ on `Metashape.TargetType`:
 | `AprilTagCircle21h7` | 21 (circular) | 38 | 7 |
 | `AprilTagStandard41h12` | 41 | 2 115 | 12 |
 | `AprilTagStandard52h13` | 52 | 48 714 | 13 |
+
+The columns:
+
+- The **bit count** (`16h5` = 16 bits per tag) sets the tag's
+  internal grid size.
+- The **Hamming distance** (the `h` number) is the minimum number
+  of bit-flips between any two valid codes — higher Hamming
+  distance is more error-resilience at the cost of fewer unique
+  tags.
+- The **library size** is the number of unique codes the dictionary
+  contains. Larger library = more unique markers in one project.
 
 The library-size and Hamming-distance values are from the public
 AprilTag specification (Olson 2011 + Wang & Olson 2016 + Krogius et
@@ -189,6 +196,11 @@ but test on a representative frame before scaling.
 
 ## Why AprilTags don't masquerade (occlusion robustness by construction)
 
+> **Explanation (background).** This section and the next go beyond the
+> variant-selection how-to above to explain *why* AprilTag resists
+> occlusion and how to squeeze more separation from a family. Skip them
+> if you only need to pick, print, and detect a variant.
+
 The CircularTarget families have a minimum rotation-invariant Hamming
 distance of just 2, which makes them prone to **masquerade** — a partially
 occluded marker decoding as a *different* valid marker (see
@@ -240,7 +252,7 @@ masquerade-free variant to request, as there is for CircularTargets.
 
 ## See also
 
-- [Coded circular targets: 12-bit markers, printing, sizing, and the 14-bit / 16-bit / 20-bit family](coded-circular-targets.md)
+- [Coded circular targets: printing, sizing, and choosing a variant](coded-circular-targets.md)
   — the older CircularTarget family that AprilTag joined,
   plus printing workflow and target-sizing guidance.
 - [Programmatic marker placement and pinning](programmatic-marker-placement.md)
