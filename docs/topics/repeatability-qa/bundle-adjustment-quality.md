@@ -75,14 +75,30 @@ free after `sensor.fixed_params`.
 
 **Scalar residuals `N`:**
 
-| Observation | Residuals each | Count |
-|-------------|----------------|-------|
-| Tie-point image projection | 2 (Δx, Δy, px) | `2 · N_tie_point_projections` |
-| Marker image projection | 2 (Δx, Δy, px) | `2 · N_marker_projections` |
-| Camera **position** reference (enabled) | 3 (X, Y, Z, m) | `3 · N_cam_pos_ref` |
-| Camera **rotation** reference (enabled) | 3 (yaw/pitch/roll or ω/φ/κ, °) | `3 · N_cam_rot_ref` |
-| Marker **position** reference (enabled) | 3 (X, Y, Z, m) | `3 · N_marker_pos_ref` |
-| Scale bar (enabled) | 1 (distance, m) | `N_scalebars` |
+| Observation | Residuals each | Count | a-priori `σᵢ` |
+|-------------|----------------|-------|---------------|
+| Tie-point image projection | 2 (Δx, Δy, px) | `2 · N_tie_point_projections` | `tiepoint_accuracy × proj.size` — **per projection** |
+| Marker image projection | 2 (Δx, Δy, px) | `2 · N_marker_projections` | `marker_projection_accuracy` |
+| Camera **position** reference (enabled) | 3 (X, Y, Z, m) | `3 · N_cam_pos_ref` | `camera.reference.location_accuracy`, else `chunk.camera_location_accuracy` |
+| Camera **rotation** reference (enabled) | 3 (yaw/pitch/roll or ω/φ/κ, °) | `3 · N_cam_rot_ref` | `camera.reference.rotation_accuracy`, else `chunk.camera_rotation_accuracy` |
+| Marker **position** reference (enabled) | 3 (X, Y, Z, m) | `3 · N_marker_pos_ref` | `marker.reference.accuracy`, else `chunk.marker_location_accuracy` |
+| Scale bar (enabled) | 1 (distance, m) | `N_scalebars` | `scalebar.reference.accuracy`, else `chunk.scalebar_accuracy` |
+
+The `σᵢ` column is the whole stochastic model, and two rows of it are easy to get wrong:
+
+- **The tie-point sigma is per-projection, not global.** Every projection carries a keypoint size
+  (`TiePoints.Projection.size`), and its effective standard deviation is `tiepoint_accuracy`
+  *multiplied by* that size — so `tiepoint_accuracy` is the accuracy of a projection **at scale 1**,
+  not of every projection, and a coarse-scale feature is trusted proportionally less. Measured, not
+  inferred: see [the kps metric](keypoint-size-error-metric.md) for the three experiments. The
+  practical consequence is that the tie-point term must be built from the **kps** residual; using the
+  pixel residual overstates it by the squared mean keypoint size (~7.6x at a 2.75 px mean).
+- **A per-object accuracy supersedes the chunk default.** Where `camera.reference.location_accuracy`,
+  `camera.reference.rotation_accuracy`, `marker.reference.accuracy` or
+  `scalebar.reference.accuracy` is set, it wins over the corresponding `chunk.*` setting — per axis,
+  for the vector-valued ones. A project that supplies per-camera accuracies in its reference table is
+  therefore weighted by those, and reading the chunk-level setting alone will reproduce the wrong
+  `σ̂₀²`.
 
 Enablement is **per vector**: a camera contributes location
 residuals iff `camera.reference.location_enabled`, rotation
@@ -107,10 +123,10 @@ correction.)
 ## The variance factor (reduced chi-square)
 
 With residuals `rᵢ` and their a-priori standard deviations `σᵢ`
-(the Metashape accuracy settings: `tiepoint_accuracy` px,
-`marker_projection_accuracy` px, `camera_location_accuracy` m,
-`camera_rotation_accuracy` °, `marker_location_accuracy` m,
-`scalebar_accuracy` m), the weighted sum of squares and the
+(the per-observation `σᵢ` column of the residual table above —
+note the tie-point sigma is `tiepoint_accuracy × proj.size`, and a
+per-object accuracy supersedes the chunk default), the weighted
+sum of squares and the
 **variance factor** (a.k.a. reference variance, reduced
 chi-square σ̂₀²) are
 
@@ -128,6 +144,26 @@ If the functional and stochastic models are both correct,
   `tiepoint_accuracy = 1 px` is conservative; it does **not**
   mean the solution is bad.
 - **σ̂₀² ≫ 1** — model error, under-weighting, or **outliers**.
+
+> **What "good" actually looks like, measured.** Across 14 real projects (two 1000-camera arena scans
+> and twelve 60-camera venue calibrations), with the tie-point sigma weighted correctly by
+> `tiepoint_accuracy × proj.size` and Metashape's default `tiepoint_accuracy = 1 px`:
+>
+> | | min | median | max |
+> |---|---|---|---|
+> | `σ̂₀²` | 0.049 | **0.173** | 0.334 |
+> | tie-point `rms_kps` | 0.221 | **0.250** | 0.362 |
+>
+> So a healthy solve reports **σ̂₀² ≈ 0.05–0.35, not ≈ 1**, and the genuinely stable quantity is
+> `rms_kps ≈ 0.25` — it varies by less than a factor of 2 across projects spanning 60 to 1000 cameras.
+> The low σ̂₀² is not a fault: it says the default 1 px is about **four times pessimistic** for these
+> captures. Set `tiepoint_accuracy` to the observed `rms_kps` if you want σ̂₀² ≈ 1, since
+> `√σ̂₀²` *is* the factor your declared σ were wrong by.
+>
+> Beware a specific trap: computing the tie-point term from the **pixel** RMS instead of the kps RMS
+> inflates σ̂₀² by the squared mean keypoint size (a median factor of **12** in that sample), which
+> lands it right inside a plausible-looking 0.5–2 band. That is two errors of opposite sign cancelling,
+> not a calibrated model.
   This is the single most useful "is my stochastic model
   sane?" number, and the global gate for outlier detection
   below.
