@@ -295,6 +295,10 @@ RMS (typically a few centimetres on aerial-with-GCPs). If
 absorbed the references — run `chunk.optimizeCameras(…)` first
 (see [When does `optimizeCameras` actually do something?](../../workflow/optimization/when-optimize-cameras-helps.md)).
 
+## See also
+
+- [Choosing camera axes: aerial vs terrestrial (and YPR vs OPK)](../scripting/choosing-rotation-representation.md)
+
 ## References
 
 - *Metashape Python Reference* (2.3.1), `Chunk.transform`,

@@ -273,6 +273,7 @@ Two causes:
 
 ## See also
 
+- [Choosing camera axes: aerial vs terrestrial (and YPR vs OPK)](../scripting/choosing-rotation-representation.md)
 - [Camera reference error: per-camera location and orientation
   in Python](camera-reference-error-python.md)
   — the simpler, no-antenna-offset, no-sigma version of this

@@ -371,6 +371,7 @@ cross-correlation.
 
 ## See also
 
+- [Choosing camera axes: aerial vs terrestrial (and YPR vs OPK)](../scripting/choosing-rotation-representation.md)
 - [Helping alignment when photos don't align](../../workflow/alignment/helping-alignment.md)
   — the pragmatic MAD/IRLS recipe for localising bad marker
   projections and references (this article is its rigorous,

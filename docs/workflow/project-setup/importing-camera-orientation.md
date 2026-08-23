@@ -318,6 +318,10 @@ populated with `Vector([0, 0, 0])` (the placeholder values).
 On a real flight log the values would carry the actual
 yaw/pitch/roll per image.
 
+## See also
+
+- [Choosing camera axes: aerial vs terrestrial (and YPR vs OPK)](../../topics/scripting/choosing-rotation-representation.md)
+
 ## References
 
 - [Forum thread, *Where to store Roll Pitch Yaw data in EXIF for

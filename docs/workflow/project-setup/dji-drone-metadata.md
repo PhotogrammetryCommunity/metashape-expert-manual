@@ -172,6 +172,7 @@ essential.
 
 ## See also
 
+- [Choosing camera axes: aerial vs terrestrial (and YPR vs OPK)](../../topics/scripting/choosing-rotation-representation.md)
 - [Custom vertical datums: adding a geoid undulation grid](custom-geoid-vertical-datum.md)
 - [Importing camera orientation: EXIF, OPK, yaw/pitch/roll](importing-camera-orientation.md)
 - [YPR rotation conventions](../../topics/scripting/ypr-rotation-conventions.md)

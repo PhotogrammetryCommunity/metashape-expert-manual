@@ -13,6 +13,7 @@ Scripts here will not run in Standard.
 
 - [Scripting context pitfalls: GUI vs command-line, document handles, and stage validation](scripting-context-pitfalls.md)
 - [YPR rotation conventions: ypr2mat vs camera.reference.rotation](ypr-rotation-conventions.md)
+- [Choosing camera axes: aerial vs terrestrial (and YPR vs OPK)](choosing-rotation-representation.md)
 - [The chunk's internal coordinate system: arbitrary scale and chunk.transform.scale](chunk-internal-scale-and-units.md)
 - [Working with shape geometries (1.7+ API)](shape-geometry-api.md)
 - [Creating point shapes programmatically: grid placement with DEM-based elevation](creating-point-shapes-from-dem.md)

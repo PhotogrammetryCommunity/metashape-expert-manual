@@ -228,6 +228,7 @@ For the conventions and the omega-phi-kappa equivalent see
 
 ## See also
 
+- [Choosing camera axes: aerial vs terrestrial (and YPR vs OPK)](../scripting/choosing-rotation-representation.md)
 - [Reprojection error analysis: per-camera and per-tie-point](reprojection-error-analysis.md)
   — pixel-space residuals (the bundle's internal geometric
   quality measure).

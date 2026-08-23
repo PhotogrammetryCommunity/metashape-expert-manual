@@ -540,6 +540,10 @@ If `baseline` is already in the cm range, the dataset doesn't
 have the failure mode this recipe addresses — the recipe is a
 no-op (or close to it) on well-behaved projects.
 
+## See also
+
+- [Choosing camera axes: aerial vs terrestrial (and YPR vs OPK)](../../topics/scripting/choosing-rotation-representation.md)
+
 ## References
 
 - [Forum thread, *Georeferencing using GCPs: Optimize -vs- Update

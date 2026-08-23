@@ -269,7 +269,10 @@ for the per-axis-vector vs single-scalar discussion.
   The pitch-sign-flip convention documented here is specific to
   YPR. If your chunk uses OPK
   (omega-phi-kappa) or another, consult the user manual for
-  that convention's canonical pose.
+  that convention's canonical pose. See
+  [Choosing camera axes: aerial vs terrestrial (and YPR vs OPK)](choosing-rotation-representation.md)
+  for how to choose between terrestrial camera axes and OPK references
+  (and the 2.3.1 bug that currently favors OPK).
 - **The forum's term "pitch" is yaw-around-the-X-axis** in
   Metashape's specific definition (consistent with aviation
   pitch). Some external tools use "pitch" to mean

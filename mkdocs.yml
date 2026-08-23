@@ -247,6 +247,7 @@ nav:
           - topics/scripting/index.md
           - "Scripting context pitfalls: GUI vs command-line, document handles, and stage validation": topics/scripting/scripting-context-pitfalls.md
           - "YPR rotation conventions: ypr2mat vs camera.reference.rotation": topics/scripting/ypr-rotation-conventions.md
+          - "Choosing camera axes: aerial vs terrestrial (and YPR vs OPK)": topics/scripting/choosing-rotation-representation.md
           - "The chunk's internal coordinate system: arbitrary scale and chunk.transform.scale": topics/scripting/chunk-internal-scale-and-units.md
           - "Working with shape geometries (1.7+ API)": topics/scripting/shape-geometry-api.md
           - "Creating point shapes programmatically: grid placement with DEM-based elevation": topics/scripting/creating-point-shapes-from-dem.md
@@ -299,6 +300,7 @@ nav:
           - Components view: reference/features/components-view.md
           - Estimate Image Quality: reference/features/estimate-image-quality.md
   - About:
+      - What's new: about/changelog.md
       - Contributing: about/contributing.md
       - Style guide: about/style.md
       - Unverified claims: about/unverified.md

@@ -194,6 +194,7 @@ correctly.
 
 ## See also
 
+- [Choosing camera axes: aerial vs terrestrial (and YPR vs OPK)](../../topics/scripting/choosing-rotation-representation.md)
 - [Repositioning a chunk: moving the origin to a known point](repositioning-chunk-origin.md)
 - [Drone metadata: DJI altitude semantics and RTK XMP accuracy tags](dji-drone-metadata.md)
 - [YPR rotation conventions: `ypr2mat` vs `camera.reference.rotation`](../../topics/scripting/ypr-rotation-conventions.md)
