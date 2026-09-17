@@ -232,7 +232,11 @@ marker placement and pinning](../../workflow/markers-gcps/programmatic-marker-pl
   `chunk.crs = Metashape.CoordinateSystem("EPSG::4326")` still
   has `camera.transform` in chunk-local space; the CRS controls
   how `chunk.reference` and `camera.reference.location` are
-  parsed and displayed.
+  parsed and displayed. For the Python recipes that *define* the
+  CRS — from an EPSG code, a WKT string or `.prj` file, adding a
+  geoid, converting coordinates, or a local Cartesian system — see
+  [*Basic commands when working with coordinate systems via Python*
+  (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000179332).
 
 ## Runnable demonstration on the Aerial-with-GCPs sample dataset
 

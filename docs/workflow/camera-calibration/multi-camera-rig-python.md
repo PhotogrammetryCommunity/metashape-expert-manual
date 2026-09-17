@@ -125,6 +125,43 @@ slave's pose follows the master's pose plus the offset.
 > — Alexey Pasumansky, 2023-11-21, Metashape 2.1
 > ([permalink](https://www.agisoft.com/forum/index.php?topic=16015.msg72350#msg72350))
 
+## Metashape 2.3 changed the slave-offset rotation direction
+
+**The direction of the slave-offset rotation reference flipped in
+Metashape 2.3.0.** `sensor.reference.rotation` is OPK
+(omega-phi-kappa) on every version, but the rotation those angles
+encode was inverted:
+
+- **2.2.x and earlier:** the reference is the OPK of the
+  master→slave rotation `R` — set it with `mat2opk(R)`.
+- **2.3.0 and later (2.3.1, 2.3.2):** the same field is read as
+  the OPK of the *inverse* `Rᵀ` — you must set
+  `mat2opk(R.transpose())` to express the same physical offset.
+
+Setting it the 2.2 way on 2.3.x is **silent**: `optimizeCameras`
+lands the slave at `Rᵀ` instead of `R` — off by about twice the
+offset angle — with no error. The angle-conversion utilities
+(`mat2opk` / `opk2mat`) are unchanged; only how `optimizeCameras`
+interprets the stored slave reference flipped. It is undocumented
+(absent from the 2.3.0 / 2.3.1 change logs) and still present in
+2.3.2, so gate the encoding on the version:
+
+```python
+import Metashape
+
+# R is the intended master->slave rotation (a Metashape.Matrix).
+R_for_ref = R if Metashape.version < "2.3.0" else R.t()
+sensor.reference.rotation = Metashape.Utils.mat2opk(R_for_ref)
+```
+
+Because a wrong convention still "succeeds", verify against
+held-out check points after solving. Reproduced locally by
+feeding a solved slave rotation back as its own reference (tight
+accuracy) and re-optimizing: on **2.2.3**, `mat2opk(solved)`
+leaves the slave put (0.0°) while `mat2opk(solved.t())` drags it
+~40° away; on **2.3.2** the two swap. ([Forum bug report, 2026,
+Metashape 2.3.1 — still present in 2.3.2](https://www.agisoft.com/forum/index.php?topic=17581.0))
+
 ## Constraining the slave offsets during alignment
 
 The slave-offset declaration above tells Metashape what the
@@ -187,11 +224,14 @@ captures is non-zero.
   ([topic 15021](https://www.agisoft.com/forum/index.php?topic=15021.0),
   [topic 10450](https://www.agisoft.com/forum/index.php?topic=10450.0)).
   Corroborated locally with `optimizeCameras` on a synthetic rig
-  under a **YPR** chunk: a slave `reference.rotation` set from
-  `mat2opk(solved_rotation)` (tight accuracy) stays put on
-  re-optimize, while `mat2ypr(solved_rotation)` drags it away
-  (single-chunk check — shows OPK is read under a YPR chunk, not a
-  full two-convention proof). In the XML, the master sensor's
+  under a **YPR** chunk: a slave `reference.rotation` set from the
+  OPK of the solved rotation (tight accuracy) stays put on
+  re-optimize, while `mat2ypr` of the same matrix drags it away —
+  confirming the offset is read as OPK, not under
+  `chunk.euler_angles`. (**Which** matrix's OPK round-trips is
+  version-dependent: `mat2opk(R)` on 2.2.x, `mat2opk(R.transpose())`
+  on 2.3.x — see *Metashape 2.3 changed the slave-offset rotation
+  direction* above.) In the XML, the master sensor's
   `<sensor>` block has no `<rotation>` tag (implicit identity);
   slave sensors carry the declared offset — the same structure used
   for the RedEdge-M diagnosis in
@@ -308,3 +348,8 @@ declared offset shows up on the slave's `reference.location` and
   — community recipes setting `sensor.reference.rotation` as
   omega-phi-kappa (`rotmat2opk`). Corroboration; forum users, not
   Agisoft staff.
+- [Forum bug report, *rig slave-sensor reference.rotation convention inverted*, 2026](https://www.agisoft.com/forum/index.php?topic=17581.0)
+  — Metashape 2.3.0 transposed the slave-offset rotation direction
+  relative to 2.2 (`mat2opk(R)` → `mat2opk(R.transpose())`);
+  reproduced locally on 2.2.3 vs 2.3.2, still present (unfixed) in
+  2.3.2.

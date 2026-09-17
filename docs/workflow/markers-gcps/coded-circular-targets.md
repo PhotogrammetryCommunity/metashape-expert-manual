@@ -129,8 +129,12 @@ shorter and survives more degradation.
 
 For non-coded targets, identity is assigned by spatial position
 rather than an encoded ID — match them via *ignore labels* on
-import, or by renaming detected markers after detection. For
-automation-friendly defaults, 12-bit circular targets plus
+import, or by renaming detected markers after detection. For the
+full non-coded detection workflow (Align Photos → *Tools →
+Markers → Detect Markers* with a non-coded target type → import
+the targets' coordinates), see
+[*Automatic detection of non-coded targets* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000155178).
+For automation-friendly defaults, 12-bit circular targets plus
 AprilTag (when 2.2+ is available) cover the vast majority of
 close-range and field-survey use cases. To refine the choice by
 how many mutually-robust markers you need, see

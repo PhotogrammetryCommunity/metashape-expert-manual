@@ -162,6 +162,16 @@ A symptom-based heuristic — observe alignment quality:
   cameras whose `Camera.mask` is unset. The article assumes masks
   have been imported / drawn upstream — `chunk.generateMasks(…)`
   or `Camera.mask = Metashape.Mask()` etc.
+- **2.3.1 regression: `chunk.mask_sets` / `chunk.masks` read
+  empty after assigning `Camera.mask`.** On Metashape 2.3.1,
+  assigning `camera.mask` left the chunk-level accessors empty
+  (`chunk.mask_sets == [None]`, `chunk.masks == None`) even though
+  `camera.mask` itself was valid — so code that enumerates masks
+  through those chunk-level collections saw nothing. This was a
+  2.3.1-only regression, **fixed in 2.3.2**; 2.2.x and 2.3.2+
+  populate them as expected. If you must run on 2.3.1, read masks
+  per camera via `camera.mask` instead of the chunk collections.
+  ([Forum bug report, 2026, Metashape 2.3.1 → fixed 2.3.2](https://www.agisoft.com/forum/index.php?topic=17580.0))
 
 ## Decision picker
 

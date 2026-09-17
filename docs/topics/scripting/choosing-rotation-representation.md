@@ -38,9 +38,10 @@ avoid the ill-conditioning explained below:
   Terrestrial** (`Sensor.axes`) and keep YPR. This re-centers the
   parameterization so a horizontal camera is well-conditioned.
 - **Recommended in practice today:** use **OPK reference angles**
-  instead. The camera-axes setting is new in 2.3 and, as of 2.3.1, has
-  a serialization bug that silently drops it when a project is saved to
-  `.psz` (see *Caveats*), so OPK remains the safe workaround for now.
+  instead. The camera-axes setting is new in 2.3 and has a
+  serialization bug — confirmed still present in 2.3.2 (build 22956) —
+  that silently drops it when a project is saved to `.psz` (see
+  *Caveats*), so OPK remains the safe workaround.
 
 ## The two controls
 
@@ -114,9 +115,9 @@ directions (Y backward, Z up rather than Z backward, Y up), which
 re-centers the parameterization so the *horizontal-looking* pose — the
 normal terrestrial case — is the well-conditioned zero region rather
 than the ±90° singularity. That is why terrestrial camera axes is the
-*principled* fix for ground-based capture — although, as of 2.3.1, a
-serialization bug (see *Caveats*) means OPK references remain the safer
-choice in practice.
+*principled* fix for ground-based capture — although a serialization
+bug (see *Caveats*), still present in 2.3.2, means OPK references
+remain the safer choice in practice.
 
 > **Note (unverified).** The clear, math-level effect is on
 > *representing* the orientation near pitch ±90° — entering, importing,
@@ -148,7 +149,7 @@ aerial/terrestrial choice is only reachable in the GUI (or not at all,
 depending on version). `Chunk.euler_angles` has been available across
 2.x.
 
-> **Warning — `.psz` serialization bug (Metashape 2.3.1).** Saving a
+> **Warning — `.psz` serialization bug (Metashape 2.3.1–2.3.2).** Saving a
 > project to `.psz` silently drops a non-default `sensor.axes`: set
 > Terrestrial, `doc.save()` to `.psz`, reopen, and the sensor is back to
 > `Aerial` with nothing logged. The `.psx` format and
@@ -156,9 +157,9 @@ depending on version). `Chunk.euler_angles` has been available across
 > `.psz` reader honours it — only the `.psz` *writer* omits it. Until
 > this is fixed, do not rely on `sensor.axes` in any workflow that
 > round-trips through `.psz`; use OPK reference angles instead. The bug
-> is logged against 2.3.1 and **may be resolved in 2.3.2 or later** —
-> check the current status in the linked report before relying on either
-> path.
+> is logged against 2.3.1 and **remains present in 2.3.2 (build 22956),
+> reproduced 2026-09** — use `.psx` / `exportCameras` XML, or OPK
+> reference angles.
 
 ## Choosing
 
@@ -168,8 +169,8 @@ depending on version). `Chunk.euler_angles` has been available across
 - **Terrestrial / façade / any horizontal-looking capture → OPK
   reference angles (recommended today).** Terrestrial camera axes with
   YPR is the cleaner solution in principle, but it is new in 2.3 and the
-  2.3.1 `.psz` writer silently drops it (see *Caveats*), so prefer OPK
-  references until that is fixed (possibly 2.3.2+).
+  `.psz` writer silently drops it (see *Caveats*) — still true in 2.3.2 —
+  so prefer OPK references.
 - **YPR vs OPK is a secondary, representation-level choice.** Pick
   whichever your reference data already uses (drone IMU/EXIF → YPR;
   classical aerotriangulation / survey exports → OPK) so you do not
@@ -181,14 +182,14 @@ depending on version). `Chunk.euler_angles` has been available across
   need the terrestrial convention, not once on the chunk.
 - **Version floor.** `Sensor.axes` / `Sensor.Axes` are 2.3+. Scripts
   targeting 2.2.x cannot set the axes convention through Python.
-- **`.psz` silently drops `sensor.axes` (2.3.1).** A non-default
+- **`.psz` silently drops `sensor.axes` (2.3.1–2.3.2).** A non-default
   `sensor.axes` is not written by the `.psz` writer, so saving to `.psz`
   and reopening reverts the sensor to `Aerial` with no warning
   (`.psx` and `exportCameras` XML are unaffected). This is why OPK
-  references are recommended over terrestrial axes today. The bug is
-  logged against 2.3.1 and **may be fixed in 2.3.2 or later** — verify
-  the current status in the linked report before relying on
-  `sensor.axes` with `.psz`.
+  references are recommended over terrestrial axes today. The bug was
+  reported against 2.3.1 and **remains present in 2.3.2 (build 22956),
+  reproduced 2026-09** — read/write `sensor.axes` only through `.psx`
+  or XML.
 - **Axes and angle elements are independent.** `Sensor.axes` chooses the
   axis directions; `Chunk.euler_angles` chooses the angle triple.
   Changing either re-interprets your `camera.reference.rotation` values.
@@ -228,5 +229,5 @@ depending on version). `Chunk.euler_angles` has been available across
   — the drone-Z-axis-pointing-to-ground canonical pose.
 - [Forum bug report, *[2.3.1] doc.save() to .psz silently drops sensor.axes*, 2026](https://www.agisoft.com/forum/index.php?topic=17595.0)
   — Metashape 2.3.1: the `.psz` writer omits `sensor.axes` while `.psx`,
-  `exportCameras` XML, and the `.psz` reader all handle it; may be
-  addressed in 2.3.2 or later.
+  `exportCameras` XML, and the `.psz` reader all handle it; reproduced
+  still present in 2.3.2 (build 22956).

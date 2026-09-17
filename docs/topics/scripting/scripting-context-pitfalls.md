@@ -284,6 +284,29 @@ subdivision, slow load/save for large projects. PSX is the
 recommended default for any new script. Old projects in PSZ
 can be opened and re-saved as PSX via *File → Save As → PSX*.
 
+## Pitfall 6 — Comparing Metashape objects with `==` / `!=` against `None` (2.3.1)
+
+On Metashape **2.3.1**, comparing a Metashape object with `==` or
+`!=` against `None` (or any non-Metashape object) returned the
+correct boolean but corrupted CPython's `NotImplemented` singleton
+reference count. On **CPython < 3.12** the leak eventually aborts
+the interpreter (`Fatal Python error: notimplemented_dealloc`),
+often at a much later, unrelated point than the comparison. On
+CPython ≥ 3.12 the singleton is immortal (PEP 683), so the bug is
+masked.
+
+It is easy to hit unintentionally — for example iterating cameras
+and testing `camera.group == some_group` while some cameras are
+ungrouped (`camera.group is None` produces `None == some_group`).
+Prefer identity checks and compare by key:
+`camera.group is not None and camera.group.key == some_group.key`
+instead of `camera.group == some_group`.
+
+This was a **2.3.1-only regression, fixed in Metashape 2.3.2**
+(confirmed by the reporter on 2.3.2.22956); run on 2.3.2+ where
+possible, and on CPython ≥ 3.12 (which masks it regardless).
+([Forum bug report, 2026, Metashape 2.3.1 → fixed 2.3.2](https://www.agisoft.com/forum/index.php?topic=17579.0))
+
 ## Caveats
 
 - **`Metashape.app.document` is read-only.** You can't assign a

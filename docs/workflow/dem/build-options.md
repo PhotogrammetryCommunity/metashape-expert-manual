@@ -170,6 +170,42 @@ The tiled-model-source DEM scales to project sizes where a
 single-block mesh would exceed RAM (typically >10km² at
 sub-decimetre resolution).
 
+## Generating contours from the DEM
+
+Once a DEM exists, `Chunk.buildContours` traces contour lines from
+it. The GUI equivalent is *Tools → Generate Contours…* (or the DEM's
+context menu on the Workspace pane); the
+[Agisoft KB walks through the GUI dialog, editing, and exporting
+contours](https://agisoft.freshdesk.com/support/solutions/articles/31000179476).
+The Python surface adds two knobs the dialog does not name — the
+elevation `source_data` and `prevent_intersections`
+(signature introspection-confirmed on Metashape 2.3.2):
+
+```python
+import Metashape
+
+chunk = Metashape.app.document.chunk
+
+chunk.buildContours(
+    source_data=Metashape.ElevationData,   # trace the chunk's DEM (chunk.elevation)
+    interval=1.0,                           # contour spacing, in the DEM's units
+    min_value=0.0,                          # clamp the traced range...
+    max_value=500.0,                        # ...to the real min/max altitude
+    prevent_intersections=True,             # default; avoids self-crossing lines
+)
+# Contours land in a new shape group; export via chunk.exportShapes(...).
+```
+
+- `interval`, `min_value`, `max_value` are in the DEM's vertical
+  units (metres for a metric CRS). The GUI pre-fills min/max from the
+  active DEM; in Python either set them explicitly or leave the
+  ±1e10 defaults to trace the whole range.
+- `source_data=Metashape.ElevationData` traces the chunk's DEM
+  (`chunk.elevation`) — make the intended DEM active first if the
+  chunk holds several.
+- The result is a shape layer, exported with `chunk.exportShapes(…)`;
+  there is no contour-specific export call.
+
 ## Caveats
 
 - **Bounding box matters.** *Build DEM* respects

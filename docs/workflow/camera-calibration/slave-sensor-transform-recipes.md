@@ -49,7 +49,12 @@ offset relative to the master sensor:
 > the sensor-level `antenna.rotation` through a fixed `ypr2mat`
 > ([metashape-scripts](https://github.com/agisoft-llc/metashape-scripts)).
 > See `multi-camera-rig-python.md` for the full discussion and a
-> local `optimizeCameras` corroboration.
+> local `optimizeCameras` corroboration. **The rotation *direction*
+> changed in Metashape 2.3.0:** 2.2.x expects `mat2opk(R)` for the
+> master→slave rotation `R`, while 2.3.x (incl. 2.3.2) expects
+> `mat2opk(R.transpose())` — setting it the 2.2 way on 2.3.x
+> silently mis-orients the slave by ~2× the offset
+> ([forum 17581](https://www.agisoft.com/forum/index.php?topic=17581.0)).
 
 The reference-surface form is the right answer for simple rigs
 and quick setup (covered in A.1). The matrix form is the right

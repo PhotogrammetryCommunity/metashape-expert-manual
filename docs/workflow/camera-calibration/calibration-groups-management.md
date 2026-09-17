@@ -47,6 +47,13 @@ By default, Metashape creates one sensor per unique
 focal length end up in one group; mixed focal lengths from a
 zoom lens end up in multiple groups.
 
+The recipes below manage groups in **Python**. For the **GUI**
+method — creating a group manually (*Tools → Camera Calibration →
+Create Group*) or splitting by capture route (*Split Groups… →
+Image groups*), and *when* to split (e.g. a single camera whose
+calibration drifted between sessions) — see
+[*How to create calibration groups* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000179478).
+
 ## Recipe 1 — Switch all sensors to a specific type
 
 > "The following code sample will switch the camera type for all

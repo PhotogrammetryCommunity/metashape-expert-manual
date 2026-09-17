@@ -58,14 +58,20 @@ filtering becomes redundant overhead.
 for the coordinate-based shortlist (introspection-confirmed on
 Metashape 2.2.2):
 
-| Mode | What it uses | Typical scenario |
-|------|-------------|------------------|
-| `ReferencePreselectionSource` (default) | The values in `camera.reference.location` (and `.rotation`, if loaded). These are the user-supplied / EXIF-derived reference coordinates. | Drone surveys with GPS-tagged images; aerial flights where every image has a position. |
-| `ReferencePreselectionEstimated` | The values in `camera.transform` from a *previous* alignment. Not the reference-pane values. | Re-running matching after an initial alignment, where the bundle-adjusted positions are more accurate than the GPS reference. |
-| `ReferencePreselectionSequential` | Image-order pairs: each camera *i* with the **24 preceding and 24 following** frames (a fixed ±24 window — see below). No coordinates required. | Video frames, drone fast-flights where the ordered sequence approximates spatial proximity, time-lapse from a moving rig. |
+| Python enum | Coordinate source |
+|-------------|-------------------|
+| `ReferencePreselectionSource` (default) | `camera.reference.location` (user-supplied / EXIF-derived) |
+| `ReferencePreselectionEstimated` | `camera.transform` from a *previous* alignment (not the reference-pane values) |
+| `ReferencePreselectionSequential` | Image order — a fixed ±24-frame window (see below); no coordinates |
 
-The default is `ReferencePreselectionSource` — the user manual's
-expected behaviour for a typical aerial workflow.
+Agisoft's Knowledge Base documents these modes officially — with
+Generic-preselection matching-time benchmarks and the
+oblique-imagery *Capture distance* setting that `Source` mode
+relies on: [*Preselection types for image alignment* (Agisoft
+KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000179371).
+This page covers what the KB does not: the Python enum surface,
+the reference/generic two-stage mechanism, and the empirically
+measured Sequential window below.
 
 ## Python API
 
