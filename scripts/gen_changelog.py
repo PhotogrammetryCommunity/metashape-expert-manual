@@ -34,10 +34,6 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 DOCS = REPO_ROOT / "docs"
 OUTPUT = DOCS / "about" / "changelog.md"
 
-# Lists longer than this collapse into a <details> block (keeps the
-# one-time initial-import month from dominating the page).
-COLLAPSE_THRESHOLD = 12
-
 MONTHS = [
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December",
@@ -55,7 +51,9 @@ def _is_tracked(path: str) -> bool:
     if not path.startswith("docs/") or not path.endswith(".md"):
         return False
     name = path.rsplit("/", 1)[-1]
-    return name != "index.md" and path != "docs/about/changelog.md"
+    excluded = {"docs/about/changelog.md",
+                "docs/reference/agisoft-knowledge-base.md"}
+    return name != "index.md" and path not in excluded
 
 
 def _title_of(path: str) -> str:
@@ -152,11 +150,6 @@ def _render_list(month_key: str, label: str, paths: set[str],
         if sentence:
             line += f" — {sentence}"
         bullets.append(line)
-    if len(bullets) > COLLAPSE_THRESHOLD:
-        block = [f'??? note "{label} — {len(bullets)} articles"', ""]
-        block += [f"    {b}" for b in bullets]
-        block += [""]
-        return block
     return [f"**{label}**", "", *bullets, ""]
 
 
@@ -181,9 +174,13 @@ def render(by_month: dict[str, dict[str, set[str]]],
         "is regenerated.",
         "",
     ]
+    # The earliest month is the manual's initial release — its "new" set
+    # is the baseline, not "news", so it is omitted from the page.
+    baseline = min(by_month) if by_month else None
     for month_key in sorted(by_month, reverse=True):
         b = by_month[month_key]
-        section = _render_list(month_key, "New articles", b["new"], preserved)
+        new_bucket = set() if month_key == baseline else b["new"]
+        section = _render_list(month_key, "New articles", new_bucket, preserved)
         section += _render_list(month_key, "Updated", b["updated"], preserved)
         if not section:
             continue
