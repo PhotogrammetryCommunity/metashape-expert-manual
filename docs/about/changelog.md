@@ -10,6 +10,23 @@ history (`scripts/gen_changelog.py`); the one-line description
 after each entry is written by hand and preserved when the list
 is regenerated.
 
+## September 2026
+
+**Updated**
+
+- [`chunk.transform.matrix` is local→world; `camera.transform` is local](../topics/crs/chunk-frame-vs-camera-frame.md) — Cross-linked the KB's Python coordinate-system recipes (EPSG / WKT / .prj / geoid / convert).
+- [`mask_tiepoints` cross-view propagation and the foreground-occluder case](../workflow/alignment/mask-tiepoints-cross-view.md) — Noted the 2.3.1 regression where `chunk.mask_sets`/`masks` read empty after assigning `camera.mask` (fixed in 2.3.2).
+- [Agisoft knowledge base](../reference/agisoft-knowledge-base.md) — Refreshed the KB index: +8 new articles (191 total) and reconciled 13 edited entries.
+- [Calibration groups: programmatic management in Python](../workflow/camera-calibration/calibration-groups-management.md) — Cross-linked the KB's GUI method for creating and splitting calibration groups.
+- [Choosing camera axes: aerial vs terrestrial (and YPR vs OPK)](../topics/scripting/choosing-rotation-representation.md) — Hardened the `sensor.axes` `.psz` caveats — the serialization bug is confirmed still present in 2.3.2 (build 22956).
+- [Coded circular targets: printing, sizing, and choosing a variant](../workflow/markers-gcps/coded-circular-targets.md) — Linked the KB's non-coded-target detection workflow from the non-coded section.
+- [Declaring a fixed-geometry multi-camera rig in Python](../workflow/camera-calibration/multi-camera-rig-python.md) — Documented the 2.3 slave-offset rotation-direction flip (use `mat2opk(R.transpose())` on >= 2.3.0), verified still present in 2.3.2.
+- [DEM build options: point cloud vs mesh as source, and the interpolation knob](../workflow/dem/build-options.md) — Added a Python `chunk.buildContours` section (the KB documents only the GUI).
+- [Reference preselection](../reference/features/reference-preselection.md) — Trimmed the mode descriptions now covered by the KB and linked it; kept the Sequential-window and two-stage material.
+- [Scripting context pitfalls: GUI vs command-line, document handles, and stage validation](../topics/scripting/scripting-context-pitfalls.md) — Added the 2.3.1 `==`/`None` interpreter-abort pitfall (fixed in 2.3.2; use `is` / `.key`).
+- [The slave-sensor transform: composition rule, axis convention, and recipes](../workflow/camera-calibration/slave-sensor-transform-recipes.md) — Cross-linked the 2.3 slave-offset rotation-direction flip caveat.
+- [Version timeline](../reference/version-timeline.md) — Added 2.3.2 (build 22956) point-release detail and per-bug status.
+
 ## August 2026
 
 **New articles**
