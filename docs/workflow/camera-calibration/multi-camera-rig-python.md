@@ -323,7 +323,7 @@ declared offset shows up on the slave's `reference.location` and
 
 ## References
 
-- [Forum thread, *Multiple-Camera Rig with Python API*, 2023](https://www.agisoft.com/forum/index.php?topic=16015.0)
+- [Forum thread, *Multiple-Camera Rig with Python API*, 2023](https://www.agisoft.com/forum/index.php?topic=16015.0) ([archived 2025-09-13](https://web.archive.org/web/20250913115451/https://www.agisoft.com/forum/index.php?topic=16015.0))
   — primary source; the question + the
   Agisoft-support workflow (msg 72350).
 - [Forum thread, *Multi-camera system Python add_photos*, 2022](https://www.agisoft.com/forum/index.php?topic=14453.0) ([archived 2025-06-20](http://web.archive.org/web/20250620201529/https://www.agisoft.com/forum/index.php?topic=14453.0))

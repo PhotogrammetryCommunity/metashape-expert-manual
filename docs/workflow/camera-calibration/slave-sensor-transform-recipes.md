@@ -567,7 +567,7 @@ mismatches).
 
 ## References
 
-- [Forum thread, *Multiple-Camera Rig with Python API*, 2023](https://www.agisoft.com/forum/index.php?topic=16015.0)
+- [Forum thread, *Multiple-Camera Rig with Python API*, 2023](https://www.agisoft.com/forum/index.php?topic=16015.0) ([archived 2025-09-13](https://web.archive.org/web/20250913115451/https://www.agisoft.com/forum/index.php?topic=16015.0))
   — the intro to the `MultiplaneLayout` +
   `sensor.reference` workflow (msg 72350, 2023-11-21,
   Metashape 2.1). The complementary surface to this article's

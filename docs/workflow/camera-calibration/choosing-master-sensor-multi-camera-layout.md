@@ -241,7 +241,7 @@ list. Other sensors: `is_master=False`.
 
 - [Forum thread, *RedEdge-M: changing the master band for camera alignment*](https://www.agisoft.com/forum/index.php?topic=13684.0) ([archived 2026-05-08](http://web.archive.org/web/20260508123018/https://www.agisoft.com/forum/index.php?topic=13684.0))
   — primary source thread documenting the calibration-vs-alignment master distinction and the folder-rename fix.
-- [Forum thread, *Multiple-Camera Rig with Python API*](https://www.agisoft.com/forum/index.php?topic=16015.0)
+- [Forum thread, *Multiple-Camera Rig with Python API*](https://www.agisoft.com/forum/index.php?topic=16015.0) ([archived 2025-09-13](https://web.archive.org/web/20250913115451/https://www.agisoft.com/forum/index.php?topic=16015.0))
   — companion thread for the Python-API surface once the master is chosen.
 - *Metashape Python Reference* (2.3.1), `Sensor.master` — confirms the `master == self` test for master identification.
 - Related: [Symlink filename — not target — controls the camera label](../project-setup/symlink-filename-camera-label.md) — the cleanest workaround when source image folders cannot be renamed.
