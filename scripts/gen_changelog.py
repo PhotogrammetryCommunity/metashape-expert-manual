@@ -80,21 +80,30 @@ def _path_from_link(rel: str) -> str:
 
 def collect() -> dict[str, dict[str, set[str]]]:
     """{month_key: {"new": {paths}, "updated": {paths}}} from git history."""
+    ignore=set()
+    igf=Path("scripts/data/changelog-ignore-commits.txt")
+    if igf.exists():
+        for ln in igf.read_text().splitlines():
+            tok=ln.split("#",1)[0].strip()
+            if tok: ignore.add(tok)
+    def _ignored(h):
+        return any(h.startswith(t) or t.startswith(h) for t in ignore)
     log = _git(
         "log", "--reverse", "--no-merges", "-M",
-        "--name-status", "--date=short", "--pretty=format:\x01%ad",
+        "--name-status", "--date=short", "--pretty=format:\x01%ad\x1f%H",
         "--", "docs/",
     )
     seen: set[str] = set()
     by_month: dict[str, dict[str, set[str]]] = defaultdict(
         lambda: {"new": set(), "updated": set()}
     )
-    cur = ""
+    cur = ""; skip=False
     for line in log.splitlines():
         if line.startswith("\x01"):
-            cur = line[1:].strip()
+            d,_,h = line[1:].partition("\x1f")
+            cur = d.strip(); skip=_ignored(h.strip())
             continue
-        if not line.strip() or not cur:
+        if not line.strip() or not cur or skip:
             continue
         parts = line.split("\t")
         status, path = parts[0], parts[-1]      # rename -> new path

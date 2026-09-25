@@ -36,6 +36,11 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Content checks (changelog + archived citations)
+        run: |
+          python scripts/gen_changelog.py --check
+          python scripts/add_archive_links.py --all --check
+
       - name: Build site (strict)
         run: mkdocs build --strict
 

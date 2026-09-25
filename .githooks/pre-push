@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# Content gates for the metashape-expert-manual: block a push whose docs
+# fail the mechanical content checks. Mirrors the CI "Content checks" step.
+#
+# Enable once per clone:  git config core.hooksPath .githooks
+# Skips gracefully if the docs venv is absent (CI still enforces).
+set -u
+repo_root=$(git rev-parse --show-toplevel)
+cd "$repo_root" || exit 0
+py="./.venv/bin/python"
+[ -x "$py" ] || { echo "pre-push: no ./.venv (skipping content checks; CI will enforce)"; exit 0; }
+
+status=0
+echo "pre-push: checking What's-new changelog is current..."
+"$py" scripts/gen_changelog.py --check || status=1
+echo "pre-push: checking every forum/KB citation has an archived companion..."
+"$py" scripts/add_archive_links.py --all --check || status=1
+
+if [ "$status" -ne 0 ]; then
+  echo ""
+  echo "pre-push BLOCKED: fix the content check(s) above, then re-push."
+  echo "  changelog:  ./.venv/bin/python scripts/gen_changelog.py"
+  echo "  archives:   ./.venv/bin/python scripts/add_archive_links.py --all"
+fi
+exit "$status"

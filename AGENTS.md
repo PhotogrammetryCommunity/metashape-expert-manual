@@ -23,3 +23,27 @@ hand.
 - Pre-push / CI gate: `./.venv/bin/python scripts/gen_changelog.py --check`
   must pass — it flags a stale entry *list*; your sentences are
   preserved.
+- **Site-wide mechanical commits** (e.g. a bulk find-and-replace across
+  many articles) are not per-article reader news and would flood the
+  list. Add their commit SHA to
+  `scripts/data/changelog-ignore-commits.txt` (one SHA per line, like
+  git's `.git-blame-ignore-revs`) so the generator skips them.
+
+### Archived companions on forum/KB citations
+
+Every forum/KB link must carry a verified-Wayback archived companion
+(see `STYLE.md` → *Archived companions for forum and KB links*).
+
+- After adding or changing a forum/KB citation, archive the source on
+  the Wayback Machine, add its `original-url → wayback-url` row to
+  `scripts/data/archive-wayback.tsv` (status `LIVE`), then run
+  `./.venv/bin/python scripts/add_archive_links.py --all` to attach the
+  companion.
+- Pre-push / CI gate:
+  `./.venv/bin/python scripts/add_archive_links.py --all --check` must
+  pass — it fails if any cited forum/KB link lacks a companion or if a
+  cited URL has no verified snapshot (generic site roots are exempt).
+
+Both gates run locally via `.githooks/pre-push` (enable once per clone
+with `git config core.hooksPath .githooks`) and in CI
+(`.github/workflows/deploy.yml`, the *Content checks* step).

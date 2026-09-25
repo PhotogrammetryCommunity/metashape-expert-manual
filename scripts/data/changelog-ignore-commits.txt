@@ -1,0 +1,8 @@
+# Commits whose docs/ changes are site-wide mechanical edits, not reader-facing
+# article news, so they must not generate "What's new" entries. One 40-char
+# SHA (or unambiguous prefix) per line; # comments allowed. Analogous to
+# git's .git-blame-ignore-revs. Add the SHA when you land a bulk mechanical
+# change (e.g. the archived-source-link rollout).
+23860f4  # Add archived-from-original companions to all forum/KB citations
+c9c64ea  # Archive 12 more forum threads and attach their citation companions
+bb46f4f  # Attach archive companion for topic=16015.0

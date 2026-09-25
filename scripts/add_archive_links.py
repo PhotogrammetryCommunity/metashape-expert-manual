@@ -15,7 +15,7 @@ Usage:
   python scripts/add_archive_links.py --all              # whole manual
   python scripts/add_archive_links.py --all --check      # report only (no write)
 """
-import argparse, re
+import argparse, re, sys
 from pathlib import Path
 
 MAP=Path("scripts/data/archive-wayback.tsv")
@@ -56,6 +56,12 @@ def main():
     ap.add_argument("--file"); ap.add_argument("--all",action="store_true"); ap.add_argument("--check",action="store_true")
     a=ap.parse_args()
     mp=load_map()
+    # Generic root/landing links are references to the sites themselves,
+    # not citations of specific content — they are never archived.
+    ALLOW_UNARCHIVED = {
+        "https://www.agisoft.com/forum/",
+        "https://agisoft.freshdesk.com/support/solutions",
+    }
     files=[Path(a.file)] if a.file else sorted(Path("docs").rglob("*.md"))
     st=dict(added=0,already=0,unmapped=0,files=0)
     for f in files:
@@ -66,4 +72,23 @@ def main():
             if not a.check: f.write_text(nt)
     print(f"mapped-live urls: {len(mp)}")
     print(f"files changed: {st['files']} | added: {st['added']} | already: {st['already']} | unmapped-skipped: {st['unmapped']}")
+    if a.check:
+        linkre=re.compile(r'\]\((%s)\)'%AG)
+        gaps=set()
+        for f in files:
+            if f.name=="changelog.md": continue
+            for m in linkre.finditer(f.read_text()):
+                u=m.group(1)
+                if u not in mp and u not in ALLOW_UNARCHIVED:
+                    gaps.add(u)
+        if st["files"]>0:
+            print("STALE: some forum/KB links are missing an [archived ...] companion.")
+            print("  run: python scripts/add_archive_links.py --all")
+            sys.exit(1)
+        if gaps:
+            print(f"MISSING ARCHIVE ({len(gaps)}): cited forum/KB URLs with no verified Wayback snapshot:")
+            for u in sorted(gaps): print("   ",u)
+            print("  archive them (Wayback Save Page Now), add rows to scripts/data/archive-wayback.tsv, re-run --all")
+            sys.exit(1)
+        print("OK: every cited forum/KB link has an archived companion.")
 if __name__=="__main__": main()
