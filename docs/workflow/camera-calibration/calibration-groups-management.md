@@ -52,14 +52,14 @@ method — creating a group manually (*Tools → Camera Calibration →
 Create Group*) or splitting by capture route (*Split Groups… →
 Image groups*), and *when* to split (e.g. a single camera whose
 calibration drifted between sessions) — see
-[*How to create calibration groups* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000179478).
+[*How to create calibration groups* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000179478) ([archived 2026-09-23](https://web.archive.org/web/20260923131344/https://agisoft.freshdesk.com/support/solutions/articles/31000179478)).
 
 ## Recipe 1 — Switch all sensors to a specific type
 
 > "The following code sample will switch the camera type for all
 > the calibration groups to Fisheye"
 > — Agisoft support, 2020-03-08, Metashape 1.6
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=11931.msg53450#msg53450))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=11931.msg53450#msg53450), [archived 2026-09-23](https://web.archive.org/web/20260923203023/https://www.agisoft.com/forum/index.php?topic=11931.msg53450))
 
 > **Demo verified:** ✗ — pending Tier 3 reproduction on a real Metashape install.
 
@@ -266,7 +266,7 @@ For the distinction see [`sensor.calibration` vs `sensor.user_calib`](sensor-cal
   `Sensor.fixed_calibration`, `Sensor.width`, `Sensor.height`,
   `Sensor.label`, `Camera.sensor`, `Camera.photo`,
   `Photo.meta`.
-- Forum thread, [*Calibrating a specific Camera Model*, 2020](https://www.agisoft.com/forum/index.php?topic=11931.msg53450#msg53450)
+- Forum thread, [*Calibrating a specific Camera Model*, 2020](https://www.agisoft.com/forum/index.php?topic=11931.msg53450#msg53450) ([archived 2026-09-23](https://web.archive.org/web/20260923203023/https://www.agisoft.com/forum/index.php?topic=11931.msg53450))
   — set-all-to-fisheye recipe; multi-camera split by path
   prompts.
 

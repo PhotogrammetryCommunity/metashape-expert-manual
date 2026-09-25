@@ -61,7 +61,7 @@ and scaled to metres via `chunk.transform.scale`.
 > space you can use the following code to get the estimated
 > distance and errors"
 > — Agisoft support, 2016-12-06, PhotoScan 1.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=6147.msg30121#msg30121))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=6147.msg30121#msg30121), [archived 2026-09-23](https://web.archive.org/web/20260923213121/https://www.agisoft.com/forum/index.php?topic=6147.msg30121))
 
 ## Recipe — per-scalebar distance error
 
@@ -300,19 +300,19 @@ For more on this, see
   `Scalebar.Reference.accuracy`, `Marker.position`,
   `Camera.center`, `Chunk.transform`,
   `ChunkTransform.scale`.
-- Forum thread, [*Total Error of References*](https://www.agisoft.com/forum/index.php?topic=6147.msg30121#msg30121)
+- Forum thread, [*Total Error of References*](https://www.agisoft.com/forum/index.php?topic=6147.msg30121#msg30121) ([archived 2026-09-23](https://web.archive.org/web/20260923213121/https://www.agisoft.com/forum/index.php?topic=6147.msg30121))
   — Agisoft support, 2016-12-06,
   PhotoScan 1.2. The canonical scalebar-error recipe walks
   through both Marker and Camera endpoint cases and the
   `chunk.transform.scale` factor.
-- Forum thread, [*Set distances of scalebars via Python API*](https://www.agisoft.com/forum/index.php?topic=14526.msg64060#msg64060)
+- Forum thread, [*Set distances of scalebars via Python API*](https://www.agisoft.com/forum/index.php?topic=14526.msg64060#msg64060) ([archived 2026-09-23](https://web.archive.org/web/20260923204805/https://www.agisoft.com/forum/index.php?topic=14526.msg64060))
   — Agisoft support, 2022-05-30,
   Metashape 2.0. The `scalebar.reference.distance =` and
   `scalebar.reference.enabled =` setter pattern, including
   the required `chunk.updateTransform()` call after batch
   updates.
-- [*Creating scale bars in the project without coded targets* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000162602)
-  and [*Coded targets and Scale bars* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000148855)
+- [*Creating scale bars in the project without coded targets* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000162602) ([archived 2026-09-24](https://web.archive.org/web/20260924074647/https://agisoft.freshdesk.com/support/solutions/articles/31000162602))
+  and [*Coded targets and Scale bars* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000148855) ([archived 2026-04-16](https://web.archive.org/web/20260416201845/https://agisoft.freshdesk.com/support/solutions/articles/31000148855))
   — Agisoft's GUI workflows for building scale bars (manually
   between markers, or from detected coded targets) and setting
   their reference distance and accuracy.

@@ -34,7 +34,7 @@ Overlap*). The feature was introduced as experimental:
 > Currently it requires to have the alignment and at least
 > rough mesh model."
 > — Alexey Pasumansky, 2018-11-18, Metashape 1.5.0 pre-release
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=9793.msg45620#msg45620))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=9793.msg45620#msg45620), [archived 2026-09-24](https://web.archive.org/web/20260924064910/https://www.agisoft.com/forum/index.php?topic=9793.msg45620))
 
 The two prerequisites — alignment + rough mesh — are unchanged
 in 2.x. A texture was briefly required in early 1.5.0 builds
@@ -42,7 +42,7 @@ but the requirement was relaxed:
 
 > "No texture is required, only mesh model."
 > — Alexey Pasumansky, 2018-11-19, Metashape 1.5.0 pre-release
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=9793.msg45633#msg45633))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=9793.msg45633#msg45633), [archived 2026-09-24](https://web.archive.org/web/20260924064937/https://www.agisoft.com/forum/index.php?topic=9793.msg45633))
 
 ### How the algorithm works (1.7+)
 
@@ -54,7 +54,7 @@ version solves a **minimum set-cover** problem:
 > significantly different angles (multiple cameras from single
 > direction count as one) where N is specified by user."
 > — simiyutin, 2020-10-27, Metashape 1.7
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=12426.msg56344#msg56344))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=12426.msg56344#msg56344), [archived 2026-09-23](https://web.archive.org/web/20260923113727/https://www.agisoft.com/forum/index.php?topic=12426.msg56344))
 
 In concrete terms:
 
@@ -235,7 +235,7 @@ typical workflow is:
   elimination* / *Reduce overlap parameters*.
 - *Metashape Python Reference* (2.3.1):
   `Chunk.reduceOverlap`.
-- [Forum topic 9793](https://www.agisoft.com/forum/index.php?topic=9793.0)
+- [Forum topic 9793](https://www.agisoft.com/forum/index.php?topic=9793.0) ([archived 2026-02-26](http://web.archive.org/web/20260226042836/https://www.agisoft.com/forum/index.php?topic=9793.0))
   — Metashape 1.5.0 pre-release thread (feature
   introduction).
 

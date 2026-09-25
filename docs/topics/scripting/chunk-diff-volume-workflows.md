@@ -36,14 +36,14 @@ route is to export and diff in an external tool.
 > exported results in the external GIS applications (like
 > GlobalMapper or Q-GIS, for example)."
 > — Agisoft support, 2017-05-15, PhotoScan 1.3
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=7056.msg34042#msg34042))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=7056.msg34042#msg34042), [archived 2026-09-24](https://web.archive.org/web/20260924130624/https://www.agisoft.com/forum/index.php?topic=7056.msg34042))
 
 **That 2017 answer is now outdated for DEMs.** Current Metashape
 Professional can subtract one DEM from another natively via
 *Tools → Transform DEM* with the *Calculate difference* option:
 import the other chunk's DEM into the project first (or keep both
 as DEM instances in one chunk), then difference them to produce a
-result DEM — [*DEM difference calculation* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000156301).
+result DEM — [*DEM difference calculation* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000156301) ([archived 2026-09-24](https://web.archive.org/web/20260924071748/https://agisoft.freshdesk.com/support/solutions/articles/31000156301)).
 The external-tool route below is still worthwhile for finer
 control over resampling, for **mesh / point-cloud** diffs that a
 2.5-D DEM cannot represent, and for cross-package analysis.
@@ -100,7 +100,7 @@ tool. Bring both epochs' DEMs into one project, then:
 It is exact and georeferenced but shares the DEM's 2.5-D
 limitation (no overhangs), and gives less control over resampling
 than a GIS. For mesh / point-cloud change use the export-and-diff
-workflows below. See [*DEM difference calculation* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000156301).
+workflows below. See [*DEM difference calculation* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000156301) ([archived 2026-09-24](https://web.archive.org/web/20260924071748/https://agisoft.freshdesk.com/support/solutions/articles/31000156301)).
 
 ## Workflow 1 — DEM raster subtraction (GIS)
 
@@ -285,14 +285,14 @@ shape).
 - *Metashape Pro User Manual* (2.3), ch. 6 *Measurements →
   Volume measurement* — describes the per-chunk *Measure Volume*
   dialog.
-- [*DEM difference calculation* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000156301)
+- [*DEM difference calculation* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000156301) ([archived 2026-09-24](https://web.archive.org/web/20260924071748/https://agisoft.freshdesk.com/support/solutions/articles/31000156301))
   — the native *Tools → Transform DEM → Calculate difference*
   operator (Workflow 0).
 - *CloudCompare Wiki*, [Cloud-to-Cloud Distance](https://www.cloudcompare.org/doc/wiki/index.php/Cloud-to-Cloud_Distance)
   — workflow 2 reference (external).
 - *QGIS Documentation*, [Raster Calculator](https://docs.qgis.org/latest/en/docs/user_manual/processing_algs/qgis/rasteranalysis.html#raster-calculator)
   — workflow 1 reference (external).
-- Forum thread, [*Comparing chunks: volume calculations*, 2017](https://www.agisoft.com/forum/index.php?topic=7056.msg34042#msg34042)
+- Forum thread, [*Comparing chunks: volume calculations*, 2017](https://www.agisoft.com/forum/index.php?topic=7056.msg34042#msg34042) ([archived 2026-09-24](https://web.archive.org/web/20260924130624/https://www.agisoft.com/forum/index.php?topic=7056.msg34042))
   — the canonical Q&A; multiple users contribute the three-
   workflow triage.
 

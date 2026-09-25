@@ -63,13 +63,13 @@ all (no effect, but processing time wasted).
 > but considered to be identical would be merged to the single
 > tie point instance in the merged chunk." — Alexey Pasumansky,
 > 2023-05-04, Metashape 2.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=15490.msg67279#msg67279))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=15490.msg67279#msg67279), [archived 2026-09-23](https://web.archive.org/web/20260923205329/https://www.agisoft.com/forum/index.php?topic=15490.msg67279))
 
 > "Merge Tie Points option is not available if there are no key
 > points stored in the chunks being merged, as it wouldn't be
 > possible to match tie points in different chunks." — Alexey
 > Pasumansky, 2023-10-31, Metashape 2.1
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=15960.msg68783#msg68783))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=15960.msg68783#msg68783), [archived 2026-09-23](https://web.archive.org/web/20260923205654/https://www.agisoft.com/forum/index.php?topic=15960.msg68783))
 
 The "key points" referenced here are not tie points. They are the
 per-image **feature descriptors** computed during *Match Photos*
@@ -197,9 +197,9 @@ to match.
 
 ## References
 
-- [Forum thread, *What do the Merge Tie Points do…*, 2023](https://www.agisoft.com/forum/index.php?topic=15490.0)
+- [Forum thread, *What do the Merge Tie Points do…*, 2023](https://www.agisoft.com/forum/index.php?topic=15490.0) ([archived 2026-09-25](https://web.archive.org/web/20260925130634/https://www.agisoft.com/forum/index.php?topic=15490.0))
   — definition of the option (msg 69850).
-- [Forum thread, *Tie points checkbox disabled…*, 2023](https://www.agisoft.com/forum/index.php?topic=15960.0)
+- [Forum thread, *Tie points checkbox disabled…*, 2023](https://www.agisoft.com/forum/index.php?topic=15960.0) ([archived 2026-05-15](http://web.archive.org/web/20260515162448/https://www.agisoft.com/forum/index.php?topic=15960.0))
   — discoverability of the prerequisite (msgs 72204;
   user surya-aereo's confirmation that *Keep Key Points* must be
   enabled before alignment).

@@ -218,7 +218,7 @@ defining the in-plane horizontal direction.
   > in GUI it can be done using Region section in the Export
   > dialog. In the next version it should be fixed." —
   > Alexey Pasumansky, 2016-09-29, PhotoScan 1.2 era
-  > ([permalink](https://www.agisoft.com/forum/index.php?topic=3996.msg28868#msg28868))
+  > ([permalink](https://www.agisoft.com/forum/index.php?topic=3996.msg28868#msg28868), [archived 2026-09-23](https://web.archive.org/web/20260923211901/https://www.agisoft.com/forum/index.php?topic=3996.msg28868))
 
   The Agisoft-staff "in the next version it should be fixed"
   follow-up confirms the issue was patched in subsequent
@@ -234,7 +234,7 @@ defining the in-plane horizontal direction.
   > "Resolution field in the script dialog means the pixel
   > size (i.e. m/pix) and not the output image dimensions." —
   > Alexey Pasumansky, 2015-10-13, PhotoScan 1.1.6
-  > ([permalink](https://www.agisoft.com/forum/index.php?topic=3996.msg22403#msg22403))
+  > ([permalink](https://www.agisoft.com/forum/index.php?topic=3996.msg22403#msg22403), [archived 2026-09-23](https://web.archive.org/web/20260923211810/https://www.agisoft.com/forum/index.php?topic=3996.msg22403))
 
   To compute the expected output image dimensions: `width_px =
   bbox_width / resolution`. For the script above:
@@ -276,7 +276,7 @@ defining the in-plane horizontal direction.
   > in the lines [...] removing the special characters. If you
   > are using any text editor, make sure you are using UTF-8
   > encoding." — Alexey Pasumansky, 2016-04-27, PhotoScan 1.2
-  > ([permalink](https://www.agisoft.com/forum/index.php?topic=3996.msg25940#msg25940))
+  > ([permalink](https://www.agisoft.com/forum/index.php?topic=3996.msg25940#msg25940), [archived 2026-09-23](https://web.archive.org/web/20260923211830/https://www.agisoft.com/forum/index.php?topic=3996.msg25940))
 
 ## See also
 
@@ -290,7 +290,7 @@ defining the in-plane horizontal direction.
 - *Metashape Python Reference* (2.3.1):
   `Chunk.buildOrthomosaic`, `Chunk.exportRaster`,
   `OrthoProjection`, `BBox`.
-- [Forum topic 3996](https://www.agisoft.com/forum/index.php?topic=3996.0)
+- [Forum topic 3996](https://www.agisoft.com/forum/index.php?topic=3996.0) ([archived 2026-03-14](http://web.archive.org/web/20260314232436/https://www.agisoft.com/forum/index.php?topic=3996.0))
   — the original 2015–2017 script-evolution thread (15
   the posts including 4 substantial script revisions).
 

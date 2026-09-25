@@ -69,7 +69,7 @@ Enable (or leave at default) when:
 > points related to the lens artifacts or stationary elements in the
 > image frame, such as parts of the drone construction, for example.
 > — Alexey Pasumansky, 2020-12-31, Metashape 1.7
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=12653.msg57275#msg57275))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=12653.msg57275#msg57275), [archived 2026-09-23](https://web.archive.org/web/20260923114020/https://www.agisoft.com/forum/index.php?topic=12653.msg57275))
 
 ## When to disable it
 
@@ -90,7 +90,7 @@ Disable (`filter_stationary_points=False`) when:
   > fitting — disabled, Guided matching — disabled, **Exclude
   > stationary points — disabled.**
   > — Alexey Pasumansky, 2021-02-11, Metashape 1.7
-  > ([permalink](https://www.agisoft.com/forum/index.php?topic=13079.msg58789#msg58789))
+  > ([permalink](https://www.agisoft.com/forum/index.php?topic=13079.msg58789#msg58789), [archived 2026-09-23](https://web.archive.org/web/20260923203923/https://www.agisoft.com/forum/index.php?topic=13079.msg58789))
 
 - **Very small baselines.** If camera positions are extremely close
   together (macro photography with sub-millimetre shifts), real scene

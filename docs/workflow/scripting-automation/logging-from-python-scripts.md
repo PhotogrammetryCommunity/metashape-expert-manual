@@ -135,10 +135,10 @@ The same redirection caveats apply.
   `Metashape.Application.Settings.log_path` — *Metashape Python API
   Reference*, version 2.3.1. Documented, not deprecated; just do
   not behave as expected in headless mode.
-- **Forum:** [Pasumansky, 2019-07-23, PhotoScan 1.5](https://www.agisoft.com/forum/index.php?topic=11129.msg50273#msg50273)
+- **Forum:** [Pasumansky, 2019-07-23, PhotoScan 1.5](https://www.agisoft.com/forum/index.php?topic=11129.msg50273#msg50273) ([archived 2026-09-24](https://web.archive.org/web/20260924081601/https://www.agisoft.com/forum/index.php?topic=11129.msg50273))
   — "For headless scripts I suggest to use the OS re-directing
   feature."
-- **Forum:** [Pasumansky, 2019-07-25, PhotoScan 1.5](https://www.agisoft.com/forum/index.php?topic=11129.msg50316#msg50316)
+- **Forum:** [Pasumansky, 2019-07-25, PhotoScan 1.5](https://www.agisoft.com/forum/index.php?topic=11129.msg50316#msg50316) ([archived 2026-09-24](https://web.archive.org/web/20260924081622/https://www.agisoft.com/forum/index.php?topic=11129.msg50316))
   — the Windows redirection example with `2>&1`.
 - **Related articles:** [Automating gradual selection in Python](automating-gradual-selection-python.md)
   is one example of a headless-friendly script; the redirect

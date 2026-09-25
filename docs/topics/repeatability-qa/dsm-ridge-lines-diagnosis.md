@@ -33,7 +33,7 @@ the chunk produces.
 > "Such artifacts usually indicate that there are alignment
 > issues for the related area."
 > — Agisoft support, 2018-02-19, PhotoScan 1.4
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=8444.msg40298#msg40298))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=8444.msg40298#msg40298), [archived 2026-09-24](https://web.archive.org/web/20260924064158/https://www.agisoft.com/forum/index.php?topic=8444.msg40298))
 
 ## How to diagnose
 
@@ -111,7 +111,7 @@ Pathological patterns indicating mis-modelled intrinsics:
 > strange — I would rather suspect that the calibration is not
 > correct."
 > — Agisoft support, 2018-02-19, PhotoScan 1.4
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=8444.msg40300#msg40300))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=8444.msg40300#msg40300), [archived 2026-09-24](https://web.archive.org/web/20260924064211/https://www.agisoft.com/forum/index.php?topic=8444.msg40300))
 
 ## Recovery recipe — re-align with strict residual filtering
 
@@ -258,7 +258,7 @@ that's diagnostic.
 - *Metashape Python API Reference* (2.3.1):
   `Chunk.optimizeCameras`, parameter `adaptive_fitting`,
   `Chunk.exportMarkers`, `Chunk.importMarkers`.
-- Forum thread, [*Strange artifacts on DEM (ridges and steps)*, 2018](https://www.agisoft.com/forum/index.php?topic=8444.msg40226#msg40226)
+- Forum thread, [*Strange artifacts on DEM (ridges and steps)*, 2018](https://www.agisoft.com/forum/index.php?topic=8444.msg40226#msg40226) ([archived 2026-09-24](https://web.archive.org/web/20260924064115/https://www.agisoft.com/forum/index.php?topic=8444.msg40226))
   — the canonical Q&A; identifies alignment as root cause and
   prescribes the recovery recipe.
 

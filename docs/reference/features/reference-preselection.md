@@ -26,7 +26,7 @@ The mechanism, attested verbatim (PhotoScan 1.2 era):
 > Generic and Reference option separated adding new
 > preselection mode (reference without generic)." —
 > Alexey Pasumansky, 2016-12-20, PhotoScan 1.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=6306.msg30457#msg30457))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=6306.msg30457#msg30457), [archived 2026-09-23](https://web.archive.org/web/20260923213534/https://www.agisoft.com/forum/index.php?topic=6306.msg30457))
 
 In other words, reference preselection is a **two-stage**
 process in modern Metashape:
@@ -68,7 +68,7 @@ Agisoft's Knowledge Base documents these modes officially — with
 Generic-preselection matching-time benchmarks and the
 oblique-imagery *Capture distance* setting that `Source` mode
 relies on: [*Preselection types for image alignment* (Agisoft
-KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000179371).
+KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000179371) ([archived 2026-09-23](https://web.archive.org/web/20260923131353/https://agisoft.freshdesk.com/support/solutions/articles/31000179371)).
 This page covers what the KB does not: the Python enum surface,
 the reference/generic two-stage mechanism, and the empirically
 measured Sequential window below.
@@ -159,7 +159,7 @@ algorithm is to mis-localised priors:
 > "I had a hunch it might do that after it aligned some images
 > in a previous project where the coordinates were completely
 > wrong in some parts." — James, 2016-12-20, PhotoScan 1.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=6306.msg30456#msg30456))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=6306.msg30456#msg30456), [archived 2026-09-23](https://web.archive.org/web/20260923213418/https://www.agisoft.com/forum/index.php?topic=6306.msg30456))
 
 The thread doesn't resolve the question. Empirically, reference
 preselection with bad coordinates can either fail outright (no
@@ -295,6 +295,6 @@ shortlist excluded.
 
 | Date | Version | Author | Thread | One-line takeaway |
 |------|---------|--------|--------|-------------------|
-| 2016-12-20 | PhotoScan 1.2 | Alexey Pasumansky | [Align images - Reference preselection](https://www.agisoft.com/forum/index.php?topic=6306.msg30226#msg30226) | The canonical mechanism: coordinate-based shortlist + generic on the shortlist. The 1.3 separation introduces "reference without generic" mode. |
-| 2016-12-20 | PhotoScan 1.2 | James | [Align images - Reference preselection](https://www.agisoft.com/forum/index.php?topic=6306.msg30227#msg30227) | Open question on robustness with bad coordinates; the thread doesn't resolve it. |
+| 2016-12-20 | PhotoScan 1.2 | Alexey Pasumansky | [Align images - Reference preselection](https://www.agisoft.com/forum/index.php?topic=6306.msg30226#msg30226) ([archived 2026-09-23](https://web.archive.org/web/20260923213239/https://www.agisoft.com/forum/index.php?topic=6306.msg30226)) | The canonical mechanism: coordinate-based shortlist + generic on the shortlist. The 1.3 separation introduces "reference without generic" mode. |
+| 2016-12-20 | PhotoScan 1.2 | James | [Align images - Reference preselection](https://www.agisoft.com/forum/index.php?topic=6306.msg30227#msg30227) ([archived 2026-09-23](https://web.archive.org/web/20260923213250/https://www.agisoft.com/forum/index.php?topic=6306.msg30227)) | Open question on robustness with bad coordinates; the thread doesn't resolve it. |
 

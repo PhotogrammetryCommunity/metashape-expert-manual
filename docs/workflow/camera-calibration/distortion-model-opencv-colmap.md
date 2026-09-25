@@ -12,7 +12,7 @@ confidence: high
 > **Confidence:** *high.* The two load-bearing facts — the P1/P2
 > swap relative to OpenCV, and the per-parameter units (`f`, `cx`,
 > `cy`, `b1`, `b2` in pixels; `k1`–`k4`, `p1`, `p2` dimensionless,
-> per the [Agisoft KB](https://agisoft.freshdesk.com/support/solutions/articles/31000158119) and consistent with the direct-pass
+> per the [Agisoft KB](https://agisoft.freshdesk.com/support/solutions/articles/31000158119) ([archived 2026-09-24](https://web.archive.org/web/20260924072343/https://agisoft.freshdesk.com/support/solutions/articles/31000158119)) and consistent with the direct-pass
 > conversion code below) — have explicit documentation. The
 > "export undistorted images is the safe path" recommendation
 > is a synthesis from multiple threads.
@@ -47,7 +47,7 @@ For what each of these parameters *means* — and how to judge
 whether an adjusted calibration is physically plausible (`cx`/`cy`
 of hundreds of pixels, or `b1`/`b2` of tens, usually signal a bad
 estimate worth re-aligning with those values fixed) — see
-Agisoft's own [*What does camera calibration results mean in Metashape?* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000158119),
+Agisoft's own [*What does camera calibration results mean in Metashape?* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000158119) ([archived 2026-09-24](https://web.archive.org/web/20260924072343/https://agisoft.freshdesk.com/support/solutions/articles/31000158119)),
 which also walks through the Distortion Plot (the Distortion,
 Profile and Correlation tabs). This article assumes those basics
 and focuses on the cross-tool conversion problem.
@@ -57,7 +57,7 @@ Two units conventions matter:
 - **Units differ by parameter.** `f`, `cx`, `cy` and the affinity
   terms `b1`, `b2` are in pixels; the distortion coefficients
   `k1`–`k4` and `p1`, `p2` are dimensionless (they act on the
-  focal-length-normalised radius), per the [Agisoft KB](https://agisoft.freshdesk.com/support/solutions/articles/31000158119) — which is
+  focal-length-normalised radius), per the [Agisoft KB](https://agisoft.freshdesk.com/support/solutions/articles/31000158119) ([archived 2026-09-24](https://web.archive.org/web/20260924072343/https://agisoft.freshdesk.com/support/solutions/articles/31000158119)) — which is
   why the conversion code below passes them straight to OpenCV's
   (dimensionless) `distCoeffs`. The older Lens-utility model
   (quoted below) described its coefficients as "inverse pixels";
@@ -84,7 +84,7 @@ described it:
 > In other case conversion might be too complicated and even
 > almost impossible." — Alexey Pasumansky, 2011-09-13,
 > PhotoScan ~0.8
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=232.msg949#msg949))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=232.msg949#msg949), [archived 2026-09-23](https://web.archive.org/web/20260923210818/https://www.agisoft.com/forum/index.php?topic=232.msg949))
 
 The model has been stable from PhotoScan 0.8 through Metashape
 2.2.2; the Lens-manual reference still applies.
@@ -113,7 +113,7 @@ Colmap or OpenCV tool consumes as if they were OpenCV-ordered.
 > 2.3.0 release it would be fixed (already included to 2.3.0
 > build 21778 pre-release version)." — Alexey Pasumansky,
 > 2025-12-16, Metashape 2.3 pre-release
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=17434.msg74607#msg74607))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=17434.msg74607#msg74607), [archived 2026-09-23](https://web.archive.org/web/20260923210458/https://www.agisoft.com/forum/index.php?topic=17434.msg74607))
 
 If your installed build is older than 2.3.0 build 21778 and
 you're exporting to Colmap, **swap p1 and p2 in the
@@ -215,7 +215,7 @@ is being applied (which is wrong for OpenCV-consuming tools).
 If they differ by approximately `(W − 1)/2`, the shift is
 applied correctly.
 
-The canonical-thread statement in [topic=17434](https://www.agisoft.com/forum/index.php?topic=17434.0)
+The canonical-thread statement in [topic=17434](https://www.agisoft.com/forum/index.php?topic=17434.0) ([archived 2025-12-31](http://web.archive.org/web/20251231080345/https://www.agisoft.com/forum/index.php?topic=17434.0))
 covers the P1/P2 swap fix in 2.3.0 build 21778+ but does not
 explicitly address the half-pixel principal-point convention.
 **Verify both the swap and the half-pixel application** when
@@ -277,7 +277,7 @@ works (topic=14738):
 > the Adjusted tab. Then use Convert Images dialog with
 > Transform to Initial Calibration option enabled." — Alexey
 > Pasumansky, 2022-08-15, Metashape 1.8 / 2.0 transition
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=14738.msg64636#msg64636))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=14738.msg64636#msg64636), [archived 2026-09-23](https://web.archive.org/web/20260923204915/https://www.agisoft.com/forum/index.php?topic=14738.msg64636))
 
 ## Caveats
 
@@ -566,17 +566,17 @@ the script applies the swap.
 
 ## References
 
-- [Forum thread, *Distortion Coefficients*, 2011](https://www.agisoft.com/forum/index.php?topic=232.0)
+- [Forum thread, *Distortion Coefficients*, 2011](https://www.agisoft.com/forum/index.php?topic=232.0) ([archived 2026-03-15](http://web.archive.org/web/20260315115411/https://www.agisoft.com/forum/index.php?topic=232.0))
   — the canonical "what units / what model" answer
   (msg 756, 2011-09-13, PhotoScan ~0.8).
 - [Forum thread, *Metashape's calibration coefficients don't
-  match OpenCV/Colmap?!*, 2025](https://www.agisoft.com/forum/index.php?topic=17434.0)
+  match OpenCV/Colmap?!*, 2025](https://www.agisoft.com/forum/index.php?topic=17434.0) ([archived 2025-12-31](http://web.archive.org/web/20251231080345/https://www.agisoft.com/forum/index.php?topic=17434.0))
   — the P1/P2 swap and the Metashape 2.3.0 build 21778 fix
   (msg 74780).
-- [Forum thread, *Camera export: distortion model*, 2022](https://www.agisoft.com/forum/index.php?topic=14738.0)
+- [Forum thread, *Camera export: distortion model*, 2022](https://www.agisoft.com/forum/index.php?topic=14738.0) ([archived 2026-04-16](http://web.archive.org/web/20260416105221/https://www.agisoft.com/forum/index.php?topic=14738.0))
   — the GUI Convert Images workaround for 1.x / 2.x
   transition (msg 63992).
-- [Forum thread, *Undistort Photos*, 2014](https://www.agisoft.com/forum/index.php?topic=1247.0)
+- [Forum thread, *Undistort Photos*, 2014](https://www.agisoft.com/forum/index.php?topic=1247.0) ([archived 2026-04-22](http://web.archive.org/web/20260422171358/https://www.agisoft.com/forum/index.php?topic=1247.0))
   — the canonical "export undistorted images" workflow.
 - [Forum thread, *Export COLMAP in Standard*, 2024](https://www.agisoft.com/forum/index.php?topic=16518.0)
   — Colmap export support discussion.
@@ -585,12 +585,12 @@ the script applies the swap.
   coordinate system has origin in the middle of the top-left
   pixel (with coordinates (0.5, 0.5))" plus the projection
   formulas using `w * 0.5 + cx` (pixel-corner convention).
-- [*What does camera calibration results mean in Metashape?* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000158119)
+- [*What does camera calibration results mean in Metashape?* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000158119) ([archived 2026-09-24](https://web.archive.org/web/20260924072343/https://agisoft.freshdesk.com/support/solutions/articles/31000158119))
   — Agisoft's own explanation of each calibration parameter
   (`f`, `cx`, `cy`, `b1`, `b2`, `k1`–`k4`, `p1`, `p2`), how to
   spot an implausible adjusted calibration, and how to read the
   Distortion Plot's Distortion / Profile / Correlation tabs.
-- [*Export undistorted photos* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000168141)
+- [*Export undistorted photos* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000168141) ([archived 2026-09-24](https://web.archive.org/web/20260924075407/https://agisoft.freshdesk.com/support/solutions/articles/31000168141))
   — Agisoft's canonical *Convert Images* / *Transform to initial
   calibration* workflow (the undistorted-image fallback used
   above), including how to recover a correct export when

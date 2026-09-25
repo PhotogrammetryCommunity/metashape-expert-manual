@@ -28,7 +28,7 @@ reclassified as unclassified.
 > with houses and trees to avoid 'stumps' on DTM when building
 > elevation model from the ground points class."
 > — Alexey Pasumansky, 2021-10-13, Metashape 1.7.5
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=13821.msg61023#msg61023))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=13821.msg61023#msg61023), [archived 2026-09-23](https://web.archive.org/web/20260923204201/https://www.agisoft.com/forum/index.php?topic=13821.msg61023))
 
 ## The "stump" problem
 
@@ -118,9 +118,9 @@ result.
 
 - *Metashape Pro User Manual* (2.3), § *Editing → Classify Ground
   Points*, p. 146 — documents all parameters including Erosion radius.
-- [*Point Cloud Classification* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000148866)
+- [*Point Cloud Classification* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000148866) ([archived 2026-04-16](https://web.archive.org/web/20260416211435/https://agisoft.freshdesk.com/support/solutions/articles/31000148866))
   — the full ground / multi-class / manual classification workflow
-  and DTM generation; and [*Parameters for ground point classification* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000160729)
+  and DTM generation; and [*Parameters for ground point classification* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000160729) ([archived 2026-09-24](https://web.archive.org/web/20260924073556/https://agisoft.freshdesk.com/support/solutions/articles/31000160729))
   — a deep dive on Max angle, Max distance, Max terrain slope, Cell
   size, Return and Erosion radius with worked examples (rural,
   low-vegetation, satellite).

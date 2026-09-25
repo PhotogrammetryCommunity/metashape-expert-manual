@@ -278,7 +278,7 @@ end-to-end run on Metashape 2.2.3 (2026-06-04).
   `Metashape.Marker.projections` (the `Marker.Projections`
   collection), `Metashape.Marker.reference.location` —
   *Metashape Python API Reference*, version 2.3.1.
-- **Forum:** [Pasumansky, 2018-12-21, PhotoScan 1.4](https://www.agisoft.com/forum/index.php?topic=10129.msg46256#msg46256)
+- **Forum:** [Pasumansky, 2018-12-21, PhotoScan 1.4](https://www.agisoft.com/forum/index.php?topic=10129.msg46256#msg46256) ([archived 2026-09-24](https://web.archive.org/web/20260924080654/https://www.agisoft.com/forum/index.php?topic=10129.msg46256))
   — the canonical two-positional-argument example. The `PhotoScan`
   module name in the snippet is the only thing that needs renaming
   for 2.x.

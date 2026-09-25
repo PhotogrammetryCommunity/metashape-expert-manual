@@ -40,7 +40,7 @@ attested verbatim:
 > turn-table sessions, but could be also used to isolate the
 > lone-standing object from non-uniform background."
 > — Alexey Pasumansky, 2024-10-08, Metashape 2.2.0 pre-release
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=16745.msg71715#msg71715))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=16745.msg71715#msg71715), [archived 2026-09-23](https://web.archive.org/web/20260923115522/https://www.agisoft.com/forum/index.php?topic=16745.msg71715))
 
 The model targets **lone-standing objects** with **non-uniform
 backgrounds**. Aerial flights, multi-object compositions, and
@@ -81,10 +81,10 @@ In any of these cases, prefer:
 
 - `MaskingModeBackground` if you have control over the background
   (drop a fabric backdrop, light it uniformly) — see KB
-  [*Masks from background photos* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000162414).
+  [*Masks from background photos* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000162414) ([archived 2026-09-24](https://web.archive.org/web/20260924074421/https://agisoft.freshdesk.com/support/solutions/articles/31000162414)).
 - `MaskingModeModel` after you have a rough first reconstruction
   — re-mask using the model silhouette and re-align for
-  better tie-points; see [*Automatic masking from the model* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000163388).
+  better tie-points; see [*Automatic masking from the model* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000163388) ([archived 2026-09-24](https://web.archive.org/web/20260924074951/https://agisoft.freshdesk.com/support/solutions/articles/31000163388)).
 - Hand-drawn masks for the first 5–10 frames + propagate via the
   *Apply Mask to Tie Points* technique discussed in
   [Cross-view mask propagation](mask-tiepoints-cross-view.md).
@@ -176,7 +176,7 @@ masking works offline. From the source thread:
 > "Providing that the trained model is already downloaded, it
 > should work even when no Internet connection is available."
 > — Alexey Pasumansky, 2024-10-29, Metashape 2.2.0 pre-release
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=16745.msg71933#msg71933))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=16745.msg71933#msg71933), [archived 2026-09-23](https://web.archive.org/web/20260923210105/https://www.agisoft.com/forum/index.php?topic=16745.msg71933))
 
 If you operate in air-gapped environments, run AI masking once on a
 connected machine before isolating it. The model location is in
@@ -200,17 +200,17 @@ it was resolved in build 19440 (later 2.2.0 pre-release update,
   `MaskingModeAI` to `MaskingMode` enum."
 - *Metashape Python Reference*:
   `Chunk.generateMasks`, `MaskingMode`, `MaskOperation`.
-- [Forum topic 16745](https://www.agisoft.com/forum/index.php?topic=16745.0)
+- [Forum topic 16745](https://www.agisoft.com/forum/index.php?topic=16745.0) ([archived 2025-09-07](http://web.archive.org/web/20250907151047/https://www.agisoft.com/forum/index.php?topic=16745.0))
   — Metashape 2.2.0 pre-release thread (4 substantive Agisoft-staff
   posts on AI masking).
-- [*New features in Agisoft Metashape 2.2.x* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000173952)
+- [*New features in Agisoft Metashape 2.2.x* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000173952) ([archived 2026-09-24](https://web.archive.org/web/20260924080052/https://agisoft.freshdesk.com/support/solutions/articles/31000173952))
   — official 2.2 feature announcement (cited in the
   pre-release thread).
-- [*Working with masks* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000153479)
+- [*Working with masks* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000153479) ([archived 2026-05-14](https://web.archive.org/web/20260514185622/https://agisoft.freshdesk.com/support/solutions/articles/31000153479))
   — the canonical Generate Masks workflow (manual editing, From
   Model, From Background, and Automatic AI methods) plus mask
   import/export.
-- [*Automatic background masking using custom script* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000161958)
+- [*Automatic background masking using custom script* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000161958) ([archived 2026-09-24](https://web.archive.org/web/20260924074139/https://agisoft.freshdesk.com/support/solutions/articles/31000161958))
   — the pre-2.2 rembg-based `automatic_masking.py` (Pro 1.7.4+),
   the script alternative for versions without the built-in AI mode.
 

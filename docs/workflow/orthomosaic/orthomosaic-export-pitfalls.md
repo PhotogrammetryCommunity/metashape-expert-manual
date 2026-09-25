@@ -44,7 +44,7 @@ The canonical statement:
 > "TIF files exported by PhotoScan really have 4 GB limit, so
 > for large areas it is recommended to use split in blocks
 > option." — Alexey Pasumansky, 2015-01-28, PhotoScan 1.1
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=3351.msg17511#msg17511))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=3351.msg17511#msg17511), [archived 2026-09-23](https://web.archive.org/web/20260923211558/https://www.agisoft.com/forum/index.php?topic=3351.msg17511))
 
 Three workarounds, in order of complexity:
 
@@ -131,7 +131,7 @@ when the survey area exceeds Metashape's per-block comfort.
 > building a VRT with GDAL and using the VRT to generate a
 > continuous geotiff (and GDAL supports BIGTIFF for TIFFs over
 > 4GB if you want to go that way)." — andyroo, 2015-01-28
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=3351.msg17530#msg17530))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=3351.msg17530#msg17530), [archived 2026-09-23](https://web.archive.org/web/20260923120622/https://www.agisoft.com/forum/index.php?topic=3351.msg17530))
 
 ## Shift during export — diagnostic checklist
 
@@ -206,7 +206,7 @@ Users occasionally report that photos they *disabled* still get
 orthorectified into the mosaic. In the one case that reached a
 resolution the cause was mundane — the frames the user believed were
 disabled (laser-scan images) were in fact still enabled ([topic
-15418](https://www.agisoft.com/forum/index.php?topic=15418.0), 2026
+15418](https://www.agisoft.com/forum/index.php?topic=15418.0) ([archived 2026-09-24](http://web.archive.org/web/20260924190643/https://www.agisoft.com/forum/index.php?topic=15418.0)), 2026
 follow-up, self-retracted). The diagnostic Agisoft support suggested is
 still worth keeping in mind:
 
@@ -217,7 +217,7 @@ still worth keeping in mind:
   regenerate seamlines) after toggling camera enablement, and check the
   *Build Orthomosaic* processing log for any disabled photo being
   orthorectified. (Alexey Pasumansky posed this as the likely cause,
-  [topic 15418](https://www.agisoft.com/forum/index.php?topic=15418.0),
+  [topic 15418](https://www.agisoft.com/forum/index.php?topic=15418.0) ([archived 2026-09-24](http://web.archive.org/web/20260924190643/https://www.agisoft.com/forum/index.php?topic=15418.0)),
   2023 — not independently confirmed.)
 
 ## Caveats
@@ -298,26 +298,26 @@ block count grows accordingly.
 
 ## References
 
-- [Forum thread, *4GB Max file size when exporting orthophoto*, 2015](https://www.agisoft.com/forum/index.php?topic=3351.0)
+- [Forum thread, *4GB Max file size when exporting orthophoto*, 2015](https://www.agisoft.com/forum/index.php?topic=3351.0) ([archived 2026-03-13](http://web.archive.org/web/20260313233658/https://www.agisoft.com/forum/index.php?topic=3351.0))
   — primary source for the 4 GB / BigTIFF / split-in-blocks
   workflow (msgs 14971 and 15009; the GDAL
   recipe msg 14994).
-- [Forum thread, *Shift in ortho image during export*, 2019](https://www.agisoft.com/forum/index.php?topic=10816.0)
+- [Forum thread, *Shift in ortho image during export*, 2019](https://www.agisoft.com/forum/index.php?topic=10816.0) ([archived 2026-09-24](http://web.archive.org/web/20260924181805/https://www.agisoft.com/forum/index.php?topic=10816.0))
   — the unresolved shift issue (multiple community reports
   spanning 2019, 2020, and 2025).
-- [Forum thread, *Generate Ortho - Big Tiff Error*, 2020](https://www.agisoft.com/forum/index.php?topic=12060.0)
+- [Forum thread, *Generate Ortho - Big Tiff Error*, 2020](https://www.agisoft.com/forum/index.php?topic=12060.0) ([archived 2025-11-09](http://web.archive.org/web/20251109191139/https://www.agisoft.com/forum/index.php?topic=12060.0))
   — companion thread on BigTIFF-export errors.
-- [Forum thread, *Shift of ortho image upon exporting*, 2020](https://www.agisoft.com/forum/index.php?topic=12021.0)
+- [Forum thread, *Shift of ortho image upon exporting*, 2020](https://www.agisoft.com/forum/index.php?topic=12021.0) ([archived 2026-09-24](http://web.archive.org/web/20260924190347/https://www.agisoft.com/forum/index.php?topic=12021.0))
   — companion to topic=10816.
-- [Forum thread, *Orthomosaic shift*, 2024](https://www.agisoft.com/forum/index.php?topic=16052.0)
+- [Forum thread, *Orthomosaic shift*, 2024](https://www.agisoft.com/forum/index.php?topic=16052.0) ([archived 2026-09-24](http://web.archive.org/web/20260924185815/https://www.agisoft.com/forum/index.php?topic=16052.0))
   — third companion on the shift issue.
-- [Forum thread, *Disabled cameras still used in Orthomosaic generation*, 2023–2026](https://www.agisoft.com/forum/index.php?topic=15418.0)
+- [Forum thread, *Disabled cameras still used in Orthomosaic generation*, 2023–2026](https://www.agisoft.com/forum/index.php?topic=15418.0) ([archived 2026-09-24](http://web.archive.org/web/20260924190643/https://www.agisoft.com/forum/index.php?topic=15418.0))
   — disabled-camera / seamline-regeneration diagnostic; a
   staff-suggested cause, with a 2026 follow-up that resolved to user
   error.
 - *Metashape Python Reference* (2.3.1), `Chunk.exportRaster`,
   `Chunk.buildOrthomosaic`.
-- [*Orthomosaic export fails* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000135270)
+- [*Orthomosaic export fails* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000135270) ([archived 2026-09-24](https://web.archive.org/web/20260924065745/https://agisoft.freshdesk.com/support/solutions/articles/31000135270))
   — the TIFF 4 GB and JPEG 65535-px export limits and the
   reduce-resolution / Split-in-blocks / BigTIFF workarounds.
 - GDAL documentation: [`gdalbuildvrt`](https://gdal.org/programs/gdalbuildvrt.html),

@@ -249,13 +249,13 @@ warning).
   earlier `Metashape.PointCloud.Filter` class (which was renamed to
   `TiePoints.Filter` only in the 2.x rework). The article's *GUI*
   workflow itself works on Standard / Pro **2.0+**.
-- **Forum:** [Pasumansky, 2012-10-18, PhotoScan 0.9](https://www.agisoft.com/forum/index.php?topic=738.msg2769#msg2769)
+- **Forum:** [Pasumansky, 2012-10-18, PhotoScan 0.9](https://www.agisoft.com/forum/index.php?topic=738.msg2769#msg2769) ([archived 2026-09-23](https://web.archive.org/web/20260923213955/https://www.agisoft.com/forum/index.php?topic=738.msg2769))
   — definitions of Reconstruction Uncertainty and Reprojection Error.
-- **Forum:** [gEEvEE (Geert), 2012-11-15, PhotoScan 0.9](https://www.agisoft.com/forum/index.php?topic=738.msg3115#msg3115)
+- **Forum:** [gEEvEE (Geert), 2012-11-15, PhotoScan 0.9](https://www.agisoft.com/forum/index.php?topic=738.msg3115#msg3115) ([archived 2026-09-24](https://web.archive.org/web/20260924081724/https://www.agisoft.com/forum/index.php?topic=738.msg3115))
   — the 4-step workflow this article rests on.
-- **Forum:** [Pasumansky, 2020-04-08, Metashape 1.6](https://www.agisoft.com/forum/index.php?topic=12069.msg53767#msg53767)
+- **Forum:** [Pasumansky, 2020-04-08, Metashape 1.6](https://www.agisoft.com/forum/index.php?topic=12069.msg53767#msg53767) ([archived 2026-09-23](https://web.archive.org/web/20260923203122/https://www.agisoft.com/forum/index.php?topic=12069.msg53767))
   — *Fit additional corrections* is a separate model, not p3/p4.
-- **Forum:** [Dud3r, 2017-12-14, PhotoScan 1.4](https://www.agisoft.com/forum/index.php?topic=8140.msg38926#msg38926)
+- **Forum:** [Dud3r, 2017-12-14, PhotoScan 1.4](https://www.agisoft.com/forum/index.php?topic=8140.msg38926#msg38926) ([archived 2026-09-24](https://web.archive.org/web/20260924063650/https://www.agisoft.com/forum/index.php?topic=8140.msg38926))
   — split-threshold descent pattern (`2 × t` then `t`).
 - **Related articles:** [Diagnosing under-aligned chunks](../../workflow/alignment/diagnosing-under-aligned-chunks.md)
   — run that article's diagnostic ladder *before* running this loop;

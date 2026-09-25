@@ -34,7 +34,7 @@ through Metashape 2.2.2.
 > "If you remove key points from the Workspace pane [...], there
 > will be no way to use 'incremental alignment approach'." —
 > Alexey Pasumansky, 2020-09-24, Metashape 1.6
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=12596.msg56131#msg56131))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=12596.msg56131#msg56131), [archived 2026-09-23](https://web.archive.org/web/20260923203509/https://www.agisoft.com/forum/index.php?topic=12596.msg56131))
 
 The same constraint applies in reverse: without keypoints stored
 in the first place, you cannot retroactively enable incremental
@@ -103,7 +103,7 @@ chunk.alignCameras(cameras=[c.key for c in new_cameras])
 > run `matchPhotos` operation for the newly added cameras and
 > then use `alignCameras` command." — Alexey Pasumansky,
 > 2022-03-07, Metashape 1.8
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=14276.msg62809#msg62809))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=14276.msg62809#msg62809), [archived 2026-09-23](https://web.archive.org/web/20260923114516/https://www.agisoft.com/forum/index.php?topic=14276.msg62809))
 
 Followed up three weeks later when the OP reported that the
 direct approach still left the new camera with no projections /
@@ -115,7 +115,7 @@ errors:
 > `matchPhotos()` task both for initial alignment and when adding
 > to photos to the existing alignment." — Alexey Pasumansky,
 > 2022-03-29, Metashape 1.8
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=14276.msg63132#msg63132))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=14276.msg63132#msg63132), [archived 2026-09-23](https://web.archive.org/web/20260923114539/https://www.agisoft.com/forum/index.php?topic=14276.msg63132))
 
 The two non-default kwargs are essential:
 
@@ -140,7 +140,7 @@ independently. Attested verbatim:
 > incremental matching, when new images are added to the already
 > matched and aligned set of images." — Alexey Pasumansky,
 > 2020-11-24, Metashape 1.6
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=12596.msg56684#msg56684))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=12596.msg56684#msg56684), [archived 2026-09-23](https://web.archive.org/web/20260923113848/https://www.agisoft.com/forum/index.php?topic=12596.msg56684))
 
 ## The silent-skip gotcha
 
@@ -152,7 +152,7 @@ verbatim:
 > `matchPhotos(reset_matches=False)` method ignore this couple,
 > even if this couple has never been matched before." — Yoann
 > Courtois, 2022-01-25, Metashape 1.8
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=14141.msg63027#msg63027))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=14141.msg63027#msg63027), [archived 2026-09-23](https://web.archive.org/web/20260923204253/https://www.agisoft.com/forum/index.php?topic=14141.msg63027))
 
 The gotcha applies when **both** of two conditions are true:
 
@@ -181,7 +181,7 @@ The recommended workaround:
 > from the chunk, re-add them and run the image matching operation
 > without resetting the tie points." — Alexey Pasumansky,
 > 2022-01-29, Metashape 1.8
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=14141.msg62343#msg62343))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=14141.msg62343#msg62343), [archived 2026-09-23](https://web.archive.org/web/20260923204222/https://www.agisoft.com/forum/index.php?topic=14141.msg62343))
 
 This is destructive: removing an image discards the tie points
 attached to it. Re-adding it gets new keypoints (since `cameras=`
@@ -268,7 +268,7 @@ linkage matters, the alternatives are:
   > photos, just run `alignCameras` and the available matching
   > points would be re-used."
   > — Agisoft support, 2019-04-24, Metashape 1.5
-  > ([permalink](https://www.agisoft.com/forum/index.php?topic=10802.msg48826#msg48826))
+  > ([permalink](https://www.agisoft.com/forum/index.php?topic=10802.msg48826#msg48826), [archived 2026-09-24](https://web.archive.org/web/20260924081113/https://www.agisoft.com/forum/index.php?topic=10802.msg48826))
 
 - **`keypoint_limit=0` and `tiepoint_limit=0` are not "use
   defaults"** — they mean *unlimited*. Setting both to 0 makes
@@ -357,12 +357,12 @@ to the stragglers.
 ## References
 
 - [Forum thread, *"Keep keypoints" confusion - not working as
-  expected*, 2020](https://www.agisoft.com/forum/index.php?topic=12596.0)
+  expected*, 2020](https://www.agisoft.com/forum/index.php?topic=12596.0) ([archived 2022-11-26](http://web.archive.org/web/20221126200721/https://www.agisoft.com/forum/index.php?topic=12596.0))
   — primary canonical workflow source; msgs 56131,
   57093.
-- [Forum thread, *alignCameras() not working*, 2022](https://www.agisoft.com/forum/index.php?topic=14276.0)
+- [Forum thread, *alignCameras() not working*, 2022](https://www.agisoft.com/forum/index.php?topic=14276.0) ([archived 2026-09-24](http://web.archive.org/web/20260924190521/https://www.agisoft.com/forum/index.php?topic=14276.0))
   — Python translation of the workflow; msgs 63571.
-- [Forum thread, *Images rematching in an aligned project*, 2022](https://www.agisoft.com/forum/index.php?topic=14141.0)
+- [Forum thread, *Images rematching in an aligned project*, 2022](https://www.agisoft.com/forum/index.php?topic=14141.0) ([archived 2023-12-07](http://web.archive.org/web/20231207194409/https://www.agisoft.com/forum/index.php?topic=14141.0))
   — silent-skip gotcha report (msg 63027) and
   the remove-readd workaround (msg 63072). The
   2023-02 follow-up and the 2023-08 bump confirm the issue

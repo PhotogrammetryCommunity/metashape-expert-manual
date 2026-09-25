@@ -64,7 +64,7 @@ The architectural reason, attested verbatim (topic 2314):
 > remove one of those images you remove a lot of tie points which
 > are not present in the other 'duplicate' that came from another
 > chunk." — James, 2014-05-01, PhotoScan 1.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=2314.msg12352#msg12352))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=2314.msg12352#msg12352), [archived 2026-09-25](https://web.archive.org/web/20260925130913/https://www.agisoft.com/forum/index.php?topic=2314.msg12352#msg12352))
 
 In other words: **each duplicate's tie points are anchored to its
 source chunk's siblings only.** They are not redundant; they are
@@ -209,7 +209,7 @@ its source-chunk tie points" claim.
 
 ## References
 
-- [Forum thread, *How to remove duplicated cameras*, 2014](https://www.agisoft.com/forum/index.php?topic=2314.0)
+- [Forum thread, *How to remove duplicated cameras*, 2014](https://www.agisoft.com/forum/index.php?topic=2314.0) ([archived 2026-09-24](http://web.archive.org/web/20260924191159/https://www.agisoft.com/forum/index.php?topic=2314.0))
   — primary source; the structural explanation (msg 11437);
   the original deduplication script (msg 11448).
 - *Metashape Python Reference* (2.3.1), `Document.mergeChunks` —

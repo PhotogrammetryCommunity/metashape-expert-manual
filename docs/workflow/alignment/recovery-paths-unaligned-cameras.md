@@ -53,7 +53,7 @@ progress.
 > information, whereas Align Selected uses the existing matching
 > points and tries to align the selected cameras with the already
 > aligned subset." — Alexey Pasumansky, 2015-12-11, PhotoScan 1.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=4671.msg23593#msg23593))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=4671.msg23593#msg23593), [archived 2026-09-23](https://web.archive.org/web/20260923212045/https://www.agisoft.com/forum/index.php?topic=4671.msg23593))
 
 This is the most common recovery route. It re-runs the
 *bundle-adjustment* portion of alignment for the selected cameras
@@ -103,7 +103,7 @@ do not override it.
 > and matched, and `chunk.alignCameras()` — that uses existing
 > matches for scene structure estimation." — Alexey Pasumansky,
 > 2015-03-22, PhotoScan 1.1
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=3599.msg18062#msg18062))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=3599.msg18062#msg18062), [archived 2026-09-23](https://web.archive.org/web/20260923211746/https://www.agisoft.com/forum/index.php?topic=3599.msg18062))
 
 The split matters: `alignCameras` does not invoke matching. If the
 straggler cameras have no matches to the aligned set, Path 1
@@ -129,7 +129,7 @@ in topic=1505):
 > aligned images), then select these cameras and perform Align
 > Selected operation." — Alexey Pasumansky, 2013-09-03,
 > PhotoScan 1.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=1505.msg7674#msg7674))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=1505.msg7674#msg7674), [archived 2026-09-25](https://web.archive.org/web/20260925130501/https://www.agisoft.com/forum/index.php?topic=1505.msg7674#msg7674))
 
 The markers serve as additional 2D-3D correspondences in the
 bundle. Four is the minimum for a non-degenerate fit (3D pose has
@@ -196,7 +196,7 @@ repetitive features:
 > repetitive features (architecture), as it seems the false
 > matches outweigh the manually places [sic] ones." — Heinrich,
 > 2013-09-11, PhotoScan 1.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=1505.msg7934#msg7934))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=1505.msg7934#msg7934), [archived 2026-09-23](https://web.archive.org/web/20260923205148/https://www.agisoft.com/forum/index.php?topic=1505.msg7934))
 
 When this happens, the bundle's existing false matches are
 consistent with the wrong pose, and the markers — even many of
@@ -425,13 +425,13 @@ deeper wrong with the chunk.
 
 ## References
 
-- [Forum thread, *Photos That Don't Align - Helpful Trick*, 2015](https://www.agisoft.com/forum/index.php?topic=4671.0)
+- [Forum thread, *Photos That Don't Align - Helpful Trick*, 2015](https://www.agisoft.com/forum/index.php?topic=4671.0) ([archived 2026-09-24](http://web.archive.org/web/20260924191516/https://www.agisoft.com/forum/index.php?topic=4671.0))
   — Path 1 origin; the user-discovered trick + the
   Agisoft-support clarification (msg 23377).
-- [Forum thread, *Align selected camera in python script*, 2015](https://www.agisoft.com/forum/index.php?topic=3599.0)
+- [Forum thread, *Align selected camera in python script*, 2015](https://www.agisoft.com/forum/index.php?topic=3599.0) ([archived 2026-03-07](http://web.archive.org/web/20260307183109/https://www.agisoft.com/forum/index.php?topic=3599.0))
   — Python equivalent of Path 1; discussion of the
   `matchPhotos`/`alignCameras` split (msgs 18056, 18062).
-- [Forum thread, *Manual camera position?*, 2013](https://www.agisoft.com/forum/index.php?topic=1505.0)
+- [Forum thread, *Manual camera position?*, 2013](https://www.agisoft.com/forum/index.php?topic=1505.0) ([archived 2026-09-24](http://web.archive.org/web/20260924190520/https://www.agisoft.com/forum/index.php?topic=1505.0))
   — Path 2 procedure (msg 7807); the
   repetitive-features caveat (msg 7916); the XML import
   workaround that motivates Path 3.

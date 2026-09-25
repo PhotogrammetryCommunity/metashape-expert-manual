@@ -42,7 +42,7 @@ Documented verbatim:
 > So actually, the quality of the dense cloud is important and
 > not the number of polygons specified in the Build Model
 > dialog." — Alexey Pasumansky, 2014-11-12, PhotoScan 1.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=3071.msg16225#msg16225))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=3071.msg16225#msg16225), [archived 2026-09-23](https://web.archive.org/web/20260923211507/https://www.agisoft.com/forum/index.php?topic=3071.msg16225))
 
 The dense-cloud quality dropdown — *Lowest / Low / Medium /
 High / Ultra High* — controls the per-image **downscale factor**
@@ -72,7 +72,7 @@ The counterintuitive result:
 > "[...] PhotoScan generates as much polygons as possible (in
 > Arbitrary mode) and then decimates the model. [...]" —
 > Alexey Pasumansky, 2014-11-12, PhotoScan 1.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=3071.msg14975#msg14975))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=3071.msg14975#msg14975), [archived 2026-09-23](https://web.archive.org/web/20260923120516/https://www.agisoft.com/forum/index.php?topic=3071.msg14975))
 
 The Build Model dialog's *Face count* parameter (or
 `chunk.buildModel(face_count=…)`) is **a post-decimation
@@ -103,7 +103,7 @@ The same-thread rule of thumb:
 > "Also please check that the bounding box is shrink [sic] up to the
 > monumnet [sic] and doesn't cover unwanted background." — Alexey
 > Pasumansky, 2014-11-12, PhotoScan 1.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=3071.msg14934#msg14934))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=3071.msg14934#msg14934), [archived 2026-09-23](https://web.archive.org/web/20260923211416/https://www.agisoft.com/forum/index.php?topic=3071.msg14934))
 
 A common pattern: an aerial survey covers a wide area but the
 user is only interested in a 100 × 100 m feature. Without
@@ -237,17 +237,17 @@ in production should be cross-checked against the PDF.
 ## References
 
 - [Forum thread, *Crash — how much Ram is recommended? I have
-  20 gigs*, 2014](https://www.agisoft.com/forum/index.php?topic=3071.0)
+  20 gigs*, 2014](https://www.agisoft.com/forum/index.php?topic=3071.0) ([archived 2024-04-23](http://web.archive.org/web/20240423121754/https://www.agisoft.com/forum/index.php?topic=3071.0))
   — primary source; discussion of quality-vs-polygon-count
   (msg 14934) and Build Model arbitrary-then-decimate (msg 14975).
-- [Forum thread, *Out of Memory*, 2010](https://www.agisoft.com/forum/index.php?topic=141.0)
+- [Forum thread, *Out of Memory*, 2010](https://www.agisoft.com/forum/index.php?topic=141.0) ([archived 2025-07-11](http://web.archive.org/web/20250711214452/https://www.agisoft.com/forum/index.php?topic=141.0))
   — early-era OOM diagnostic thread.
-- [Forum thread, *Building new Machine any Suggestions?*, 2017](https://www.agisoft.com/forum/index.php?topic=7644.0)
+- [Forum thread, *Building new Machine any Suggestions?*, 2017](https://www.agisoft.com/forum/index.php?topic=7644.0) ([archived 2026-09-24](http://web.archive.org/web/20260924191940/https://www.agisoft.com/forum/index.php?topic=7644.0))
   — hardware-sizing discussion with multiple posts in the source thread.
 - *PhotoScan Memory Requirements* PDF — the canonical Agisoft
   document referenced by the source:
   [agisoft.com/pdf/tips_and_tricks/PhotoScan_Memory_Requirements.pdf](https://www.agisoft.com/pdf/tips_and_tricks/PhotoScan_Memory_Requirements.pdf)
-- [*Memory requirements for processing operations* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000157329)
+- [*Memory requirements for processing operations* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000157329) ([archived 2026-09-24](https://web.archive.org/web/20260924071956/https://agisoft.freshdesk.com/support/solutions/articles/31000157329))
   — benchmark tables of processing time and peak RAM per stage
   for reference aerial and close-range datasets.
 - *Metashape Python Reference* (2.3.1),

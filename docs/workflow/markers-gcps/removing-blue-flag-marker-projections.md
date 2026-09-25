@@ -254,10 +254,10 @@ load-bearing rather than defensive.
   `Metashape.Camera.project` (3D-to-image projection; returns
   `None` if the point is outside the frame) —
   *Metashape Python API Reference*, version 2.3.1.
-- **Forum:** [Pasumansky, 2016-02-10, PhotoScan 1.2](https://www.agisoft.com/forum/index.php?topic=4947.msg24830#msg24830)
+- **Forum:** [Pasumansky, 2016-02-10, PhotoScan 1.2](https://www.agisoft.com/forum/index.php?topic=4947.msg24830#msg24830) ([archived 2026-09-23](https://web.archive.org/web/20260923212414/https://www.agisoft.com/forum/index.php?topic=4947.msg24830))
   — "Both blue and green flags are considered" (the foundational
   fact).
-- **Forum:** [Pasumansky, 2017-03-03, PhotoScan 1.3](https://www.agisoft.com/forum/index.php?topic=6635.msg32062#msg32062)
+- **Forum:** [Pasumansky, 2017-03-03, PhotoScan 1.3](https://www.agisoft.com/forum/index.php?topic=6635.msg32062#msg32062) ([archived 2026-09-23](https://web.archive.org/web/20260923213554/https://www.agisoft.com/forum/index.php?topic=6635.msg32062))
   — the canonical bulk-removal snippet.
 - **Related articles:** [Programmatic marker placement and pinning](programmatic-marker-placement.md)
   is the inverse operation — creating a projection rather than

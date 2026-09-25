@@ -231,14 +231,14 @@ mirroring the stopping rule in the GUI article.
   `Metashape.Chunk.optimizeCameras`, `Metashape.TiePoints.Filter`,
   `Metashape.TiePoints.Filter.Criterion` —
   *Metashape Python API Reference*, version 2.3.1.
-- [*How to select fixed percent of the points (Gradual Selection) using Python* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000154629)
+- [*How to select fixed percent of the points (Gradual Selection) using Python* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000154629) ([archived 2026-09-24](https://web.archive.org/web/20260924071429/https://agisoft.freshdesk.com/support/solutions/articles/31000154629))
   — Agisoft's own example of filtering tie points by reprojection
   error to retain a target percentage (the data-driven-threshold
   idea in Pattern 2), with both the 1.x `PointCloud.Filter` and
   2.x `TiePoints.Filter` code.
-- **Forum (1.x context, do not copy verbatim):** [Dud3r, 2017-12-14, PhotoScan 1.4](https://www.agisoft.com/forum/index.php?topic=8140.msg38926#msg38926)
+- **Forum (1.x context, do not copy verbatim):** [Dud3r, 2017-12-14, PhotoScan 1.4](https://www.agisoft.com/forum/index.php?topic=8140.msg38926#msg38926) ([archived 2026-09-24](https://web.archive.org/web/20260924063650/https://www.agisoft.com/forum/index.php?topic=8140.msg38926))
   for the original split-threshold-descent script.
-- **Forum (the rename / API gotcha):** [LFSantosgeo, 2018-05-16, PhotoScan 1.4](https://www.agisoft.com/forum/index.php?topic=9018.msg42291#msg42291)
+- **Forum (the rename / API gotcha):** [LFSantosgeo, 2018-05-16, PhotoScan 1.4](https://www.agisoft.com/forum/index.php?topic=9018.msg42291#msg42291) ([archived 2026-09-24](https://web.archive.org/web/20260924064556/https://www.agisoft.com/forum/index.php?topic=9018.msg42291))
   for the *Gradual Selection vs Build Points* distinction (now
   obsolete in 2.x where `buildPoints` is gone).
 - **Related articles:** [The Clean Tie Points → Optimize Cameras loop](../optimization/clean-tie-points-optimize-cameras-loop.md)

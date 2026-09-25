@@ -228,11 +228,11 @@ for marker in chunk.markers:
   `Camera.project`, `Camera.error`, `Marker.projections`,
   `TiePoints.projections`, `chunk.transform.matrix`,
   `chunk.crs.project`.
-- Forum thread, [*export projections & error (pix) for every cam*, 2016](https://www.agisoft.com/forum/index.php?topic=5255.msg26266#msg26266)
+- Forum thread, [*export projections & error (pix) for every cam*, 2016](https://www.agisoft.com/forum/index.php?topic=5255.msg26266#msg26266) ([archived 2026-09-23](https://web.archive.org/web/20260923212519/https://www.agisoft.com/forum/index.php?topic=5255.msg26266))
   — the per-camera average-RMS recipe.
-- Forum thread, [*Export reprojection errors for each tie points*, 2016](https://www.agisoft.com/forum/index.php?topic=5267.msg26529#msg26529)
+- Forum thread, [*Export reprojection errors for each tie points*, 2016](https://www.agisoft.com/forum/index.php?topic=5267.msg26529#msg26529) ([archived 2026-09-23](https://web.archive.org/web/20260923212550/https://www.agisoft.com/forum/index.php?topic=5267.msg26529))
   — the per-tie-point error export recipe.
-- Forum thread, [*How to get markers errors*, 2017](https://www.agisoft.com/forum/index.php?topic=8019.msg37947#msg37947)
+- Forum thread, [*How to get markers errors*, 2017](https://www.agisoft.com/forum/index.php?topic=8019.msg37947#msg37947) ([archived 2026-09-24](https://web.archive.org/web/20260924063530/https://www.agisoft.com/forum/index.php?topic=8019.msg37947))
   — the clarification of the three distinct
   marker-error meanings; community marker-error script.
 

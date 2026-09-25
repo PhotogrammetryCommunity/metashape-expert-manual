@@ -70,7 +70,7 @@ if valid.any():
 > format, so to get grayscale values in 0 - 255 range it would
 > be necessary to transform the data 'manually'."
 > — Alexey Pasumansky, 2016-11-04, PhotoScan 1.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=6074.msg30459#msg30459))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=6074.msg30459#msg30459), [archived 2026-09-23](https://web.archive.org/web/20260923213029/https://www.agisoft.com/forum/index.php?topic=6074.msg30459))
 
 ## Recipe 2 — Read existing depth maps as numpy arrays
 
@@ -105,7 +105,7 @@ if chunk.transform.scale:
 > you should use reshape method:
 > `numpy.frombuffer(depth.tostring(), dtype=numpy.float32).reshape(height, width)`"
 > — Alexey Pasumansky, 2022-03-21, Metashape 1.8
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=14317.msg63021#msg63021))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=14317.msg63021#msg63021), [archived 2026-09-23](https://web.archive.org/web/20260923204621/https://www.agisoft.com/forum/index.php?topic=14317.msg63021))
 
 For multi-channel images (RGB camera output), reshape with the
 channel count:
@@ -128,7 +128,7 @@ the outside faces first.
 > not have any vertex inside the boundary shape using Python and
 > export the cropped model."
 > — Alexey Pasumansky, 2020-08-08, Metashape 1.6
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=12421.msg55331#msg55331))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=12421.msg55331#msg55331), [archived 2026-09-25](https://web.archive.org/web/20260925130315/https://www.agisoft.com/forum/index.php?topic=12421.msg55331#msg55331))
 
 > **Demo verified:** ✗ — pending Tier 3 reproduction on a real Metashape install.
 
@@ -199,10 +199,10 @@ tool. Options:
 > exported results in the external GIS applications (like
 > GlobalMapper or Q-GIS, for example)."
 > — Alexey Pasumansky, 2017-05-15, PhotoScan 1.3
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=7056.msg34042#msg34042))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=7056.msg34042#msg34042), [archived 2026-09-24](https://web.archive.org/web/20260924130624/https://www.agisoft.com/forum/index.php?topic=7056.msg34042))
 
 That 2017 answer predates the native **Transform DEM → Calculate
-difference** operator ([*DEM difference calculation* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000156301));
+difference** operator ([*DEM difference calculation* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000156301), [archived 2026-09-24](https://web.archive.org/web/20260924071748/https://agisoft.freshdesk.com/support/solutions/articles/31000156301));
 for the full chunk-diff treatment see [Comparing chunks for change
 detection](chunk-diff-volume-workflows.md).
 
@@ -248,7 +248,7 @@ for chunk in doc.chunks:
 > "In order to skip 'zero resolution' chunks for the dense cloud
 > generation, you can use try-except approach"
 > — Alexey Pasumansky, 2019-01-17, Metashape 1.5
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=10245.msg47893#msg47893))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=10245.msg47893#msg47893), [archived 2026-09-24](https://web.archive.org/web/20260924080728/https://www.agisoft.com/forum/index.php?topic=10245.msg47893))
 
 ## Recipe 6 — Split a mesh into N×N tiles
 
@@ -343,7 +343,7 @@ error handling) is in the source thread.
 > on script start) in XY plane (as if you are looking from Top
 > on the mesh)."
 > — Alexey Pasumansky, 2022-02-25, Metashape 1.8
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=14150.msg63645#msg63645))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=14150.msg63645#msg63645), [archived 2026-09-23](https://web.archive.org/web/20260923204312/https://www.agisoft.com/forum/index.php?topic=14150.msg63645))
 
 ## Recipe 7 — Merging multiple point clouds in one chunk
 
@@ -357,7 +357,7 @@ multiple clouds in the Workspace pane and choosing *Merge*.
 > dense clouds in the active chunk into new dense cloud
 > instance"
 > — Alexey Pasumansky, 2019-04-07, Metashape 1.5
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=10720.msg48535#msg48535))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=10720.msg48535#msg48535), [archived 2026-09-24](https://web.archive.org/web/20260924081036/https://www.agisoft.com/forum/index.php?topic=10720.msg48535))
 
 > **Demo verified:** ✗ — pending Tier 3 reproduction on a real Metashape install.
 
@@ -407,7 +407,7 @@ For 1.x compatibility, replace `chunk.point_clouds` with
 - *Metashape Pro User Manual* (2.3) §
   *Editing → Editing model* — describes the GUI's mesh-editing
   tools (this article documents the Python equivalents).
-- [*Advanced Selection tools for Point Cloud and Model* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000167986)
+- [*Advanced Selection tools for Point Cloud and Model* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000167986) ([archived 2026-09-23](https://web.archive.org/web/20260923130510/https://agisoft.freshdesk.com/support/solutions/articles/31000167986))
   — the GUI Visible Selection / Invert / Grow / Shrink / Filter-by-
   Selection tools whose Python equivalents these recipes use.
 

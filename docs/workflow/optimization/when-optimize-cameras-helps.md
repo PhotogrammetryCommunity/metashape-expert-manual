@@ -39,7 +39,7 @@ Non-linear deformation is removed instead by **optimizing** the
 tie-point cloud and camera parameters against the known reference
 coordinates, which minimizes the combined reprojection-error and
 reference-coordinate-misalignment error (discussed in the forum at
-[topic=8054](https://www.agisoft.com/forum/index.php?topic=8054.0)).
+[topic=8054](https://www.agisoft.com/forum/index.php?topic=8054.0) ([archived 2026-09-24](http://web.archive.org/web/20260924192011/https://www.agisoft.com/forum/index.php?topic=8054.0))).
 
 In one paragraph:
 
@@ -74,7 +74,7 @@ visible difference. The operational answer, attested verbatim:
 > - You add/move/remove any markers
 > - You changed any GCP or camera coordinates" — James,
 > 2017-11-28, PhotoScan 1.3
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=8054.msg39160#msg39160))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=8054.msg39160#msg39160), [archived 2026-09-24](https://web.archive.org/web/20260924063625/https://www.agisoft.com/forum/index.php?topic=8054.msg39160))
 
 Two practical implications:
 
@@ -122,7 +122,7 @@ their CRS is updated.
 > cloud or mesh is preserved in the new coordinate system that
 > you have defined/modified by the addition/edition of
 > coordinate data." — James, 2017-11-28, PhotoScan 1.3
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=8054.msg38480#msg38480))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=8054.msg38480#msg38480), [archived 2026-09-24](https://web.archive.org/web/20260924063642/https://www.agisoft.com/forum/index.php?topic=8054.msg38480))
 
 ## The case for Optimize over Update
 
@@ -263,7 +263,7 @@ between the two calls — or the bundle has not converged.
 ## References
 
 - [Forum thread, *Georeferencing using GCPs: Optimize -vs- Update
-  tool*, 2017](https://www.agisoft.com/forum/index.php?topic=8054.0)
+  tool*, 2017](https://www.agisoft.com/forum/index.php?topic=8054.0) ([archived 2026-09-24](http://web.archive.org/web/20260924192011/https://www.agisoft.com/forum/index.php?topic=8054.0))
   — primary source; the user-manual quote (msg 38901);
   the enumeration of when each tool has effect (msgs 39160,
   39163).

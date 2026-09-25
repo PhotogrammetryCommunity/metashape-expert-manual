@@ -212,7 +212,7 @@ mode but to **excessive image overlap**:
 > have lower GSD, resulting in the overlap with considerable
 > amount of lower altitude photos."
 > — Agisoft support, 2016-01-19, PhotoScan 1.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=4841.msg24329#msg24329))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=4841.msg24329#msg24329), [archived 2026-09-23](https://web.archive.org/web/20260923212226/https://www.agisoft.com/forum/index.php?topic=4841.msg24329))
 
 The fix: exclude the overview / high-altitude photos from
 *Build Point Cloud* (set `camera.enabled = False` on those
@@ -295,10 +295,10 @@ rebuild depth maps with Aggressive for the point cloud.
 - *Metashape Python API Reference* (2.3.1):
   `Chunk.buildDepthMaps`, `Chunk.buildPointCloud`,
   `Chunk.depth_maps`, `FilterMode`, `Chunk.point_cloud`.
-- Forum thread, [*depth filtering processing time*, 2016](https://www.agisoft.com/forum/index.php?topic=4841.msg24329#msg24329)
+- Forum thread, [*depth filtering processing time*, 2016](https://www.agisoft.com/forum/index.php?topic=4841.msg24329#msg24329) ([archived 2026-09-23](https://web.archive.org/web/20260923212226/https://www.agisoft.com/forum/index.php?topic=4841.msg24329))
   — excessive-overlap pitfall and the exclude-overview-images
   workaround.
-- Forum thread, [*When does depth filtering happen?*, 2013](https://www.agisoft.com/forum/index.php?topic=1108.msg5226#msg5226)
+- Forum thread, [*When does depth filtering happen?*, 2013](https://www.agisoft.com/forum/index.php?topic=1108.msg5226#msg5226) ([archived 2026-09-24](https://web.archive.org/web/20260924081428/https://www.agisoft.com/forum/index.php?topic=1108.msg5226))
   — clarifies that filter mode is applied at depth-maps stage,
   not at point-cloud stage.
 

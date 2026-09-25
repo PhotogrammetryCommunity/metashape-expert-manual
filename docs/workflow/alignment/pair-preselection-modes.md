@@ -42,14 +42,14 @@ shortlist is filtered through the generic-overlap check.
 > methods (reference and generic) will align your photos faster
 > with more error."
 > — jwoods, 2016-06-15, PhotoScan 1.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=5454.msg26770#msg26770))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=5454.msg26770#msg26770), [archived 2026-09-23](https://web.archive.org/web/20260923212702/https://www.agisoft.com/forum/index.php?topic=5454.msg26770))
 
 As the Agisoft support forum describes it, Generic preselection
 first finds candidate *overlapping* image pairs from downscaled
 copies of the images, then matches only those pairs — so a given
 photo is matched against the images it overlaps with rather than
 against every image in the set (discussed at
-[topic=2104](https://www.agisoft.com/forum/index.php?topic=2104.0)).
+[topic=2104](https://www.agisoft.com/forum/index.php?topic=2104.0) ([archived 2026-09-24](http://web.archive.org/web/20260924191116/https://www.agisoft.com/forum/index.php?topic=2104.0))).
 
 In short:
 
@@ -72,7 +72,7 @@ A frequent misunderstanding:
 > have geotags the software will still estimate a coordinate
 > system for the alignment."
 > — jwoods, 2016-06-15, PhotoScan 1.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=5454.msg26770#msg26770))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=5454.msg26770#msg26770), [archived 2026-09-23](https://web.archive.org/web/20260923212702/https://www.agisoft.com/forum/index.php?topic=5454.msg26770))
 
 Reference preselection only affects which pairs are **matched**
 during alignment — it does not affect whether the chunk gets
@@ -177,8 +177,8 @@ The `reference_preselection_mode` parameter has three values
   `Chunk.matchPhotos`, parameters `generic_preselection` and
   `reference_preselection`, plus
   `ReferencePreselectionMode` enum.
-- Forum thread, [*Which Align mode I should use?*, 2016](https://www.agisoft.com/forum/index.php?topic=5454.msg26770#msg26770)
+- Forum thread, [*Which Align mode I should use?*, 2016](https://www.agisoft.com/forum/index.php?topic=5454.msg26770#msg26770) ([archived 2026-09-23](https://web.archive.org/web/20260923212702/https://www.agisoft.com/forum/index.php?topic=5454.msg26770))
   — jwoods's accuracy/speed tradeoff summary; quotes
   the 2013-07-30 explanation
-  ([permalink](https://www.agisoft.com/forum/index.php?topic=2104.msg10551#msg10551)).
+  ([permalink](https://www.agisoft.com/forum/index.php?topic=2104.msg10551#msg10551), [archived 2026-09-23](https://web.archive.org/web/20260923115956/https://www.agisoft.com/forum/index.php?topic=2104.msg10551)).
 

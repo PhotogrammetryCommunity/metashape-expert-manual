@@ -211,7 +211,7 @@ not Metashape. Check OS-level network logs.
 
 Out of RAM on the worker for the assigned task. Reduce per-task
 RAM by lowering `quality` (depth maps) or splitting the chunk
-into smaller chunks. See [the bad-alloc thread for context](https://www.agisoft.com/forum/index.php?topic=5553.0)
+into smaller chunks. See [the bad-alloc thread for context](https://www.agisoft.com/forum/index.php?topic=5553.0) ([archived 2026-09-24](http://web.archive.org/web/20260924190229/https://www.agisoft.com/forum/index.php?topic=5553.0))
 (forum t=5553).
 
 ### License complaints
@@ -227,8 +227,8 @@ unless that client is also one of the 10 workers, in which case it
 shares a license.
 Standard Edition cannot act as server, worker, or client. Check
 *Tools → License → Information* on each machine. (Per
-[*How many licenses are required for network processing* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000145920)
-and [*Is network processing supported in Standard and/or Professional edition* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000145919).)
+[*How many licenses are required for network processing* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000145920) ([archived 2026-09-24](https://web.archive.org/web/20260924070442/https://agisoft.freshdesk.com/support/solutions/articles/31000145920))
+and [*Is network processing supported in Standard and/or Professional edition* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000145919) ([archived 2026-09-24](https://web.archive.org/web/20260924070318/https://agisoft.freshdesk.com/support/solutions/articles/31000145919)).)
 
 ## Performance tuning
 
@@ -302,11 +302,11 @@ Build Tiled Model.
   `Chunk.buildModel`, `Chunk.buildDem`,
   `Chunk.buildOrthomosaic`, `Chunk.buildTiledModel` — all
   accept `network=True`.
-- [*How to configure the network processing* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000145918)
+- [*How to configure the network processing* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000145918) ([archived 2026-09-24](https://web.archive.org/web/20260924070234/https://agisoft.freshdesk.com/support/solutions/articles/31000145918))
   — the official server/worker/client setup walkthrough (the
   2.2.0+ `metashape-server` utility, `--resume-workers`,
-  `--root`, Network Monitor); plus [*Is network processing supported in Standard and/or Professional edition* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000145919),
-  [*How many licenses are required for network processing* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000145920),
-  and [*Licensing for the network processing* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000133121)
+  `--root`, Network Monitor); plus [*Is network processing supported in Standard and/or Professional edition* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000145919) ([archived 2026-09-24](https://web.archive.org/web/20260924070318/https://agisoft.freshdesk.com/support/solutions/articles/31000145919)),
+  [*How many licenses are required for network processing* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000145920) ([archived 2026-09-24](https://web.archive.org/web/20260924070442/https://agisoft.freshdesk.com/support/solutions/articles/31000145920)),
+  and [*Licensing for the network processing* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000133121) ([archived 2026-09-24](https://web.archive.org/web/20260924065124/https://agisoft.freshdesk.com/support/solutions/articles/31000133121))
   for the licensing rules.
 

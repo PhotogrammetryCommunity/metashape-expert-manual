@@ -53,7 +53,7 @@ origin.
 > - using Rotate Object and Move Object tools to modify the
 >   model location and orientation in space."
 > — Alexey Pasumansky, 2018-06-27, PhotoScan 1.4
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=9240.msg43080#msg43080))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=9240.msg43080#msg43080), [archived 2026-09-23](https://web.archive.org/web/20260923123011/https://www.agisoft.com/forum/index.php?topic=9240.msg43080))
 
 | Approach | Effort | Persists across re-build | Notes |
 |----------|--------|--------------------------|-------|
@@ -97,7 +97,7 @@ are available:
 > so that its translation component (last column of the matrix)
 > points to the desired origin location."
 > — Alexey Pasumansky, 2023-02-16, Metashape 2.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=9240.msg66440#msg66440))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=9240.msg66440#msg66440), [archived 2026-09-24](https://web.archive.org/web/20260924064644/https://www.agisoft.com/forum/index.php?topic=9240.msg66440))
 
 ### Recipe: move chunk origin to the model's geometric centre
 
@@ -213,7 +213,7 @@ recorded).
 
 ## See also
 
-- [*Exported model becomes less detailed and ripples* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000162477)
+- [*Exported model becomes less detailed and ripples* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000162477) ([archived 2026-09-25](https://web.archive.org/web/20260925130204/https://agisoft.freshdesk.com/support/solutions/articles/31000162477))
   — if the reason you are repositioning is that large
   Easting/Northing values truncate on model export (the "blocky"
   mesh), the Export Model *Shift* fields or *Local Coordinates*
@@ -231,7 +231,7 @@ recorded).
 - *Metashape Python API Reference* (2.3.1):
   `Chunk.transform`, `Matrix.Translation`, `Matrix.mulp`,
   `Chunk.resetRegion`.
-- Forum thread, [*How to position object on zero point?*, 2018-2023](https://www.agisoft.com/forum/index.php?topic=9240.0)
+- Forum thread, [*How to position object on zero point?*, 2018-2023](https://www.agisoft.com/forum/index.php?topic=9240.0) ([archived 2024-05-16](http://web.archive.org/web/20240516023251/https://www.agisoft.com/forum/index.php?topic=9240.0))
   — three-approach overview (msg 44103) +
   `chunk.transform.matrix` recipe (msg 69113).
 

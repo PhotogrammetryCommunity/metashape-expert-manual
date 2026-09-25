@@ -225,9 +225,9 @@ depending on version). `Chunk.euler_angles` has been available across
   coordinate system orientation"), the `Sensor.Axes` enum
   (`Aerial`, `Terrestrial`) — both **added in 2.3** per the reference's
   change log — and `Chunk.euler_angles`, `Metashape.EulerAngles`.
-- [Forum thread, *Z axis convention for aerial datasets*, 2016](https://www.agisoft.com/forum/index.php?topic=6126.0)
+- [Forum thread, *Z axis convention for aerial datasets*, 2016](https://www.agisoft.com/forum/index.php?topic=6126.0) ([archived 2026-09-24](http://web.archive.org/web/20260924191737/https://www.agisoft.com/forum/index.php?topic=6126.0))
   — the drone-Z-axis-pointing-to-ground canonical pose.
-- [Forum bug report, *[2.3.1] doc.save() to .psz silently drops sensor.axes*, 2026](https://www.agisoft.com/forum/index.php?topic=17595.0)
+- [Forum bug report, *[2.3.1] doc.save() to .psz silently drops sensor.axes*, 2026](https://www.agisoft.com/forum/index.php?topic=17595.0) ([archived 2026-09-24](http://web.archive.org/web/20260924185923/https://www.agisoft.com/forum/index.php?topic=17595.0))
   — Metashape 2.3.1: the `.psz` writer omits `sensor.axes` while `.psx`,
   `exportCameras` XML, and the `.psz` reader all handle it; reproduced
   still present in 2.3.2 (build 22956).

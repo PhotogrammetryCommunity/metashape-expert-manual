@@ -280,7 +280,7 @@ merge step.
   `DataSource` (DepthMapsData, PointCloudData, TiePointsData),
   `FaceCount` (LowFaceCount, MediumFaceCount, HighFaceCount,
   CustomFaceCount), `Interpolation`.
-- Forum thread, [*Optimal tiled model settings?*, 2019](https://www.agisoft.com/forum/index.php?topic=11630.msg53148#msg53148)
+- Forum thread, [*Optimal tiled model settings?*, 2019](https://www.agisoft.com/forum/index.php?topic=11630.msg53148#msg53148) ([archived 2026-09-23](https://web.archive.org/web/20260923202840/https://www.agisoft.com/forum/index.php?topic=11630.msg53148))
   — depth-maps-based mesh memory expectations (≤16 GB on
   typical aerial).
 

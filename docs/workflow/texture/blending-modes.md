@@ -291,6 +291,6 @@ Run:
 - Agisoft Metashape Python API Reference 2.3.1, chapter 1
   *General concepts* > `Metashape.Chunk.buildTexture` (kwarg
   documentation).
-- [*How to analyse Model UV Statistics?* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000162210)
+- [*How to analyse Model UV Statistics?* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000162210) ([archived 2026-09-24](https://web.archive.org/web/20260924074325/https://agisoft.freshdesk.com/support/solutions/articles/31000162210))
   — assessing the resulting texture atlas (Fill ratio, Overlap,
   Resolution) after choosing a blending mode.

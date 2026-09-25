@@ -171,7 +171,7 @@ A symptom-based heuristic — observe alignment quality:
   2.3.1-only regression, **fixed in 2.3.2**; 2.2.x and 2.3.2+
   populate them as expected. If you must run on 2.3.1, read masks
   per camera via `camera.mask` instead of the chunk collections.
-  ([Forum bug report, 2026, Metashape 2.3.1 → fixed 2.3.2](https://www.agisoft.com/forum/index.php?topic=17580.0))
+  ([Forum bug report, 2026, Metashape 2.3.1 → fixed 2.3.2](https://www.agisoft.com/forum/index.php?topic=17580.0), [archived 2026-09-24](http://web.archive.org/web/20260924185909/https://www.agisoft.com/forum/index.php?topic=17580.0))
 
 ## Decision picker
 
@@ -285,7 +285,7 @@ needs a true foreground-occluder dataset.
 - *Metashape Python Reference* (2.3.1), `Chunk.matchPhotos` —
   documents `filter_mask` and `mask_tiepoints` kwargs (defaults
   `False` and `True`).
-- [*Aligning photos with background suppression from single mask* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000158967)
+- [*Aligning photos with background suppression from single mask* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000158967) ([archived 2026-09-24](https://web.archive.org/web/20260924072844/https://agisoft.freshdesk.com/support/solutions/articles/31000158967))
   — Agisoft's explanation of the same two options: *Apply masks to
   Key points* is per-view (excludes masked areas from feature
   detection), while *Apply masks to Tie points* propagates across

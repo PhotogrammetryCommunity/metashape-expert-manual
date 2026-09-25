@@ -11,7 +11,7 @@ confidence: medium
 # Tightening reference accuracies after `alignCameras`: when the similarity-transform residual isn't enough
 > **Confidence:** *medium.* The recipe's *direction* — that
 > non-linear drift needs non-linear bundle adjustment — is
-> forum-grounded ([topic=8054](https://www.agisoft.com/forum/index.php?topic=8054.0)).
+> forum-grounded ([topic=8054](https://www.agisoft.com/forum/index.php?topic=8054.0), [archived 2026-09-24](http://web.archive.org/web/20260924192011/https://www.agisoft.com/forum/index.php?topic=8054.0)).
 > The specific *two-or-three-phase weighting* (tight camera refs
 > first, loose camera refs with tight markers second, optionally
 > disabled camera refs third) is operational synthesis: the
@@ -78,7 +78,7 @@ misalignment between the model and the reference data. Any
 removed this way — it is removed instead by **optimizing** the
 tie-point cloud and camera parameters against the known reference
 coordinates (discussed in the forum at
-[topic=8054](https://www.agisoft.com/forum/index.php?topic=8054.0)).
+[topic=8054](https://www.agisoft.com/forum/index.php?topic=8054.0) ([archived 2026-09-24](http://web.archive.org/web/20260924192011/https://www.agisoft.com/forum/index.php?topic=8054.0))).
 
 If the SfM-recovered structure has *non-linear* drift — typical
 in noisy match domains: large repeating textures, low-parallax
@@ -547,7 +547,7 @@ no-op (or close to it) on well-behaved projects.
 ## References
 
 - [Forum thread, *Georeferencing using GCPs: Optimize -vs- Update
-  tool*, 2017](https://www.agisoft.com/forum/index.php?topic=8054.0)
+  tool*, 2017](https://www.agisoft.com/forum/index.php?topic=8054.0) ([archived 2026-09-24](http://web.archive.org/web/20260924192011/https://www.agisoft.com/forum/index.php?topic=8054.0))
   — primary source; the enumeration of when Optimize has
   effect; the user-manual quote on similarity-vs-bundle.
 - *Metashape Professional Edition User Manual* (2.3),

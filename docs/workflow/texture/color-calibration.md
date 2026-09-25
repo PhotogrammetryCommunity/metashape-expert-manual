@@ -84,7 +84,7 @@ The key historical context (from the source thread):
 > Orthomosaic dialogs. This new function can be used any time,
 > before texture/orthomosaic are generated."
 > — Agisoft support, 2018-01-22, PhotoScan 1.4
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=8284.msg39640#msg39640))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=8284.msg39640#msg39640), [archived 2026-09-24](https://web.archive.org/web/20260924063926/https://www.agisoft.com/forum/index.php?topic=8284.msg39640))
 
 In PhotoScan 1.3 and earlier, the equivalent functionality
 was a checkbox **inside** *Build Texture* / *Build Orthomosaic*
@@ -142,7 +142,7 @@ A checkbox controlling whether each colour band is corrected
 > be corrected separately, whereas with the option unchecked
 > all bands will be corrected simultaneously."
 > — Agisoft support, 2018-01-22, PhotoScan 1.4
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=8284.msg39640#msg39640))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=8284.msg39640#msg39640), [archived 2026-09-24](https://web.archive.org/web/20260924063926/https://www.agisoft.com/forum/index.php?topic=8284.msg39640))
 
 For multispectral / NDVI / scientific work: leave unchecked
 to preserve the per-band relationships (NDVI = (NIR-RED)/(NIR+RED)
@@ -205,7 +205,7 @@ The forum-attested pattern from Agisoft support:
 > But there's no straightforward way to estimate the default
 > values, like via GUI."
 > — Agisoft support, 2019-07-23, Metashape 1.5
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=11164.msg50274#msg50274))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=11164.msg50274#msg50274), [archived 2026-09-23](https://web.archive.org/web/20260923202452/https://www.agisoft.com/forum/index.php?topic=11164.msg50274))
 
 The "no straightforward way to estimate default values"
 caveat is important: the GUI's *Adjust Color Levels* dialog
@@ -240,7 +240,7 @@ workaround:
 > chunk.zip archive in project.files directory and check for
 > <vignetting> section contents."
 > — Agisoft support, 2020-02-12, Metashape 1.6
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=11803.msg53024#msg53024))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=11803.msg53024#msg53024), [archived 2026-09-23](https://web.archive.org/web/20260923202931/https://www.agisoft.com/forum/index.php?topic=11803.msg53024))
 
 The `project.files/<chunk_id>/0/chunk.zip` archive contains
 `doc.xml` with `<vignetting>` blocks; each block contains a
@@ -296,7 +296,7 @@ had a known bug:
 > editing out the <vignette> blocks in the chunk. and frame.
 > files for that model, but the button would be easier!"
 > — *hairyfreak*, 2019-10-02, Metashape 1.5.3
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=11404.msg51148#msg51148))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=11404.msg51148#msg51148), [archived 2026-09-23](https://web.archive.org/web/20260923202656/https://www.agisoft.com/forum/index.php?topic=11404.msg51148))
 
 The bug was fixed in Metashape 1.5.5 per the same thread. If
 you're on 1.5.3 or 1.5.4, manually delete the `<vignetting>`
@@ -375,14 +375,14 @@ To speed up:
   `Chunk.calibrateColors`, `Chunk.image_brightness`,
   `Chunk.image_contrast`, `DataSource` enum.
 - Forum thread, [*Questions about new calibrate color feature
-  in 1.4*, 2018](https://www.agisoft.com/forum/index.php?topic=8284.msg40046#msg40046)
+  in 1.4*, 2018](https://www.agisoft.com/forum/index.php?topic=8284.msg40046#msg40046) ([archived 2026-09-24](https://web.archive.org/web/20260924064042/https://www.agisoft.com/forum/index.php?topic=8284.msg40046))
   — feature introduction and the white-balance-checkbox
   semantic.
-- Forum thread, [*How to get the Vignetting coefficients?*, 2020](https://www.agisoft.com/forum/index.php?topic=11803.msg53024#msg53024)
+- Forum thread, [*How to get the Vignetting coefficients?*, 2020](https://www.agisoft.com/forum/index.php?topic=11803.msg53024#msg53024) ([archived 2026-09-23](https://web.archive.org/web/20260923202931/https://www.agisoft.com/forum/index.php?topic=11803.msg53024))
   — the doc.xml inspection workaround.
-- Forum thread, [*reset calibrate color not working*, 2019](https://www.agisoft.com/forum/index.php?topic=11404.msg51148#msg51148)
+- Forum thread, [*reset calibrate color not working*, 2019](https://www.agisoft.com/forum/index.php?topic=11404.msg51148#msg51148) ([archived 2026-09-23](https://web.archive.org/web/20260923202656/https://www.agisoft.com/forum/index.php?topic=11404.msg51148))
   — the 1.5.3-1.5.4 reset-button bug; fixed in 1.5.5.
 - Forum thread, [*Run "Set Brightness" tool to estimate
-  brightness from python*, 2019](https://www.agisoft.com/forum/index.php?topic=11164.msg49325#msg49325)
+  brightness from python*, 2019](https://www.agisoft.com/forum/index.php?topic=11164.msg49325#msg49325) ([archived 2026-09-23](https://web.archive.org/web/20260923202423/https://www.agisoft.com/forum/index.php?topic=11164.msg49325))
   — the per-chunk image_brightness / image_contrast attributes.
 

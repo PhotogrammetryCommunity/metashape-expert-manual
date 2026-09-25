@@ -87,7 +87,7 @@ Critical step that's easy to miss:
 > context menu in the Ortho view mode to ensure that shape vertex
 > has all three coordinates [...]" — Alexey Pasumansky,
 > 2018-09-19, PhotoScan 1.4
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=9404.msg44623#msg44623))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=9404.msg44623#msg44623), [archived 2026-09-24](https://web.archive.org/web/20260924064739/https://www.agisoft.com/forum/index.php?topic=9404.msg44623))
 
 Why: orthomosaics are 2D. Drawing a Point shape on the
 orthomosaic creates a vertex with X / Y in CRS coordinates but
@@ -165,7 +165,7 @@ Three operational scenarios:
 ## Related: pixel coordinates without a point cloud
 
 A companion question (forum
-[topic=17352](https://www.agisoft.com/forum/index.php?topic=17352.0)):
+[topic=17352](https://www.agisoft.com/forum/index.php?topic=17352.0) ([archived 2026-09-25](https://web.archive.org/web/20260925130648/https://www.agisoft.com/forum/index.php?topic=17352.0))):
 how to convert image pixels to real-world coordinates *without*
 a point cloud or mesh available. The recipe is the **inverse**
 of the one above:
@@ -258,11 +258,11 @@ source image it back-projects to.
 ## References
 
 - [Forum thread, *How to map a pixel in a orthophoto to the
-  original images*, 2018](https://www.agisoft.com/forum/index.php?topic=9404.0)
+  original images*, 2018](https://www.agisoft.com/forum/index.php?topic=9404.0) ([archived 2022-12-04](http://web.archive.org/web/20221204015241/https://www.agisoft.com/forum/index.php?topic=9404.0))
   — primary source; the complete sample script (msg
   47266, 2018-09-19).
 - [Forum thread, *Convert pixel coordinates to real world without
-  dense cloud*, 2024](https://www.agisoft.com/forum/index.php?topic=17352.0)
+  dense cloud*, 2024](https://www.agisoft.com/forum/index.php?topic=17352.0) ([archived 2026-09-25](https://web.archive.org/web/20260925130648/https://www.agisoft.com/forum/index.php?topic=17352.0))
   — companion thread on the inverse direction (image pixel →
   world).
 - *Metashape Python Reference* (2.3.1), `Camera.project`,

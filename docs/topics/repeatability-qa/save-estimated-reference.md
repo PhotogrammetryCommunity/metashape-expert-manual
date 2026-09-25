@@ -291,7 +291,7 @@ Two causes:
 
 - [`save_estimated_reference.py`](https://github.com/agisoft-llc/metashape-scripts/blob/master/src/save_estimated_reference.py)
   — the canonical script implementation.
-- [*How to calculate estimated Exterior Orientation parameters for the cameras using Python* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000145016)
+- [*How to calculate estimated Exterior Orientation parameters for the cameras using Python* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000145016) ([archived 2026-09-24](https://web.archive.org/web/20260924070139/https://agisoft.freshdesk.com/support/solutions/articles/31000145016))
   — Agisoft's pointer to the script, noting it also accounts for
   GPS/INS antenna offsets and meridian convergence.
 - *Metashape Python API Reference* (2.3.1):

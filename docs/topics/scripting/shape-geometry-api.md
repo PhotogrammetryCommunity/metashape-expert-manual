@@ -35,7 +35,7 @@ structure**. The pivot is canonical, attested verbatim:
 > "For shape properties you should now access shape.geometry
 > (actually, should be available in 1.7 API as well)."
 > — Alexey Pasumansky, 2021-11-30, Metashape 1.8.0 pre-release
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=13736.msg61603#msg61603))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=13736.msg61603#msg61603), [archived 2026-09-23](https://web.archive.org/web/20260923204037/https://www.agisoft.com/forum/index.php?topic=13736.msg61603))
 
 The API mirrors the [GeoJSON
 specification](https://datatracker.ietf.org/doc/html/rfc7946):
@@ -108,7 +108,7 @@ The list-of-lists addressing convention, attested verbatim:
 > coordinates of the Nth vertex you should use:
 > `shape.geometry.coordinates[0][N]`"
 > — Alexey Pasumansky, 2021-11-30, Metashape 1.8.0 pre-release
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=13736.msg61615#msg61615))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=13736.msg61615#msg61615), [archived 2026-09-23](https://web.archive.org/web/20260923204108/https://www.agisoft.com/forum/index.php?topic=13736.msg61615))
 
 ### Adding a shape programmatically
 
@@ -187,7 +187,7 @@ for the analogous transform pattern.
   > `shape.geometry.coordinates` will contain the keys of the
   > related markers (`marker.key`)."
   > — Alexey Pasumansky, 2021-11-30, Metashape 1.8.0 pre-release
-  > ([permalink](https://www.agisoft.com/forum/index.php?topic=13736.msg61623#msg61623))
+  > ([permalink](https://www.agisoft.com/forum/index.php?topic=13736.msg61623#msg61623), [archived 2026-09-23](https://web.archive.org/web/20260923204129/https://www.agisoft.com/forum/index.php?topic=13736.msg61623))
 
   The pattern for handling attached shapes:
 
@@ -241,7 +241,7 @@ for the analogous transform pattern.
     from `Shape` class."
 - *Metashape Python Reference* (2.3.1):
   `Shape`, `Geometry`, `AttachedGeometry`.
-- [Forum topic 13736](https://www.agisoft.com/forum/index.php?topic=13736.0)
+- [Forum topic 13736](https://www.agisoft.com/forum/index.php?topic=13736.0) ([archived 2025-11-15](http://web.archive.org/web/20251115090519/https://www.agisoft.com/forum/index.php?topic=13736.0))
   — the 1.8.0 pre-release thread (4 substantive Agisoft-staff
   posts on the shape geometry API).
 - [GeoJSON specification (RFC 7946)](https://datatracker.ietf.org/doc/html/rfc7946)

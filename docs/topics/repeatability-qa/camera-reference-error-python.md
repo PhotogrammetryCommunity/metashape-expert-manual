@@ -59,7 +59,7 @@ The "per-camera error" is the difference between
 > camera locations and the source values, input to the Reference
 > pane, then you can use the following code"
 > — Agisoft support, 2019-02-13, Metashape 1.5
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=10415.msg47414#msg47414))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=10415.msg47414#msg47414), [archived 2026-09-24](https://web.archive.org/web/20260924080919/https://www.agisoft.com/forum/index.php?topic=10415.msg47414))
 
 > **Demo verified:** ✗ — pending Tier 3 reproduction on a real Metashape install.
 
@@ -110,7 +110,7 @@ Notes on the projection / unprojection round-trip:
 > "To get the total error value for the aligned cameras I can
 > suggest the following code"
 > — Agisoft support, 2019-07-04, Metashape 1.5
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=11077.msg49903#msg49903))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=11077.msg49903#msg49903), [archived 2026-09-24](https://web.archive.org/web/20260924081407/https://www.agisoft.com/forum/index.php?topic=11077.msg49903))
 
 > **Demo verified:** ✗ — pending Tier 3 reproduction on a real Metashape install.
 
@@ -146,7 +146,7 @@ estimated locations across all aligned reference cameras.
 > the measurement device, so this value is fixed and wouldn't
 > change due to the processing workflow."
 > — Agisoft support, 2019-02-13, Metashape 1.5
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=10415.msg47414#msg47414))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=10415.msg47414#msg47414), [archived 2026-09-24](https://web.archive.org/web/20260924080919/https://www.agisoft.com/forum/index.php?topic=10415.msg47414))
 
 Common confusion: users expect `camera.reference.location_accuracy`
 to drop after Optimize Cameras as the bundle "improves" the
@@ -251,11 +251,11 @@ For the conventions and the omega-phi-kappa equivalent see
   `CoordinateSystem.unproject`, `Utils.mat2ypr`,
   `Utils.mat2opk`.
 - Forum thread, [*Getting the final accuracy for the reference
-  coordinates*, 2019](https://www.agisoft.com/forum/index.php?topic=10415.msg47137#msg47137)
+  coordinates*, 2019](https://www.agisoft.com/forum/index.php?topic=10415.msg47137#msg47137) ([archived 2026-09-24](https://web.archive.org/web/20260924080842/https://www.agisoft.com/forum/index.php?topic=10415.msg47137))
   — per-camera location error recipe; the
   `location_accuracy` is fixed-input clarification.
-- Forum thread, [*How to return total camera error*, 2019](https://www.agisoft.com/forum/index.php?topic=11077.msg49903#msg49903)
+- Forum thread, [*How to return total camera error*, 2019](https://www.agisoft.com/forum/index.php?topic=11077.msg49903#msg49903) ([archived 2026-09-24](https://web.archive.org/web/20260924081407/https://www.agisoft.com/forum/index.php?topic=11077.msg49903))
   — RMS aggregation recipe.
-- [*How to calculate estimated Exterior Orientation parameters for the cameras using Python* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000145016)
+- [*How to calculate estimated Exterior Orientation parameters for the cameras using Python* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000145016) ([archived 2026-09-24](https://web.archive.org/web/20260924070139/https://agisoft.freshdesk.com/support/solutions/articles/31000145016))
   — supplementary tutorial.
 

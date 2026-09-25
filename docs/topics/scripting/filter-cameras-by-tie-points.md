@@ -59,7 +59,7 @@ track_id?"*
 > need to replace the line `if points[point_id].selected:` with
 > `if points[point_id].valid:`"
 > — Agisoft support, 2022-11-30, Metashape 2.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=15017.msg66716#msg66716))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=15017.msg66716#msg66716), [archived 2026-09-23](https://web.archive.org/web/20260923205037/https://www.agisoft.com/forum/index.php?topic=15017.msg66716))
 
 > **Demo verified:** ✗ — pending Tier 3 reproduction on a real Metashape install.
 
@@ -261,7 +261,7 @@ tie_points = getattr(chunk, "tie_points", None) or getattr(chunk, "point_cloud")
   `TiePoints.projections`, `Track`, `Point.coord`,
   `Point.track_id`, `Point.selected`, `Point.valid`,
   `Projection.coord`, `Projection.track_id`, `Vector.norm2`.
-- Forum thread, [*Filter photos by point using Python API*, 2022](https://www.agisoft.com/forum/index.php?topic=15017.msg66716#msg66716)
+- Forum thread, [*Filter photos by point using Python API*, 2022](https://www.agisoft.com/forum/index.php?topic=15017.msg66716#msg66716) ([archived 2026-09-23](https://web.archive.org/web/20260923205037/https://www.agisoft.com/forum/index.php?topic=15017.msg66716))
   — `selected` vs `valid` filter; the (camera, x, y) tuple
   collection pattern.
 

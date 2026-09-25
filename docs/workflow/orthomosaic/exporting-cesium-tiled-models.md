@@ -54,12 +54,12 @@ but they produce different *kinds* of tiles:
 >
 > Export -> Dense Cloud / Tiled Model -> Cesium 3D Tiles." —
 > Alexey Pasumansky, 2019-02-22, PhotoScan 1.5
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=8227.msg47614#msg47614))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=8227.msg47614#msg47614), [archived 2026-09-23](https://web.archive.org/web/20260923122453/https://www.agisoft.com/forum/index.php?topic=8227.msg47614))
 
 > "Exporting Cesium tiles from the dense cloud will contain the
 > dense cloud only, from the tiled model — textured mesh
 > blocks." — Alexey Pasumansky, 2019-02-25, PhotoScan 1.5
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=8227.msg47624#msg47624))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=8227.msg47624#msg47624), [archived 2026-09-24](https://web.archive.org/web/20260924063811/https://www.agisoft.com/forum/index.php?topic=8227.msg47624))
 
 | Source | Action | Output format | Texture? |
 |--------|--------|---------------|----------|
@@ -99,7 +99,7 @@ thread:
 > be rebuilt in any case for the LOD pyramid, according to
 > the input resolution value." — Alexey Pasumansky, 2019-02-25,
 > PhotoScan 1.5
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=8227.msg47629#msg47629))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=8227.msg47629#msg47629), [archived 2026-09-23](https://web.archive.org/web/20260923122527/https://www.agisoft.com/forum/index.php?topic=8227.msg47629))
 
 The texture pyramid is rebuilt regardless of the source — the
 tiled model has its own LOD-specific texture atlases, not the
@@ -176,7 +176,7 @@ The pitfall, attested verbatim:
 > that doesn't support geographic coordinates, it will treat
 > all XYZ values as the same scale units." — Alexey Pasumansky,
 > 2019-02-27, PhotoScan 1.5
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=8227.msg47674#msg47674))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=8227.msg47674#msg47674), [archived 2026-09-24](https://web.archive.org/web/20260924063907/https://www.agisoft.com/forum/index.php?topic=8227.msg47674))
 
 The failure mode: WGS84 geographic (EPSG:4326) puts longitude /
 latitude in *degrees* and altitude in *metres* — a tile at
@@ -217,7 +217,7 @@ Historical context — for users still on legacy installs:
 > states that properties should be byte aligned to their data
 > type, so the byteOffset needs to be a multiple of 4." —
 > jetdog6, 2018-01-10, PhotoScan 1.4.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=8227.msg39390#msg39390))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=8227.msg39390#msg39390), [archived 2024-07-19](https://web.archive.org/web/20240719143800/https://www.agisoft.com/forum/index.php?topic=8227.msg39390))
 
 The issue was confirmed and fixed in 1.4.1:
 
@@ -227,7 +227,7 @@ The issue was confirmed and fixed in 1.4.1:
 > 1.4.1, please send the problematic export result to
 > support@agisoft.com for the further investigation." —
 > Alexey Pasumansky, 2018-03-02, PhotoScan 1.4.1
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=8227.msg40615#msg40615))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=8227.msg40615#msg40615), [archived 2026-09-24](https://web.archive.org/web/20260924063717/https://www.agisoft.com/forum/index.php?topic=8227.msg40615))
 
 If you are stuck on a legacy install and seeing the
 byte-alignment error in Cesium, upgrade to 1.4.1 or later
@@ -376,19 +376,19 @@ server and load `tileset.json` in a CesiumJS viewer.
 
 ## References
 
-- [Forum thread, *Cesium tiles*, 2018–2019](https://www.agisoft.com/forum/index.php?topic=8227.0)
+- [Forum thread, *Cesium tiles*, 2018–2019](https://www.agisoft.com/forum/index.php?topic=8227.0) ([archived 2025-08-10](http://web.archive.org/web/20250810094612/https://www.agisoft.com/forum/index.php?topic=8227.0))
   — primary source. The two-export-types distinction
   (msg 39060). The textured-vs-untextured
   distinction (msg 39067). The Build Tiled Model workflow
   (msg 39072). The CRS pitfall (msg 39238). The byte-alignment
   bug history (msgs 36767, msgs 37261).
-- [Forum thread, *Export tiled model to Cesium ion*, 2021](https://www.agisoft.com/forum/index.php?topic=12730.0)
+- [Forum thread, *Export tiled model to Cesium ion*, 2021](https://www.agisoft.com/forum/index.php?topic=12730.0) ([archived 2025-12-11](http://web.archive.org/web/20251211154709/https://www.agisoft.com/forum/index.php?topic=12730.0))
   — companion thread on the Cesium-ion upload pipeline.
-- [Forum thread, *Unsupported datum transformation - CESIUM ION*, 2022](https://www.agisoft.com/forum/index.php?topic=14251.0)
+- [Forum thread, *Unsupported datum transformation - CESIUM ION*, 2022](https://www.agisoft.com/forum/index.php?topic=14251.0) ([archived 2025-07-13](http://web.archive.org/web/20250713170247/https://www.agisoft.com/forum/index.php?topic=14251.0))
   — datum-transformation pitfalls for Cesium ion uploads.
 - [Forum thread, *Issue with exporting Cesium Tiled Models — Version Mismatch*, 2025](https://www.agisoft.com/forum/index.php?topic=17024.0)
   — tileset-version compatibility issues.
-- [Forum thread, *exportModelTiles() documentation request*, 2016](https://www.agisoft.com/forum/index.php?topic=3849.0)
+- [Forum thread, *exportModelTiles() documentation request*, 2016](https://www.agisoft.com/forum/index.php?topic=3849.0) ([archived 2026-02-18](http://web.archive.org/web/20260218055624/https://www.agisoft.com/forum/index.php?topic=3849.0))
   — legacy thread; the API has been substantially renamed since.
 - [Cesium 3D Tiles specification (1.0)](https://github.com/CesiumGS/3d-tiles)
   — the format spec. Tile content types (`.b3dm`, `.pnts`,

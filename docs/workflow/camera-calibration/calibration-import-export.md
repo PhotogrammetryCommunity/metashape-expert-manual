@@ -210,13 +210,13 @@ on both ends.
 
 ## References
 
-- [Forum thread, *import calibration from other sw*, 2012](https://www.agisoft.com/forum/index.php?topic=563.0)
+- [Forum thread, *import calibration from other sw*, 2012](https://www.agisoft.com/forum/index.php?topic=563.0) ([archived 2026-09-24](http://web.archive.org/web/20260924191636/https://www.agisoft.com/forum/index.php?topic=563.0))
   — the framing of the format-compatibility question.
 - [Forum thread, *Python script on precalibrated camera
-  calibration parameters*, 2014](https://www.agisoft.com/forum/index.php?topic=1748.0)
+  calibration parameters*, 2014](https://www.agisoft.com/forum/index.php?topic=1748.0) ([archived 2025-11-15](http://web.archive.org/web/20251115115246/https://www.agisoft.com/forum/index.php?topic=1748.0))
   — community examples of programmatic loading.
 - [Forum thread, *How to load calibration Camera parameter in
-  batch file*, 2017](https://www.agisoft.com/forum/index.php?topic=6084.0)
+  batch file*, 2017](https://www.agisoft.com/forum/index.php?topic=6084.0) ([archived 2026-09-25](https://web.archive.org/web/20260925131414/https://www.agisoft.com/forum/index.php?topic=6084.0))
   — batch-processing context.
 - *Metashape Python Reference* (2.3.1), `Calibration.load`,
   `Calibration.save`, `Calibration` attribute set.

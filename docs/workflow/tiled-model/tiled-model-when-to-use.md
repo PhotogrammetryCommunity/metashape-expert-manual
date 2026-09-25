@@ -62,7 +62,7 @@ Compared to a single-block mesh + texture:
 > example) or for small areas, when mesh surface produce more
 > accurate results, for example, by the edges of the roofs."
 > — Agisoft support, 2019-03-22, Metashape 1.5
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=10615.msg48212#msg48212))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=10615.msg48212#msg48212), [archived 2026-09-24](https://web.archive.org/web/20260924080943/https://www.agisoft.com/forum/index.php?topic=10615.msg48212))
 
 > "For the upload to 4DMapper you might really need tiled
 > model. Usually we suggest to use 256 tiles option for faster
@@ -70,7 +70,7 @@ Compared to a single-block mesh + texture:
 > but usually it is sufficient for aerial projects. But you
 > can go with Medium, if you wish."
 > — Agisoft support, 2019-12-15, Metashape 1.6
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=11630.msg52157#msg52157))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=11630.msg52157#msg52157), [archived 2026-09-23](https://web.archive.org/web/20260923202828/https://www.agisoft.com/forum/index.php?topic=11630.msg52157))
 
 Concrete decision rules:
 
@@ -226,9 +226,9 @@ DEM-on-orthomosaic and tiled-model uploads.
   `Chunk.buildTiledModel`, `Chunk.exportTiledModel`,
   `Chunk.tiled_model`, `TiledModelFormat`, `DataSource`,
   `FaceCount`.
-- Forum thread, [*Optimal tiled model settings?*, 2019](https://www.agisoft.com/forum/index.php?topic=11630.msg52157#msg52157)
+- Forum thread, [*Optimal tiled model settings?*, 2019](https://www.agisoft.com/forum/index.php?topic=11630.msg52157#msg52157) ([archived 2026-09-23](https://web.archive.org/web/20260923202828/https://www.agisoft.com/forum/index.php?topic=11630.msg52157))
   — tile-count and face-count recommendations.
 - Forum thread, [*Orthophoto generation: source from DEM or
-  Mesh?*, 2019](https://www.agisoft.com/forum/index.php?topic=10615.msg49635#msg49635)
+  Mesh?*, 2019](https://www.agisoft.com/forum/index.php?topic=10615.msg49635#msg49635) ([archived 2026-09-24](https://web.archive.org/web/20260924081017/https://www.agisoft.com/forum/index.php?topic=10615.msg49635))
   — when-to-use rule including tiled-model option.
 

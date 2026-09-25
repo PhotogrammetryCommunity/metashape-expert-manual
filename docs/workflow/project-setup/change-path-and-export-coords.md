@@ -29,7 +29,7 @@ the chunk references `.jpg` images silently keeps the original
 > another folder) and is not able to change the extension of the
 > images used for the project."
 > — Alexey Pasumansky, 2014-03-17, PhotoScan 1.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=2150.msg11404#msg11404))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=2150.msg11404#msg11404), [archived 2026-09-23](https://web.archive.org/web/20260923210757/https://www.agisoft.com/forum/index.php?topic=2150.msg11404))
 
 ### Use case: low-res align, then high-res process
 
@@ -123,7 +123,7 @@ explicitly.
 > coordinates, while script export saves the coordinates in the
 > internal coordinates."
 > — Alexey Pasumansky, 2016-03-01, PhotoScan 1.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=5037.msg25059#msg25059))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=5037.msg25059#msg25059), [archived 2025-08-05](https://web.archive.org/web/20250805035920/https://www.agisoft.com/forum/index.php?topic=5037.msg25059))
 
 ### Solution
 
@@ -170,9 +170,9 @@ chunk.exportPointCloud(
 - *Metashape Python API Reference* (2.3.1):
   `Camera.photo.path`, `Chunk.exportPointCloud`, `Chunk.crs`.
 - Forum threads:
-  [*Change path/replace photos*](https://www.agisoft.com/forum/index.php?topic=2150.0)
+  [*Change path/replace photos*](https://www.agisoft.com/forum/index.php?topic=2150.0) ([archived 2026-09-24](http://web.archive.org/web/20260924191212/https://www.agisoft.com/forum/index.php?topic=2150.0))
   (Change Path semantics);
-  [*exportPoints()*](https://www.agisoft.com/forum/index.php?topic=5037.0)
+  [*exportPoints()*](https://www.agisoft.com/forum/index.php?topic=5037.0) ([archived 2026-04-22](http://web.archive.org/web/20260422175500/https://www.agisoft.com/forum/index.php?topic=5037.0))
   (CRS-default difference).
 
 ## See also

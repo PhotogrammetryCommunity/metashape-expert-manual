@@ -193,7 +193,7 @@ produced the file.
   `Metashape.Image.save(path)`, `Metashape.Chunk.transform.scale`,
   `Metashape.Camera.Type.Regular` —
   *Metashape Python API Reference*, version 2.3.1.
-- **Forum:** [Pasumansky, 2020-09-11, Metashape 1.6](https://www.agisoft.com/forum/index.php?topic=12549.msg55731#msg55731)
+- **Forum:** [Pasumansky, 2020-09-11, Metashape 1.6](https://www.agisoft.com/forum/index.php?topic=12549.msg55731#msg55731) ([archived 2026-09-23](https://web.archive.org/web/20260923113830/https://www.agisoft.com/forum/index.php?topic=12549.msg55731))
   — full PySide2 dialog with the three-format export.
 - **Suggested sample dataset:** [Aerial images (with GCPs)](../../reference/sample-data.md#aerial-images-with-gcps).
   Has 444 cameras and a real CRS so `chunk.transform.scale`

@@ -38,12 +38,12 @@ cylindrical cameras, the user must explicitly change the type:
 
 > "PS takes care of the calibration but you have to specify
 > that it's a fisheye lens." — bigben, 2014-09-25, PhotoScan 1.1
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=2901.msg15355#msg15355))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=2901.msg15355#msg15355), [archived 2026-09-23](https://web.archive.org/web/20260923211212/https://www.agisoft.com/forum/index.php?topic=2901.msg15355))
 
 > "Fisheye and Spherical camera types are available in
 > PhotoScan Pro only. Standard edition supports only Frame
 > camera type." — Alexey Pasumansky, 2015-01-19, PhotoScan 1.1
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=2901.msg17259#msg17259))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=2901.msg17259#msg17259), [archived 2026-09-23](https://web.archive.org/web/20260923211303/https://www.agisoft.com/forum/index.php?topic=2901.msg17259))
 
 If the *Camera Type* dropdown is greyed out in the *Camera
 Calibration* dialog, the project is on Standard edition. The
@@ -105,7 +105,7 @@ quickest reference:
 > can still get a result using Photoscan, but you will get a
 > better result if you use Fisheye for the lens parameter." —
 > bigben, 2015-01-21, PhotoScan 1.1
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=2901.msg17322#msg17322))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=2901.msg17322#msg17322), [archived 2026-09-23](https://web.archive.org/web/20260923211325/https://www.agisoft.com/forum/index.php?topic=2901.msg17322))
 
 ## Equidistant vs Equisolid (and the legacy `Fisheye`)
 
@@ -151,7 +151,7 @@ new `EquisolidFisheye` for >180° lenses. Therefore:
 Agisoft's own guidance: *"For most images with fisheye effect, use
 the Equidistant Fisheye camera model. For images with a viewing
 angle greater than 180 degrees, use the Equisolid"* — see
-[*New features in Agisoft Metashape 2.3.x* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000177202).
+[*New features in Agisoft Metashape 2.3.x* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000177202) ([archived 2026-09-24](https://web.archive.org/web/20260924080147/https://agisoft.freshdesk.com/support/solutions/articles/31000177202)).
 
 ## The Python API surface
 
@@ -228,7 +228,7 @@ sensor with the error *"Unsupported calibration type"*:
 > completion the process fails with an error message:
 > 'Unsupported calibration type, Retry Processing?'" —
 > AVsupport, 2026-01-14, Metashape 2.3
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=17446.msg135648#msg135648))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=17446.msg135648#msg135648), [archived 2026-09-23](https://web.archive.org/web/20260923210526/https://www.agisoft.com/forum/index.php?topic=17446.msg135648))
 
 Two things to know:
 
@@ -261,7 +261,7 @@ A counterintuitive empirical observation:
 > caught with a fisheye lens on land, and as such the 'fisheye'
 > setting in PhotoScan appears to work less well on underwater
 > images." — ThomasVD, 2015-01-18, PhotoScan 1.1
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=2901.msg17239#msg17239))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=2901.msg17239#msg17239), [archived 2026-09-23](https://web.archive.org/web/20260923211300/https://www.agisoft.com/forum/index.php?topic=2901.msg17239))
 
 The dome-port refraction partially cancels the fisheye barrel
 distortion, so the *effective* projection in the captured pixels
@@ -284,7 +284,7 @@ workflow from forum topic 16091 (msg 79105, 2023-12-21):
 > folders and you let Metashape know they are different cameras.
 > Use the photos as multicamera or as single camera files, its
 > up to you." — JMR, 2023-12-21, Metashape 2.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=16091.msg69300#msg69300))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=16091.msg69300#msg69300), [archived 2026-09-23](https://web.archive.org/web/20260923115416/https://www.agisoft.com/forum/index.php?topic=16091.msg69300))
 
 The two halves become two `Fisheye` sensors; multi-camera-rig
 geometry then ties them together (see [Declaring a
@@ -304,7 +304,7 @@ unit sphere as placeholders.
 > (such points could not be positioned in 3D space due to lack
 > of distance info)." — Alexey Pasumansky, 2015-01-22,
 > PhotoScan 1.1
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=2901.msg17372#msg17372))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=2901.msg17372#msg17372), [archived 2026-09-23](https://web.archive.org/web/20260923211354/https://www.agisoft.com/forum/index.php?topic=2901.msg17372))
 
 These points have uncertainty exactly 1 and are filtered out
 during dense reconstruction; the user can ignore them for
@@ -359,7 +359,7 @@ flowchart TD
 
 ## References
 
-- [Forum thread, *Fisheye support OMG!!!*, 2014–2015](https://www.agisoft.com/forum/index.php?topic=2901.0)
+- [Forum thread, *Fisheye support OMG!!!*, 2014–2015](https://www.agisoft.com/forum/index.php?topic=2901.0) ([archived 2026-09-24](http://web.archive.org/web/20260924191331/https://www.agisoft.com/forum/index.php?topic=2901.0))
   — primary source. discussion of Pro-only fisheye/spherical
   (msg 14671). bigben on lens-projection-not-FoV (msg 14741).
   discussion of dome-port underwater fisheye behaving like Frame
@@ -368,12 +368,12 @@ flowchart TD
 - [Forum thread, *Insta360 double Fisheye DNG's*, 2023](https://www.agisoft.com/forum/index.php?topic=16091.0)
   — the dual-fisheye crop-and-import workflow (msg 79105).
 - [Forum thread, *Bug 2.3.0.21868: Cannot Export Equisolid
-  Fisheye Cameras*, 2026](https://www.agisoft.com/forum/index.php?topic=17446.0)
+  Fisheye Cameras*, 2026](https://www.agisoft.com/forum/index.php?topic=17446.0) ([archived 2026-03-12](http://web.archive.org/web/20260312003849/https://www.agisoft.com/forum/index.php?topic=17446.0))
   — the Equisolid Colmap-export bug.
-- [Forum thread, *Negative focal length and fisheye*, 2017](https://www.agisoft.com/forum/index.php?topic=6644.0)
+- [Forum thread, *Negative focal length and fisheye*, 2017](https://www.agisoft.com/forum/index.php?topic=6644.0) ([archived 2026-01-23](http://web.archive.org/web/20260123203651/https://www.agisoft.com/forum/index.php?topic=6644.0))
   — companion thread on fisheye-specific calibration pitfalls.
 - [Forum thread, *Improving spherical-camera quality by using
-  their fisheye sub-images*, 2020](https://www.agisoft.com/forum/index.php?topic=10905.0)
+  their fisheye sub-images*, 2020](https://www.agisoft.com/forum/index.php?topic=10905.0) ([archived 2026-09-24](http://web.archive.org/web/20260924181949/https://www.agisoft.com/forum/index.php?topic=10905.0))
   — companion thread on the fisheye-vs-spherical decision.
 - *Metashape Python Reference* (2.3.1): `Sensor.type`,
   `Sensor.Type` (enum: Frame, Fisheye, EquidistantFisheye,
@@ -384,7 +384,7 @@ flowchart TD
   Equisolid (p. 233) formulas. The legacy single-`Fisheye` formula
   in the 2.2 manual (p. 243) is identical to the 2.3 Equidistant
   model.
-- [*New features in Agisoft Metashape 2.3.x* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000177202)
+- [*New features in Agisoft Metashape 2.3.x* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000177202) ([archived 2026-09-24](https://web.archive.org/web/20260924080147/https://agisoft.freshdesk.com/support/solutions/articles/31000177202))
   — introduces the Equidistant and Equisolid fisheye camera models.
 - *Metashape changelog*: 2.3.0 "Added Equidistant Fisheye and
   Equisolid Fisheye camera models with hyper hemispheric lens

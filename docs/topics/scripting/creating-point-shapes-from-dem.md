@@ -47,7 +47,7 @@ This recipe is the canonical pattern from Agisoft support's
 > shapes with elevation calculated based on DEM altitude in
 > corresponding XY location"
 > — Agisoft support, 2024-06-24, Metashape 2.1
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=16516.msg70934#msg70934))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=16516.msg70934#msg70934), [archived 2026-09-23](https://web.archive.org/web/20260923210020/https://www.agisoft.com/forum/index.php?topic=16516.msg70934))
 
 > **Demo verified:** ✗ — pending Tier 3 reproduction on a real Metashape install.
 
@@ -215,7 +215,7 @@ allow that operation in 2.x.
 > "You need to remove the shapes from the layer first, then
 > remove the layers."
 > — Agisoft support, 2018-08-24, PhotoScan 1.4
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=9587.msg44910#msg44910))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=9587.msg44910#msg44910), [archived 2026-09-24](https://web.archive.org/web/20260924064814/https://www.agisoft.com/forum/index.php?topic=9587.msg44910))
 
 ## Caveats
 
@@ -277,9 +277,9 @@ allow that operation in 2.x.
   `Elevation.top`, `Elevation.bottom`, `Elevation.crs`,
   `CoordinateSystem.transform`, `CoordinateSystem.project`,
   `CoordinateSystem.unproject`.
-- Forum thread, [*script inserting points with Z label*, 2024](https://www.agisoft.com/forum/index.php?topic=16516.msg70934#msg70934)
+- Forum thread, [*script inserting points with Z label*, 2024](https://www.agisoft.com/forum/index.php?topic=16516.msg70934#msg70934) ([archived 2026-09-23](https://web.archive.org/web/20260923210020/https://www.agisoft.com/forum/index.php?topic=16516.msg70934))
   — the canonical recipe for grid creation with DEM-derived
   elevation.
-- Forum thread, [*remove shape layers*, 2018](https://www.agisoft.com/forum/index.php?topic=9587.msg44910#msg44910)
+- Forum thread, [*remove shape layers*, 2018](https://www.agisoft.com/forum/index.php?topic=9587.msg44910#msg44910) ([archived 2026-09-24](https://web.archive.org/web/20260924064814/https://www.agisoft.com/forum/index.php?topic=9587.msg44910))
   — the shapes-then-group cleanup pattern.
 

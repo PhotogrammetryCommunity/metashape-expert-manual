@@ -138,7 +138,7 @@ PNG, normalise:
 > and maximal floating point values and then scaling the pixel
 > values accordingly."
 > — Agisoft support, 2016-11-04, PhotoScan 1.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=6074.msg29487#msg29487))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=6074.msg29487#msg29487), [archived 2026-09-25](https://web.archive.org/web/20260925131248/https://www.agisoft.com/forum/index.php?topic=6074.msg29487#msg29487))
 
 > **Demo verified:** ✗ — pending Tier 3 reproduction on a real Metashape install.
 
@@ -254,7 +254,7 @@ PILImage.fromarray(depth_arr, mode="F").save("/tmp/depth.tif")
   `Model.renderDepth`, `Image.tostring`, `Image.cn`,
   `Image.data_type`, `Calibration`, `Matrix.Rotation`,
   `Matrix.Translation`.
-- Forum thread, [*model.renderDepth(transform, calibration)*, 2016](https://www.agisoft.com/forum/index.php?topic=6074.msg30401#msg30401)
+- Forum thread, [*model.renderDepth(transform, calibration)*, 2016](https://www.agisoft.com/forum/index.php?topic=6074.msg30401#msg30401) ([archived 2026-09-23](https://web.archive.org/web/20260923213007/https://www.agisoft.com/forum/index.php?topic=6074.msg30401))
   — the canonical Q&A; introduces the float32 output behaviour
   (msg 30459).
 

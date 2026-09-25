@@ -103,5 +103,5 @@ generic_preselection=False`). This is the
 
 | Date | Version | Author | Thread | One-line takeaway |
 |------|---------|--------|--------|-------------------|
-| 2016-12-20 | PhotoScan 1.2 | Alexey Pasumansky | [Align images - Reference preselection](https://www.agisoft.com/forum/index.php?topic=6306.msg30226#msg30226) | Generic preselection runs on the reference-preselection shortlist when both are enabled (1.2 era; separable in 1.3+). |
-| 2021-02-11 | Metashape 1.7 | Alexey Pasumansky | [Tie points ghosting](https://www.agisoft.com/forum/index.php?topic=13079.msg58789#msg58789) | The canonical "clean" baseline keeps generic preselection enabled. |
+| 2016-12-20 | PhotoScan 1.2 | Alexey Pasumansky | [Align images - Reference preselection](https://www.agisoft.com/forum/index.php?topic=6306.msg30226#msg30226) ([archived 2026-09-23](https://web.archive.org/web/20260923213239/https://www.agisoft.com/forum/index.php?topic=6306.msg30226)) | Generic preselection runs on the reference-preselection shortlist when both are enabled (1.2 era; separable in 1.3+). |
+| 2021-02-11 | Metashape 1.7 | Alexey Pasumansky | [Tie points ghosting](https://www.agisoft.com/forum/index.php?topic=13079.msg58789#msg58789) ([archived 2026-09-23](https://web.archive.org/web/20260923203923/https://www.agisoft.com/forum/index.php?topic=13079.msg58789)) | The canonical "clean" baseline keeps generic preselection enabled. |

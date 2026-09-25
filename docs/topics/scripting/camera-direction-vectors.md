@@ -43,7 +43,7 @@ that ray in chunk-local coordinates:
 
 > "I suggest to use the following vector"
 > — Agisoft support, 2019-11-07, Metashape 1.5
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=11506.msg51385#msg51385))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=11506.msg51385#msg51385), [archived 2026-09-23](https://web.archive.org/web/20260923202730/https://www.agisoft.com/forum/index.php?topic=11506.msg51385))
 
 > **Demo verified:** ✗ — pending Tier 3 reproduction on a real Metashape install.
 
@@ -279,7 +279,7 @@ refresh it from the loaded reference data.)
   `Calibration.unproject`, `Matrix.rotation`, `Matrix.mulp`,
   `Vector.normalized`, `Vector.normalize`,
   `CoordinateSystem.localframe`.
-- Forum thread, [*Camera orientation*, 2019](https://www.agisoft.com/forum/index.php?topic=11506.msg51385#msg51385)
+- Forum thread, [*Camera orientation*, 2019](https://www.agisoft.com/forum/index.php?topic=11506.msg51385#msg51385) ([archived 2026-09-23](https://web.archive.org/web/20260923202730/https://www.agisoft.com/forum/index.php?topic=11506.msg51385))
   — the canonical Q&A; introduces the `unproject(image_centre)
   → mulp → minus camera.center` pattern.
 

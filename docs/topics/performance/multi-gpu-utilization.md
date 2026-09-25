@@ -24,7 +24,7 @@ NVLink bridges do **not** accelerate processing.
 > "SLI doesn't help for CUDA computations. SLI is used to improve
 > the visualization only."
 > — Alexey Pasumansky, 2017-05-08, PhotoScan 1.3
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=6992.msg32413#msg32413))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=6992.msg32413#msg32413), [archived 2026-09-23](https://web.archive.org/web/20260923213644/https://www.agisoft.com/forum/index.php?topic=6992.msg32413))
 
 If you have two GPUs connected via SLI/NVLink, Metashape will use both
 independently for compute. The bridge adds no benefit and can be

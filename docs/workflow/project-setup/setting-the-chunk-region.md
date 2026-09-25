@@ -143,7 +143,7 @@ Two key behavioural facts underpin the recipe:
 > example, to convert chunk.region.center vector from this
 > system you need to use chunk.transform matrix" — Alexey
 > Pasumansky, 2014-01-09, PhotoScan 1.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=1886.msg10041#msg10041))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=1886.msg10041#msg10041), [archived 2026-09-23](https://web.archive.org/web/20260923210616/https://www.agisoft.com/forum/index.php?topic=1886.msg10041))
 
 > "When using real-world scales for the bounding box size you
 > need to divide them by the scale factor s, calculated during
@@ -152,7 +152,7 @@ Two key behavioural facts underpin the recipe:
 > centerGEO vector in geocentric coordinates will be calculated
 > incorrectly due to zero altitude above ellipsoid using in the
 > script provided." — Alexey Pasumansky, 2014-12-09, PhotoScan 1.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=1886.msg16605#msg16605))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=1886.msg16605#msg16605), [archived 2026-09-23](https://web.archive.org/web/20260923210637/https://www.agisoft.com/forum/index.php?topic=1886.msg16605))
 
 The two-coordinate gotcha (omitting altitude) is a recurring
 source of bugs in older scripts. Always pass three real-world
@@ -168,7 +168,7 @@ the project is "essentially 2D."
 > Transformation matrix for chunk is now accessible via
 > chunk.transform.matrix." — Alexey Pasumansky, 2014-09-29,
 > PhotoScan 1.0 → 1.1 transition
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=1886.msg15464#msg15464))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=1886.msg15464#msg15464), [archived 2026-01-17](https://web.archive.org/web/20260117075435/https://www.agisoft.com/forum/index.php?topic=1886.msg15464))
 
 ### Excluding outliers before the resize
 
@@ -301,7 +301,7 @@ cuboid (modulo small numerical differences).
   `Metashape.Chunk.tie_points`, `Metashape.TiePoints.Point`
   (with `.coord` and `.valid`) — *Metashape Python API
   Reference*, version 2.3.1.
-- **Forum:** [Pasumansky, 2017-08-14, PhotoScan 1.3](https://www.agisoft.com/forum/index.php?topic=7543.msg36125#msg36125)
+- **Forum:** [Pasumansky, 2017-08-14, PhotoScan 1.3](https://www.agisoft.com/forum/index.php?topic=7543.msg36125#msg36125) ([archived 2026-09-23](https://web.archive.org/web/20260923122212/https://www.agisoft.com/forum/index.php?topic=7543.msg36125))
   — the CRS-roundtrip reference snippet. *This article
   intentionally documents a simpler alternative that does not use
   the round-trip; both produce a region that bounds the cloud.*

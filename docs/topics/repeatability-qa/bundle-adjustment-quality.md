@@ -52,7 +52,7 @@ weighted non-linear least-squares problem (a bundle
 adjustment). Per Agisoft, the adjustment uses all available
 measurements and their accuracies — tie- and marker-point image
 projections, camera GPS positions, GCP coordinates, and scale-bar
-distances ([*Control and Check points for aerial surveys* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000154132)).
+distances ([*Control and Check points for aerial surveys* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000154132), [archived 2026-05-14](https://web.archive.org/web/20260514190150/https://agisoft.freshdesk.com/support/solutions/articles/31000154132)).
 
 To read any quality statistic you first have to count what is
 being estimated and from what. Two ledgers:
@@ -179,7 +179,7 @@ and they are strongest when they **agree**.
 
 Metashape produces the parameter covariance for the adjusted
 intrinsics (the *Correlation* tab; see
-[*What does camera calibration results mean in Metashape?* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000158119)),
+[*What does camera calibration results mean in Metashape?* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000158119) ([archived 2026-09-24](https://web.archive.org/web/20260924072343/https://agisoft.freshdesk.com/support/solutions/articles/31000158119))),
 exposed as `sensor.calibration.covariance_matrix` (an N×N
 `Matrix`) with `covariance_params` naming its rows/columns. For
 an adjusted parameter θ̂ with standard error `σ_θ = sqrt(diag)`,
@@ -394,10 +394,10 @@ cross-correlation.
   `Camera.rotation_covariance`, `Marker.position_covariance`,
   `Chunk.optimizeCameras` (`tiepoint_covariance`). Symbols
   introspection-confirmed on 2.3.1.
-- Agisoft KB [*Control and Check points for aerial surveys* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000154132)
+- Agisoft KB [*Control and Check points for aerial surveys* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000154132) ([archived 2026-05-14](https://web.archive.org/web/20260514190150/https://agisoft.freshdesk.com/support/solutions/articles/31000154132))
   — the bundle cost (which measurements and accuracies enter the
   adjustment) and the control-vs-check distinction.
-- Agisoft KB [*What does camera calibration results mean in Metashape?* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000158119)
+- Agisoft KB [*What does camera calibration results mean in Metashape?* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000158119) ([archived 2026-09-24](https://web.archive.org/web/20260924072343/https://agisoft.freshdesk.com/support/solutions/articles/31000158119))
   — the calibration covariance / *Correlation* tab and the
   bad-camera-model cues.
 - Baarda, W. (1968). *A testing procedure for use in geodetic

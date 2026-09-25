@@ -47,7 +47,7 @@ neighbouring images.
 > understanding of the 3D point location, based on the marker
 > projections defined on other images."
 > — Agisoft support, 2022-02-09, Metashape 1.8
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=14192.msg63403#msg63403))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=14192.msg63403#msg63403), [archived 2026-09-23](https://web.archive.org/web/20260923204437/https://www.agisoft.com/forum/index.php?topic=14192.msg63403))
 
 This is helpful for QA: a gray flag confirms that a marker
 *should* be visible on this image. If you can see the physical
@@ -81,7 +81,7 @@ absent.
 > projections for the related markers, defined on the aligned
 > images."
 > — Agisoft support, 2022-02-09, Metashape 1.8
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=14192.msg62499#msg62499))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=14192.msg62499#msg62499), [archived 2026-09-23](https://web.archive.org/web/20260923204343/https://www.agisoft.com/forum/index.php?topic=14192.msg62499))
 
 The condition for gray-flag display is **≥ 2 real (green/blue)
 projections on aligned cameras**. Below that threshold, the
@@ -144,7 +144,7 @@ applies generally:
 > other markers from the chunk, before assigning labels and
 > coordinates to the correctly detected markers."
 > — Agisoft support, 2022-02-09, Metashape 1.8
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=14192.msg62502#msg62502))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=14192.msg62502#msg62502), [archived 2026-09-23](https://web.archive.org/web/20260923204405/https://www.agisoft.com/forum/index.php?topic=14192.msg62502))
 
 The recipe: compute the convex hull of all auto-detected marker
 positions, keep only the markers at hull vertices (typically 4
@@ -233,7 +233,7 @@ geometric filter, or manually inspect each detected marker.
   `Marker.projections`, `Marker.Projection.pinned`,
   `Marker.position`, `Camera.project`.
 - Forum thread, [*How to remove gray flag from the marker
-  detection*, 2022](https://www.agisoft.com/forum/index.php?topic=14192.msg63403#msg63403)
+  detection*, 2022](https://www.agisoft.com/forum/index.php?topic=14192.msg63403#msg63403) ([archived 2026-09-23](https://web.archive.org/web/20260923204437/https://www.agisoft.com/forum/index.php?topic=14192.msg63403))
   — gray-flag semantics; ≥ 2 projection threshold;
   convex-hull false-positive filter.
 

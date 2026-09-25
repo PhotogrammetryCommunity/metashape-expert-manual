@@ -62,7 +62,7 @@ The canonical explanation:
 > using the Full model, 6 parameters are optimized for each
 > frame: shift along the XYZ axes and rotation along the XYZ
 > axes." — Alexey Pasumansky, 2022-07-31, Metashape 1.8
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=14670.msg64472#msg64472))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=14670.msg64472#msg64472), [archived 2026-09-23](https://web.archive.org/web/20260923204832/https://www.agisoft.com/forum/index.php?topic=14670.msg64472))
 
 ## Per-photo, not averaged
 
@@ -73,7 +73,7 @@ once per image. The answer is per-image:
 > "The rolling shutter compensation parameters are applied on a
 > per foto basis, as seen in following screen shot..." —
 > Paulo, 2025-06-27, Metashape 2.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=14670.msg73828#msg73828))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=14670.msg73828#msg73828), [archived 2026-09-23](https://web.archive.org/web/20260923204855/https://www.agisoft.com/forum/index.php?topic=14670.msg73828))
 
 The implication for hand-flown drone capture: even when the
 flight speed and direction vary frame-to-frame (gusts, manual
@@ -125,7 +125,7 @@ Metashape 1.8+:
 > Try them and see if it improves results after redoing alignment
 > and optimization." — Paulo (relaying Agisoft Support),
 > 2022-05-11, Metashape 1.8
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=14480.msg63654#msg63654))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=14480.msg63654#msg63654), [archived 2026-09-23](https://web.archive.org/web/20260923114657/https://www.agisoft.com/forum/index.php?topic=14480.msg63654))
 
 The implication: even when *Tools → Camera Calibration → Rolling
 Shutter Compensation* is set to *Full*, the underlying bundle
@@ -278,19 +278,19 @@ the application settings. After running, re-execute the chunk's
 
 ## References
 
-- [Forum thread, *Rolling shutter*, 2022–2025](https://www.agisoft.com/forum/index.php?topic=14670.0)
+- [Forum thread, *Rolling shutter*, 2022–2025](https://www.agisoft.com/forum/index.php?topic=14670.0) ([archived 2026-02-19](http://web.archive.org/web/20260219010842/https://www.agisoft.com/forum/index.php?topic=14670.0))
   — primary source for the Regularized-vs-Full distinction
   (msg 64384, 2022-07-31) and the per-photo-not-
   averaged confirmation (msg 135030, 2025-06-27).
-- [Forum thread, *Rolling shutter compensation in 1.8 does not correct all parameters*, 2022](https://www.agisoft.com/forum/index.php?topic=14480.0)
+- [Forum thread, *Rolling shutter compensation in 1.8 does not correct all parameters*, 2022](https://www.agisoft.com/forum/index.php?topic=14480.0) ([archived 2025-07-13](http://web.archive.org/web/20250713022830/https://www.agisoft.com/forum/index.php?topic=14480.0))
   — primary source for the 1.7.4-restriction history and the
   `full_shutter_model` tweaks (Agisoft Support,
   2022-05-11, msg 64151).
-- [Forum thread, *Rolling Shutter bug?*, 2021](https://www.agisoft.com/forum/index.php?topic=12235.0)
+- [Forum thread, *Rolling Shutter bug?*, 2021](https://www.agisoft.com/forum/index.php?topic=12235.0) ([archived 2025-12-08](http://web.archive.org/web/20251208045813/https://www.agisoft.com/forum/index.php?topic=12235.0))
   — companion thread on a specific 1.7-era bug.
 - [Forum thread, *Rolling shutter integration*, 2017](https://www.agisoft.com/forum/index.php?topic=5144.0)
   — early-era thread; predates the Regularized/Full split.
-- [Forum thread, *Distance and angle calculation and rolling shutter in 1.4*, 2018](https://www.agisoft.com/forum/index.php?topic=8548.0)
+- [Forum thread, *Distance and angle calculation and rolling shutter in 1.4*, 2018](https://www.agisoft.com/forum/index.php?topic=8548.0) ([archived 2026-09-24](http://web.archive.org/web/20260924192112/https://www.agisoft.com/forum/index.php?topic=8548.0))
   — older thread on metrology effects.
 - *Metashape Python Reference* (2.3.1):
   `Sensor.rolling_shutter`, `Shutter`, `Shutter.Model`,

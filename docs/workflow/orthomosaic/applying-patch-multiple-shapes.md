@@ -160,7 +160,7 @@ GUI's ranking is more sophisticated:
 > center, distance from camera to the 3D surface being textured,
 > relative orientation of the camera normal and surface
 > normals." — Alexey Pasumansky, 2019-07-10, Metashape 1.5
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=11105.msg50053#msg50053))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=11105.msg50053#msg50053), [archived 2026-09-24](https://web.archive.org/web/20260924081504/https://www.agisoft.com/forum/index.php?topic=11105.msg50053))
 
 For most use-cases, the centroid-distance metric produces
 results within a few candidates of the GUI's top pick. When the
@@ -442,12 +442,12 @@ patch is visible.
 
 ## References
 
-- [Forum thread, *Apply patch on multiple shapes*, 2019–2020](https://www.agisoft.com/forum/index.php?topic=11105.0)
+- [Forum thread, *Apply patch on multiple shapes*, 2019–2020](https://www.agisoft.com/forum/index.php?topic=11105.0) ([archived 2025-09-16](http://web.archive.org/web/20250916050744/https://www.agisoft.com/forum/index.php?topic=11105.0))
   — primary source. The three the scripts: msg 49019
   (auto-rank by centroid), msg 49340 (patch from shape
   attribute), msg 49502 (extract patches into attributes).
   GUI ranking explanation: msg 49039.
-- [Forum thread, *exportShapes — using shape attributes for export*, 2019](https://www.agisoft.com/forum/index.php?topic=10266.msg48076#msg48076)
+- [Forum thread, *exportShapes — using shape attributes for export*, 2019](https://www.agisoft.com/forum/index.php?topic=10266.msg48076#msg48076) ([archived 2026-09-23](https://web.archive.org/web/20260923124019/https://www.agisoft.com/forum/index.php?topic=10266.msg48076))
   — the cited precedent for the shape-attribute pattern that
   the patching script reuses.
 - *Metashape Python Reference* (2.3.1):
@@ -457,7 +457,7 @@ patch is visible.
 - *Metashape Pro User Manual* (2.3), ch. 5 *Orthomosaic*,
   § *Orthomosaic seamlines and patching* — official description
   of the *Patch* shape feature in the *Ortho* view.
-- [*Orthomosaic seamline editing (patching)* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000148853)
+- [*Orthomosaic seamline editing (patching)* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000148853) ([archived 2026-09-24](https://web.archive.org/web/20260924070613/https://agisoft.freshdesk.com/support/solutions/articles/31000148853))
   — the GUI Assign Images / Draw Patch workflow this script
   automates, plus the Fill tool for excluding objects or filling
   holes.

@@ -308,10 +308,10 @@ This is consistent with the forum guidance to "select camera
 parameters based on the camera type" — a frame camera being
 "processed well with default parameter set" (`f, cx, cy, k1–k3, p1, p2`)
 (nprokofyev, 2021-03-30, Metashape 1.7,
-[topic 13221](https://www.agisoft.com/forum/index.php?topic=13221.msg58683#msg58683))
+[topic 13221](https://www.agisoft.com/forum/index.php?topic=13221.msg58683#msg58683) ([archived 2026-09-23](https://web.archive.org/web/20260923204016/https://www.agisoft.com/forum/index.php?topic=13221.msg58683)))
 — and with the KB cue to fix `cx, cy, b1, b2` when their adjusted
 values come out implausibly large
-([*What does camera calibration results mean in Metashape?* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000158119)).
+([*What does camera calibration results mean in Metashape?* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000158119), [archived 2026-09-24](https://web.archive.org/web/20260924072343/https://agisoft.freshdesk.com/support/solutions/articles/31000158119)).
 
 ## Or let Metashape decide: Adaptive camera model fitting
 
@@ -367,9 +367,9 @@ for when to enable vs disable it.
   laser scans* — *Adaptive camera model fitting* (≈ p. 46);
   *Optimize Camera Alignment parameters* (≈ p. 118); *Appendix C,
   Camera models*.
-- [*What does camera calibration results mean in Metashape?* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000158119)
+- [*What does camera calibration results mean in Metashape?* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000158119) ([archived 2026-09-24](https://web.archive.org/web/20260924072343/https://agisoft.freshdesk.com/support/solutions/articles/31000158119))
   — the "fix `cx, cy, b1, b2` when their adjusted values are large" cue.
-- Forum, [*Selecting camera parameters to be optimized*](https://www.agisoft.com/forum/index.php?topic=13221.msg58683#msg58683)
+- Forum, [*Selecting camera parameters to be optimized*](https://www.agisoft.com/forum/index.php?topic=13221.msg58683#msg58683) ([archived 2026-09-23](https://web.archive.org/web/20260923204016/https://www.agisoft.com/forum/index.php?topic=13221.msg58683))
   — nprokofyev, 2021-03-30, Metashape 1.7: choose by camera type;
   a frame camera is processed well by the default set.
 - Brown, D. C. (1971). *Close-range camera calibration.*

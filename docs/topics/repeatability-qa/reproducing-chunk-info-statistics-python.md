@@ -313,11 +313,11 @@ with the discrepancy and a copy of the *Reference* pane numbers.
   `Metashape.Chunk.transform.matrix.mulp`,
   `Metashape.Matrix.mulv` —
   *Metashape Python API Reference*, version 2.3.1.
-- **Forum:** [Pasumansky, 2018-08-31, PhotoScan 1.4](https://www.agisoft.com/forum/index.php?topic=9612.msg44367#msg44367)
+- **Forum:** [Pasumansky, 2018-08-31, PhotoScan 1.4](https://www.agisoft.com/forum/index.php?topic=9612.msg44367#msg44367) ([archived 2026-09-24](https://web.archive.org/web/20260924064835/https://www.agisoft.com/forum/index.php?topic=9612.msg44367))
   — definition of *points* vs *tracks*.
-- **Forum:** [Pasumansky, 2019-11-22, Metashape 1.5](https://www.agisoft.com/forum/index.php?topic=11548.msg52102#msg52102)
+- **Forum:** [Pasumansky, 2019-11-22, Metashape 1.5](https://www.agisoft.com/forum/index.php?topic=11548.msg52102#msg52102) ([archived 2026-09-23](https://web.archive.org/web/20260923202749/https://www.agisoft.com/forum/index.php?topic=11548.msg52102))
   — the canonical RMS-reprojection-error script.
-- **Forum:** [Pasumansky, 2016-02-09, PhotoScan 1.2](https://www.agisoft.com/forum/index.php?topic=4901.msg24700#msg24700)
+- **Forum:** [Pasumansky, 2016-02-09, PhotoScan 1.2](https://www.agisoft.com/forum/index.php?topic=4901.msg24700#msg24700) ([archived 2026-09-23](https://web.archive.org/web/20260923212316/https://www.agisoft.com/forum/index.php?topic=4901.msg24700))
   — the canonical marker-3D-error script (the *corrected*
   version; the first reply five days earlier had the wrong frame).
 - **Suggested sample dataset:** [Aerial images (with GCPs)](../../reference/sample-data.md#aerial-images-with-gcps).

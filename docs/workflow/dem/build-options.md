@@ -50,7 +50,7 @@ Three options:
 > for small areas, when mesh surface produce more accurate
 > results, for example, by the edges of the roofs."
 > — Agisoft support, 2019-03-22, Metashape 1.5
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=10615.msg48212#msg48212))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=10615.msg48212#msg48212), [archived 2026-09-24](https://web.archive.org/web/20260924080943/https://www.agisoft.com/forum/index.php?topic=10615.msg48212))
 
 The recommended workflow on aerial projects: build dense
 point cloud → build DEM from point cloud → build orthomosaic
@@ -83,7 +83,7 @@ DEM fills cells where the source data is sparse:
 > interpolated in the areas that are visible from at least one
 > camera inside bounding box."
 > — Agisoft support, 2015-12-29, PhotoScan 1.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=4745.msg23951#msg23951))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=4745.msg23951#msg23951), [archived 2026-09-23](https://web.archive.org/web/20260923212104/https://www.agisoft.com/forum/index.php?topic=4745.msg23951))
 
 The *Enabled* mode's "visible from at least one camera"
 criterion is important: cells outside any camera's view get
@@ -98,7 +98,7 @@ interpolation option became available only after PhotoScan 1.2:
 > "Disabled interpolation option for DEM based on Mesh
 > generation will be available in the next version update."
 > — Agisoft support, 2016-01-08, PhotoScan 1.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=4745.msg24131#msg24131))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=4745.msg24131#msg24131), [archived 2026-09-25](https://web.archive.org/web/20260925131024/https://www.agisoft.com/forum/index.php?topic=4745.msg24131#msg24131))
 
 If you're on a pre-1.3 version, mesh-source DEMs always
 interpolate; only point-cloud-source DEMs allow Disabled.
@@ -176,7 +176,7 @@ Once a DEM exists, `Chunk.buildContours` traces contour lines from
 it. The GUI equivalent is *Tools → Generate Contours…* (or the DEM's
 context menu on the Workspace pane); the
 [Agisoft KB walks through the GUI dialog, editing, and exporting
-contours](https://agisoft.freshdesk.com/support/solutions/articles/31000179476).
+contours](https://agisoft.freshdesk.com/support/solutions/articles/31000179476) ([archived 2026-09-23](https://web.archive.org/web/20260923131327/https://agisoft.freshdesk.com/support/solutions/articles/31000179476)).
 The Python surface adds two knobs the dialog does not name — the
 elevation `source_data` and `prevent_intersections`
 (signature introspection-confirmed on Metashape 2.3.2):
@@ -258,10 +258,10 @@ chunk.buildContours(
   `Chunk.model`, `Chunk.tiled_model`, `DataSource` enum,
   `Interpolation` enum.
 - Forum thread, [*Orthophoto generation: source from DEM or
-  Mesh?*, 2019](https://www.agisoft.com/forum/index.php?topic=10615.msg49635#msg49635)
+  Mesh?*, 2019](https://www.agisoft.com/forum/index.php?topic=10615.msg49635#msg49635) ([archived 2026-09-24](https://web.archive.org/web/20260924081017/https://www.agisoft.com/forum/index.php?topic=10615.msg49635))
   — canonical Q&A on source selection; tiled-model option
   introduction.
-- Forum thread, [*DEM from Mesh not working*, 2015-2016](https://www.agisoft.com/forum/index.php?topic=4745.msg23951#msg23951)
+- Forum thread, [*DEM from Mesh not working*, 2015-2016](https://www.agisoft.com/forum/index.php?topic=4745.msg23951#msg23951) ([archived 2026-09-23](https://web.archive.org/web/20260923212104/https://www.agisoft.com/forum/index.php?topic=4745.msg23951))
   — interpolation semantics; the Disabled-on-mesh-source
   release timing.
 

@@ -40,7 +40,7 @@ metadata:
 > Also they are copying one of these values to GPSAltitude tag
 > in EXIF — and it's Absolute altitude."
 > — Alexey Pasumansky, 2018-03-27, PhotoScan 1.4
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=8306.msg41134#msg41134))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=8306.msg41134#msg41134), [archived 2026-09-24](https://web.archive.org/web/20260924064021/https://www.agisoft.com/forum/index.php?topic=8306.msg41134))
 
 ### Why this matters
 
@@ -107,7 +107,7 @@ This enables proper RTK / PPK weighting in bundle adjustment.
 > XMP meta data to the Reference pane (corresponding flag should
 > be enabled in the Advanced preferences tab)."
 > — Alexey Pasumansky, 2018-11-19, Metashape 1.5.0 pre-release
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=9910.msg45643#msg45643))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=9910.msg45643#msg45643), [archived 2024-05-23](https://web.archive.org/web/20240523002845/https://www.agisoft.com/forum/index.php?topic=9910.msg45643))
 
 ### Enabling the XMP accuracy reader
 
@@ -164,10 +164,10 @@ essential.
 - Forum thread, [*Workflow to process the Photography of "PHANTOM
   4 RTK"*](https://www.agisoft.com/forum/index.php?topic=9910.0)
   — XMP accuracy tag introduction in 1.5.0.
-- [*Possible causes of large altitude errors when working with DJI images in Metashape* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000152491)
+- [*Possible causes of large altitude errors when working with DJI images in Metashape* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000152491) ([archived 2026-09-24](https://web.archive.org/web/20260924070935/https://agisoft.freshdesk.com/support/solutions/articles/31000152491))
   — the AbsoluteAltitude/RelativeAltitude distinction and scripts
   to read RelativeAltitude and add a known ellipsoidal offset; and
-  [*DJI with RTK coordinates data processing* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000161735)
+  [*DJI with RTK coordinates data processing* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000161735) ([archived 2026-09-24](https://web.archive.org/web/20260924074119/https://agisoft.freshdesk.com/support/solutions/articles/31000161735))
   — the end-to-end RTK workflow (XMP accuracy, GNSS bias adjustment).
 
 ## See also

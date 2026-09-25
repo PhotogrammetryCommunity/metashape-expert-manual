@@ -78,7 +78,7 @@ not connected.
 > are merging the markers, the subsets would be optimized
 > independently in the merged chunk." — Alexey Pasumansky,
 > 2017-03-14, PhotoScan 1.3
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=6691.msg32347#msg32347);
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=6691.msg32347#msg32347) ([archived 2026-09-23](https://web.archive.org/web/20260923213616/https://www.agisoft.com/forum/index.php?topic=6691.msg32347));
 > reposted in the thread index at
 > <https://www.agisoft.com/forum/index.php?topic=6691.0>)
 
@@ -235,7 +235,7 @@ produce a non-zero count.
 
 ## References
 
-- [Forum thread, *Optimisation of Merged Chunks*, 2017](https://www.agisoft.com/forum/index.php?topic=6691.0)
+- [Forum thread, *Optimisation of Merged Chunks*, 2017](https://www.agisoft.com/forum/index.php?topic=6691.0) ([archived 2026-09-24](http://web.archive.org/web/20260924191910/https://www.agisoft.com/forum/index.php?topic=6691.0))
   — primary source; the clarification (msg 32510).
 - [Forum thread, *Merging different chunks flawlessly?*, 2015](https://www.agisoft.com/forum/index.php?topic=3325.0)
   — practical 462-image / 4-chunk case with a 1 m residual,

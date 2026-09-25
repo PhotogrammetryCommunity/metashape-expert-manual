@@ -61,7 +61,7 @@ its **lens nodal point** does not.
 > head is recommended. Offsets would not be compensated and may
 > lead to the reconstruction problems."
 > — Alexey Pasumansky, 2015-03-27, PhotoScan 1.1
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=3525.msg18949#msg18949))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=3525.msg18949#msg18949), [archived 2026-09-23](https://web.archive.org/web/20260923211727/https://www.agisoft.com/forum/index.php?topic=3525.msg18949))
 
 Practical consequences:
 
@@ -147,7 +147,7 @@ from one viewpoint.
   `CameraGroup.Type.Station`, `Camera.group`,
   `Chunk.addCameraGroup`.
 - Forum thread, [*Best practices for tank
-  scanning*](https://www.agisoft.com/forum/index.php?topic=3525.0)
+  scanning*](https://www.agisoft.com/forum/index.php?topic=3525.0) ([archived 2026-09-24](http://web.archive.org/web/20260924190023/https://www.agisoft.com/forum/index.php?topic=3525.0))
   — the nodal-head requirement (msg 17376).
 
 ## See also

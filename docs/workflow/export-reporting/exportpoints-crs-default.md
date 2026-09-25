@@ -41,7 +41,7 @@ mismatch between the GUI and the Python API.
 > coordinates, while script export saves the coordinates in the
 > internal coordinates."
 > — Agisoft support, 2016-03-01, PhotoScan 1.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=5037.msg25059#msg25059))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=5037.msg25059#msg25059), [archived 2025-08-05](https://web.archive.org/web/20250805035920/https://www.agisoft.com/forum/index.php?topic=5037.msg25059))
 
 Same `chunk.exportPointCloud` API exists in 1.x as `exportPoints`
 (renamed at the 2.0 transition). The default-coordinate behaviour
@@ -120,7 +120,7 @@ CRS for referenced chunks. To force chunk-internal:
 > also use *Reset Transform* option in the chunk context menu
 > after right-clicking on its label in the Workspace pane."
 > — Agisoft support, 2016-03-01, PhotoScan 1.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=5037.msg25071#msg25071))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=5037.msg25071#msg25071), [archived 2026-09-25](https://web.archive.org/web/20260925131226/https://www.agisoft.com/forum/index.php?topic=5037.msg25071#msg25071))
 
 This drops the chunk's reference frame entirely, making the
 chunk no longer "referenced" — at which point GUI and Python
@@ -178,7 +178,7 @@ data.
   `Chunk.exportPointCloud`, parameter `crs`,
   `Chunk.crs`, `CoordinateSystem`, `DataSource.PointCloudData`,
   `DataSource.TiePointsData`.
-- Forum thread, [*Different point cloud from script export*, 2016](https://www.agisoft.com/forum/index.php?topic=5037.msg25241#msg25241)
+- Forum thread, [*Different point cloud from script export*, 2016](https://www.agisoft.com/forum/index.php?topic=5037.msg25241#msg25241) ([archived 2026-09-23](https://web.archive.org/web/20260923212426/https://www.agisoft.com/forum/index.php?topic=5037.msg25241))
   — the canonical Q&A; default-coordinate-system difference
   identified by Agisoft support.
 

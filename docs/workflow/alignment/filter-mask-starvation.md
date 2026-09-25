@@ -230,7 +230,7 @@ threshold is somewhere in between.
   heavy-masking failure mode).
 - *Metashape Python Reference* (2.3.1), `Chunk.matchPhotos` —
   documents `filter_mask` and `mask_tiepoints` kwargs.
-- [*Aligning photos with background suppression from single mask* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000158967)
+- [*Aligning photos with background suppression from single mask* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000158967) ([archived 2026-09-24](https://web.archive.org/web/20260924072844/https://agisoft.freshdesk.com/support/solutions/articles/31000158967))
   — the canonical description of the *Apply mask to Key points*
   (per-view) and *Apply mask to Tie points* options analyzed here.
 - [`mask_tiepoints` cross-view propagation and the

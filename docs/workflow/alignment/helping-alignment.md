@@ -87,7 +87,7 @@ handled by markers.
 > results would be in some arbitrary internal coordinate
 > system."
 > — Alexey Pasumansky, 2019-07-18, Metashape 1.5
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=11153.msg50187#msg50187))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=11153.msg50187#msg50187), [archived 2026-09-23](https://web.archive.org/web/20260923202420/https://www.agisoft.com/forum/index.php?topic=11153.msg50187))
 
 So if you align without any reference (no GPS, no markers, no
 scalebars), the result lives in a **chunk-internal arbitrary
@@ -105,7 +105,7 @@ Metashape picks an internal frame chosen by the bundle solver
 arbitrary orientation. A common community observation is that
 an exported mesh "lands at a seemingly random point in space"
 relative to the world origin
-([forum thread t=11120, daxils, 2019-07-09, Metashape 1.5](https://www.agisoft.com/forum/index.php?topic=11120.msg50096#msg50096));
+([forum thread t=11120, daxils, 2019-07-09, Metashape 1.5](https://www.agisoft.com/forum/index.php?topic=11120.msg50096#msg50096), [archived 2026-09-23](https://web.archive.org/web/20260923113008/https://www.agisoft.com/forum/index.php?topic=11120.msg50096));
 that's expected behaviour, not a bug.
 
 The chunk-internal scale being arbitrary has subtle
@@ -137,8 +137,8 @@ more images, behaves exactly as a manual tie point during
 > tie point during Align Photos or Align Selected Cameras
 > operations."
 > — Alexey Pasumansky, 2017-06-21, PhotoScan 1.3
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=7277.msg35040#msg35040);
-> reaffirmed in [t=7977](https://www.agisoft.com/forum/index.php?topic=7977.msg37947#msg37947))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=7277.msg35040#msg35040) ([archived 2026-09-23](https://web.archive.org/web/20260923213931/https://www.agisoft.com/forum/index.php?topic=7277.msg35040));
+> reaffirmed in [t=7977](https://www.agisoft.com/forum/index.php?topic=7977.msg37947#msg37947) ([archived 2026-09-24](https://web.archive.org/web/20260924063501/https://www.agisoft.com/forum/index.php?topic=7977.msg37947)))
 
 This matters for users coming from Pix4D or RealityCapture,
 which have distinct *manual tie point* (MTP) concepts. In
@@ -163,7 +163,7 @@ have a manual tie point.
 > projections on correctly aligned images), then select these
 > cameras and perform Align Selected operation."
 > — Alexey Pasumansky, 2013-09-03, PhotoScan 1.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=1505.msg7674#msg7674))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=1505.msg7674#msg7674), [archived 2026-09-25](https://web.archive.org/web/20260925130501/https://www.agisoft.com/forum/index.php?topic=1505.msg7674#msg7674))
 
 This is documented step-by-step (with a worked GUI and Python
 walkthrough) in
@@ -204,7 +204,7 @@ by feature matching.
 > could be used for difficult datasets as 100% valid matches
 > if 'Align selected' feature is used."
 > — Alexey Pasumansky, 2012-10-18, PhotoScan 0.9
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=764.msg3576#msg3576))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=764.msg3576#msg3576), [archived 2026-09-24](https://web.archive.org/web/20260924063400/https://www.agisoft.com/forum/index.php?topic=764.msg3576))
 
 > "Markers can be used as valid matching points between
 > photos, but it works only for 'Align Selected Cameras'
@@ -212,7 +212,7 @@ by feature matching.
 > Control pane if the coordinate information is missing, just
 > leave them unchecked."
 > — Alexey Pasumansky, 2014-08-19, PhotoScan 1.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=2728.msg14454#msg14454))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=2728.msg14454#msg14454), [archived 2026-09-23](https://web.archive.org/web/20260923211214/https://www.agisoft.com/forum/index.php?topic=2728.msg14454))
 
 Two scenarios worth distinguishing:
 
@@ -238,7 +238,7 @@ already-aligned images.
 > marker should have at least two projections on correctly
 > aligned images)"
 > — Alexey Pasumansky, 2013-09-03, PhotoScan 1.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=1505.msg7674#msg7674))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=1505.msg7674#msg7674), [archived 2026-09-25](https://web.archive.org/web/20260925130501/https://www.agisoft.com/forum/index.php?topic=1505.msg7674#msg7674))
 
 The "4" is the geometric minimum: a 6-DOF camera pose
 (3 translation + 3 rotation) needs 4 non-coplanar 2D-3D
@@ -251,7 +251,7 @@ robustness.
 For chunk-wide recovery in repetitive-feature scenes, more is
 better. One community user reports placing "dozens" of markers
 without success in highly repetitive architecture
-([t=1505 msg 7916](https://www.agisoft.com/forum/index.php?topic=1505.msg7916#msg7916));
+([t=1505 msg 7916](https://www.agisoft.com/forum/index.php?topic=1505.msg7916#msg7916), [archived 2026-09-23](https://web.archive.org/web/20260923205132/https://www.agisoft.com/forum/index.php?topic=1505.msg7916));
 in those cases the false matches outweigh the manual ones, and
 either reference preselection or recapture is needed instead.
 
@@ -267,7 +267,7 @@ matters more than the count:
 > 10-15 different markers for the whole project, you do not
 > have to place marker on every image in the dataset."
 > — Alexey Pasumansky, 2020-12-07, Metashape 1.6
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=12852.msg56975#msg56975))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=12852.msg56975#msg56975), [archived 2026-09-23](https://web.archive.org/web/20260923114030/https://www.agisoft.com/forum/index.php?topic=12852.msg56975))
 
 Three placement principles photogrammetric practice
 generally agrees on (none specifically forum-attested but
@@ -327,7 +327,7 @@ real failure mode:
 > markers) — usually mean value is about 1 pix, whereas here
 > it is 5.5 pix."
 > — Alexey Pasumansky, 2018-02-19, PhotoScan 1.4
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=8444.msg40226#msg40226))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=8444.msg40226#msg40226), [archived 2026-09-24](https://web.archive.org/web/20260924064115/https://www.agisoft.com/forum/index.php?topic=8444.msg40226))
 
 Metashape's `Refine Markers` tool helps with auto-placed
 projections but does not recognise reference-coordinate
@@ -646,7 +646,7 @@ location:
 > can use Place Marker option if you want to add another
 > projection of existing marker to photo."
 > — Alexey Pasumansky, 2012-01-17, PhotoScan 0.9
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=335.msg1353#msg1353))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=335.msg1353#msg1353), [archived 2026-09-23](https://web.archive.org/web/20260923211538/https://www.agisoft.com/forum/index.php?topic=335.msg1353))
 
 **Step 3 — Refine the projection if needed.**
 
@@ -667,14 +667,14 @@ colour:
 > convenience only and projections marked by grey flags do not
 > really exist."
 > — Alexey Pasumansky, 2015-02-04, PhotoScan 1.1
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=3371.msg17724#msg17724))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=3371.msg17724#msg17724), [archived 2026-09-23](https://web.archive.org/web/20260923120649/https://www.agisoft.com/forum/index.php?topic=3371.msg17724))
 
 > "Both blue and green flags are considered. Blue (unpinned)
 > markers usually are related to the automatically placed
 > projections, whereas green (pinned) are those that are
 > adjusted or placed by user manually."
 > — Alexey Pasumansky, 2016-02-10, PhotoScan 1.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=4947.msg24735#msg24735))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=4947.msg24735#msg24735), [archived 2026-09-23](https://web.archive.org/web/20260923212336/https://www.agisoft.com/forum/index.php?topic=4947.msg24735))
 
 A common mistake: assuming gray flags mean "marker is
 visible here." They don't — the real projections are only the
@@ -695,7 +695,7 @@ Markers* leaves them alone.
 > markers on the unaligned images converting them into pinned
 > status."
 > — Alexey Pasumansky, 2017-09-26, PhotoScan 1.3
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=7772.msg37143#msg37143))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=7772.msg37143#msg37143), [archived 2026-09-24](https://web.archive.org/web/20260924063442/https://www.agisoft.com/forum/index.php?topic=7772.msg37143))
 
 For Python equivalents (programmatic marker creation, pinning,
 and projection placement) see
@@ -720,7 +720,7 @@ Coded targets remove the renaming step entirely:
 > modify the file with the coordinates to fit the proper
 > markers."
 > — Alexey Pasumansky, 2016-12-10, PhotoScan 1.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=6258.msg30236#msg30236))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=6258.msg30236#msg30236), [archived 2026-09-23](https://web.archive.org/web/20260923213151/https://www.agisoft.com/forum/index.php?topic=6258.msg30236))
 
 For non-coded targets with surveyed coordinates, the
 *ignore labels* option in *Import Reference* matches each
@@ -735,7 +735,7 @@ rather than label:
 > and automatically assign the labels to the corresponding
 > points."
 > — Alexey Pasumansky, 2019-01-18, Metashape 1.5
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=10250.msg46776#msg46776))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=10250.msg46776#msg46776), [archived 2026-09-24](http://web.archive.org/web/20260924125726/https://www.agisoft.com/forum/index.php?topic=10250.msg46776))
 
 For physical-target sizing rules, the printing workflow, and
 the comparison between the four CircularTarget bit-counts,
@@ -797,14 +797,14 @@ optional, independent weighted constraints.
 > corresponding values are checked on in the Reference pane
 > (coordinate information works in a similar way)."
 > — Alexey Pasumansky, 2023-07-27, Metashape 2.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=15721.msg68018#msg68018))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=15721.msg68018#msg68018), [archived 2026-09-23](https://web.archive.org/web/20260923205400/https://www.agisoft.com/forum/index.php?topic=15721.msg68018))
 
 > "Camera orientation angles are only taken into account if
 > they are loaded to the Reference pane and when the Ground
 > Altitude value is specified in the pane's preferences
 > dialog."
 > — Alexey Pasumansky, 2016-12-20, PhotoScan 1.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=6306.msg30457#msg30457))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=6306.msg30457#msg30457), [archived 2026-09-23](https://web.archive.org/web/20260923213534/https://www.agisoft.com/forum/index.php?topic=6306.msg30457))
 
 Position alone is enough to enable *Reference Preselection*
 (restricts matcher pair candidates by spatial proximity) and
@@ -823,13 +823,13 @@ the accuracy parameter is set to match the actual uncertainty.
 > separate accuracy for XY coordinates (like hundreds or
 > thousands of meters) and high accuracy on Z."
 > — Alexey Pasumansky, 2021-02-03, Metashape 1.7
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=13047.msg57887#msg57887))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=13047.msg57887#msg57887), [archived 2026-09-23](https://web.archive.org/web/20260923203832/https://www.agisoft.com/forum/index.php?topic=13047.msg57887))
 
 > "Probably you need to adjust the Camera Accuracy (m) value,
 > as it is 10 meters by default. Maybe for the close range
 > object you need to set it as 1 cm, or even lower."
 > — Alexey Pasumansky, 2016-11-11, PhotoScan 1.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=6111.msg30095#msg30095))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=6111.msg30095#msg30095), [archived 2026-09-23](https://web.archive.org/web/20260923213100/https://www.agisoft.com/forum/index.php?topic=6111.msg30095))
 
 The accuracy parameter does the work: a 1000-metre accuracy
 tells the bundle "trust this position only loosely" and
@@ -870,7 +870,7 @@ different capture geometry:
 > (using only certain number of neighbors according to the
 > camera centers coordinates)."
 > — Alexey Pasumansky, 2016-12-20, PhotoScan 1.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=6306.msg30457#msg30457))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=6306.msg30457#msg30457), [archived 2026-09-23](https://web.archive.org/web/20260923213534/https://www.agisoft.com/forum/index.php?topic=6306.msg30457))
 
 For complex capture geometries (lawn-mower aerial patterns,
 underwater scans, video sequences with cross-strip overlap),
@@ -882,7 +882,7 @@ a **two-pass approach** often outperforms a single mode:
 > preselection and then with estimated preselection,
 > providing that most of the cameras are properly aligned."
 > — Alexey Pasumansky, 2020-09-12, Metashape 1.6
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=12553.msg55746#msg55746))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=12553.msg55746#msg55746), [archived 2026-09-23](https://web.archive.org/web/20260923203425/https://www.agisoft.com/forum/index.php?topic=12553.msg55746))
 
 (*"Space invader"* is Agisoft community shorthand for a
 lawn-mower flight pattern: parallel strips with cross-strip
@@ -906,7 +906,7 @@ tie points. Forum-attested typical values:
 | Source | Camera location accuracy (m) | Camera rotation accuracy (deg) | Notes |
 |--------|------------------------------|-------------------------------|-------|
 | Consumer drone GPS (DJI Phantom etc) | 10 (Metashape default) | n/a (no rotation usually) | Range typically 2.5 m — ∞; 10 is conservative |
-| RTK drone (DJI Phantom 4 RTK etc) | 0.02 — 0.10 | 0.5 — 2 | DJI recommends 0.1 m per [*DJI with RTK coordinates data processing* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000161735) |
+| RTK drone (DJI Phantom 4 RTK etc) | 0.02 — 0.10 | 0.5 — 2 | DJI recommends 0.1 m per [*DJI with RTK coordinates data processing* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000161735) ([archived 2026-09-24](https://web.archive.org/web/20260924074119/https://agisoft.freshdesk.com/support/solutions/articles/31000161735)) |
 | PPK post-processed | 0.025 — 0.05 | 0.5 — 2 | Depends on baseline / fix |
 | Smartphone GPS (no RTK) | 3 — 10 | n/a | EXIF varies wildly |
 | No GPS at all | n/a (don't load reference) | n/a | Use markers / scalebars instead |
@@ -939,7 +939,7 @@ camera.reference.location_accuracy = Metashape.Vector([0.01, 0.01, 0.05])
 > range from 2.5 to 'infinite' so 10 meters (default) is a
 > flexible approach as a priori coordinates."
 > — JMR, 2016-02-19, PhotoScan 1.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=4766.msg21024#msg21024))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=4766.msg21024#msg21024), [archived 2026-09-23](https://web.archive.org/web/20260923212202/https://www.agisoft.com/forum/index.php?topic=4766.msg21024))
 
 For the per-scalebar accuracy field, ruler-measured distances
 typically warrant `accuracy = 0.002 m` (2 mm); calliper-grade
@@ -962,7 +962,7 @@ loaded; typically Label, X / Y / Z, and Accuracy.
 > camera positions to the Reference pane — the corresponding
 > lines are empty."
 > — Alexey Pasumansky, 2016-09-08, PhotoScan 1.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=5837.msg28390#msg28390))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=5837.msg28390#msg28390), [archived 2026-09-23](https://web.archive.org/web/20260923212831/https://www.agisoft.com/forum/index.php?topic=5837.msg28390))
 
 Double-click a cell, type the value, press Enter. Repeat for
 each camera or marker. For per-camera accuracy (different
@@ -976,7 +976,7 @@ Accuracy…*.
 > Import button on the Reference pane toolbar. The input file
 > should contain the image filename, x, y and z coordinate."
 > — Alexey Pasumansky, 2020-09-19, Metashape 1.6
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=12581.msg55852#msg55852))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=12581.msg55852#msg55852), [archived 2026-09-23](https://web.archive.org/web/20260923203438/https://www.agisoft.com/forum/index.php?topic=12581.msg55852))
 
 The Reference pane toolbar has an Import button (left side).
 Pick the file, configure column mapping, OK. The values land
@@ -993,7 +993,7 @@ it a check point (post-hoc validation only).
 > coordinates from the source values tab of the Reference
 > pane will be considered in any case."
 > — Alexey Pasumansky, 2022-12-09, Metashape 2.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=15053.msg65810#msg65810))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=15053.msg65810#msg65810), [archived 2026-09-23](https://web.archive.org/web/20260923205219/https://www.agisoft.com/forum/index.php?topic=15053.msg65810))
 
 So *Reference Preselection* uses the values whether ticked or
 not (as long as they're in *Source values*); the bundle
@@ -1032,13 +1032,13 @@ to world coordinates.
 > changed in the project) there's no difference how many
 > times you press Update Transform button."
 > — Alexey Pasumansky, 2020-03-29, Metashape 1.6
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=12036.msg53833#msg53833))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=12036.msg53833#msg53833), [archived 2026-09-23](https://web.archive.org/web/20260923203100/https://www.agisoft.com/forum/index.php?topic=12036.msg53833))
 
 > "Input coordinates for at least three markers that do not
 > lay on the same line, check them on in the Reference pane
 > and click Update Transform button on the pane's toolbar."
 > — Alexey Pasumansky, 2023-11-21, Metashape 2.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=16013.msg68965#msg68965))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=16013.msg68965#msg68965), [archived 2026-09-23](https://web.archive.org/web/20260923205822/https://www.agisoft.com/forum/index.php?topic=16013.msg68965))
 
 The "at least three non-collinear markers" rule is the
 geometric minimum for a 2D-determinable rotation; for a full
@@ -1082,7 +1082,7 @@ distinguishing facts:
 > Optimize Cameras procedure would discard the generated
 > dense cloud, mesh and tiled model."
 > — Alexey Pasumansky, 2019-04-30, Metashape 1.5
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=10834.msg48943#msg48943))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=10834.msg48943#msg48943), [archived 2026-09-24](https://web.archive.org/web/20260924081236/https://www.agisoft.com/forum/index.php?topic=10834.msg48943))
 
 > "During optimization PhotoScan performs full
 > photogrammetric adjustment taking into account additional
@@ -1093,7 +1093,7 @@ distinguishing facts:
 > helps to significantly improve accuracy of the final
 > solution."
 > — Alexey Pasumansky, 2012-07-27, PhotoScan 0.9
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=600.msg2677#msg2677))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=600.msg2677#msg2677), [archived 2026-09-23](https://web.archive.org/web/20260923212845/https://www.agisoft.com/forum/index.php?topic=600.msg2677))
 
 **The two are sequential, not mutually exclusive.** A typical
 production workflow:
@@ -1138,7 +1138,7 @@ constraint more weight.
 > purposes should be checked on. And those that are assumed
 > to be used for measurements should be unchecked."
 > — Alexey Pasumansky, 2016-05-05, PhotoScan 1.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=5061.msg25163#msg25163))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=5061.msg25163#msg25163), [archived 2026-09-23](https://web.archive.org/web/20260923212456/https://www.agisoft.com/forum/index.php?topic=5061.msg25163))
 
 **A common production pattern (GPS + GCPs + scalebars):**
 
@@ -1194,7 +1194,7 @@ Each step is forum-attested:
 > size, so PhotoScan initial calibration data may be
 > incorrect."
 > — Alexey Pasumansky, 2013-09-08, PhotoScan 1.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=1526.msg7833#msg7833))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=1526.msg7833#msg7833), [archived 2026-09-23](https://web.archive.org/web/20260923115042/https://www.agisoft.com/forum/index.php?topic=1526.msg7833))
 
 > "I can suggest to increase tie point limit rather than
 > key point limit, for example, up to 10 000. Also if you
@@ -1203,14 +1203,14 @@ Each step is forum-attested:
 > preselection in the Align Photos dialog, if the
 > dataset is not very big."
 > — Alexey Pasumansky, 2016-07-11, PhotoScan 1.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=5585.msg27299#msg27299))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=5585.msg27299#msg27299), [archived 2026-09-23](https://web.archive.org/web/20260923212753/https://www.agisoft.com/forum/index.php?topic=5585.msg27299))
 
 > "Without seeing the images themselves I can only say
 > that the most common reasons of the alignment issues
 > are lack of the image overlap and image quality (when
 > too few tie points are detected on the images)."
 > — Alexey Pasumansky, 2022-04-06, Metashape 1.8
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=14382.msg63242#msg63242))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=14382.msg63242#msg63242), [archived 2026-09-23](https://web.archive.org/web/20260923204745/https://www.agisoft.com/forum/index.php?topic=14382.msg63242))
 
 ## Bowl / dome effect
 
@@ -1231,7 +1231,7 @@ that affects the entire reconstruction.
 > on camera or GCP coordinates, performed after photo
 > alignment."
 > — Alexey Pasumansky, 2012-07-27, PhotoScan 0.9
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=600.msg2677#msg2677))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=600.msg2677#msg2677), [archived 2026-09-23](https://web.archive.org/web/20260923212845/https://www.agisoft.com/forum/index.php?topic=600.msg2677))
 
 The cause is **focal-length under-determination** in nadir-only
 aerial datasets: with all cameras pointing roughly downward,
@@ -1264,7 +1264,7 @@ reconstruction into a bowl.
    > are suggested by default (and don't enable the
    > adaptive camera model fitting option)."
    > — Alexey Pasumansky, 2018-07-16, Metashape 1.4
-   > ([permalink](https://www.agisoft.com/forum/index.php?topic=9244.msg43493#msg43493))
+   > ([permalink](https://www.agisoft.com/forum/index.php?topic=9244.msg43493#msg43493), [archived 2026-09-24](https://web.archive.org/web/20260924064742/https://www.agisoft.com/forum/index.php?topic=9244.msg43493))
 
 5. **Manual focal-length adjustment.** For severely bowed
    reconstructions, set the focal length manually in
@@ -1277,7 +1277,7 @@ reconstruction into a bowl.
    > F optimization), but it could require a few
    > iterations."
    > — Alexey Pasumansky, 2019-07-03, Metashape 1.5
-   > ([permalink](https://www.agisoft.com/forum/index.php?topic=11068.msg52237#msg52237))
+   > ([permalink](https://www.agisoft.com/forum/index.php?topic=11068.msg52237#msg52237), [archived 2026-09-24](https://web.archive.org/web/20260924081332/https://www.agisoft.com/forum/index.php?topic=11068.msg52237))
 
 6. **Capture-side prevention**: include oblique imagery
    (camera-tilted shots) in addition to nadir. Convergent
@@ -1288,7 +1288,7 @@ reconstruction into a bowl.
 > 'bowl-effect' even GPS coordinates are not so accurate
 > (about several meters)."
 > — Alexey Pasumansky, 2012-07-27, PhotoScan 0.9
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=600.msg2893#msg2893))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=600.msg2893#msg2893), [archived 2026-09-23](https://web.archive.org/web/20260923212919/https://www.agisoft.com/forum/index.php?topic=600.msg2893))
 
 So even if the only reference data is rough drone GPS
 (several-metre accuracy), Optimize Cameras can correct the
@@ -1317,7 +1317,7 @@ fix lost mid-flight, etc.). Symptoms:
 > on the chunk's label in the Workspace pane and choose
 > 'reset transform' option from the context menu."
 > — Alexey Pasumansky, 2016-05-18, PhotoScan 1.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=5359.msg26355#msg26355))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=5359.msg26355#msg26355), [archived 2026-09-23](https://web.archive.org/web/20260923212610/https://www.agisoft.com/forum/index.php?topic=5359.msg26355))
 
 The full operational sequence for bad GPS:
 
@@ -1457,7 +1457,7 @@ response. Links point at the deep-dive recipe for each path.
   has no ground plane to project onto and the
   computed-footprint pair-selection logic falls back to
   position-only behaviour. The forum mention in
-  [t=6306](https://www.agisoft.com/forum/index.php?topic=6306.msg30719#msg30719)
+  [t=6306](https://www.agisoft.com/forum/index.php?topic=6306.msg30719#msg30719) ([archived 2026-09-23](https://web.archive.org/web/20260923213514/https://www.agisoft.com/forum/index.php?topic=6306.msg30719))
   is the only attested reference; the official manual
   doesn't expand on this. Set the value to the project's
   approximate ground elevation in the same units as the
@@ -1506,107 +1506,107 @@ response. Links point at the deep-dive recipe for each path.
   `Marker.position`, `Marker.projections`,
   `Marker.Projection.pinned`, `Chunk.markers`,
   `Chunk.scalebars`, `Chunk.transform`, `Chunk.crs`.
-- Forum thread, [*Manual camera position?*](https://www.agisoft.com/forum/index.php?topic=1505.0)
+- Forum thread, [*Manual camera position?*](https://www.agisoft.com/forum/index.php?topic=1505.0) ([archived 2026-09-24](http://web.archive.org/web/20260924190520/https://www.agisoft.com/forum/index.php?topic=1505.0))
   — Alexey Pasumansky, 2013-09-03, PhotoScan 1.0. The
   canonical 4-markers-per-photo recipe + repetitive-features
   caveat from community follow-up.
-- Forum thread, [*tie points and optimization*](https://www.agisoft.com/forum/index.php?topic=764.0)
+- Forum thread, [*tie points and optimization*](https://www.agisoft.com/forum/index.php?topic=764.0) ([archived 2026-09-24](http://web.archive.org/web/20260924190310/https://www.agisoft.com/forum/index.php?topic=764.0))
   — Alexey Pasumansky, 2012-10-18, PhotoScan 0.9. Markers as
   "100% valid matches" for *Align Selected Cameras* and the
   no-coordinates-don't-help-Optimize-Cameras distinction.
-- Forum thread, [*Markers without coordinates*](https://www.agisoft.com/forum/index.php?topic=2728.0)
+- Forum thread, [*Markers without coordinates*](https://www.agisoft.com/forum/index.php?topic=2728.0) ([archived 2025-03-19](http://web.archive.org/web/20250319162640/https://www.agisoft.com/forum/index.php?topic=2728.0))
   — Alexey Pasumansky, 2014-08-19, PhotoScan 1.0. The
   Reference-pane-checkbox-not-required clarification for
   marker-as-tie-point usage.
-- Forum thread, [*Marker projections*](https://www.agisoft.com/forum/index.php?topic=3008.0)
+- Forum thread, [*Marker projections*](https://www.agisoft.com/forum/index.php?topic=3008.0) ([archived 2025-08-09](http://web.archive.org/web/20250809123127/https://www.agisoft.com/forum/index.php?topic=3008.0))
   — Alexey Pasumansky, 2014-10-22, PhotoScan 1.0. The
   ray-cast-onto-mesh mechanism for automatic marker
   projection placement (when *Create Marker* with a mesh
   present).
-- Forum thread, [*Scaled model exporting*](https://www.agisoft.com/forum/index.php?topic=3371.0)
+- Forum thread, [*Scaled model exporting*](https://www.agisoft.com/forum/index.php?topic=3371.0) ([archived 2026-09-24](http://web.archive.org/web/20260924190016/https://www.agisoft.com/forum/index.php?topic=3371.0))
   — Alexey Pasumansky, 2015-02-04, PhotoScan 1.1. The
   green/blue/gray flag canonical definitions.
-- Forum thread, [*guided marker placement — blue markers used in optimisation?*](https://www.agisoft.com/forum/index.php?topic=4947.0)
+- Forum thread, [*guided marker placement — blue markers used in optimisation?*](https://www.agisoft.com/forum/index.php?topic=4947.0) ([archived 2026-09-25](https://web.archive.org/web/20260925131101/https://www.agisoft.com/forum/index.php?topic=4947.0))
   — Alexey Pasumansky, 2016-02-10, PhotoScan 1.2. Both blue
   and green flags used in optimisation; how to deal with
   incorrect blue projections.
-- Forum thread, [*Placed markers disappear from unaligned photos*](https://www.agisoft.com/forum/index.php?topic=7772.0)
+- Forum thread, [*Placed markers disappear from unaligned photos*](https://www.agisoft.com/forum/index.php?topic=7772.0) ([archived 2025-07-17](http://web.archive.org/web/20250717183718/https://www.agisoft.com/forum/index.php?topic=7772.0))
   — Alexey Pasumansky, 2017-09-26, PhotoScan 1.3. Pinning
   projections before running *Refine Markers*.
-- Forum thread, [*Extract and change the coordinate system*](https://www.agisoft.com/forum/index.php?topic=11153.0)
+- Forum thread, [*Extract and change the coordinate system*](https://www.agisoft.com/forum/index.php?topic=11153.0) ([archived 2026-09-24](http://web.archive.org/web/20260924185738/https://www.agisoft.com/forum/index.php?topic=11153.0))
   — Alexey Pasumansky, 2019-07-18, Metashape 1.5. The
   "arbitrary internal coordinate system" definitive
   statement for unreferenced chunks.
-- Forum thread, [*Constrained camera altitude but not horizontal position*](https://www.agisoft.com/forum/index.php?topic=13047.0)
+- Forum thread, [*Constrained camera altitude but not horizontal position*](https://www.agisoft.com/forum/index.php?topic=13047.0) ([archived 2025-09-07](http://web.archive.org/web/20250907022109/https://www.agisoft.com/forum/index.php?topic=13047.0))
   — Alexey Pasumansky, 2021-02-03, Metashape 1.7. Hundreds-
   or-thousands-of-metres-accuracy is fine for approximate
   references.
-- Forum thread, [*Align with GPS coordinates: should images be checked or not?*](https://www.agisoft.com/forum/index.php?topic=15053.0)
+- Forum thread, [*Align with GPS coordinates: should images be checked or not?*](https://www.agisoft.com/forum/index.php?topic=15053.0) ([archived 2026-09-24](http://web.archive.org/web/20260924190612/https://www.agisoft.com/forum/index.php?topic=15053.0))
   — Alexey Pasumansky, 2022-12-09, Metashape 2.0. Reference
   Preselection uses Source values regardless of ticked /
   unticked.
-- Forum thread, [*Processing Smartphone Photos with Metashape*](https://www.agisoft.com/forum/index.php?topic=15721.0)
+- Forum thread, [*Processing Smartphone Photos with Metashape*](https://www.agisoft.com/forum/index.php?topic=15721.0) ([archived 2026-09-24](http://web.archive.org/web/20260924190722/https://www.agisoft.com/forum/index.php?topic=15721.0))
   — Alexey Pasumansky, 2023-07-27, Metashape 2.0. Position
   and rotation are independent optional weighted
   constraints; preselection in Source mode is for nadir
   surveys.
-- Forum thread, [*Align images — Reference preselection*](https://www.agisoft.com/forum/index.php?topic=6306.0)
+- Forum thread, [*Align images — Reference preselection*](https://www.agisoft.com/forum/index.php?topic=6306.0) ([archived 2026-01-04](http://web.archive.org/web/20260104063112/https://www.agisoft.com/forum/index.php?topic=6306.0))
   — Alexey Pasumansky, 2016-12-20, PhotoScan 1.2. Camera
   orientation requires Ground Altitude in the pane's
   preferences; reference-preselection mechanism.
-- Forum thread, [*Camera Pose Positions in UI and Exported Camera Poses*](https://www.agisoft.com/forum/index.php?topic=5837.0)
+- Forum thread, [*Camera Pose Positions in UI and Exported Camera Poses*](https://www.agisoft.com/forum/index.php?topic=5837.0) ([archived 2025-04-01](http://web.archive.org/web/20250401075453/https://www.agisoft.com/forum/index.php?topic=5837.0))
   — Alexey Pasumansky, 2016-09-08, PhotoScan 1.2. Reference
   values can be loaded OR input manually in the GUI.
-- Forum thread, [*Use PPP corrected positions to overwrite image positions*](https://www.agisoft.com/forum/index.php?topic=12581.0)
+- Forum thread, [*Use PPP corrected positions to overwrite image positions*](https://www.agisoft.com/forum/index.php?topic=12581.0) ([archived 2026-09-25](https://web.archive.org/web/20260925130349/https://www.agisoft.com/forum/index.php?topic=12581.0))
   — Alexey Pasumansky, 2020-09-19, Metashape 1.6. The
   Import-button-on-Reference-pane-toolbar workflow for CSV /
   TXT bulk loading.
-- Forum thread, [*Accuracy parameters in Reference Settings*](https://www.agisoft.com/forum/index.php?topic=4766.0)
+- Forum thread, [*Accuracy parameters in Reference Settings*](https://www.agisoft.com/forum/index.php?topic=4766.0) ([archived 2023-06-27](http://web.archive.org/web/20230627055552/https://www.agisoft.com/forum/index.php?topic=4766.0))
   — JMR, 2016-02-19, PhotoScan 1.2.
   Field-by-field explanation of all Reference Settings
   values; typical ranges per source type.
-- Forum thread, [*Adding (Manual) Tie Points in Photoscan*](https://www.agisoft.com/forum/index.php?topic=7277.0)
+- Forum thread, [*Adding (Manual) Tie Points in Photoscan*](https://www.agisoft.com/forum/index.php?topic=7277.0) ([archived 2026-09-24](http://web.archive.org/web/20260924190301/https://www.agisoft.com/forum/index.php?topic=7277.0))
   — Agisoft support, 2017-06-21,
   PhotoScan 1.3. Markers without coordinates ARE manual
   tie points; no separate object type exists.
-- Forum thread, [*Detect Markers (non coded) with survey coordinate*](https://www.agisoft.com/forum/index.php?topic=6258.0)
+- Forum thread, [*Detect Markers (non coded) with survey coordinate*](https://www.agisoft.com/forum/index.php?topic=6258.0) ([archived 2026-09-24](http://web.archive.org/web/20260924191808/https://www.agisoft.com/forum/index.php?topic=6258.0))
   — Agisoft support, 2016-12-10,
   PhotoScan 1.2. Coded targets get automatic labels;
   non-coded require renaming or *ignore labels* CSV import.
-- Forum thread, [*Refine marker location with python scripts*](https://www.agisoft.com/forum/index.php?topic=10250.0)
+- Forum thread, [*Refine marker location with python scripts*](https://www.agisoft.com/forum/index.php?topic=10250.0) ([archived 2024-02-24](http://web.archive.org/web/20240224014226/https://www.agisoft.com/forum/index.php?topic=10250.0))
   — Agisoft support, 2019-01-18,
   Metashape 1.5. The *ignore labels* CSV import strategy
   for non-coded targets matched by spatial distribution.
-- Forum thread, [*Update Transform question*](https://www.agisoft.com/forum/index.php?topic=12036.0)
+- Forum thread, [*Update Transform question*](https://www.agisoft.com/forum/index.php?topic=12036.0) ([archived 2025-05-15](http://web.archive.org/web/20250515184724/https://www.agisoft.com/forum/index.php?topic=12036.0))
   — Agisoft support, 2020-03-29,
   Metashape 1.6. *Update Transform* runs once after
   reference data changes; idempotent thereafter.
-- Forum thread, [*Detect markers*](https://www.agisoft.com/forum/index.php?topic=16013.0)
+- Forum thread, [*Detect markers*](https://www.agisoft.com/forum/index.php?topic=16013.0) ([archived 2026-09-24](http://web.archive.org/web/20260924185902/https://www.agisoft.com/forum/index.php?topic=16013.0))
   — Agisoft support, 2023-11-21,
   Metashape 2.0. Three non-collinear markers minimum for
   *Update Transform*.
-- Forum thread, [*Difficulties measuring using scale bars*](https://www.agisoft.com/forum/index.php?topic=5061.0)
+- Forum thread, [*Difficulties measuring using scale bars*](https://www.agisoft.com/forum/index.php?topic=5061.0) ([archived 2026-09-24](http://web.archive.org/web/20260924191612/https://www.agisoft.com/forum/index.php?topic=5061.0))
   — Agisoft support, 2016-05-05,
   PhotoScan 1.2. Scaling vs measurement-only references
   (ticked vs unticked); mixing reference sources.
-- Forum thread, [*Underwater orthomosaic with no GPS data*](https://www.agisoft.com/forum/index.php?topic=12553.0)
+- Forum thread, [*Underwater orthomosaic with no GPS data*](https://www.agisoft.com/forum/index.php?topic=12553.0) ([archived 2026-09-24](http://web.archive.org/web/20260924190417/https://www.agisoft.com/forum/index.php?topic=12553.0))
   — Agisoft support, 2020-09-12,
   Metashape 1.6. Two-pass alignment for video / underwater:
   Sequential first, then Estimated.
-- Forum thread, [*Can't align photos*](https://www.agisoft.com/forum/index.php?topic=1526.0)
+- Forum thread, [*Can't align photos*](https://www.agisoft.com/forum/index.php?topic=1526.0) ([archived 2018-07-25](http://web.archive.org/web/20180725172129/http://www.agisoft.com:80/forum/index.php?topic=1526.0))
   — Agisoft support, 2013-09-08,
   PhotoScan 1.0. Missing EXIF / pixel-size as the most
   common total-failure cause.
-- Forum thread, [*about the photo alignment*](https://www.agisoft.com/forum/index.php?topic=5585.0)
+- Forum thread, [*about the photo alignment*](https://www.agisoft.com/forum/index.php?topic=5585.0) ([archived 2026-05-15](http://web.archive.org/web/20260515173307/https://www.agisoft.com/forum/index.php?topic=5585.0))
   — Agisoft support, 2016-07-11,
   PhotoScan 1.2. Tie-point-limit-up-to-10000 and
   disable-preselection-on-small-datasets recovery for
   total-failure cases.
-- Forum thread, [*Photos failed to align*](https://www.agisoft.com/forum/index.php?topic=14382.0)
+- Forum thread, [*Photos failed to align*](https://www.agisoft.com/forum/index.php?topic=14382.0) ([archived 2026-05-06](http://web.archive.org/web/20260506144332/https://www.agisoft.com/forum/index.php?topic=14382.0))
   — Agisoft support, 2022-04-06,
   Metashape 1.8. The "image overlap and image quality" as
   most-common-fundamental-cause framing.
-- Forum thread, [*Strange artifacts on DEM (ridges and steps)*](https://www.agisoft.com/forum/index.php?topic=8444.0)
+- Forum thread, [*Strange artifacts on DEM (ridges and steps)*](https://www.agisoft.com/forum/index.php?topic=8444.0) ([archived 2025-07-17](http://web.archive.org/web/20250717194318/https://www.agisoft.com/forum/index.php?topic=8444.0))
   — Agisoft support, 2018-02-19,
   PhotoScan 1.4. Confirms that "incorrect markers" can
   drive optimisation RMS up to 5.5 px (vs typical ~1 px);
@@ -1626,7 +1626,7 @@ response. Links point at the deep-dive recipe for each path.
   cause is inaccurate camera self-calibration during
   alignment; remedy is *Optimize Cameras* with reference
   data.
-- Forum thread, [*add coordinates after build dense cloud*](https://www.agisoft.com/forum/index.php?topic=10834.0)
+- Forum thread, [*add coordinates after build dense cloud*](https://www.agisoft.com/forum/index.php?topic=10834.0) ([archived 2026-09-24](http://web.archive.org/web/20260924181823/https://www.agisoft.com/forum/index.php?topic=10834.0))
   — Agisoft support, 2019-04-30,
   Metashape 1.5. Update Transform vs Optimize Cameras: the
   former preserves dense products, the latter discards them.
@@ -1635,22 +1635,22 @@ response. Links point at the deep-dive recipe for each path.
   Metashape 1.4. The "untick cameras / tick GCPs / Optimize
   with K1-K3, P1-P2, no adaptive" recipe for stubborn
   bowls.
-- Forum thread, [*Underwater mapping model curved... help?*](https://www.agisoft.com/forum/index.php?topic=11068.0)
+- Forum thread, [*Underwater mapping model curved... help?*](https://www.agisoft.com/forum/index.php?topic=11068.0) ([archived 2026-09-24](http://web.archive.org/web/20260924185633/https://www.agisoft.com/forum/index.php?topic=11068.0))
   — Agisoft support, 2019-07-03,
   Metashape 1.5. Manual focal-length adjustment + Optimize
   without F as a recovery for severely bowled
   reconstructions.
-- Forum thread, [*ignore coordinate system*](https://www.agisoft.com/forum/index.php?topic=5359.0)
+- Forum thread, [*ignore coordinate system*](https://www.agisoft.com/forum/index.php?topic=5359.0) ([archived 2026-09-24](http://web.archive.org/web/20260924190112/https://www.agisoft.com/forum/index.php?topic=5359.0))
   — Agisoft support, 2016-05-18,
   PhotoScan 1.2. The "uncheck cameras / clear coordinates /
   switch to Local / Reset Transform" sequence for handling
   bogus GPS values.
-- Forum thread, [*Placing markers without targets*](https://www.agisoft.com/forum/index.php?topic=12852.0)
+- Forum thread, [*Placing markers without targets*](https://www.agisoft.com/forum/index.php?topic=12852.0) ([archived 2026-09-24](http://web.archive.org/web/20260924185801/https://www.agisoft.com/forum/index.php?topic=12852.0))
   — Agisoft support, 2020-12-07,
   Metashape 1.6. Marker placement strategy: 10-15 markers
   for whole-project georeferencing, 4-5 projections per
   marker recommended.
-- [*DJI with RTK coordinates data processing* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000161735)
+- [*DJI with RTK coordinates data processing* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000161735) ([archived 2026-09-24](https://web.archive.org/web/20260924074119/https://agisoft.freshdesk.com/support/solutions/articles/31000161735))
   — official Agisoft guidance on RTK accuracy values and
   XMP loading; recommends 0.1 m camera accuracy for DJI
   P4 RTK.

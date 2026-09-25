@@ -56,9 +56,9 @@ threads below.
 
 | Date | Version | Author | Thread | One-line takeaway |
 |------|---------|--------|--------|-------------------|
-| 2012-10-18 | PhotoScan 0.9 | Alexey Pasumansky | [clarification on gradual selection parameters please](https://www.agisoft.com/forum/index.php?topic=738.msg2769#msg2769) | Reconstruction Uncertainty is a max/min variance ratio in 2-camera triangulation; Reprojection Error is in pixels. |
-| 2012-11-15 | PhotoScan 0.9 | gEEvEE (Geert) | [clarification on gradual selection parameters please](https://www.agisoft.com/forum/index.php?topic=738.msg3115#msg3115) | The widely-cited 4-step workflow: align → crop → gradual selection on reprojection (~1 px) → optimize, iterate at most 1–3 times. |
-| 2012-11-15 | PhotoScan 0.9 | Alexey Pasumansky | [clarification on gradual selection parameters please](https://www.agisoft.com/forum/index.php?topic=738.msg3105#msg3105) | Never delete so many points that alignment can break. |
+| 2012-10-18 | PhotoScan 0.9 | Alexey Pasumansky | [clarification on gradual selection parameters please](https://www.agisoft.com/forum/index.php?topic=738.msg2769#msg2769) ([archived 2026-09-23](https://web.archive.org/web/20260923213955/https://www.agisoft.com/forum/index.php?topic=738.msg2769)) | Reconstruction Uncertainty is a max/min variance ratio in 2-camera triangulation; Reprojection Error is in pixels. |
+| 2012-11-15 | PhotoScan 0.9 | gEEvEE (Geert) | [clarification on gradual selection parameters please](https://www.agisoft.com/forum/index.php?topic=738.msg3115#msg3115) ([archived 2026-09-24](https://web.archive.org/web/20260924081724/https://www.agisoft.com/forum/index.php?topic=738.msg3115)) | The widely-cited 4-step workflow: align → crop → gradual selection on reprojection (~1 px) → optimize, iterate at most 1–3 times. |
+| 2012-11-15 | PhotoScan 0.9 | Alexey Pasumansky | [clarification on gradual selection parameters please](https://www.agisoft.com/forum/index.php?topic=738.msg3105#msg3105) ([archived 2026-09-23](https://web.archive.org/web/20260923122138/https://www.agisoft.com/forum/index.php?topic=738.msg3105)) | Never delete so many points that alignment can break. |
 
 ## Caveats
 

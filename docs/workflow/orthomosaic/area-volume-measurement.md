@@ -48,7 +48,7 @@ measured area equals its plan footprint.
 > function, it will sum the area of every polygon left, then
 > you can undo the polygons removal."
 > — Agisoft support, 2018-04-27, PhotoScan 1.4
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=8879.msg41875#msg41875))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=8879.msg41875#msg41875), [archived 2026-09-23](https://web.archive.org/web/20260923122806/https://www.agisoft.com/forum/index.php?topic=8879.msg41875))
 
 In Model view, the *Measure* command does not accept polygon
 shapes as boundary input. To measure inclined surface area
@@ -73,7 +73,7 @@ within a region:
 > model with 'clip to boundary shapes' option enabled. After
 > that use Measure Area & Volume option in Tools menu."
 > — Agisoft support, 2021-04-14, Metashape 1.7
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=8879.msg58893#msg58893))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=8879.msg58893#msg58893), [archived 2025-10-14](https://web.archive.org/web/20251014171044/https://www.agisoft.com/forum/index.php?topic=8879.msg58893))
 
 ## Python automation for many polygons
 
@@ -127,7 +127,7 @@ georeferenced chunks).
 > inclination and you'll get the area in XY plane based on the
 > input shape."
 > — Agisoft support, 2018-04-27, PhotoScan 1.4
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=8879.msg41875#msg41875))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=8879.msg41875#msg41875), [archived 2026-09-23](https://web.archive.org/web/20260923122806/https://www.agisoft.com/forum/index.php?topic=8879.msg41875))
 
 DEM-based measurements are **planimetric** by construction: the
 DEM is a 2.5D height-field, so area is computed in the XY plane
@@ -189,9 +189,9 @@ mostly in Model view:
 
 - *Metashape Pro User Manual* (2.3), ch. 6 *Measurements →
   Distances, areas and volumes* — describes both subsystems.
-- [*Measurement tools in Model view* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000170365),
-  [*DEM based measurements* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000148884),
-  and [*Mesh model based volume measure* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000166942)
+- [*Measurement tools in Model view* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000170365) ([archived 2026-09-24](https://web.archive.org/web/20260924075841/https://agisoft.freshdesk.com/support/solutions/articles/31000170365)),
+  [*DEM based measurements* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000148884) ([archived 2026-06-06](https://web.archive.org/web/20260606132706/https://agisoft.freshdesk.com/support/solutions/articles/31000148884)),
+  and [*Mesh model based volume measure* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000166942) ([archived 2026-09-24](https://web.archive.org/web/20260924075129/https://agisoft.freshdesk.com/support/solutions/articles/31000166942))
   — Agisoft's how-tos for the Model-view ruler/profile/shape
   tools, the planimetric DEM measurements, and closed-mesh volume
   (Close Holes + Measure Area & Volume) respectively.
@@ -199,7 +199,7 @@ mostly in Model view:
   `Shape.boundary_type`, `Shape.OuterBoundary`,
   `Tasks.DuplicateAsset`, `Model.faces`, `Model.vertices`.
 - Forum thread, [*Area calculation — Only getting perimeter
-  measure*, 2018-2021](https://www.agisoft.com/forum/index.php?topic=8879.msg42196#msg42196)
+  measure*, 2018-2021](https://www.agisoft.com/forum/index.php?topic=8879.msg42196#msg42196) ([archived 2026-09-24](https://web.archive.org/web/20260924064304/https://www.agisoft.com/forum/index.php?topic=8879.msg42196))
   — the workaround chain (the 2018-04-27 thread + 2021-04-14;
   the batch-script extension 2021-04-15).
 

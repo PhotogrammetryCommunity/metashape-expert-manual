@@ -44,7 +44,7 @@ aligns cleanly; the remaining rungs become more invasive.
    > fitting - disabled, Guided matching - disabled, Exclude
    > stationary points - disabled." — Alexey Pasumansky,
    > 2021-02-11, Metashape 1.7
-   > ([permalink](https://www.agisoft.com/forum/index.php?topic=13079.msg58789#msg58789))
+   > ([permalink](https://www.agisoft.com/forum/index.php?topic=13079.msg58789#msg58789), [archived 2026-09-23](https://web.archive.org/web/20260923203923/https://www.agisoft.com/forum/index.php?topic=13079.msg58789))
 
    In the GUI:
 
@@ -216,17 +216,17 @@ names above were verified against the local Metashape 2.2.2 Python API.
 - **Python Reference:** `Metashape.Chunk.matchPhotos`,
   `Metashape.Chunk.alignCameras`, `Metashape.Chunk.analyzeImages` —
   *Metashape Python API Reference*, version 2.3.1.
-- **Forum:** [Pasumansky, 2021-02-11, Metashape 1.7](https://www.agisoft.com/forum/index.php?topic=13079.msg58789#msg58789)
+- **Forum:** [Pasumansky, 2021-02-11, Metashape 1.7](https://www.agisoft.com/forum/index.php?topic=13079.msg58789#msg58789) ([archived 2026-09-23](https://web.archive.org/web/20260923203923/https://www.agisoft.com/forum/index.php?topic=13079.msg58789))
   — origin of the canonical clean-settings recipe.
-- **Forum:** [Paulo, 2022-02-19, Metashape 1.8](https://www.agisoft.com/forum/index.php?topic=14222.msg63988#msg63988)
+- **Forum:** [Paulo, 2022-02-19, Metashape 1.8](https://www.agisoft.com/forum/index.php?topic=14222.msg63988#msg63988) ([archived 2026-09-23](https://web.archive.org/web/20260923204456/https://www.agisoft.com/forum/index.php?topic=14222.msg63988))
   — log-file analysis of runaway intrinsics in a sub-block.
-- **Forum:** [Pasumansky, 2021-03-04, Metashape 1.7](https://www.agisoft.com/forum/index.php?topic=13079.msg59330#msg59330)
+- **Forum:** [Pasumansky, 2021-03-04, Metashape 1.7](https://www.agisoft.com/forum/index.php?topic=13079.msg59330#msg59330) ([archived 2026-09-23](https://web.archive.org/web/20260923203946/https://www.agisoft.com/forum/index.php?topic=13079.msg59330))
   — camera-type mismatch as a ghosting cause; introduction of the
   Components view.
-- **Forum:** [SAV, 2017-05-10, PhotoScan 1.3](https://www.agisoft.com/forum/index.php?topic=7020.msg34121#msg34121)
+- **Forum:** [SAV, 2017-05-10, PhotoScan 1.3](https://www.agisoft.com/forum/index.php?topic=7020.msg34121#msg34121) ([archived 2026-09-23](https://web.archive.org/web/20260923213835/https://www.agisoft.com/forum/index.php?topic=7020.msg34121))
   — overlap, key/tie point limits, and markers as the recovery ladder
   for low-feature subjects.
-- **Forum:** [jwoods, 2016-06-15, PhotoScan 1.2](https://www.agisoft.com/forum/index.php?topic=5454.msg26905#msg26905)
+- **Forum:** [jwoods, 2016-06-15, PhotoScan 1.2](https://www.agisoft.com/forum/index.php?topic=5454.msg26905#msg26905) ([archived 2026-09-23](https://web.archive.org/web/20260923212732/https://www.agisoft.com/forum/index.php?topic=5454.msg26905))
   — preselection-mode tradeoffs for accuracy vs speed.
 - **Related feature pages:** [Gradual selection](../../reference/features/gradual-selection.md),
   [Guided matching](../../reference/features/guided-matching.md),

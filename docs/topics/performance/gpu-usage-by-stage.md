@@ -38,7 +38,7 @@ log markers.
 > "PhotoScan uses every OpenCL supported device that is checked
 > on in the corresponding tab of PhotoScan Preferences window." —
 > Alexey Pasumansky, 2014-07-31, PhotoScan 1.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=2587.msg14153#msg14153))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=2587.msg14153#msg14153), [archived 2026-09-23](https://web.archive.org/web/20260923211030/https://www.agisoft.com/forum/index.php?topic=2587.msg14153))
 
 The mechanism is simple:
 
@@ -85,7 +85,7 @@ The 2014 enumeration:
 > during Reconstructing depth portion of Build Dense Cloud.
 > GPU is not used during Build Mesh. GPU is not used during
 > Build Texture." — David Cockey, 2014-07-08, PhotoScan 1.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=2587.msg13713#msg13713))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=2587.msg13713#msg13713), [archived 2026-09-23](https://web.archive.org/web/20260923210908/https://www.agisoft.com/forum/index.php?topic=2587.msg13713))
 
 This was the canonical community statement at the time;
 the subsequent 2017 statement on the second-dense-
@@ -104,7 +104,7 @@ expected to be partial:
 > depth maps reconstruction step only, as the second phase of
 > the dense cloud generation stage is performed on CPU only." —
 > Alexey Pasumansky, 2017-05-04, PhotoScan 1.3
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=6992.msg33751#msg33751))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=6992.msg33751#msg33751), [archived 2026-09-23](https://web.archive.org/web/20260923213704/https://www.agisoft.com/forum/index.php?topic=6992.msg33751))
 
 - **Build Dense Cloud is split.** Phase 1 (depth maps)
   saturates the GPU; phase 2 (consolidation) is CPU-only.
@@ -126,7 +126,7 @@ The canonical method to observe GPU activity at runtime:
 > If the GPU is used you'll see lines starting from `[CPU]` and
 > `[GPU]` during depth maps estimation process." — Alexey
 > Pasumansky, 2014-07-31, PhotoScan 1.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=2587.msg13735#msg13735))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=2587.msg13735#msg13735), [archived 2026-09-23](https://web.archive.org/web/20260923120131/https://www.agisoft.com/forum/index.php?topic=2587.msg13735))
 
 During Build Depth Maps / Build Dense Cloud, the *Console* pane
 shows per-tile lines:
@@ -181,7 +181,7 @@ log to file* writes the same lines to disk.
   > not have any effect. Later it would have meaning for
   > GPU-based texturing and vertex colorization procedure."
   > — Alexey Pasumansky, 2024-12-02, Metashape 2.2.0
-  > pre-release ([permalink](https://www.agisoft.com/forum/index.php?topic=16745.0))
+  > pre-release ([permalink](https://www.agisoft.com/forum/index.php?topic=16745.0), [archived 2025-09-07](http://web.archive.org/web/20250907151047/https://www.agisoft.com/forum/index.php?topic=16745.0))
 
 ## Decision picker
 
@@ -245,23 +245,23 @@ it's CPU-only (or fallback after a GPU failure).
 ## References
 
 - [Forum thread, *GPU processing during the modeling and
-  settings*, 2014](https://www.agisoft.com/forum/index.php?topic=2587.0)
+  settings*, 2014](https://www.agisoft.com/forum/index.php?topic=2587.0) ([archived 2026-09-25](https://web.archive.org/web/20260925130949/https://www.agisoft.com/forum/index.php?topic=2587.0))
   — discussion of OpenCL device discovery (msg 13721),
   the `[CPU]` / `[GPU]` log markers (msg 13735), and the bad-
   driver workaround (msg 14253). the 2014
   stage-by-stage enumeration (msg 12839).
 - [Forum thread, *Photoscan 1.3.1, GPU load reaching 20 to 30 %
-  max*, 2017](https://www.agisoft.com/forum/index.php?topic=6992.0)
+  max*, 2017](https://www.agisoft.com/forum/index.php?topic=6992.0) ([archived 2026-09-24](http://web.archive.org/web/20260924190316/https://www.agisoft.com/forum/index.php?topic=6992.0))
   — discussion of multi-GPU TCC mode and the
   second-phase-CPU-only behaviour (msg 34036).
-- [Forum thread, *Blending Textures not using GPU*, 2022](https://www.agisoft.com/forum/index.php?topic=14503.0)
+- [Forum thread, *Blending Textures not using GPU*, 2022](https://www.agisoft.com/forum/index.php?topic=14503.0) ([archived 2026-06-14](http://web.archive.org/web/20260614000529/https://www.agisoft.com/forum/index.php?topic=14503.0))
   — companion thread on texture-blending GPU questions.
 - *Metashape Python Reference* (2.3.1), `Metashape.app.gpu_mask`,
   `Metashape.app.enumGPUDevices()`, `Metashape.app.cpu_enable`.
-- [*General information related to GPU processing* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000150614)
+- [*General information related to GPU processing* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000150614) ([archived 2026-09-24](https://web.archive.org/web/20260924070746/https://agisoft.freshdesk.com/support/solutions/articles/31000150614))
   — supported GPUs, configuring the GPU preferences tab, and which
   stages are GPU-accelerated (including Vulkan texture blending in
-  2.x); and [*NVIDIA graphic card is not recognized on macOS in GPU preferences tab* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000133910)
+  2.x); and [*NVIDIA graphic card is not recognized on macOS in GPU preferences tab* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000133910) ([archived 2026-09-24](https://web.archive.org/web/20260924065411/https://agisoft.freshdesk.com/support/solutions/articles/31000133910))
   — the macOS empty-GPU-list case (CUDA driver pack on older
   macOS; automatic OpenCL fallback on 10.14+).
 - [Diagnosing CUDA / OpenCL errors: timeouts, OOM, kernel

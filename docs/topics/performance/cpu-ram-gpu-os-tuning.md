@@ -40,7 +40,7 @@ benchmark thread:
 > with highest possible frequency. Using 40 cores with 2.2 GHz
 > could be even slower than desktop six-core i7."
 > — Alexey Pasumansky, 2015-02-09, PhotoScan 1.1
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=1868.msg17853#msg17853))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=1868.msg17853#msg17853), [archived 2026-09-23](https://web.archive.org/web/20260923210559/https://www.agisoft.com/forum/index.php?topic=1868.msg17853))
 
 Reasons:
 
@@ -156,7 +156,7 @@ instability often passes Prime95 SSE but fails AVX2.
 > CPU system crashes were related to the mentioned hardware
 > issues, as confirmed by users."
 > — Alexey Pasumansky, 2023-10-31, Metashape 2.1
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=15903.msg68784#msg68784))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=15903.msg68784#msg68784), [archived 2026-09-23](https://web.archive.org/web/20260923205451/https://www.agisoft.com/forum/index.php?topic=15903.msg68784))
 
 For the full step-by-step BIOS-workaround procedure with vendor-
 specific menu paths (ASUS, Gigabyte, MSI, ASRock), the diagnostic
@@ -190,10 +190,10 @@ For an existing workstation:
 - *Metashape Pro User Manual* (2.3) §
   *System Requirements* — hardware compatibility list (no
   performance commentary).
-- [*Hardware recommendations* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000172512)
-  (the official sizing baseline), [*General information related to GPU processing* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000150614)
+- [*Hardware recommendations* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000172512) ([archived 2026-09-24](https://web.archive.org/web/20260924080031/https://agisoft.freshdesk.com/support/solutions/articles/31000172512))
+  (the official sizing baseline), [*General information related to GPU processing* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000150614) ([archived 2026-09-24](https://web.archive.org/web/20260924070746/https://agisoft.freshdesk.com/support/solutions/articles/31000150614))
   (supported GPUs, configuring the GPU tab, Vulkan texture
-  blending), and [*Does Metashape work on Apple M1 architecture?* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000158928).
+  blending), and [*Does Metashape work on Apple M1 architecture?* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000158928) ([archived 2026-09-24](https://web.archive.org/web/20260924072717/https://agisoft.freshdesk.com/support/solutions/articles/31000158928)).
 - [GPU usage by stage](gpu-usage-by-stage.md) — companion
   article enumerating GPU usage per processing step.
 - [Multi-GPU setups](multi-gpu-utilization.md) — SLI, TCC, WDDM

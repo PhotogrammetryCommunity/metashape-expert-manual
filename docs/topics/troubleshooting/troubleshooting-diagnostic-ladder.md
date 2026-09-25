@@ -226,7 +226,7 @@ elsewhere:
   License-checks can hang Metashape on startup if the server
   is unreachable. Firewalls blocking Metashape's optional online
   services (Agisoft Cloud, base maps, online publishing) cause
-  similar hangs — see [*Firewall configuration* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000163280)
+  similar hangs — see [*Firewall configuration* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000163280) ([archived 2026-09-24](https://web.archive.org/web/20260924074903/https://agisoft.freshdesk.com/support/solutions/articles/31000163280))
   for the endpoints to allow.
 
 If you've worked through the ladder and the problem is on the
@@ -270,10 +270,10 @@ file the report from step 6.
 
 - *Metashape Pro User Manual* (2.3), ch. *Help → Submit Crash
   Report* — describes the in-app submission flow.
-- [*What to do, if Metashape crashes?* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000159037)
+- [*What to do, if Metashape crashes?* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000159037) ([archived 2026-09-23](https://web.archive.org/web/20260923124856/https://agisoft.freshdesk.com/support/solutions/articles/31000159037))
   (crash-report submission, Memtest86, GPU drivers, Windows Event
-  Viewer), [*What do some error messages in Metashape interface mean?* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000148432)
+  Viewer), [*What do some error messages in Metashape interface mean?* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000148432) ([archived 2026-09-24](https://web.archive.org/web/20260924070526/https://agisoft.freshdesk.com/support/solutions/articles/31000148432))
   (the cryptic-message glossary: Empty extent, Null model, Zero
-  resolution, etc.), and [*Troubleshooting about usage on Linux* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000163267)
+  resolution, etc.), and [*Troubleshooting about usage on Linux* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000163267) ([archived 2026-09-24](https://web.archive.org/web/20260924074801/https://agisoft.freshdesk.com/support/solutions/articles/31000163267))
   (glibc / OpenGL / codec / missing-library fixes).
 

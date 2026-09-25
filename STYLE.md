@@ -179,6 +179,34 @@ Link to the Python Reference entry only when the method is the central
 topic of a paragraph; the qualified name alone is enough in passing
 references.
 
+## Archived companions for forum and KB links
+
+Every link to an Agisoft **forum thread/post** or **Knowledge Base
+article** carries a Wikipedia-style archived-from-the-original companion,
+so the cited content survives if the source site changes or disappears:
+
+```markdown
+[label](original-url) ([archived YYYY-MM-DD](wayback-snapshot-url))
+```
+
+- The companion points at a **specific, content-verified Wayback
+  snapshot** (`https://web.archive.org/web/<timestamp>/…`), never a
+  "latest" redirect — the specific capture is immutable and known-good.
+- The label carries that snapshot's **capture date**: `[archived
+  2026-09-24](…)`.
+- In a parenthesised citation the companion is flat, comma-joined:
+  `> … ([permalink](url), [archived 2026-09-24](wb))`.
+- Applies to `agisoft.com/forum/index.php?topic=…` and
+  `agisoft.freshdesk.com/support/solutions/articles/…` links only. Do
+  **not** archive generic roots (the forum home, the KB solutions root).
+- The snapshot inventory is `scripts/data/archive-wayback.tsv`
+  (original-url → wayback-url, content-verified). Companions are applied
+  and re-checked mechanically by `scripts/add_archive_links.py`
+  (`--all` to apply, `--all --check` to report links still missing a
+  companion). When you add a new forum/KB citation, archive the source
+  (Wayback Save Page Now), add its row to the inventory, then run the
+  script.
+
 ## Code blocks
 
 - Always specify a language: `python`, `bash`, `text`, `xml`, `yaml`, `json`.

@@ -192,7 +192,7 @@ chunk.exportModel(
 > "Please check, if the following approach solves the task of
 > mesh export in local coordinates"
 > — Agisoft support, 2020-12-23, Metashape 1.7
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=12813.msg57218#msg57218))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=12813.msg57218#msg57218), [archived 2026-09-23](https://web.archive.org/web/20260923203750/https://www.agisoft.com/forum/index.php?topic=12813.msg57218))
 
 ## DXF source compatibility
 
@@ -208,7 +208,7 @@ non-POLYLINE polygons:
 > (POLYLINE type) therefore you should re-save the DXF in the
 > external application, for example, Global Mapper."
 > — Agisoft support, 2020-11-30, Metashape 1.7
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=12813.msg56813#msg56813))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=12813.msg56813#msg56813), [archived 2026-09-23](https://web.archive.org/web/20260923203711/https://www.agisoft.com/forum/index.php?topic=12813.msg56813))
 
 Workarounds:
 
@@ -261,7 +261,7 @@ Workarounds:
   `Chunk.exportModel`, `Shape.boundary_type`,
   `Shape.BoundaryType`, `OrthoProjection`, `RasterFormat`,
   `ModelFormat`.
-- Forum thread, [*Auto Export Orthophoto by index (sheet) name?*, 2020](https://www.agisoft.com/forum/index.php?topic=12813.msg56813#msg56813)
+- Forum thread, [*Auto Export Orthophoto by index (sheet) name?*, 2020](https://www.agisoft.com/forum/index.php?topic=12813.msg56813#msg56813) ([archived 2026-09-23](https://web.archive.org/web/20260923203711/https://www.agisoft.com/forum/index.php?topic=12813.msg56813))
   — the canonical Q&A; per-shape export script (msg 57965);
   multi-product extension (msg 58060); KMZ variant (msg 58116);
   local-CRS mesh export (msg 58162).

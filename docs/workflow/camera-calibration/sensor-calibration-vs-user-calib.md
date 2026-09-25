@@ -37,7 +37,7 @@ The canonical-thread statement on the distinction:
 > adjusted values. If you need to input pre-calibrated values,
 > then use `user_calib` and optionally fix all the calibration
 > parameters." — Alexey Pasumansky, 2025-09-27, Metashape 2.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=17357.msg74309#msg74309))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=17357.msg74309#msg74309), [archived 2026-09-23](https://web.archive.org/web/20260923210158/https://www.agisoft.com/forum/index.php?topic=17357.msg74309))
 
 ## Why it matters
 
@@ -219,12 +219,12 @@ pixels).
 
 ## References
 
-- [Forum thread, *sensor.calibration vs sensor.user_calib*, 2025](https://www.agisoft.com/forum/index.php?topic=17357.0)
+- [Forum thread, *sensor.calibration vs sensor.user_calib*, 2025](https://www.agisoft.com/forum/index.php?topic=17357.0) ([archived 2026-09-25](https://web.archive.org/web/20260925130812/https://www.agisoft.com/forum/index.php?topic=17357.0))
   — primary source; the clarification (msg 74305,
   2025-09-27).
-- [Forum thread, *Fail to load calibration*, 2020](https://www.agisoft.com/forum/index.php?topic=11491.0)
+- [Forum thread, *Fail to load calibration*, 2020](https://www.agisoft.com/forum/index.php?topic=11491.0) ([archived 2025-11-09](http://web.archive.org/web/20251109125215/https://www.agisoft.com/forum/index.php?topic=11491.0))
   — operational case showing user_calib.load misuse.
-- [Forum thread, *calibration in each photo?*, 2024](https://www.agisoft.com/forum/index.php?topic=16395.0)
+- [Forum thread, *calibration in each photo?*, 2024](https://www.agisoft.com/forum/index.php?topic=16395.0) ([archived 2026-09-24](http://web.archive.org/web/20260924185821/https://www.agisoft.com/forum/index.php?topic=16395.0))
   — companion thread on per-image vs per-sensor calibration.
 - *Metashape Python Reference* (2.3.1), `Sensor.calibration`,
   `Sensor.user_calib`, `Sensor.fixed_calibration`,

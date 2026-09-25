@@ -46,7 +46,7 @@ quality score:
 > number of the depth maps involved to the point generation
 > process. The value is integer."
 > — Agisoft support, 2022-04-07, Metashape 1.8
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=14381.msg63268#msg63268))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=14381.msg63268#msg63268), [archived 2025-12-05](https://web.archive.org/web/20251205183234/https://www.agisoft.com/forum/index.php?topic=14381.msg63268))
 
 A point with `confidence=5` was independently observed by 5
 depth maps; the matcher fused those depth values into one 3D
@@ -77,7 +77,7 @@ The standard cleanup workflow Agisoft support recommends:
 > that you would like to remove, then select and delete those
 > points and after that reset filter."
 > — Agisoft support, 2020-02-09, Metashape 1.6
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=11817.msg52924#msg52924))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=11817.msg52924#msg52924), [archived 2026-09-23](https://web.archive.org/web/20260923203001/https://www.agisoft.com/forum/index.php?topic=11817.msg52924))
 
 Step-by-step:
 
@@ -181,7 +181,7 @@ bytes* concept introduced in LAS 1.4:
 > "Confidence is exported to LAS/LAZ formats via the extra
 > bytes concept introduced in the LAS 1.4 specification."
 > — Agisoft support, 2020-10-16, Metashape 1.6
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=12270.msg56225#msg56225))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=12270.msg56225#msg56225), [archived 2026-09-23](https://web.archive.org/web/20260923113643/https://www.agisoft.com/forum/index.php?topic=12270.msg56225))
 
 The Python export:
 
@@ -234,7 +234,7 @@ hidden low-confidence noise and produces cleaner classes.
 > "`list(range(128))` — creates the list of ints, that defines
 > the classes of the dense cloud (all classes, actually)."
 > — Agisoft support, 2021-04-29, Metashape 1.7
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=12114.msg59880#msg59880))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=12114.msg59880#msg59880), [archived 2026-09-23](https://web.archive.org/web/20260923203144/https://www.agisoft.com/forum/index.php?topic=12114.msg59880))
 
 For batch classification using the confidence filter as a
 pre-clean step (the classify method lives on the PointCloud
@@ -299,7 +299,7 @@ For the parameters of `classifyGroundPoints` itself, see
 
 - *Metashape Pro User Manual* (2.3), ch. 5 *Point cloud → Filter
   Points by Confidence*.
-- [*Point cloud editing with confidence filter tool* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000162209)
+- [*Point cloud editing with confidence filter tool* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000162209) ([archived 2026-09-24](https://web.archive.org/web/20260924074306/https://agisoft.freshdesk.com/support/solutions/articles/31000162209))
   — Agisoft's walkthrough of Calculate point confidence, Filter by
   Confidence (which hides, not deletes), and the select-then-delete
   cleanup.
@@ -310,13 +310,13 @@ For the parameters of `classifyGroundPoints` itself, see
   `PointCloud.cropSelectedPoints`, `PointCloud.resetFilters`,
   `PointCloud.classifyGroundPoints`, `PointCloud.point_count`,
   `PointCloud.Point.confidence`, `Chunk.exportPointCloud`.
-- Forum thread, [*Confidence math*, 2022](https://www.agisoft.com/forum/index.php?topic=14381.msg63972#msg63972)
+- Forum thread, [*Confidence math*, 2022](https://www.agisoft.com/forum/index.php?topic=14381.msg63972#msg63972) ([archived 2026-09-23](https://web.archive.org/web/20260923204642/https://www.agisoft.com/forum/index.php?topic=14381.msg63972))
   — point vs mesh-vertex confidence semantics; integer vs
   float distinction.
-- Forum thread, [*Remove Points By Confidence*, 2020](https://www.agisoft.com/forum/index.php?topic=11817.msg52924#msg52924)
+- Forum thread, [*Remove Points By Confidence*, 2020](https://www.agisoft.com/forum/index.php?topic=11817.msg52924#msg52924) ([archived 2026-09-23](https://web.archive.org/web/20260923203001/https://www.agisoft.com/forum/index.php?topic=11817.msg52924))
   — canonical filter-then-delete workflow.
-- Forum thread, [*Export confidence as intensity*, 2020](https://www.agisoft.com/forum/index.php?topic=12270.msg58112#msg58112)
+- Forum thread, [*Export confidence as intensity*, 2020](https://www.agisoft.com/forum/index.php?topic=12270.msg58112#msg58112) ([archived 2026-09-23](https://web.archive.org/web/20260923203235/https://www.agisoft.com/forum/index.php?topic=12270.msg58112))
   — LAS 1.4 extra-bytes export mechanism.
-- Forum thread, [*Removing low confidence dense cloud points*, 2021](https://www.agisoft.com/forum/index.php?topic=12114.msg59880#msg59880)
+- Forum thread, [*Removing low confidence dense cloud points*, 2021](https://www.agisoft.com/forum/index.php?topic=12114.msg59880#msg59880) ([archived 2026-09-23](https://web.archive.org/web/20260923203144/https://www.agisoft.com/forum/index.php?topic=12114.msg59880))
   — combined confidence filter + classification pattern.
 

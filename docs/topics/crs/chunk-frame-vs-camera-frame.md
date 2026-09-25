@@ -236,7 +236,7 @@ marker placement and pinning](../../workflow/markers-gcps/programmatic-marker-pl
   CRS — from an EPSG code, a WKT string or `.prj` file, adding a
   geoid, converting coordinates, or a local Cartesian system — see
   [*Basic commands when working with coordinate systems via Python*
-  (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000179332).
+  (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000179332) ([archived 2026-09-23](https://web.archive.org/web/20260923131302/https://agisoft.freshdesk.com/support/solutions/articles/31000179332)).
 
 ## Runnable demonstration on the Aerial-with-GCPs sample dataset
 

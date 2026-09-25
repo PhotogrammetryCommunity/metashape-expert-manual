@@ -43,7 +43,7 @@ offset relative to the master sensor:
 > chunk's Euler convention (yaw-pitch-roll under YPR), but a
 > *slave-sensor* offset is read as OPK regardless: Agisoft support
 > reads the adjusted offset as `mat2opk(sensor.rotation)`
-> ([topic 11173](https://www.agisoft.com/forum/index.php?topic=11173.0)),
+> ([topic 11173](https://www.agisoft.com/forum/index.php?topic=11173.0), [archived 2026-06-16](http://web.archive.org/web/20260616191455/https://www.agisoft.com/forum/index.php?topic=11173.0)),
 > and Agisoft's *Apply Vertical Camera Alignment* script routes a
 > *camera* reference through `euler2mat(…, chunk.euler_angles)` but
 > the sensor-level `antenna.rotation` through a fixed `ypr2mat`
@@ -54,7 +54,7 @@ offset relative to the master sensor:
 > master→slave rotation `R`, while 2.3.x (incl. 2.3.2) expects
 > `mat2opk(R.transpose())` — setting it the 2.2 way on 2.3.x
 > silently mis-orients the slave by ~2× the offset
-> ([forum 17581](https://www.agisoft.com/forum/index.php?topic=17581.0)).
+> ([forum 17581](https://www.agisoft.com/forum/index.php?topic=17581.0), [archived 2026-09-24](http://web.archive.org/web/20260924185916/https://www.agisoft.com/forum/index.php?topic=17581.0)).
 
 The reference-surface form is the right answer for simple rigs
 and quick setup (covered in A.1). The matrix form is the right
@@ -572,18 +572,18 @@ mismatches).
   `sensor.reference` workflow (msg 72350, 2023-11-21,
   Metashape 2.1). The complementary surface to this article's
   matrix form.
-- [Forum thread, *print adjusted slave-sensor offsets*](https://www.agisoft.com/forum/index.php?topic=11173.0)
+- [Forum thread, *print adjusted slave-sensor offsets*](https://www.agisoft.com/forum/index.php?topic=11173.0) ([archived 2026-06-16](http://web.archive.org/web/20260616191455/https://www.agisoft.com/forum/index.php?topic=11173.0))
   — Alexey Pasumansky (Agisoft) reads the adjusted offset as
   `mat2opk(sensor.rotation)`: the slave offset is omega-phi-kappa.
 - [agisoft-llc/metashape-scripts](https://github.com/agisoft-llc/metashape-scripts),
   *Apply Vertical Camera Alignment* (quoted at
-  [forum topic 17079](https://www.agisoft.com/forum/index.php?topic=17079.0))
+  [forum topic 17079](https://www.agisoft.com/forum/index.php?topic=17079.0) ([archived 2026-09-24](http://web.archive.org/web/20260924190823/https://www.agisoft.com/forum/index.php?topic=17079.0)))
   — converts `camera.reference.rotation` via
   `euler2mat(…, chunk.euler_angles)` but `antenna.rotation` via a
   fixed `ypr2mat`: sensor-level references are not
   `euler_angles`-driven.
-- [Forum thread, *How to enter slave offset values*, 2022](https://www.agisoft.com/forum/index.php?topic=15021.0)
-  and [*input slave offset reference*, 2019](https://www.agisoft.com/forum/index.php?topic=10450.0)
+- [Forum thread, *How to enter slave offset values*, 2022](https://www.agisoft.com/forum/index.php?topic=15021.0) ([archived 2025-12-08](http://web.archive.org/web/20251208231627/https://www.agisoft.com/forum/index.php?topic=15021.0))
+  and [*input slave offset reference*, 2019](https://www.agisoft.com/forum/index.php?topic=10450.0) ([archived 2026-04-16](http://web.archive.org/web/20260416103508/https://www.agisoft.com/forum/index.php?topic=10450.0))
   — community recipes (`rotmat2opk`) corroborating the OPK offset
   convention; forum users, not Agisoft staff.
 - *Metashape Python Reference* (2.3.1), `Sensor.rotation`,

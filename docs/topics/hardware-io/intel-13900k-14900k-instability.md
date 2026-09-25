@@ -62,7 +62,7 @@ faults. Agisoft support's published diagnostic order:
 > - try Intel Processor Diagnostic Tool,
 > - try Intel XTU CPU stress test."
 > — Agisoft support, 2023-10-31, Metashape 2.1
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=15903.msg72205#msg72205))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=15903.msg72205#msg72205), [archived 2026-09-23](https://web.archive.org/web/20260923205632/https://www.agisoft.com/forum/index.php?topic=15903.msg72205))
 
 If all four diagnostic tools pass cleanly **and** Metashape still
 crashes, the BIOS workarounds below are the most reliable
@@ -95,7 +95,7 @@ This is reported to fix many crashes:
 > This has worked for me on a couple of small (700-800 image)
 > datasets, now trying on a 63k image dataset."
 > — 3dMB Ltd, 2024-01-19, Metashape 2.1
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=15903.msg69649#msg69649))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=15903.msg69649#msg69649), [archived 2026-09-23](https://web.archive.org/web/20260923205550/https://www.agisoft.com/forum/index.php?topic=15903.msg69649))
 
 The setting name varies by motherboard:
 
@@ -118,7 +118,7 @@ to 53× has been reported as stable:
 > and setting the Performance Active-Core Tuning Ratio of all of
 > the cores to 53x."
 > — colbyrand, 2024-04-02, Metashape 2.1
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=15903.msg70291#msg70291))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=15903.msg70291#msg70291), [archived 2026-09-23](https://web.archive.org/web/20260923205602/https://www.agisoft.com/forum/index.php?topic=15903.msg70291))
 
 This caps each core's turbo to 5.3 GHz (53 × 100 MHz BCLK)
 instead of the stock 5.8 GHz. The 8.6% clock reduction
@@ -141,7 +141,7 @@ adjustment fixed:
 > card, disk, but with no results. Only replacing the motherboard
 > with an ASUS Prime Z790-P allowed it to work without errors."
 > — geodamkru, 2023-11-23, Metashape 2.1
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=15903.msg69015#msg69015))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=15903.msg69015#msg69015), [archived 2026-09-23](https://web.archive.org/web/20260923205510/https://www.agisoft.com/forum/index.php?topic=15903.msg69015))
 
 This points to motherboard-level VRM (voltage regulator module)
 quality / firmware as a contributing factor on certain Gigabyte
@@ -204,7 +204,7 @@ GPU driver crash, RAM corruption, etc.).
   > instability and the lower maximum frequency at which memory
   > is stable."
   > — PolarNick, 2023-10-16, Metashape 2.1
-  > ([permalink](https://www.agisoft.com/forum/index.php?topic=15903.msg68616#msg68616))
+  > ([permalink](https://www.agisoft.com/forum/index.php?topic=15903.msg68616#msg68616), [archived 2026-09-23](https://web.archive.org/web/20260923205427/https://www.agisoft.com/forum/index.php?topic=15903.msg68616))
 
   4×32GB DDR5 sticks at the kit's rated XMP speed often run
   unstable; reducing to 2×32GB or dropping the XMP profile to
@@ -230,7 +230,7 @@ GPU driver crash, RAM corruption, etc.).
 - *Metashape Pro User Manual* (2.3) — does not currently document
   hardware crash-diagnosis paths beyond `Help → Save Session
   Logs`.
-- Forum thread, [*Metashape Pro Crashing During Image Alignment*, 2023-2024](https://www.agisoft.com/forum/index.php?topic=15903.0)
+- Forum thread, [*Metashape Pro Crashing During Image Alignment*, 2023-2024](https://www.agisoft.com/forum/index.php?topic=15903.0) ([archived 2025-10-18](http://web.archive.org/web/20251018065907/https://www.agisoft.com/forum/index.php?topic=15903.0))
   — primary source; ~30 substantive replies; multi-vendor
   reproduction; multi-workaround validation.
 - *Intel*, [Intel® Core™ Processors Intel® Microcode Patch Update Notes, 2024](https://www.intel.com/content/www/us/en/support/articles/000089190.html)

@@ -47,7 +47,7 @@ band groupings explicitly via a **nested list**.
 > But if you are using some other sources, you can follow this
 > approach"
 > — Agisoft support, 2018-05-08, PhotoScan 1.4
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=8978.msg42061#msg42061))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=8978.msg42061#msg42061), [archived 2026-09-24](https://web.archive.org/web/20260924064452/https://www.agisoft.com/forum/index.php?topic=8978.msg42061))
 
 ### Pattern: nested list with per-instant band groups
 
@@ -97,7 +97,7 @@ change it programmatically:
 > To switch the Master Band I can suggest the following
 > solution"
 > — Agisoft support, 2018-05-08, PhotoScan 1.4
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=8967.msg42062#msg42062))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=8967.msg42062#msg42062), [archived 2026-09-24](https://web.archive.org/web/20260924064358/https://www.agisoft.com/forum/index.php?topic=8967.msg42062))
 
 ### Pattern: clear-then-reassign
 
@@ -156,7 +156,7 @@ AND NIR pose as reference (`new_master = nir_sensor`).
 A documented real-world case is the **Sentera 6X**: Agisoft
 recommends changing the master band from NIR to **Green** (the
 NIR band tends to oversaturate without a sun sensor) — see KB
-[*How to process data from Sentera 6X in Metashape?* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000161146).
+[*How to process data from Sentera 6X in Metashape?* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000161146) ([archived 2026-09-24](https://web.archive.org/web/20260924073838/https://agisoft.freshdesk.com/support/solutions/articles/31000161146)).
 
 ## Caveats
 
@@ -195,21 +195,21 @@ NIR band tends to oversaturate without a sun sensor) — see KB
   the auto-detection workflow and Reflectance Calibration.
 - *Per-sensor processing workflows* (end-to-end,
   including reflectance calibration):
-    - [*MicaSense Altum processing workflow (including Reflectance Calibration) in Agisoft Metashape Professional* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000148381)
-    - [*MicaSense RedEdge MX processing workflow (including Reflectance Calibration) in Agisoft Metashape Professional* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000148780)
-    - [*How to add MicaSense RedEdge MX Dual data properly* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000161029)
-    - [*DJI Phantom 4 Multispectral data processing* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000159853)
-    - [*How to process data from Sentera 6X in Metashape?* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000161146)
+    - [*MicaSense Altum processing workflow (including Reflectance Calibration) in Agisoft Metashape Professional* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000148381) ([archived 2026-09-24](https://web.archive.org/web/20260924070501/https://agisoft.freshdesk.com/support/solutions/articles/31000148381))
+    - [*MicaSense RedEdge MX processing workflow (including Reflectance Calibration) in Agisoft Metashape Professional* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000148780) ([archived 2026-04-16](https://web.archive.org/web/20260416203339/https://agisoft.freshdesk.com/support/solutions/articles/31000148780))
+    - [*How to add MicaSense RedEdge MX Dual data properly* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000161029) ([archived 2026-09-24](https://web.archive.org/web/20260924073740/https://agisoft.freshdesk.com/support/solutions/articles/31000161029))
+    - [*DJI Phantom 4 Multispectral data processing* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000159853) ([archived 2026-09-24](https://web.archive.org/web/20260924073225/https://agisoft.freshdesk.com/support/solutions/articles/31000159853))
+    - [*How to process data from Sentera 6X in Metashape?* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000161146) ([archived 2026-09-24](https://web.archive.org/web/20260924073838/https://agisoft.freshdesk.com/support/solutions/articles/31000161146))
 - *Downstream / thermal:*
-    - [*Prescription maps generation in Agisoft Metashape* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000161545) (NDVI-zone output)
-    - [*Thermal imagery processing* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000158942)
-    - [*Processing R-JPEG data in Metashape* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000166933)
+    - [*Prescription maps generation in Agisoft Metashape* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000161545) ([archived 2026-09-24](https://web.archive.org/web/20260924074043/https://agisoft.freshdesk.com/support/solutions/articles/31000161545)) (NDVI-zone output)
+    - [*Thermal imagery processing* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000158942) ([archived 2026-09-24](https://web.archive.org/web/20260924072809/https://agisoft.freshdesk.com/support/solutions/articles/31000158942))
+    - [*Processing R-JPEG data in Metashape* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000166933) ([archived 2026-09-24](https://web.archive.org/web/20260924075132/https://agisoft.freshdesk.com/support/solutions/articles/31000166933))
 - *Metashape Python API Reference* (2.3.1):
   `Chunk.addPhotos`, `Metashape.MultiplaneLayout`,
   `Sensor.master`, `Sensor.fixed_rotation`, `Chunk.primary_channel`.
-- Forum thread, [*Multispectral Cameras from Files as Bands*, 2018](https://www.agisoft.com/forum/index.php?topic=8978.msg42061#msg42061)
+- Forum thread, [*Multispectral Cameras from Files as Bands*, 2018](https://www.agisoft.com/forum/index.php?topic=8978.msg42061#msg42061) ([archived 2026-09-24](https://web.archive.org/web/20260924064452/https://www.agisoft.com/forum/index.php?topic=8978.msg42061))
   — nested-list `addPhotos` pattern.
 - Forum thread, [*Python function on how to change master band in
-  multispectral image mosaic*, 2018](https://www.agisoft.com/forum/index.php?topic=8967.msg42514#msg42514)
+  multispectral image mosaic*, 2018](https://www.agisoft.com/forum/index.php?topic=8967.msg42514#msg42514) ([archived 2026-09-24](https://web.archive.org/web/20260924064501/https://www.agisoft.com/forum/index.php?topic=8967.msg42514))
   — master-band change recipe with the `fixed_rotation` fix.
 

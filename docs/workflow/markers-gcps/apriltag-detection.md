@@ -40,7 +40,7 @@ Marker detection — including AprilTag — is **Pro-only**:
 
 > "At the moment we are not planning to add markers to Standard
 > edition of Metashape." — Alexey Pasumansky, 2024-11-26
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=16745.msg72257#msg72257))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=16745.msg72257#msg72257), [archived 2026-09-23](https://web.archive.org/web/20260923210135/https://www.agisoft.com/forum/index.php?topic=16745.msg72257))
 
 ## Solution
 
@@ -268,13 +268,13 @@ masquerade-free variant to request, as there is for CircularTargets.
 - *Metashape Python Reference*:
   `Chunk.detectMarkers`, `TargetType` (enum: 5 CircularTarget = 4 coded + 1 non-coded,
   plus 7 AprilTag + CrossTarget).
-- [Forum topic 16745](https://www.agisoft.com/forum/index.php?topic=16745.0)
+- [Forum topic 16745](https://www.agisoft.com/forum/index.php?topic=16745.0) ([archived 2025-09-07](http://web.archive.org/web/20250907151047/https://www.agisoft.com/forum/index.php?topic=16745.0))
   — Metashape 2.2.0 pre-release thread.
 - [AprilTag homepage (April Lab, U. Michigan)](https://april.eecs.umich.edu/software/apriltag)
   — Olson 2011 (original specification), Wang & Olson 2016
   (`AprilTag36h11` family), Krogius et al. 2019 (`AprilTagStandard*`
   family).
-- [*New features in Agisoft Metashape 2.2.x* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000173952)
+- [*New features in Agisoft Metashape 2.2.x* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000173952) ([archived 2026-09-24](https://web.archive.org/web/20260924080052/https://agisoft.freshdesk.com/support/solutions/articles/31000173952))
   — official 2.2 feature announcement.
 
 - Garrido-Jurado, S., et al. (2014). "Automatic generation and detection

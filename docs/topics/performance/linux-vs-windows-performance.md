@@ -29,7 +29,7 @@ on identical hardware.
 | Intel i9-9900K + RTX 2080 Super | 8999 s | 11815 s | +31% slower on Win |
 
 Source: Agisoft forum, 2024-12-07, Metashape 2.1
-([permalink](https://www.agisoft.com/forum/index.php?topic=16909.0))
+([permalink](https://www.agisoft.com/forum/index.php?topic=16909.0), [archived 2026-09-25](https://web.archive.org/web/20260925130613/https://www.agisoft.com/forum/index.php?topic=16909.0))
 
 ## Controlled isolation
 
@@ -80,7 +80,7 @@ utilization:
 > shouldn't be an issue related to WDDM driver, I believe the
 > utilization of the cards would be considerably better."
 > — Alexey Pasumansky, 2017-05-04, PhotoScan 1.3
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=6992.msg33765#msg33765))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=6992.msg33765#msg33765), [archived 2026-09-23](https://web.archive.org/web/20260923213739/https://www.agisoft.com/forum/index.php?topic=6992.msg33765))
 
 ## Practical recommendations
 

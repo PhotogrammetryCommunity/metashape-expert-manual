@@ -268,7 +268,7 @@ fully-working revision** is at commit
    versions* below for the API-stability audit.
 3. Save to your Metashape scripts auto-launch folder
    (per OS — see
-   [*How to run Python script automatically on Metashape Professional start* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000133123)).
+   [*How to run Python script automatically on Metashape Professional start* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000133123) ([archived 2026-09-24](https://web.archive.org/web/20260924065155/https://agisoft.freshdesk.com/support/solutions/articles/31000133123))).
 4. Restart Metashape.
 5. The script appears under *Scripts → Export Colmap project
    (for Gaussian Splatting)*.

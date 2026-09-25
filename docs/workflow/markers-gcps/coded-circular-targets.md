@@ -133,7 +133,7 @@ import, or by renaming detected markers after detection. For the
 full non-coded detection workflow (Align Photos → *Tools →
 Markers → Detect Markers* with a non-coded target type → import
 the targets' coordinates), see
-[*Automatic detection of non-coded targets* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000155178).
+[*Automatic detection of non-coded targets* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000155178) ([archived 2026-09-24](https://web.archive.org/web/20260924071532/https://agisoft.freshdesk.com/support/solutions/articles/31000155178)).
 For automation-friendly defaults, 12-bit circular targets plus
 AprilTag (when 2.2+ is available) cover the vast majority of
 close-range and field-survey use cases. To refine the choice by
@@ -189,7 +189,7 @@ multiple cameras (DJI Phantom 4, GoPro Hero 4):
 > 35 cm [for a 1 cm GSD]."
 > — Yoann Courtois (community forum user), 2017-04-03,
 > PhotoScan 1.3
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=2768.msg32898#msg32898))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=2768.msg32898#msg32898), [archived 2026-04-12](https://web.archive.org/web/20260412201806/https://www.agisoft.com/forum/index.php?topic=2768.msg32898))
 
 **Upper bound — the central circle should not exceed 30
 pixels.** From Agisoft's own *Coded Targets & Scale Bars in
@@ -200,7 +200,7 @@ thread:
 > greater than 30 pix."
 > — Agisoft, *Coded Targets & Scale Bars* tutorial
 > (PhotoScan Pro 1.0.0), via
-> [forum thread t=2768](https://www.agisoft.com/forum/index.php?topic=2768.msg14648#msg14648)
+> [forum thread t=2768](https://www.agisoft.com/forum/index.php?topic=2768.msg14648#msg14648) ([archived 2026-09-23](https://web.archive.org/web/20260923211142/https://www.agisoft.com/forum/index.php?topic=2768.msg14648))
 
 So aim for **10–30 pixels** of central circle on the image,
 with the **global target diameter ≈ 3.5× the central-circle
@@ -244,7 +244,7 @@ Detection from oblique angles is partially understood:
 > position, and not the angle of view."
 > — Yoann Courtois (community forum user), 2017-04-03,
 > PhotoScan 1.3
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=2768.msg32898#msg32898))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=2768.msg32898#msg32898), [archived 2026-04-12](https://web.archive.org/web/20260412201806/https://www.agisoft.com/forum/index.php?topic=2768.msg32898))
 
 In other words: the detector copes with oblique angles
 reasonably well (the central-circle ellipse fit is
@@ -749,7 +749,7 @@ target #1, the second is target #2, and so on.
   `CircularTarget20bit`, plus the AprilTag variants;
   `Chunk.detectMarkers(target_type=…)`.
 - Forum thread, [*The size of coded markers for UAV
-  acquisition*](https://www.agisoft.com/forum/index.php?topic=2768.0)
+  acquisition*](https://www.agisoft.com/forum/index.php?topic=2768.0) ([archived 2026-03-14](http://web.archive.org/web/20260314171947/https://www.agisoft.com/forum/index.php?topic=2768.0))
   — the canonical sizing thread; a community-user reply
   (2017-04-03, PhotoScan 1.3) provides the empirical
   9-10 px minimum central circle, 3.5× ratio for global
@@ -787,7 +787,7 @@ target #1, the second is target #2, and so on.
 - Gonzalez, T. F. (1985). "Clustering to minimize the maximum intercluster
   distance." *Theoretical Computer Science* 38, 293-306. The farthest-point
   heuristic underlying max-min subset selection.
-- [*Coded targets and Scale bars* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000148855)
+- [*Coded targets and Scale bars* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000148855) ([archived 2026-04-16](https://web.archive.org/web/20260416201845/https://agisoft.freshdesk.com/support/solutions/articles/31000148855))
   — Agisoft's basic workflow for printing, placing and
   auto-detecting circular coded targets and building scale bars
   from the detected markers.

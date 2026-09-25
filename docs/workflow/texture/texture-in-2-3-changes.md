@@ -127,7 +127,7 @@ Mosaic is still preferable when:
   > in Natural mode. So we expect no problems for 8K pages
   > generation now, as it could happen in earlier pre-release
   > versions." — Alexey Pasumansky, 2025-11-11, Metashape 2.3.0
-  > pre-release ([permalink](https://www.agisoft.com/forum/index.php?topic=17361.msg74472#msg74472))
+  > pre-release ([permalink](https://www.agisoft.com/forum/index.php?topic=17361.msg74472#msg74472), [archived 2026-09-23](https://web.archive.org/web/20260923210250/https://www.agisoft.com/forum/index.php?topic=17361.msg74472))
 
 ### Migration step 3 — discover the new natural-only controls
 
@@ -147,7 +147,7 @@ Three of the five new kwargs only take effect with
   > "Can you please check if adding `out_of_focus_filter=True`
   > parameter resolves the problem?" — Alexey Pasumansky,
   > 2025-12-03, Metashape 2.3.0 pre-release
-  > ([permalink](https://www.agisoft.com/forum/index.php?topic=17361.msg74561#msg74561))
+  > ([permalink](https://www.agisoft.com/forum/index.php?topic=17361.msg74561#msg74561), [archived 2026-09-23](https://web.archive.org/web/20260923210343/https://www.agisoft.com/forum/index.php?topic=17361.msg74561))
 
 The parameter is a no-op in any non-natural blending mode.
 
@@ -165,7 +165,7 @@ together. The documented workaround:
 > Transfer option in order to re-pack the texture generated in
 > Natural mode to the desired UV layout." — Alexey Pasumansky,
 > 2025-10-28, Metashape 2.3.0 pre-release
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=17361.msg74418#msg74418))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=17361.msg74418#msg74418), [archived 2026-09-25](https://web.archive.org/web/20260925130803/https://www.agisoft.com/forum/index.php?topic=17361.msg74418#msg74418))
 
 The procedure:
 
@@ -196,7 +196,7 @@ verbatim:
 > and then rebuild the texture with 'use assigned images'
 > option enabled?" — Alexey Pasumansky, 2025-12-03,
 > Metashape 2.3.0 pre-release
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=17361.msg74558#msg74558))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=17361.msg74558#msg74558), [archived 2026-09-25](https://web.archive.org/web/20260925130902/https://www.agisoft.com/forum/index.php?topic=17361.msg74558#msg74558))
 
 The two-pass procedure:
 
@@ -213,7 +213,7 @@ The two-pass procedure:
    > option and accidentally far away or inverted faces are
    > selected?" — Alexey Pasumansky, 2025-12-05,
    > Metashape 2.3.0 pre-release
-   > ([permalink](https://www.agisoft.com/forum/index.php?topic=17361.msg74566#msg74566))
+   > ([permalink](https://www.agisoft.com/forum/index.php?topic=17361.msg74566#msg74566), [archived 2026-09-23](https://web.archive.org/web/20260923210403/https://www.agisoft.com/forum/index.php?topic=17361.msg74566))
 
 3. Rebuild with `use_assigned_images=True`. The new pass honours
    the manual assignments.
@@ -266,9 +266,9 @@ doc.save()
 - [Forum topic 17361](https://www.agisoft.com/forum/index.php?topic=17361.0)
   — Metashape 2.3.0 pre-release thread (6 substantive
   Agisoft-staff posts on texture).
-- [*New features in Agisoft Metashape 2.3.x* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000177202)
+- [*New features in Agisoft Metashape 2.3.x* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000177202) ([archived 2026-09-24](https://web.archive.org/web/20260924080147/https://agisoft.freshdesk.com/support/solutions/articles/31000177202))
   — official 2.3 feature announcement.
-- [*Texture map types* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000154587)
+- [*Texture map types* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000154587) ([archived 2026-09-23](https://web.archive.org/web/20260923123849/https://agisoft.freshdesk.com/support/solutions/articles/31000154587))
   — what the Diffuse, Occlusion, Normal and Displacement maps are
   (the options behind the `texture_type` kwarg).
 - [Metashape / PhotoScan version timeline](../../reference/version-timeline.md)

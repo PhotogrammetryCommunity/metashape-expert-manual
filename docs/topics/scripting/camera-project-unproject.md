@@ -47,7 +47,7 @@ the camera's own frame (origin = optical centre, Z = forward).
 > coordinates in the image space of the 3D point (defined in
 > the internal coordinate system of the chunk)."
 > — Agisoft support, 2024-06-07, Metashape 2.1
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=16481.msg70795#msg70795))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=16481.msg70795#msg70795), [archived 2026-09-23](https://web.archive.org/web/20260923205917/https://www.agisoft.com/forum/index.php?topic=16481.msg70795))
 
 ## Recipe — 3D point → image pixel
 
@@ -322,7 +322,7 @@ cameras and chunk-local 3D points.
   `Model.pickPoint`, `Vector`, `CoordinateSystem.project`,
   `CoordinateSystem.unproject`.
 - Forum thread, [*question about camera.project and
-  camera.unproject*, 2024](https://www.agisoft.com/forum/index.php?topic=16481.msg72862#msg72862)
+  camera.unproject*, 2024](https://www.agisoft.com/forum/index.php?topic=16481.msg72862#msg72862) ([archived 2026-09-23](https://web.archive.org/web/20260923205937/https://www.agisoft.com/forum/index.php?topic=16481.msg72862))
   — the canonical Q&A explaining the chunk-local-coords
   convention.
 

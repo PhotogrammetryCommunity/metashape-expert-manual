@@ -47,7 +47,7 @@ read its scale factor, and when you need to apply it.
 > dimensions. It is `chunk.transform` that applies proper
 > scale, when you are transforming to ECEF system."
 > — Agisoft support, 2022-09-09, Metashape 1.8
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=14821.msg66108#msg66108))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=14821.msg66108#msg66108), [archived 2026-09-25](https://web.archive.org/web/20260925130425/https://www.agisoft.com/forum/index.php?topic=14821.msg66108#msg66108))
 
 The chunk-internal system serves three roles internally:
 
@@ -159,7 +159,7 @@ scales as the square.
 > ECEF or geographic/projected coordinate system before the
 > alignment is completed."
 > — Agisoft support, 2022-09-12, Metashape 1.8
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=14821.msg64950#msg64950))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=14821.msg64950#msg64950), [archived 2026-09-23](https://web.archive.org/web/20260923204947/https://www.agisoft.com/forum/index.php?topic=14821.msg64950))
 
 The bundle-adjustment optimisation has only image observations
 to work with, plus user-supplied reference data (camera GPS,
@@ -248,7 +248,7 @@ control: move, scale, rotate the bounding box](../../workflow/project-setup/regi
   `ChunkTransform.rotation`, `Chunk.region`, `Region.center`,
   `Region.size`, `Region.rot`, `Chunk.updateTransform`.
 - Forum thread, [*Confused about local to geographic
-  conversion*, 2022](https://www.agisoft.com/forum/index.php?topic=14821.msg66108#msg66108)
+  conversion*, 2022](https://www.agisoft.com/forum/index.php?topic=14821.msg66108#msg66108) ([archived 2026-09-25](https://web.archive.org/web/20260925130425/https://www.agisoft.com/forum/index.php?topic=14821.msg66108#msg66108))
   — the canonical Q&A on the chunk-internal arbitrary-scale
   semantic.
 

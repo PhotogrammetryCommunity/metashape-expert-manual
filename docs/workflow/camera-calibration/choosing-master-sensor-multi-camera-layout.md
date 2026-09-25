@@ -239,7 +239,7 @@ list. Other sensors: `is_master=False`.
 
 ## References
 
-- [Forum thread, *RedEdge-M: changing the master band for camera alignment*](https://www.agisoft.com/forum/index.php?topic=13684.0)
+- [Forum thread, *RedEdge-M: changing the master band for camera alignment*](https://www.agisoft.com/forum/index.php?topic=13684.0) ([archived 2026-05-08](http://web.archive.org/web/20260508123018/https://www.agisoft.com/forum/index.php?topic=13684.0))
   — primary source thread documenting the calibration-vs-alignment master distinction and the folder-rename fix.
 - [Forum thread, *Multiple-Camera Rig with Python API*](https://www.agisoft.com/forum/index.php?topic=16015.0)
   — companion thread for the Python-API surface once the master is chosen.

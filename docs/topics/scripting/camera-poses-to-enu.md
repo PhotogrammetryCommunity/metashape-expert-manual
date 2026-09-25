@@ -288,14 +288,14 @@ hasn't been computed yet — run `chunk.alignCameras()` first.
 
 ## References
 
-- [Forum thread, *How do I convert a camera to ENU?*, 2018](https://www.agisoft.com/forum/index.php?topic=9689.0)
+- [Forum thread, *How do I convert a camera to ENU?*, 2018](https://www.agisoft.com/forum/index.php?topic=9689.0) ([archived 2026-09-24](http://web.archive.org/web/20260924190310/https://www.agisoft.com/forum/index.php?topic=9689.0))
   — primary source; the pointer to the freshdesk
   article and the photoscan-scripts GitHub repo (msg 47147,
   2018-09-18).
 - [agisoft-llc/metashape-scripts on GitHub](https://github.com/agisoft-llc/metashape-scripts/blob/master/src/footprints_to_shapes.py)
   — `footprints_to_shapes.py` script that uses the same
   ECEF / CRS pipeline.
-- [*How to calculate estimated Exterior Orientation parameters for the cameras using Python* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000145016)
+- [*How to calculate estimated Exterior Orientation parameters for the cameras using Python* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000145016) ([archived 2026-09-24](https://web.archive.org/web/20260924070139/https://agisoft.freshdesk.com/support/solutions/articles/31000145016))
   — official documentation on the camera-pose math.
 - *Metashape Python Reference* (2.3.1), `Chunk.transform`,
   `Chunk.crs`, `CoordinateSystem.project` / `unproject`.

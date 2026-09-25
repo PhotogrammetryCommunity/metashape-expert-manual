@@ -71,7 +71,7 @@ versions (1.3) used `50` as a hard-coded threshold.
 | `50` | fast | noisier | Extreme overlap (>90%, dense survey grids) |
 | `30` or below | fastest | poor | Not recommended |
 
-> *Sources: Agisoft support, 2018-05-11, Metashape 1.4 ([permalink](https://www.agisoft.com/forum/index.php?topic=8984.msg42655#msg42655)); 2019-01-29, Metashape 1.5 ([permalink](https://www.agisoft.com/forum/index.php?topic=10304.msg47977#msg47977)).*
+> *Sources: Agisoft support, 2018-05-11, Metashape 1.4 ([permalink](https://www.agisoft.com/forum/index.php?topic=8984.msg42655#msg42655), [archived 2026-09-24](https://web.archive.org/web/20260924064529/https://www.agisoft.com/forum/index.php?topic=8984.msg42655)); 2019-01-29, Metashape 1.5 ([permalink](https://www.agisoft.com/forum/index.php?topic=10304.msg47977#msg47977), [archived 2026-09-23](https://web.archive.org/web/20260923112345/https://www.agisoft.com/forum/index.php?topic=10304.msg47977)).*
 
 ### `main/mesh_trimming_radius`
 
@@ -92,7 +92,7 @@ density.
 - Lower values trim more aggressively; too low risks losing
   legitimate distant features.
 
-Source: Agisoft support, 2019-08-16, Metashape 1.5.4 ([permalink](https://www.agisoft.com/forum/index.php?topic=10848.msg53212#msg53212)).
+Source: Agisoft support, 2019-08-16, Metashape 1.5.4 ([permalink](https://www.agisoft.com/forum/index.php?topic=10848.msg53212#msg53212), [archived 2026-09-24](https://web.archive.org/web/20260924081312/https://www.agisoft.com/forum/index.php?topic=10848.msg53212)).
 
 ### `main/mesh_visibility_trimming_radius`
 
@@ -124,7 +124,7 @@ depth map anyway. Quality suffers but coverage is preserved.
 points, the resulting depth map will be unreliable. Better to
 fix the alignment than work around the threshold.
 
-Source: Agisoft support, 2021-02-09, Metashape 1.7.1 ([permalink](https://www.agisoft.com/forum/index.php?topic=13066.msg58847#msg58847)).
+Source: Agisoft support, 2021-02-09, Metashape 1.7.1 ([permalink](https://www.agisoft.com/forum/index.php?topic=13066.msg58847#msg58847), [archived 2026-09-23](https://web.archive.org/web/20260923203852/https://www.agisoft.com/forum/index.php?topic=13066.msg58847)).
 
 ## Caveats
 

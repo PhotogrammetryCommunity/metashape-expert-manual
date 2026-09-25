@@ -56,7 +56,7 @@ without any pose refinement. That requires:
 > the images are matched, but EO and IO parameters are not
 > refined."
 > — Agisoft support, 2019-04-29, Metashape 1.5
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=10828.msg48916#msg48916))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=10828.msg48916#msg48916), [archived 2026-09-24](https://web.archive.org/web/20260924081139/https://www.agisoft.com/forum/index.php?topic=10828.msg48916))
 
 ### Path 1 — *Import Cameras* command (built-in)
 
@@ -211,9 +211,9 @@ correctly.
   `Chunk.triangulateTiePoints`, `Utils.opk2mat`, `Utils.ypr2mat`,
   `CoordinateSystem.localframe`, `CoordinateSystem.unproject`.
 - Forum thread, [*Metashape External Orientation instead of
-  Aerial Triangulation*, 2019-2020](https://www.agisoft.com/forum/index.php?topic=10828.msg49989#msg49989)
+  Aerial Triangulation*, 2019-2020](https://www.agisoft.com/forum/index.php?topic=10828.msg49989#msg49989) ([archived 2026-09-24](https://web.archive.org/web/20260924081214/https://www.agisoft.com/forum/index.php?topic=10828.msg49989))
   — the canonical Q&A; includes the Python recipe (msg 51996).
-- Forum thread, [*Importing LIDAR Data*, 2018](https://www.agisoft.com/forum/index.php?topic=8315.msg40852#msg40852)
+- Forum thread, [*Importing LIDAR Data*, 2018](https://www.agisoft.com/forum/index.php?topic=8315.msg40852#msg40852) ([archived 2026-09-24](https://web.archive.org/web/20260924064056/https://www.agisoft.com/forum/index.php?topic=8315.msg40852))
   — earlier Q&A on the same workflow with photogrammetric
   data from external packages.
 

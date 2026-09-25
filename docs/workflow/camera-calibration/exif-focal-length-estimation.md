@@ -39,7 +39,7 @@ focal length internally — and that's what the bundle uses.
 > focal length in pixels: `FocalLength`, `FocalPlaneXResolution`,
 > `FocalPlaneYResolution`"
 > — Agisoft support, 2015-10-26, PhotoScan 1.1
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=4443.msg22617#msg22617))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=4443.msg22617#msg22617), [archived 2026-09-23](https://web.archive.org/web/20260923211952/https://www.agisoft.com/forum/index.php?topic=4443.msg22617))
 
 | EXIF tag | Unit | Role |
 |----------|------|------|
@@ -78,7 +78,7 @@ or pixels-per-millimetre directly; Metashape parses
 > to recalculate focal length according to the camera crop
 > factor."
 > — Agisoft support, 2015-10-25, PhotoScan 1.1
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=4443.msg22594#msg22594))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=4443.msg22594#msg22594), [archived 2026-09-23](https://web.archive.org/web/20260923211925/https://www.agisoft.com/forum/index.php?topic=4443.msg22594))
 
 Why this matters: photographers used to thinking in "35mm
 equivalent" focal lengths sometimes manually input 35mm-eq
@@ -131,7 +131,7 @@ RAW frame may have been digitally cropped or fused from multiple
 sensors.
 
 **Fix:** Use a calibration target to determine the real focal
-length empirically — [*Lens calibration (using chessboard pattern) in Metashape* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000160059)
+length empirically — [*Lens calibration (using chessboard pattern) in Metashape* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000160059) ([archived 2026-09-24](https://web.archive.org/web/20260924073338/https://agisoft.freshdesk.com/support/solutions/articles/31000160059))
 walks through the on-screen-chessboard *Tools → Camera →
 Calibrate Lens* procedure (or use an AprilTag grid). Load the
 result via `sensor.user_calib` (see
@@ -232,9 +232,9 @@ single-orbit, or fisheye captures, EXIF accuracy matters more.
   `Sensor.calibration`, `Sensor.user_calib`,
   `Calibration.f`.
 - Forum thread, [*Focal length entry — should I apply crop
-  factor?*, 2015](https://www.agisoft.com/forum/index.php?topic=4443.msg22687#msg22687)
+  factor?*, 2015](https://www.agisoft.com/forum/index.php?topic=4443.msg22687#msg22687) ([archived 2026-09-23](https://web.archive.org/web/20260923212013/https://www.agisoft.com/forum/index.php?topic=4443.msg22687))
   — the canonical clarification of the crop-factor confusion.
-- [*Lens calibration (using chessboard pattern) in Metashape* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000160059)
+- [*Lens calibration (using chessboard pattern) in Metashape* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000160059) ([archived 2026-09-24](https://web.archive.org/web/20260924073338/https://agisoft.freshdesk.com/support/solutions/articles/31000160059))
   — the on-screen-chessboard empirical lens-calibration
   procedure (*Tools → Camera → Calibrate Lens*) for when EXIF
   focal length is missing or synthetic.

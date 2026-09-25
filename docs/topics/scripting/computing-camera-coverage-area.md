@@ -220,11 +220,11 @@ suitable test case.
 ## References
 
 - [Forum thread, *How can I compute the area that a camera is
-  covering?*, 2014](https://www.agisoft.com/forum/index.php?topic=2666.0)
+  covering?*, 2014](https://www.agisoft.com/forum/index.php?topic=2666.0) ([archived 2026-06-17](http://web.archive.org/web/20260617163843/https://www.agisoft.com/forum/index.php?topic=2666.0))
   — primary source; the complete sample script (msg
   13598, 2014-07-29) and the 1.0.4 → 1.1 port note (msg 14893,
   2015-01-24).
-- [Forum thread, *Calculate Coverage Area of Chunk*, 2024](https://www.agisoft.com/forum/index.php?topic=17411.0)
+- [Forum thread, *Calculate Coverage Area of Chunk*, 2024](https://www.agisoft.com/forum/index.php?topic=17411.0) ([archived 2026-09-24](http://web.archive.org/web/20260924190956/https://www.agisoft.com/forum/index.php?topic=17411.0))
   — companion thread with a more recent rephrasing of the same
   question.
 - [agisoft-llc/metashape-scripts on GitHub](https://github.com/agisoft-llc/metashape-scripts/blob/master/src/footprints_to_shapes.py)

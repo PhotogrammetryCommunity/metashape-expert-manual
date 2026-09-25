@@ -98,7 +98,7 @@ formula:
 > example), and all projections based on these tracks we get
 > the number 3.21 of example."
 > — Paulo (community forum user), 2019-07-15, Metashape 1.5
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=11148.msg50135#msg50135))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=11148.msg50135#msg50135), [archived 2026-09-24](https://web.archive.org/web/20260924081705/https://www.agisoft.com/forum/index.php?topic=11148.msg50135))
 
 In other words, Metashape's *Average tie point multiplicity*
 is:
@@ -359,7 +359,7 @@ camera filter narrowed.
   `Chunk.tie_points`, `TiePoints.points`, `TiePoints.tracks`,
   `TiePoints.projections`, `TiePoints.Point.track_id`,
   `TiePoints.Point.valid`, `TiePoints.Projection.track_id`.
-- Forum thread, [*Average Tie point multiplicity parameter*](https://www.agisoft.com/forum/index.php?topic=11148.0)
+- Forum thread, [*Average Tie point multiplicity parameter*](https://www.agisoft.com/forum/index.php?topic=11148.0) ([archived 2026-06-11](http://web.archive.org/web/20260611162658/https://www.agisoft.com/forum/index.php?topic=11148.0))
   — a community forum user, 2019-07-15, Metashape 1.5.
   The canonical Q&A: a community forum user and Agisoft support
   work through the formula. The empirical analysis

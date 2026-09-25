@@ -52,7 +52,7 @@ metres.
 > `.mnt`, Sideris, or a lat/lon/alt table), load it instead
 > through the *Coordinate System* dialog's *Vertical CS → Custom
 > → Add…* datum option, which accepts all of these — see the
-> [*Reference links and description for supported Geoids formats* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000155544).
+> [*Reference links and description for supported Geoids formats* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000155544) ([archived 2026-09-24](https://web.archive.org/web/20260924071702/https://agisoft.freshdesk.com/support/solutions/articles/31000155544)).
 
 ### 2. Verify the `DESC` metadata field
 
@@ -157,18 +157,18 @@ TIFF in QGIS.
 
 ## References
 
-- [*How to use height above geoid for the coordinate system* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000148332)
+- [*How to use height above geoid for the coordinate system* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000148332) ([archived 2026-09-24](https://web.archive.org/web/20260924070425/https://agisoft.freshdesk.com/support/solutions/articles/31000148332))
   — the official tutorial.
 - *Metashape Pro User Manual* (2.3) §
   *Coordinate Systems → Vertical Datum* — describes the compound
   CRS workflow.
-- Forum thread, [*Can't load local geoid model into metashape*, 2020](https://www.agisoft.com/forum/index.php?topic=12602.msg66936#msg66936)
+- Forum thread, [*Can't load local geoid model into metashape*, 2020](https://www.agisoft.com/forum/index.php?topic=12602.msg66936#msg66936) ([archived 2026-09-23](https://web.archive.org/web/20260923203600/https://www.agisoft.com/forum/index.php?topic=12602.msg66936))
   — community-attested origin of the `DESC` name-collision
   warning (2020-10-12).
 
 ## See also
 
-- [*What to do if you need to use an existing geoid on another datum* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000161533)
+- [*What to do if you need to use an existing geoid on another datum* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000161533) ([archived 2026-09-23](https://web.archive.org/web/20260923125551/https://agisoft.freshdesk.com/support/solutions/articles/31000161533))
   — datum-shifting an undulation grid (e.g. GDA94 → GDA2020) via
   *Transform DEM* before building a compound CRS.
 - [Drone metadata: DJI altitude semantics and RTK XMP accuracy tags](dji-drone-metadata.md)

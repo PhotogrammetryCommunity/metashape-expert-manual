@@ -49,7 +49,7 @@ restricts cross-image pair candidates to cameras whose
 > Generic and Reference option are separated adding new
 > preselection mode (reference without generic)." — Alexey
 > Pasumansky, 2016-12-20, PhotoScan 1.2
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=6306.msg30457#msg30457))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=6306.msg30457#msg30457), [archived 2026-09-23](https://web.archive.org/web/20260923213534/https://www.agisoft.com/forum/index.php?topic=6306.msg30457))
 
 The application that defeats repeated-geometry: **populate
 `camera.reference.location` with synthetic priors** — hand-clicked
@@ -267,7 +267,7 @@ neighbourhoods, mirror-equivalent placement, etc.).
 
 ## References
 
-- [Forum thread, *Align images - Reference preselection*, 2016](https://www.agisoft.com/forum/index.php?topic=6306.0)
+- [Forum thread, *Align images - Reference preselection*, 2016](https://www.agisoft.com/forum/index.php?topic=6306.0) ([archived 2026-01-04](http://web.archive.org/web/20260104063112/https://www.agisoft.com/forum/index.php?topic=6306.0))
   — primary source; the clarification of what
   `reference_preselection` does (msg 30716).
 - *Metashape Python Reference* (2.3.1), `Chunk.matchPhotos` —

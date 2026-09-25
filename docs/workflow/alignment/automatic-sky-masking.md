@@ -220,9 +220,9 @@ print(f"Will sky-mask {len(oblique_cams)} oblique cameras")
 - *Metashape Python API Reference* (2.3.1):
   `Camera.mask`, `Camera.photo`, `Chunk.matchPhotos` (params
   `filter_mask`, `mask_tiepoints`).
-- [*How to run Python script automatically on Metashape Professional start* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000133123)
+- [*How to run Python script automatically on Metashape Professional start* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000133123) ([archived 2026-09-24](https://web.archive.org/web/20260924065155/https://agisoft.freshdesk.com/support/solutions/articles/31000133123))
   — auto-launch installation procedure.
-- [*Working with masks* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000153479)
+- [*Working with masks* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000153479) ([archived 2026-05-14](https://web.archive.org/web/20260514185622/https://agisoft.freshdesk.com/support/solutions/articles/31000153479))
   — the general Generate Masks / import / edit workflow these
   script-generated masks plug into.
 

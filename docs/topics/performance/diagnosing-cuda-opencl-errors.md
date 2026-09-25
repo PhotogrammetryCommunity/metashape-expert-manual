@@ -49,7 +49,7 @@ The most common GPU pipeline failure. The documented diagnostic:
 > has not recovered, so all the next tries fails immediately.
 > I suggest to make a clean driver install [...]" — Alexey
 > Pasumansky, 2020-01-25, Metashape 1.5
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=11771.msg52680#msg52680))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=11771.msg52680#msg52680), [archived 2026-09-23](https://web.archive.org/web/20260923202911/https://www.agisoft.com/forum/index.php?topic=11771.msg52680))
 
 What's happening:
 
@@ -107,7 +107,7 @@ Documented verbatim:
 > rollback to the previous version of drivers, while we are
 > trying to find out if it could be fixed on our side." —
 > Alexey Pasumansky, 2014-08-27, PhotoScan 1.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=2587.msg14663#msg14663))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=2587.msg14663#msg14663), [archived 2026-09-23](https://web.archive.org/web/20260923211057/https://www.agisoft.com/forum/index.php?topic=2587.msg14663))
 
 The pattern recurs over time: a recently-released NVIDIA
 driver introduces an OpenCL regression that causes
@@ -121,7 +121,7 @@ A third-party diagnostic recommended in the source thread:
 > "We can suggest to use some tests for OpenCL, for example,
 > GPU Caps should have such functionality." — Alexey
 > Pasumansky, 2014-08-04, PhotoScan 1.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=2587.msg14130#msg14130))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=2587.msg14130#msg14130), [archived 2026-09-23](https://web.archive.org/web/20260923211000/https://www.agisoft.com/forum/index.php?topic=2587.msg14130))
 
 [GPU Caps Viewer](https://www.geeks3d.com/dlcomputing/) tests
 OpenCL functionality independently of Metashape. If GPU Caps
@@ -191,7 +191,7 @@ flowchart TD
   > version (581.42 worked fine) and implemented the
   > workaround in the latest 2.3.0 update."
   > — Alexey Pasumansky, 2025-12-23, Metashape 2.3.0
-  > pre-release ([permalink](https://www.agisoft.com/forum/index.php?topic=17361.msg74630#msg74630))
+  > pre-release ([permalink](https://www.agisoft.com/forum/index.php?topic=17361.msg74630#msg74630), [archived 2026-09-23](https://web.archive.org/web/20260923210440/https://www.agisoft.com/forum/index.php?topic=17361.msg74630))
 
   The pattern (specific NVIDIA driver versions trigger
   regressions; subsequent Metashape updates ship workarounds)
@@ -256,11 +256,11 @@ has been killed and the run aborts — restart Metashape.
 
 ## References
 
-- [Forum thread, *cudaMemGetInfo time out error*, 2020](https://www.agisoft.com/forum/index.php?topic=11771.0)
+- [Forum thread, *cudaMemGetInfo time out error*, 2020](https://www.agisoft.com/forum/index.php?topic=11771.0) ([archived 2026-03-17](http://web.archive.org/web/20260317061151/https://www.agisoft.com/forum/index.php?topic=11771.0))
   — primary source; the "driver failure" diagnosis
   and clean-driver-install recommendation (msg 52680, 2020-01-25).
 - [Forum thread, *GPU processing during the modeling and
-  settings*, 2014](https://www.agisoft.com/forum/index.php?topic=2587.0)
+  settings*, 2014](https://www.agisoft.com/forum/index.php?topic=2587.0) ([archived 2026-09-25](https://web.archive.org/web/20260925130949/https://www.agisoft.com/forum/index.php?topic=2587.0))
   — the bad NVIDIA 340.52 driver (msg 14253) and
   GPU Caps Viewer recommendation (msg 14130). Also the source-thread user
   log excerpt showing the per-tile `GPU processing failed,
@@ -268,15 +268,15 @@ has been killed and the run aborts — restart Metashape.
 - [Forum thread, *GPU CUDA_ERROR_OUT_OF_MEMORY*, 2018](https://www.agisoft.com/forum/index.php?topic=9565.0)
   — companion thread on the genuine OOM family.
 - [Forum thread, *Crash at dense cloud processing — CUDA
-  error*, 2018](https://www.agisoft.com/forum/index.php?topic=8946.0)
+  error*, 2018](https://www.agisoft.com/forum/index.php?topic=8946.0) ([archived 2026-04-22](http://web.archive.org/web/20260422043045/https://www.agisoft.com/forum/index.php?topic=8946.0))
   — the responses on OOM-vs-driver-state diagnosis.
 - [Microsoft TDR documentation](https://learn.microsoft.com/en-us/windows-hardware/drivers/display/timeout-detection-and-recovery)
   — the Windows kernel-timeout mechanism.
-- [*GPU error messages - possible solutions* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000160027)
-  and [*GPU-related crashes in Metashape* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000160098)
+- [*GPU error messages - possible solutions* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000160027) ([archived 2026-09-24](https://web.archive.org/web/20260924073332/https://agisoft.freshdesk.com/support/solutions/articles/31000160027))
+  and [*GPU-related crashes in Metashape* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000160098) ([archived 2026-09-24](https://web.archive.org/web/20260924073413/https://agisoft.freshdesk.com/support/solutions/articles/31000160098))
   — Agisoft's own triage of the CUDA/OpenCL error families and
   per-vendor (Intel / NVIDIA / AMD) GPU crashes covered here.
-- [*Photo and Ortho view is not responding, toolbar disappears* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000145376)
+- [*Photo and Ortho view is not responding, toolbar disappears* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000145376) ([archived 2026-09-23](https://web.archive.org/web/20260923122735/https://agisoft.freshdesk.com/support/solutions/articles/31000145376))
   — a separate, display-side GPU issue (OpenGL rendering, fixed
   via a driver update or `--opengl angle`), distinct from the
   compute errors here; check it if the symptom is an unresponsive

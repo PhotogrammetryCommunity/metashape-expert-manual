@@ -53,7 +53,7 @@ The drone convention is documented in the Pro 2.3 user manual
 ("yaw axis runs from top to bottom of the drone, pitch axis
 runs from left to right wing of the drone, roll axis runs from
 tail to nose of the drone") and the Z-axis convention is also
-attested ([t=6126](https://www.agisoft.com/forum/index.php?topic=6126.0)):
+attested ([t=6126](https://www.agisoft.com/forum/index.php?topic=6126.0), [archived 2026-09-24](http://web.archive.org/web/20260924191737/https://www.agisoft.com/forum/index.php?topic=6126.0)):
 "Z axis is pointing from camera to the object, so for aerial
 datasets where the cameras are looking to the ground by default
 Z will be pointing from the camera to the ground."
@@ -61,7 +61,7 @@ Z will be pointing from the camera to the ground."
 The two functions agree on **axis assignment** — yaw around
 world Z, pitch around world X, roll around world Y, applied as
 −yaw / pitch / roll per the YPR composition rule
-([t=5381](https://www.agisoft.com/forum/index.php?topic=5381.msg26475#msg26475)).
+([t=5381](https://www.agisoft.com/forum/index.php?topic=5381.msg26475#msg26475), [archived 2026-09-25](https://web.archive.org/web/20260925131212/https://www.agisoft.com/forum/index.php?topic=5381.msg26475#msg26475)).
 They disagree on **what physical pose YPR=(0,0,0) describes**.
 
 ## The operational consequence: pitch sign
@@ -265,7 +265,7 @@ for the per-axis-vector vs single-scalar discussion.
   Reference pane displays angles in this convention, and
   `chunk.importCameras(path, format="opk")` converts OPK input to
   YPR on load (Alexey Pasumansky,
-  [forum topic 3901](https://www.agisoft.com/forum/index.php?topic=3901.0)).
+  [forum topic 3901](https://www.agisoft.com/forum/index.php?topic=3901.0) ([archived 2026-06-06](http://web.archive.org/web/20260606035832/https://www.agisoft.com/forum/index.php?topic=3901.0))).
   The pitch-sign-flip convention documented here is specific to
   YPR. If your chunk uses OPK
   (omega-phi-kappa) or another, consult the user manual for
@@ -382,13 +382,13 @@ version. Re-document for that release.
 
 ## References
 
-- [Forum thread, *YPR axis assignment*, 2016](https://www.agisoft.com/forum/index.php?topic=5381.msg26475#msg26475)
+- [Forum thread, *YPR axis assignment*, 2016](https://www.agisoft.com/forum/index.php?topic=5381.msg26475#msg26475) ([archived 2026-09-25](https://web.archive.org/web/20260925131212/https://www.agisoft.com/forum/index.php?topic=5381.msg26475#msg26475))
   — primary source on the −yaw / pitch / roll axis composition
   (the 2016 forum thread).
-- [Forum thread, *Z axis convention for aerial datasets*, 2016](https://www.agisoft.com/forum/index.php?topic=6126.0)
+- [Forum thread, *Z axis convention for aerial datasets*, 2016](https://www.agisoft.com/forum/index.php?topic=6126.0) ([archived 2026-09-24](http://web.archive.org/web/20260924191737/https://www.agisoft.com/forum/index.php?topic=6126.0))
   — primary source for the drone-Z-axis-pointing-to-ground
   canonical pose .
-- [Forum thread, *converting Euler angles to YPR — what are PS's conventions?*, 2015](https://www.agisoft.com/forum/index.php?topic=3901.0)
+- [Forum thread, *converting Euler angles to YPR — what are PS's conventions?*, 2015](https://www.agisoft.com/forum/index.php?topic=3901.0) ([archived 2026-06-06](http://web.archive.org/web/20260606035832/https://www.agisoft.com/forum/index.php?topic=3901.0))
   — Alexey Pasumansky (Agisoft): the Reference pane default is
   YPR, and `importCameras(format="opk")` converts OPK input to
   YPR on load.

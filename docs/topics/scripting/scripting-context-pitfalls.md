@@ -41,7 +41,7 @@ trip up new users.
 > project. For the command-line run scripts the correct way is
 > creating a new Metashape.Document() instance."
 > — Agisoft support, 2020-09-28, Metashape 1.6
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=12603.msg55985#msg55985))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=12603.msg55985#msg55985), [archived 2026-09-23](https://web.archive.org/web/20260923203620/https://www.agisoft.com/forum/index.php?topic=12603.msg55985))
 
 `Metashape.app.document` is the **currently-loaded GUI
 document**. In headless / command-line runs, no GUI is loaded,
@@ -139,7 +139,7 @@ empty result.
 > unexpected assertions, such as 'Zero Resolution', 'Null tie
 > points' and similar."
 > — Agisoft support, 2023-02-10, Metashape 2.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=15240.msg66874#msg66874))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=15240.msg66874#msg66874), [archived 2026-09-23](https://web.archive.org/web/20260923205238/https://www.agisoft.com/forum/index.php?topic=15240.msg66874))
 
 ### Pattern: try-except + content check
 
@@ -245,7 +245,7 @@ format, not the older PSZ format.
 > Metashape.Document instance) and then just call doc.save()
 > method without path argument."
 > — Agisoft support, 2020-11-25, Metashape 1.6
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=4853.msg56725#msg56725))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=4853.msg56725#msg56725), [archived 2026-09-23](https://web.archive.org/web/20260923212246/https://www.agisoft.com/forum/index.php?topic=4853.msg56725))
 
 This restriction persists in Metashape 2.x: PSX is the only
 project format that supports orthomosaic, DEM, and tiled-model
@@ -305,7 +305,7 @@ instead of `camera.group == some_group`.
 This was a **2.3.1-only regression, fixed in Metashape 2.3.2**
 (confirmed by the reporter on 2.3.2.22956); run on 2.3.2+ where
 possible, and on CPython ≥ 3.12 (which masks it regardless).
-([Forum bug report, 2026, Metashape 2.3.1 → fixed 2.3.2](https://www.agisoft.com/forum/index.php?topic=17579.0))
+([Forum bug report, 2026, Metashape 2.3.1 → fixed 2.3.2](https://www.agisoft.com/forum/index.php?topic=17579.0), [archived 2026-09-24](http://web.archive.org/web/20260924191027/https://www.agisoft.com/forum/index.php?topic=17579.0))
 
 ## Caveats
 
@@ -348,11 +348,11 @@ possible, and on CPython ≥ 3.12 (which masks it regardless).
   `Metashape.app.getExistingDirectory`,
   `Metashape.app.getCoordinateSystem`, `Metashape.Document`,
   `Document.open`, `Document.save`, `Document.chunk`.
-- [*How to run the script in headless mode from the command-line* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000133141)
+- [*How to run the script in headless mode from the command-line* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000133141) ([archived 2026-09-24](https://web.archive.org/web/20260924065219/https://agisoft.freshdesk.com/support/solutions/articles/31000133141))
   — supplementary tutorial.
-- Forum thread, [*Metashape.app.document is NoneType*, 2020](https://www.agisoft.com/forum/index.php?topic=12603.msg55985#msg55985)
+- Forum thread, [*Metashape.app.document is NoneType*, 2020](https://www.agisoft.com/forum/index.php?topic=12603.msg55985#msg55985) ([archived 2026-09-23](https://web.archive.org/web/20260923203620/https://www.agisoft.com/forum/index.php?topic=12603.msg55985))
   — the GUI-vs-headless context restriction.
 - Forum thread, [*Validate if the stage was successfully
-  completed*, 2023](https://www.agisoft.com/forum/index.php?topic=15240.msg66874#msg66874)
+  completed*, 2023](https://www.agisoft.com/forum/index.php?topic=15240.msg66874#msg66874) ([archived 2026-09-23](https://web.archive.org/web/20260923205238/https://www.agisoft.com/forum/index.php?topic=15240.msg66874))
   — try/except pattern for stage assertion errors.
 

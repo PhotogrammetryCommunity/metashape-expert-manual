@@ -36,7 +36,7 @@ is **disabled**:
 
 > "Adaptive fitting - disabled" — Alexey Pasumansky,
 > 2021-02-11, Metashape 1.7
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=13079.msg58789#msg58789))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=13079.msg58789#msg58789), [archived 2026-09-23](https://web.archive.org/web/20260923203923/https://www.agisoft.com/forum/index.php?topic=13079.msg58789))
 
 That is, the alignment-debugging baseline keeps the parameter
 set fixed rather than letting the bundle decide what to fit.
@@ -110,4 +110,4 @@ trade-off is dataset-specific:
 
 | Date | Version | Author | Thread | One-line takeaway |
 |------|---------|--------|--------|-------------------|
-| 2021-02-11 | Metashape 1.7 | Alexey Pasumansky | [Tie points ghosting](https://www.agisoft.com/forum/index.php?topic=13079.msg58789#msg58789) | The canonical "clean" baseline keeps adaptive fitting disabled. |
+| 2021-02-11 | Metashape 1.7 | Alexey Pasumansky | [Tie points ghosting](https://www.agisoft.com/forum/index.php?topic=13079.msg58789#msg58789) ([archived 2026-09-23](https://web.archive.org/web/20260923203923/https://www.agisoft.com/forum/index.php?topic=13079.msg58789)) | The canonical "clean" baseline keeps adaptive fitting disabled. |

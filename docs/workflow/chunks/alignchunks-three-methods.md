@@ -55,7 +55,7 @@ Metashape.Document.alignChunks(
 > and no tie points are found for the images from light and dark
 > sub-sets, the point based chunk alignment would likely fail."
 > — Alexey Pasumansky, 2017-05-04, PhotoScan 1.3
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=6995.msg33747#msg33747))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=6995.msg33747#msg33747), [archived 2026-09-23](https://web.archive.org/web/20260923213758/https://www.agisoft.com/forum/index.php?topic=6995.msg33747))
 
 ## Diagnostic: did the alignment establish a transformation?
 
@@ -202,9 +202,9 @@ successful methods (within the chunks' geometric agreement).
 
 ## References
 
-- [Forum thread, *Merging Chunks*, 2017](https://www.agisoft.com/forum/index.php?topic=6995.0)
+- [Forum thread, *Merging Chunks*, 2017](https://www.agisoft.com/forum/index.php?topic=6995.0) ([archived 2022-06-18](http://web.archive.org/web/20220618112632/https://www.agisoft.com/forum/index.php?topic=6995.0))
   — primary source; the failure-mode summary (msg 33625).
-- [Forum thread, *Optimisation of Merged Chunks*, 2017](https://www.agisoft.com/forum/index.php?topic=6691.0)
+- [Forum thread, *Optimisation of Merged Chunks*, 2017](https://www.agisoft.com/forum/index.php?topic=6691.0) ([archived 2026-09-24](http://web.archive.org/web/20260924191910/https://www.agisoft.com/forum/index.php?topic=6691.0))
   — extends the comparison to optimisation context (covered in
   [What `mergeChunks` actually does](what-mergechunks-does.md)).
 - *Metashape Professional Edition User Manual* (2.3), §"Aligning

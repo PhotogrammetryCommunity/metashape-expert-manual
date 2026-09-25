@@ -36,7 +36,7 @@ errors, but extracting them in bulk requires Python.
 > label and corresponding number of projections in the active
 > chunk of the currently opened document"
 > — Agisoft support, 2019-08-21, PhotoScan 1.5
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=11286.msg50690#msg50690))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=11286.msg50690#msg50690), [archived 2026-09-23](https://web.archive.org/web/20260923202544/https://www.agisoft.com/forum/index.php?topic=11286.msg50690))
 
 > **Demo verified:** ✗ — pending Tier 3 reproduction on a real Metashape install.
 
@@ -118,7 +118,7 @@ geocentric-metres, producing meaningless numbers.
 > system and you can calculate the error as a norm of the
 > connecting vector."
 > — Agisoft support, 2019-08-22, PhotoScan 1.5
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=11286.msg50699#msg50699))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=11286.msg50699#msg50699), [archived 2026-09-23](https://web.archive.org/web/20260923202606/https://www.agisoft.com/forum/index.php?topic=11286.msg50699))
 
 ## The metre-vs-pixel distinction
 
@@ -141,13 +141,13 @@ projection. Per-image errors only exist in **pixels**:
 > but I can't get 1 value of error (m) by target by image, that's
 > it?"
 > — the source-thread user, 2019-08-22, PhotoScan 1.5
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=11286.msg49832#msg49832))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=11286.msg49832#msg49832), [archived 2026-09-23](https://web.archive.org/web/20260923202520/https://www.agisoft.com/forum/index.php?topic=11286.msg49832))
 
 > "Yes indeed I was wrong in what I wanted to do: I can only have
 > one residue in m per point for a whole chunk but several
 > residues px of a point."
 > — the source-thread user, 2019-08-22, PhotoScan 1.5
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=11286.msg50706#msg50706))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=11286.msg50706#msg50706), [archived 2026-09-23](https://web.archive.org/web/20260923202636/https://www.agisoft.com/forum/index.php?topic=11286.msg50706))
 
 ## Recipe — per-projection pixel error
 
@@ -259,7 +259,7 @@ RMS), weight by accuracy, or apply your own outlier rejection.
   `Marker.projections`, `Marker.Projection`,
   `Marker.position`, `Marker.reference`, `Camera.project`,
   `Chunk.transform`, `CoordinateSystem.unproject`.
-- Forum thread, [*Export number projection of markers*, 2019](https://www.agisoft.com/forum/index.php?topic=11286.msg50690#msg50690)
+- Forum thread, [*Export number projection of markers*, 2019](https://www.agisoft.com/forum/index.php?topic=11286.msg50690#msg50690) ([archived 2026-09-23](https://web.archive.org/web/20260923202544/https://www.agisoft.com/forum/index.php?topic=11286.msg50690))
   — projection-count recipe + per-marker error walkthrough +
   metre-vs-pixel framing clarification.
 

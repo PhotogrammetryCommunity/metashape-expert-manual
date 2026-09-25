@@ -46,7 +46,7 @@ The tags Metashape recognises follow the EXIF 2.3 standard
 > "You can check EXIF 2.3 standard specification:
 > [http://www.cipa.jp/std/documents/e/DC-008-2012_E.pdf](http://www.cipa.jp/std/documents/e/DC-008-2012_E.pdf)" —
 > Alexey Pasumansky, 2014-07-03, PhotoScan 1.0
-> ([permalink](https://www.agisoft.com/forum/index.php?topic=2572.msg13156#msg13156))
+> ([permalink](https://www.agisoft.com/forum/index.php?topic=2572.msg13156#msg13156), [archived 2026-09-23](https://web.archive.org/web/20260923210850/https://www.agisoft.com/forum/index.php?topic=2572.msg13156))
 
 ### Diagnose what your camera emits
 
@@ -325,18 +325,18 @@ yaw/pitch/roll per image.
 ## References
 
 - [Forum thread, *Where to store Roll Pitch Yaw data in EXIF for
-  import into PS*, 2014](https://www.agisoft.com/forum/index.php?topic=2572.0)
+  import into PS*, 2014](https://www.agisoft.com/forum/index.php?topic=2572.0) ([archived 2026-09-24](http://web.archive.org/web/20260924191230/https://www.agisoft.com/forum/index.php?topic=2572.0))
   — primary source; the pointer to EXIF 2.3 spec
   (msg 13156, 2014-07-03), 26-reply discussion of the EXIF
   side.
 - [Forum thread, *How to convert Euler angles to Yaw, Pitch, &
-  Roll (what are PS's conventions?)*, 2015](https://www.agisoft.com/forum/index.php?topic=3901.0)
+  Roll (what are PS's conventions?)*, 2015](https://www.agisoft.com/forum/index.php?topic=3901.0) ([archived 2026-06-06](http://web.archive.org/web/20260606035832/https://www.agisoft.com/forum/index.php?topic=3901.0))
   — convention details for the YPR mode.
-- [Forum thread, *omega phi kappa import*, 2015](https://www.agisoft.com/forum/index.php?topic=4569.0)
+- [Forum thread, *omega phi kappa import*, 2015](https://www.agisoft.com/forum/index.php?topic=4569.0) ([archived 2026-09-24](http://web.archive.org/web/20260924191441/https://www.agisoft.com/forum/index.php?topic=4569.0))
   — OPK-mode specifics.
-- [Forum thread, *Orientation issues*, 2015](https://www.agisoft.com/forum/index.php?topic=4425.0)
+- [Forum thread, *Orientation issues*, 2015](https://www.agisoft.com/forum/index.php?topic=4425.0) ([archived 2026-09-24](http://web.archive.org/web/20260924191450/https://www.agisoft.com/forum/index.php?topic=4425.0))
   — general orientation-issue diagnostic patterns.
-- [Forum thread, *Write Camera Locations to EXIF*, 2013](https://www.agisoft.com/forum/index.php?topic=512.0)
+- [Forum thread, *Write Camera Locations to EXIF*, 2013](https://www.agisoft.com/forum/index.php?topic=512.0) ([archived 2026-09-24](http://web.archive.org/web/20260924190152/https://www.agisoft.com/forum/index.php?topic=512.0))
   — EXIFTool recipes for the rare "inject into EXIF" case.
 - *EXIF 2.3 specification*, CIPA DC-008-2012 ([cipa.jp link](http://www.cipa.jp/std/documents/e/DC-008-2012_E.pdf))
   — the canonical tag schema.
