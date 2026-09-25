@@ -94,7 +94,7 @@ Three concrete consequences:
    Optimisation converges to N independent local optima. Residual
    geometric error between sub-chunks (typically whatever *Align
    Chunks* left, sometimes ≥1 m on marker-based alignments —
-   [topic=3325](https://www.agisoft.com/forum/index.php?topic=3325.0))
+   [topic=3325](https://www.agisoft.com/forum/index.php?topic=3325.0) ([archived 2026-09-25](https://web.archive.org/web/20260925151400/https://www.agisoft.com/forum/index.php?topic=3325.0)))
    stays.
 3. **No camera deduplication.** The same image, present in two
    source chunks (e.g. via *Align Chunks (camera based)*), appears
@@ -237,7 +237,7 @@ produce a non-zero count.
 
 - [Forum thread, *Optimisation of Merged Chunks*, 2017](https://www.agisoft.com/forum/index.php?topic=6691.0) ([archived 2026-09-24](http://web.archive.org/web/20260924191910/https://www.agisoft.com/forum/index.php?topic=6691.0))
   — primary source; the clarification (msg 32510).
-- [Forum thread, *Merging different chunks flawlessly?*, 2015](https://www.agisoft.com/forum/index.php?topic=3325.0)
+- [Forum thread, *Merging different chunks flawlessly?*, 2015](https://www.agisoft.com/forum/index.php?topic=3325.0) ([archived 2026-09-25](https://web.archive.org/web/20260925151400/https://www.agisoft.com/forum/index.php?topic=3325.0))
   — practical 462-image / 4-chunk case with a 1 m residual,
   motivating the question.
 - *Metashape Professional Edition User Manual* (2.3), §"Merging

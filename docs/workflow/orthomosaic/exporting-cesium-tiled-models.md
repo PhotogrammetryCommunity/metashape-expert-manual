@@ -386,7 +386,7 @@ server and load `tileset.json` in a CesiumJS viewer.
   — companion thread on the Cesium-ion upload pipeline.
 - [Forum thread, *Unsupported datum transformation - CESIUM ION*, 2022](https://www.agisoft.com/forum/index.php?topic=14251.0) ([archived 2025-07-13](http://web.archive.org/web/20250713170247/https://www.agisoft.com/forum/index.php?topic=14251.0))
   — datum-transformation pitfalls for Cesium ion uploads.
-- [Forum thread, *Issue with exporting Cesium Tiled Models — Version Mismatch*, 2025](https://www.agisoft.com/forum/index.php?topic=17024.0)
+- [Forum thread, *Issue with exporting Cesium Tiled Models — Version Mismatch*, 2025](https://www.agisoft.com/forum/index.php?topic=17024.0) ([archived 2026-09-25](https://web.archive.org/web/20260925151254/https://www.agisoft.com/forum/index.php?topic=17024.0))
   — tileset-version compatibility issues.
 - [Forum thread, *exportModelTiles() documentation request*, 2016](https://www.agisoft.com/forum/index.php?topic=3849.0) ([archived 2026-02-18](http://web.archive.org/web/20260218055624/https://www.agisoft.com/forum/index.php?topic=3849.0))
   — legacy thread; the API has been substantially renamed since.

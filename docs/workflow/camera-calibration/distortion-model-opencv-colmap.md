@@ -578,7 +578,7 @@ the script applies the swap.
   transition (msg 63992).
 - [Forum thread, *Undistort Photos*, 2014](https://www.agisoft.com/forum/index.php?topic=1247.0) ([archived 2026-04-22](http://web.archive.org/web/20260422171358/https://www.agisoft.com/forum/index.php?topic=1247.0))
   — the canonical "export undistorted images" workflow.
-- [Forum thread, *Export COLMAP in Standard*, 2024](https://www.agisoft.com/forum/index.php?topic=16518.0)
+- [Forum thread, *Export COLMAP in Standard*, 2024](https://www.agisoft.com/forum/index.php?topic=16518.0) ([archived 2026-09-25](https://web.archive.org/web/20260925151315/https://www.agisoft.com/forum/index.php?topic=16518.0))
   — Colmap export support discussion.
 - *Metashape Professional Edition User Manual* (2.3), camera
   model section — the canonical statement that "the image

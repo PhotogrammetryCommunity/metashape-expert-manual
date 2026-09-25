@@ -288,7 +288,7 @@ the application settings. After running, re-execute the chunk's
   2022-05-11, msg 64151).
 - [Forum thread, *Rolling Shutter bug?*, 2021](https://www.agisoft.com/forum/index.php?topic=12235.0) ([archived 2025-12-08](http://web.archive.org/web/20251208045813/https://www.agisoft.com/forum/index.php?topic=12235.0))
   — companion thread on a specific 1.7-era bug.
-- [Forum thread, *Rolling shutter integration*, 2017](https://www.agisoft.com/forum/index.php?topic=5144.0)
+- [Forum thread, *Rolling shutter integration*, 2017](https://www.agisoft.com/forum/index.php?topic=5144.0) ([archived 2026-09-25](https://web.archive.org/web/20260925151428/https://www.agisoft.com/forum/index.php?topic=5144.0))
   — early-era thread; predates the Regularized/Full split.
 - [Forum thread, *Distance and angle calculation and rolling shutter in 1.4*, 2018](https://www.agisoft.com/forum/index.php?topic=8548.0) ([archived 2026-09-24](http://web.archive.org/web/20260924192112/https://www.agisoft.com/forum/index.php?topic=8548.0))
   — older thread on metrology effects.

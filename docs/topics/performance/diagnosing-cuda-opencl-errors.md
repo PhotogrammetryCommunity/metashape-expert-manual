@@ -265,7 +265,7 @@ has been killed and the run aborts — restart Metashape.
   GPU Caps Viewer recommendation (msg 14130). Also the source-thread user
   log excerpt showing the per-tile `GPU processing failed,
   switching to CPU mode` fallback in action (msg 13769).
-- [Forum thread, *GPU CUDA_ERROR_OUT_OF_MEMORY*, 2018](https://www.agisoft.com/forum/index.php?topic=9565.0)
+- [Forum thread, *GPU CUDA_ERROR_OUT_OF_MEMORY*, 2018](https://www.agisoft.com/forum/index.php?topic=9565.0) ([archived 2026-09-25](https://web.archive.org/web/20260925151704/https://www.agisoft.com/forum/index.php?topic=9565.0))
   — companion thread on the genuine OOM family.
 - [Forum thread, *Crash at dense cloud processing — CUDA
   error*, 2018](https://www.agisoft.com/forum/index.php?topic=8946.0) ([archived 2026-04-22](http://web.archive.org/web/20260422043045/https://www.agisoft.com/forum/index.php?topic=8946.0))

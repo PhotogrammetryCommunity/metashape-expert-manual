@@ -365,7 +365,7 @@ flowchart TD
   discussion of dome-port underwater fisheye behaving like Frame
   (msg 14651). discussion of spheres-of-points artifacts
   (msg 14728).
-- [Forum thread, *Insta360 double Fisheye DNG's*, 2023](https://www.agisoft.com/forum/index.php?topic=16091.0)
+- [Forum thread, *Insta360 double Fisheye DNG's*, 2023](https://www.agisoft.com/forum/index.php?topic=16091.0) ([archived 2026-09-25](https://web.archive.org/web/20260925151242/https://www.agisoft.com/forum/index.php?topic=16091.0))
   — the dual-fisheye crop-and-import workflow (msg 79105).
 - [Forum thread, *Bug 2.3.0.21868: Cannot Export Equisolid
   Fisheye Cameras*, 2026](https://www.agisoft.com/forum/index.php?topic=17446.0) ([archived 2026-03-12](http://web.archive.org/web/20260312003849/https://www.agisoft.com/forum/index.php?topic=17446.0))

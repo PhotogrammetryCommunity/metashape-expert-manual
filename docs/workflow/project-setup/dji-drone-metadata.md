@@ -159,10 +159,10 @@ essential.
   *Loading photos → EXIF metadata* — describes the GPS / orientation
   metadata Metashape reads.
 - Forum thread, [*Altitude used in Processing UAV (DJI Phantom 4
-  Pro)*](https://www.agisoft.com/forum/index.php?topic=8306.0) —
+  Pro)*](https://www.agisoft.com/forum/index.php?topic=8306.0) ([archived 2026-09-25](https://web.archive.org/web/20260925151600/https://www.agisoft.com/forum/index.php?topic=8306.0)) —
   the EXIF / XMP altitude distinction.
 - Forum thread, [*Workflow to process the Photography of "PHANTOM
-  4 RTK"*](https://www.agisoft.com/forum/index.php?topic=9910.0)
+  4 RTK"*](https://www.agisoft.com/forum/index.php?topic=9910.0) ([archived 2026-09-25](https://web.archive.org/web/20260925151733/https://www.agisoft.com/forum/index.php?topic=9910.0))
   — XMP accuracy tag introduction in 1.5.0.
 - [*Possible causes of large altitude errors when working with DJI images in Metashape* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000152491) ([archived 2026-09-24](https://web.archive.org/web/20260924070935/https://agisoft.freshdesk.com/support/solutions/articles/31000152491))
   — the AbsoluteAltitude/RelativeAltitude distinction and scripts

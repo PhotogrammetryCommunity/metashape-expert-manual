@@ -263,7 +263,7 @@ doc.save()
 
 ## See also
 
-- [Forum topic 17361](https://www.agisoft.com/forum/index.php?topic=17361.0)
+- [Forum topic 17361](https://www.agisoft.com/forum/index.php?topic=17361.0) ([archived 2026-09-25](https://web.archive.org/web/20260925151326/https://www.agisoft.com/forum/index.php?topic=17361.0))
   — Metashape 2.3.0 pre-release thread (6 substantive
   Agisoft-staff posts on texture).
 - [*New features in Agisoft Metashape 2.3.x* (Agisoft KB)](https://agisoft.freshdesk.com/support/solutions/articles/31000177202) ([archived 2026-09-24](https://web.archive.org/web/20260924080147/https://agisoft.freshdesk.com/support/solutions/articles/31000177202))

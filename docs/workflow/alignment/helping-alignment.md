@@ -1613,14 +1613,14 @@ response. Links point at the deep-dive recipe for each path.
   motivates the iterative-outlier-detection recipe in
   this article's "Markers have no automatic outlier
   detection" section.
-- Forum thread, [*Projection error of a marker*](https://www.agisoft.com/forum/index.php?topic=5322.0)
+- Forum thread, [*Projection error of a marker*](https://www.agisoft.com/forum/index.php?topic=5322.0) ([archived 2026-09-25](https://web.archive.org/web/20260925151500/https://www.agisoft.com/forum/index.php?topic=5322.0))
   — Agisoft support, 2016-05-11,
   PhotoScan 1.2. The per-marker per-projection pixel-error
   formula
   (`(camera.project(marker.position) - projection.coord).norm()`)
   used in the per-projection IRLS screen of the
   outlier-detection recipe.
-- Forum thread, [*The mysterious 'bowl effect'*](https://www.agisoft.com/forum/index.php?topic=600.0)
+- Forum thread, [*The mysterious 'bowl effect'*](https://www.agisoft.com/forum/index.php?topic=600.0) ([archived 2026-09-25](https://web.archive.org/web/20260925151528/https://www.agisoft.com/forum/index.php?topic=600.0))
   — Agisoft support, 2012-07-27,
   PhotoScan 0.9. The canonical bowl-effect explanation:
   cause is inaccurate camera self-calibration during
@@ -1630,7 +1630,7 @@ response. Links point at the deep-dive recipe for each path.
   — Agisoft support, 2019-04-30,
   Metashape 1.5. Update Transform vs Optimize Cameras: the
   former preserves dense products, the latter discards them.
-- Forum thread, [*Bowl-shaped distortion in DEM*](https://www.agisoft.com/forum/index.php?topic=9244.0)
+- Forum thread, [*Bowl-shaped distortion in DEM*](https://www.agisoft.com/forum/index.php?topic=9244.0) ([archived 2026-09-25](https://web.archive.org/web/20260925131705/https://www.agisoft.com/forum/index.php?topic=9244.0))
   — Agisoft support, 2018-07-16,
   Metashape 1.4. The "untick cameras / tick GCPs / Optimize
   with K1-K3, P1-P2, no adaptive" recipe for stubborn
