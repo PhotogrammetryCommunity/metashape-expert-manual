@@ -10,6 +10,12 @@ history (`scripts/gen_changelog.py`); the one-line description
 after each entry is written by hand and preserved when the list
 is regenerated.
 
+## October 2026
+
+**Updated**
+
+- [Color calibration: when to use it, what it does, and the white-balance / vignetting knobs](../workflow/texture/color-calibration.md) — Added a measured correction-model section: the two vignetting polynomials (sensor falloff vs per-image gain), that both apply on the stored gamma-encoded pixels, and a `convertImages` gain-only recipe.
+
 ## September 2026
 
 **Updated**
