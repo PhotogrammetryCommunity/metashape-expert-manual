@@ -45,10 +45,10 @@ shape of the work.
 ### Build and preview the docs site locally
 
 ```bash
-# Create the docs build venv (Python 3.12 recommended).
-~/.pyenv/versions/3.12.9/bin/python -m venv .venv
-./.venv/bin/python -m pip install --upgrade pip
-./.venv/bin/python -m pip install -r requirements.txt
+# Create the docs build venv with uv (Python 3.12 recommended).
+# Install uv once: https://docs.astral.sh/uv/getting-started/installation/
+uv venv --python 3.12 .venv
+uv pip install --python .venv/bin/python -r requirements.txt
 
 # Build (strict — fails on broken links / missing nav entries).
 ./.venv/bin/mkdocs build --clean --strict
