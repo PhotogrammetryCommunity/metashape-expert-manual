@@ -3,7 +3,7 @@ title: "Color calibration: when to use it, what it does, and the white-balance /
 status: unverified
 applies_to: Metashape Pro 2.x and Standard 2.x — same `Calibrate Colors` command since PhotoScan 1.4 (Jan 2018)
 edition: "Pro / Standard"
-last_reviewed: 2026-06-01
+last_reviewed: 2026-10-06
 diataxis: explanation
 confidence: high
 ---
@@ -17,6 +17,10 @@ confidence: high
 > vignetting coefficients) are forum-attested with permalinks.
 > The `Chunk.image_brightness`, `Chunk.image_contrast`, and
 > `Chunk.calibrateColors` API are introspection-confirmed.
+> The section *The correction model, measured* was measured on
+> Metashape Pro 2.3.2 (macOS) with a **contributor-private**
+> dataset of fixed cameras, 4096 × 1728 8-bit PNG. You will not
+> reproduce the exact numbers without your own data.
 
 > **Scope statement.** The official manual extensively
 > documents *Calibrate Colors* and the *Color calibration*
@@ -168,7 +172,7 @@ if not chunk.model:
 # Run color calibration
 chunk.calibrateColors(
     source_data=Metashape.DataSource.ModelData,   # or TiePointsData / ElevationData
-    color_balance=True,                           # the "Calibrate white balance" checkbox
+    white_balance=True,                           # the "Calibrate white balance" checkbox
 )
 
 # Now build texture / orthomosaic — corrections apply automatically
@@ -177,7 +181,12 @@ chunk.buildTexture(blending_mode=Metashape.BlendingMode.MosaicBlending)
 ```
 
 The `source_data=` parameter accepts the same `DataSource` enum
-values as other build operations.
+values as other build operations. The white-balance keyword is
+`white_balance`; Metashape 2.3.2 rejects the older
+`color_balance` with `NameError: Invalid argument name`. The
+task attribute was renamed from `calibrate_color_balance` to
+`white_balance` in 1.6.0 (*Metashape Python API Reference*,
+version 2.3.2, ch. 3 "Python API Change Log" → "Metashape version 1.6.0").
 
 ## Per-image manual brightness adjustments
 
@@ -226,9 +235,10 @@ and applies it** at *Add Photos* time:
 > — *Metashape Pro Manual* 2.3, § *Vignetting correction*
 
 For cameras without metadata-encoded vignetting, *Calibrate
-Colors* estimates per-image vignetting coefficients along with
-the brightness/white-balance corrections. The coefficients are
-stored in the chunk's internal data structures.
+Colors* estimates vignetting coefficients along with the
+brightness/white-balance corrections. They are stored as two
+separate polynomials, one on the sensor and one on each camera;
+see *The correction model, measured* below.
 
 ### Reading the estimated vignetting coefficients
 
@@ -244,13 +254,183 @@ workaround:
 
 The `project.files/<chunk_id>/0/chunk.zip` archive contains
 `doc.xml` with `<vignetting>` blocks; each block contains a
-2D polynomial coefficient grid. Decoding requires understanding
-the polynomial form (the manual doesn't document it; coefficient
-indexing is `[i, j]` where `i+j ≤ 3`).
+2D polynomial coefficient grid, indexed `[i, j]` with `i+j ≤ 3`.
+
+The coefficients are also readable from Python, by indexing
+rather than by attribute. `Camera.vignetting`,
+`Sensor.vignetting` and the `Vignetting` class were added in
+Metashape 1.5.0, together with `Chunk.calibrateColors()`
+(*Metashape Python API Reference*, version 2.3.2, ch. 3
+"Python API Change Log" → "Metashape version 1.5.0"). The
+indexing below was checked on 2.3.2 only. `dir()` on a
+`Metashape.Vignetting` object lists only `copy`, but
+`camera.vignetting[0][i, j]` and `camera.sensor.vignetting[0][i, j]`
+return the coefficients, one `Vignetting` per band. Both lists
+are also assignable.
+
+The polynomial form *is* documented, in the reflectance section
+of the Pro manual rather than the color-calibration one:
+
+> "Vignetting is modeled in Metashape using a 3 degree bivariate
+> polynomial: V(x, y) = exp(sumij cij \* xi \* yj) […] To compensate
+> vignetting in the image, each pixel value is divided by
+> corresponding vignetting factor."
+> — *Metashape Pro User Manual*, ch. 5 "Measurements" §
+> "Vegetation indices calculation" → "Vignetting correction"
+> (Pro 2.3, p. 129)
+
+The manual normalises the coordinates to `x = 2(i + 0.5)/w − 1`
+and `y = 2(j + 0.5)/h − 1`, so the image spans [−1, 1] with
+(−1, −1) at the top-left corner.
 
 For most users, the calibration is opaque and "just works"; the
 internal-XML inspection is only needed for forensic debugging
 of mis-corrected images.
+
+## The correction model, measured
+
+Measured on Metashape Pro 2.3.2 with the contributor-private
+dataset described in the preamble. The project was
+aligned with **one sensor per camera**, then
+`calibrateColors(source_data=TiePointsData, white_balance=False)`
+was run, and corrected copies were written with
+`chunk.convertImages(color_correction=True)` to lossless TIFF.
+Each finding compares those copies with the originals pixel by
+pixel.
+
+### Two polynomials: falloff on the sensor, gain on the camera
+
+*Calibrate Colors* writes **two** `<vignetting>` blocks, with
+different terms:
+
+| Stored on | Non-zero terms | What it is |
+|-----------|----------------|------------|
+| `sensor.vignetting` | `(2,0)`, `(0,2)`, `(1,1)`; `(0,0)` is 0 | Spatial falloff of the lens |
+| `camera.vignetting` | `(0,0)`, `(1,0)`, `(0,1)` | Per-image level: a gain `exp(c₀₀)` and a linear tilt across the frame |
+
+The split does not depend on how sensors are shared. With one
+sensor per camera, every sensor and every camera carried a
+non-zero block, so each camera has its own falloff and its own
+gain. With one sensor shared by several cameras, the falloff
+block is shared and the camera blocks still differ per image.
+
+There is no option to fit only the gain. `calibrateColors`
+takes `source_data`, `white_balance` and `cameras`, and
+`Metashape.Tasks.CalibrateColors().encode()` returns no further
+parameters.
+
+### Both blocks are applied together, on the stored pixel values
+
+The manual's formula holds with the two blocks summed in one
+exponent:
+
+```text
+I' = I / exp( Σ cᵢⱼ xⁱ yʲ )      camera terms + sensor terms
+```
+
+What the measurement adds is that `I` is the **stored, gamma-
+encoded 8-bit value**, not a linearised one:
+
+- **Falloff.** With the camera block zeroed, dividing each stored
+  pixel by `V(x, y)` rebuilt from the sensor coefficients
+  reproduces the corrected image to 0.58 levels RMS. Doing the
+  division in linear light (sRGB-decode, divide, re-encode)
+  leaves 1.57 levels.
+- **Gain.** With the sensor block zeroed and the camera block
+  reduced to `(0,0)`, the corrected image is the original times
+  `exp(−c₀₀)` to 0.57 levels RMS, with no free parameter; a
+  fitted scalar matches `exp(−c₀₀)` to within 0.7% on every
+  camera.
+
+The 8-bit rounding of the output alone accounts for about 0.3
+levels.
+
+### `convertImages` uses the coefficients as they are
+
+Coefficients edited after *Calibrate Colors* are honoured, not
+recomputed. That makes it possible to keep only the per-image
+gain:
+
+> **Demo verified:** ✗ — not run on an Agisoft sample dataset.
+> Run end-to-end on Metashape Pro 2.3.2 with the
+> contributor-private dataset above; the table below is from
+> that run.
+
+```python
+import Metashape
+
+chunk = Metashape.app.document.chunk
+chunk.calibrateColors(source_data=Metashape.DataSource.TiePointsData,
+                      white_balance=False)
+
+for camera in chunk.cameras:
+    sensor = camera.sensor
+    if sensor is not None and sensor.vignetting:
+        # drop the lens falloff
+        sensor.vignetting = [Metashape.Vignetting() for _ in sensor.vignetting]
+    if camera.vignetting:
+        # keep only the per-image gain exp(c00), dropping the tilt
+        bands = []
+        for v in camera.vignetting:
+            g = Metashape.Vignetting()
+            g[0, 0] = v[0, 0]
+            bands.append(g)
+        camera.vignetting = bands
+
+chunk.convertImages(path="corrected/{filename}.tif", color_correction=True)
+```
+
+Fitting a single scalar per image and channel to the result:
+
+| Coefficients kept | Residual of a scalar fit |
+|-------------------|--------------------------|
+| All, as calibrated | 3.27 levels |
+| Sensor falloff zeroed | 2.17 levels |
+| Gain `(0,0)` only | 0.39 levels |
+
+A residual this close to the rounding floor means the gain-only
+output is a pure per-image multiply. Assigning to
+`sensor.vignetting` leaves `camera.vignetting` unchanged.
+
+### Is a gain in gamma space physically wrong?
+
+Exposure and lens falloff act on scene radiance, so a
+correction belongs in linear light. Applying it to encoded
+values is still a correction of the right form, **provided the
+encoding is a pure power law**. If `v = L^(1/γ)`, then
+`g · v = (g^γ · L)^(1/γ)`: multiplying the encoded value by `g`
+multiplies linear radiance by `g^γ`. A smooth multiplicative
+field in encoded space is likewise a smooth multiplicative
+field in linear space.
+
+Only the meaning of the coefficients changes. They describe
+the correction in encoded units, and the linear-light factor
+is `exp(Σ cᵢⱼ xⁱ yʲ)^γ`. Because *Calibrate Colors* fits them
+to encoded intensities, the exponent is absorbed into the fit.
+
+This is also why a free-gain fit cannot tell the two spaces
+apart: on the same images, a scalar fitted in encoded space
+and one fitted in linear light left 3.27 and 3.30 levels. Only
+holding the field at the stored coefficients, as in the
+falloff measurement above, separates them.
+
+Where the equivalence breaks:
+
+- **The sRGB toe.** Below about 10/255, sRGB is linear rather
+  than a power law, so dark pixels get `g` in linear light while
+  mid-tones get about `g^2.2`. At 8 bits and gains within ±10%,
+  the error is under a level.
+- **Camera tone curves that are not a power law**: BT.709,
+  highlight knees, S-curves, log profiles. A scalar in encoded
+  space cannot represent a gain under such a curve, and the
+  error grows toward the highlights. The measurement above
+  assumed sRGB; the cameras' actual transfer curve was not
+  checked.
+- **Black-level offsets and clipped pixels** break any purely
+  multiplicative model, in either space.
+- **Reusing the coefficients in a linear pipeline.** Applied
+  unchanged to linear data, they correct by roughly a factor of
+  γ too little in log terms. Raise the factor to γ first.
 
 ## When to NOT use Calibrate Colors
 
@@ -325,10 +505,15 @@ To speed up:
   the calibrated values in the chunk's per-camera storage,
   but the existing texture / orthomosaic are still based on
   the un-calibrated values until rebuilt.
-- **The corrections are NOT applied to exported source images**
-  (the photo files on disk are unchanged). They apply only at
-  Metashape's internal texture-fetch step. If you need
-  calibrated images on disk, export via the
+- **The corrections are NOT applied to the source images**
+  (the photo files on disk are unchanged). They apply at
+  Metashape's internal texture-fetch step. To get corrected
+  copies on disk, use `chunk.convertImages(color_correction=True)`
+  (*Tools → Convert Images*). `Chunk.convertImages()` was added in
+  Metashape 2.1.2; earlier versions have a
+  `Metashape.Tasks.ConvertImages` task class (named
+  `Tasks.UndistortPhotos` before 1.6.0), whose color-correction
+  support was not checked. The older route is the
   [Undistort Photos workflow](https://github.com/agisoft-llc/metashape-scripts/blob/master/src/undistort_photos.py)
   with calibration applied.
 - **The Reset button (in 2.x) clears the correction** without
