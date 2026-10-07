@@ -23,28 +23,25 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      UV_PYTHON: "3.12"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Set up uv
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@v10.2.0
 
-      - name: Install Python 3.12
-        run: uv python install 3.12
-
-      - name: Install dependencies
-        run: uv pip install --system -r requirements.txt
+      - name: Create venv and install dependencies
+        run: |
+          uv venv --python 3.12 .venv
+          uv pip install --python .venv/bin/python -r requirements.txt
 
       - name: Content checks (changelog + archived citations)
         run: |
-          python scripts/gen_changelog.py --check
-          python scripts/add_archive_links.py --all --check
+          ./.venv/bin/python scripts/gen_changelog.py --check
+          ./.venv/bin/python scripts/add_archive_links.py --all --check
 
       - name: Build site (strict)
-        run: mkdocs build --strict
+        run: ./.venv/bin/mkdocs build --strict
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
